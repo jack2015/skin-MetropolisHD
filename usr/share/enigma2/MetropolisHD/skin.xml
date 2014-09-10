@@ -558,17 +558,15 @@
 	</screen>
 	<screen name="About" position="0,0" size="1280,720" title="About" flags="wfNoBorder" backgroundColor="transparent">
 		<widget source="Title" render="Label" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<eLabel text="Skin: MetropolisHD by Franc" position="center,523" size="540,32" font="Regular; 22" halign="center" backgroundColor="transpBlack" transparent="1" foregroundColor="undedede" />
-		<widget source="EnigmaVersion" render="Label" position="center,158" size="540,25" font="Regular;22" halign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="ImageVersion" render="Label" position="center,188" size="540,25" font="Regular;22" halign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="FPVersion" render="Label" position="center,218" size="540,25" font="Regular;22" halign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="TunerHeader" render="Label" position="center,261" size="540,25" font="Regular;24" halign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="Tuner0" render="Label" position="center,290" size="540,25" font="Regular;22" halign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="HDDHeader" render="Label" position="center,425" size="540,25" font="Regular;24" halign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="hddA" render="Label" position="center,450" size="540,50" font="Regular;22" halign="center" backgroundColor="transpBlack" transparent="1" />
+		<widget name="AboutScrollLabel" position="center,130" size="705,430" halign="center" font="Regular;22" backgroundColor="transpBlack" transparent="1" />
 		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
 		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
-		<ePixmap pixmap="MetropolisHD/metropolishd_logo.png" position="center,600" size="743,50" alphatest="off" zPosition="3" transparent="1" />
+		<ePixmap pixmap="MetropolisHD/metropolishd_logo.png" position="center,550" size="743,50" alphatest="off" zPosition="3" transparent="1" />
+		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
+		<widget source="key_red" render="Label" position="393,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
+		<widget source="key_green" render="Label" position="664,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
+		<eLabel name="Red" position="393,645" size="250,1" foregroundColor="red" backgroundColor="red" />
+		<eLabel name="Green" position="664,645" size="250,1" foregroundColor="green" backgroundColor="green" />
 	</screen>
 	<screen name="ServiceInfo" position="0,0" size="1280,720" title="Serviceinfo" flags="wfNoBorder" backgroundColor="transparent">
 		<widget source="Title" render="Label" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
