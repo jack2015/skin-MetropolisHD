@@ -557,7 +557,7 @@
 		<ePixmap position="128,132" size="125,125" zPosition="-1" pixmap="MetropolisHD/menu/sat_search.png" transparent="0" alphatest="blend" />
 	</screen>
 	<screen name="About" position="0,0" size="1280,720" title="About" flags="wfNoBorder" backgroundColor="transparent">
-		<widget source="Title" render="Label" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
+		<eLabel text="About" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
 		<widget name="AboutScrollLabel" position="center,130" size="705,430" halign="center" font="Regular;22" backgroundColor="transpBlack" transparent="1" />
 		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
 		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
