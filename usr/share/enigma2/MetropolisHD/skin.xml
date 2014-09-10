@@ -564,9 +564,6 @@
 		<widget source="FPVersion" render="Label" position="center,218" size="540,25" font="Regular;22" halign="center" backgroundColor="transpBlack" transparent="1" />
 		<widget source="TunerHeader" render="Label" position="center,261" size="540,25" font="Regular;24" halign="center" backgroundColor="transpBlack" transparent="1" />
 		<widget source="Tuner0" render="Label" position="center,290" size="540,25" font="Regular;22" halign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="Tuner1" render="Label" position="center,320" size="540,25" font="Regular;22" halign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="Tuner2" render="Label" position="center,350" size="540,25" font="Regular;22" halign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="Tuner3" render="Label" position="center,380" size="540,25" font="Regular;22" halign="center" backgroundColor="transpBlack" transparent="1" />
 		<widget source="HDDHeader" render="Label" position="center,425" size="540,25" font="Regular;24" halign="center" backgroundColor="transpBlack" transparent="1" />
 		<widget source="hddA" render="Label" position="center,450" size="540,50" font="Regular;22" halign="center" backgroundColor="transpBlack" transparent="1" />
 		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
