@@ -59,7 +59,7 @@
 	<fonts>
 		<font filename="/usr/share/fonts/lcd.ttf" name="LCD" scale="100" />
 		<font filename="/usr/share/fonts/Army_Regular_L.ttf" name="Army" scale="100" />
-		<font filename="/usr/share/fonts/MET_FontinSansSmallCaps.ttf" name="Replacement" scale="100" replacement="1" />
+		<font filename="/usr/share/fonts/md_khmurabi_10.ttf" name="Replacement" scale="100" replacement="1" />
 		<font filename="/usr/share/fonts/tuxtxt.ttf" name="Console" scale="100" />
 		<font filename="/usr/share/fonts/DroidSans.ttf" name="Regular" scale="100" />
 		<font filename="/usr/share/fonts/OpenSans-Regular.ttf" name="OpenSans" scale="100" />
