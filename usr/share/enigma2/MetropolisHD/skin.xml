@@ -148,11 +148,11 @@
 		<widget source="session.CurrentService" render="Label" position="1025,520" size="205,24" font="Replacement; 20" backgroundColor="transpGrey" transparent="1" zPosition="1" text="12519 V 27500 Auto" foregroundColor="yellow" halign="left">
 			<convert type="ServiceName2">%F %p %Y %f</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Picon" position="60,588" size="100,60" zPosition="10" transparent="0" alphatest="off">
- 	<convert type="ServiceName">Reference</convert>
+		<widget source="session.CurrentService" render="Picon" position="60,588" size="100,60" zPosition="10" transparent="1" alphatest="blend">
+ 	 	 	<convert type="ServiceName">Reference</convert>
 		</widget>
 		<ePixmap pixmap="MetropolisHD/infobar/ico_sub_off.png" position="200,650" size="59,67" zPosition="1" alphatest="off" />
-	<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/infobar/ico_sub_on.png" position="200,650" size="59,67" zPosition="2" alphatest="off">
+	 	<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/infobar/ico_sub_on.png" position="200,650" size="59,67" zPosition="2" alphatest="off">
 			<convert type="ServiceInfo">SubservicesAvailable</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -172,12 +172,12 @@
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget> 
-	<ePixmap pixmap="MetropolisHD/infobar/ico_txt_off.png" position="480,650" size="138,67" zPosition="1" alphatest="off" />
+	 	<ePixmap pixmap="MetropolisHD/infobar/ico_txt_off.png" position="480,650" size="138,67" zPosition="1" alphatest="off" />
 		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/infobar/ico_txt_on.png" position="480,650" size="138,67" zPosition="2" alphatest="off">
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide" />
 		</widget> 
-	<ePixmap pixmap="MetropolisHD/infobar/ico_crypt_off.png" position="560,650" size="59,67" zPosition="1" alphatest="off" />
+	 	<ePixmap pixmap="MetropolisHD/infobar/ico_crypt_off.png" position="560,650" size="59,67" zPosition="1" alphatest="off" />
 		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/infobar/ico_crypt_on.png" position="560,650" size="59,67" zPosition="2" alphatest="off">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
@@ -214,7 +214,7 @@
 		<widget source="session.FrontendStatus" render="Label" position="1015,615" size="100,24" font="Replacement; 20" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
 			<convert type="FrontendInfo">SNRdB</convert>
 		</widget>
-	<widget halign="left" noWrap="1" position="1015,681" render="Label" size="34,24" source="session.CurrentService" transparent="1" foregroundColor="yellow" font="Replacement; 20" backgroundColor="transpGrey" text="25">
+	 	<widget halign="left" noWrap="1" position="1015,681" render="Label" size="34,24" source="session.CurrentService" transparent="1" foregroundColor="yellow" font="Replacement; 20" backgroundColor="transpGrey" text="25">
 			<convert type="ServiceInfoEX">fps</convert>
 		</widget>
 		<eLabel text="FPS:" position="968,681" size="50,24" font="Replacement; 20" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2" />
@@ -238,7 +238,7 @@
 			<convert type="ClockToText">Format:%e. %B</convert>
 		</widget>
 		<ePixmap position="center,510" size="1280,250" pixmap="MetropolisHD/infobar/back.png" zPosition="-1" alphatest="off" transparent="0" />
-	</screen>&gt;
+	</screen>
  	<screen name="UnhandledKey" position="center,200" size="64, 64" title="UnhandledKey" zPosition="100" flags="wfNoBorder" backgroundColor="transparent">
 		<widget alphatest="off" name="UnhandledKeyPixmap" pixmap="MetropolisHD/error.png" position="6,2" size="53,65" transparent="0" />
 	</screen>
