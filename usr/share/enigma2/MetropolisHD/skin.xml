@@ -250,7 +250,7 @@
  	<screen name="Mute" position="67,50" size="64,64" title="Mute" backgroundColor="transparent" zPosition="10" flags="wfNoBorder" transparent="0">
 		<ePixmap pixmap="MetropolisHD/mute.png" position="1,1" size="64,64" zPosition="-5" alphatest="off" />
 	</screen>
- 	<screen name="menu_mainmenu" position="center,center" size="1280,720" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
+ 	<screen name="menu_mainmenu" position="center,center" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap position="center,center" size="544,592" zPosition="-2" pixmap="MetropolisHD/podloga.png" alphatest="off" borderWidth="1" borderColor="un666666" />
 		<widget source="global.CurrentTime" render="Label" position="916,218" size="321,29" zPosition="1" font="Replacement; 22" halign="center" backgroundColor="background" transparent="1" foregroundColor="green">
 			<convert type="ClockToText">Format: %A - %d.%m.%Y</convert>
@@ -258,7 +258,7 @@
 		<widget source="global.CurrentTime" render="Label" position="1096,150" size="141,46" font="Regular; 24" valign="center" halign="left" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
 			<convert type="ClockToText">Format::%M</convert>
 		</widget>
-		<widget source="Title" render="Label" position="380,72" size="522,41" zPosition="1" halign="center" font="Replacement; 24" foregroundColor="red" backgroundColor="background" transparent="1" />
+		<widget source="title" render="Label" position="380,72" size="522,41" zPosition="1" halign="center" font="Replacement; 24" foregroundColor="red" backgroundColor="background" transparent="1" />
 		<widget source="menu" render="Listbox" enableWrapAround="1" position="381,125" size="522,475" zPosition="1" scrollbarMode="showNever" selectionPixmap="MetropolisHD/menu/sel631x46.png" transparent="1" backgroundPixmap="MetropolisHD/menu/bg40x40.png">
 			<convert type="TemplatedMultiContent">
 {"template": [ MultiContentEntryText(pos = (40,6), size = (425,32), flags = RT_HALIGN_CENTER, text =0) ],
@@ -299,7 +299,7 @@
 		<eLabel name="new eLabel" position="380,605" size="518,1" backgroundColor="un666666" />
 		<eLabel name="new eLabel" position="0,114" size="3,160" backgroundColor="background" />
 	</screen>
-	<screen name="menu_setup" position="0,0" size="1280,720" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="menu_setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap position="center,center" size="544,592" zPosition="-2" pixmap="MetropolisHD/podloga.png" alphatest="off" borderWidth="1" borderColor="un666666" />
 		<widget source="global.CurrentTime" render="Label" position="916,218" size="321,29" zPosition="1" font="Replacement; 22" halign="center" backgroundColor="background" transparent="1" foregroundColor="green">
 			<convert type="ClockToText">Format: %A - %d.%m.%Y</convert>
@@ -307,7 +307,7 @@
 		<widget source="global.CurrentTime" render="Label" position="1096,150" size="141,46" font="Regular; 45" valign="center" halign="left" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
 			<convert type="ClockToText">Format::%M</convert>
 		</widget>
-		<widget source="Title" render="Label" position="380,72" size="522,41" zPosition="1" halign="center" font="Replacement; 26" foregroundColor="red" backgroundColor="background" transparent="1" />
+		<widget source="title" render="Label" position="380,72" size="522,41" zPosition="1" halign="center" font="Replacement; 26" foregroundColor="red" backgroundColor="background" transparent="1" />
 		<widget source="menu" render="Listbox" enableWrapAround="1" position="381,125" size="522,475" zPosition="1" scrollbarMode="showNever" selectionPixmap="MetropolisHD/menu/sel631x46.png" transparent="1" backgroundPixmap="MetropolisHD/menu/bg40x40.png">
 			<convert type="TemplatedMultiContent">
 {"template": [ MultiContentEntryText(pos = (40,6), size = (425,32), flags = RT_HALIGN_CENTER, text =0) ],
@@ -376,7 +376,7 @@
 		<eLabel name="new eLabel" position="380,605" size="518,1" backgroundColor="un666666" />
 		<eLabel name="new eLabel" position="0,114" size="3,160" backgroundColor="background" />
 	</screen>
-	<screen name="menu_system" position="0,0" size="1280,720" title="System" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="menu_system" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap position="center,center" size="544,592" zPosition="-2" pixmap="MetropolisHD/podloga.png" alphatest="off" borderWidth="1" borderColor="un666666" />
 		<widget source="global.CurrentTime" render="Label" position="916,218" size="321,29" zPosition="1" font="Replacement; 22" halign="center" backgroundColor="background" transparent="1" foregroundColor="green">
 			<convert type="ClockToText">Format: %A - %d.%m.%Y</convert>
@@ -384,7 +384,7 @@
 		<widget source="global.CurrentTime" render="Label" position="1096,150" size="141,46" font="Regular; 45" valign="center" halign="left" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
 			<convert type="ClockToText">Format::%M</convert>
 		</widget>
-		<widget source="Title" render="Label" position="380,72" size="522,41" zPosition="1" halign="center" font="Replacement; 26" foregroundColor="red" backgroundColor="background" transparent="1" />
+		<widget source="title" render="Label" position="380,72" size="522,41" zPosition="1" halign="center" font="Replacement; 26" foregroundColor="red" backgroundColor="background" transparent="1" />
 		<widget source="menu" render="Listbox" enableWrapAround="1" position="381,125" size="522,475" zPosition="1" scrollbarMode="showNever" selectionPixmap="MetropolisHD/menu/sel631x46.png" transparent="1" backgroundPixmap="MetropolisHD/menu/bg40x40.png">
 			<convert type="TemplatedMultiContent">
 {"template": [ MultiContentEntryText(pos = (40,6), size = (425,32), flags = RT_HALIGN_CENTER, text =0) ],
@@ -405,7 +405,7 @@
 		<eLabel name="new eLabel" position="380,605" size="518,1" backgroundColor="un666666" />
 		<eLabel name="new eLabel" position="0,114" size="3,160" backgroundColor="background" />
 	</screen>
-	<screen name="menu_harddisk" position="0,0" size="1280,720" title="Harddisk" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="menu_harddisk" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap position="center,center" size="544,592" zPosition="-2" pixmap="MetropolisHD/podloga.png" alphatest="off" borderWidth="1" borderColor="un666666" />
 		<widget source="global.CurrentTime" render="Label" position="916,218" size="321,29" zPosition="1" font="Replacement; 22" halign="center" backgroundColor="background" transparent="1" foregroundColor="green">
 			<convert type="ClockToText">Format: %A - %d.%m.%Y</convert>
@@ -413,7 +413,7 @@
 		<widget source="global.CurrentTime" render="Label" position="1096,150" size="141,46" font="Regular; 45" valign="center" halign="left" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
 			<convert type="ClockToText">Format::%M</convert>
 		</widget>
-		<widget source="Title" render="Label" position="380,72" size="522,41" zPosition="1" halign="center" font="Replacement; 26" foregroundColor="red" backgroundColor="background" transparent="1" />
+		<widget source="title" render="Label" position="380,72" size="522,41" zPosition="1" halign="center" font="Replacement; 26" foregroundColor="red" backgroundColor="background" transparent="1" />
 		<widget source="menu" render="Listbox" enableWrapAround="1" position="381,125" size="522,475" zPosition="1" scrollbarMode="showNever" selectionPixmap="MetropolisHD/menu/sel631x46.png" transparent="1" backgroundPixmap="MetropolisHD/menu/bg40x40.png">
 			<convert type="TemplatedMultiContent">
 {"template": [ MultiContentEntryText(pos = (40,6), size = (425,32), flags = RT_HALIGN_CENTER, text =0) ],
@@ -446,7 +446,7 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 	</screen>
-	<screen name="menu_shutdown" position="0,0" size="1280,720" title="Shutdown" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="menu_shutdown" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap position="center,center" size="544,592" zPosition="-2" pixmap="MetropolisHD/podloga.png" alphatest="off" borderWidth="1" borderColor="un666666" />
 		<widget source="global.CurrentTime" render="Label" position="916,218" size="321,29" zPosition="1" font="Replacement; 22" halign="center" backgroundColor="background" transparent="1" foregroundColor="green">
 			<convert type="ClockToText">Format: %A - %d.%m.%Y</convert>
@@ -454,7 +454,7 @@
 		<widget source="global.CurrentTime" render="Label" position="1096,150" size="141,46" font="Regular; 45" valign="center" halign="left" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
 			<convert type="ClockToText">Format::%M</convert>
 		</widget>
-		<widget source="Title" render="Label" position="380,72" size="522,41" zPosition="1" halign="center" font="Replacement; 26" foregroundColor="red" backgroundColor="background" transparent="1" />
+		<widget source="title" render="Label" position="380,72" size="522,41" zPosition="1" halign="center" font="Replacement; 26" foregroundColor="red" backgroundColor="background" transparent="1" />
 		<widget source="menu" render="Listbox" enableWrapAround="1" position="381,125" size="522,475" zPosition="1" scrollbarMode="showNever" selectionPixmap="MetropolisHD/menu/sel631x46.png" transparent="1" backgroundPixmap="MetropolisHD/menu/bg40x40.png">
 			<convert type="TemplatedMultiContent">
 {"template": [ MultiContentEntryText(pos = (40,6), size = (425,32), flags = RT_HALIGN_CENTER, text =0) ],
@@ -495,7 +495,7 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 	</screen>
-	<screen name="menu_information" position="0,0" size="1280,720" title="Information" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="menu_information" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap position="center,center" size="544,592" zPosition="-2" pixmap="MetropolisHD/podloga.png" alphatest="off" borderWidth="1" borderColor="un666666" />
 		<widget source="global.CurrentTime" render="Label" position="916,218" size="321,29" zPosition="1" font="Replacement; 22" halign="center" backgroundColor="background" transparent="1" foregroundColor="green">
 			<convert type="ClockToText">Format: %A - %d.%m.%Y</convert>
@@ -503,7 +503,7 @@
 		<widget source="global.CurrentTime" render="Label" position="1096,150" size="141,46" font="Regular; 45" valign="center" halign="left" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
 			<convert type="ClockToText">Format::%M</convert>
 		</widget>
-		<widget source="Title" render="Label" position="380,72" size="522,41" zPosition="1" halign="center" font="Replacement; 26" foregroundColor="red" backgroundColor="background" transparent="1" />
+		<widget source="title" render="Label" position="380,72" size="522,41" zPosition="1" halign="center" font="Replacement; 26" foregroundColor="red" backgroundColor="background" transparent="1" />
 		<widget source="menu" render="Listbox" enableWrapAround="1" position="381,125" size="522,475" zPosition="1" scrollbarMode="showNever" selectionPixmap="MetropolisHD/menu/sel631x46.png" transparent="1" backgroundPixmap="MetropolisHD/menu/bg40x40.png">
 			<convert type="TemplatedMultiContent">
 {"template": [ MultiContentEntryText(pos = (40,6), size = (425,32), flags = RT_HALIGN_CENTER, text =0) ],
@@ -532,7 +532,7 @@
 		<eLabel name="new eLabel" position="380,605" size="518,1" backgroundColor="un666666" />
 		<eLabel name="new eLabel" position="0,114" size="3,160" backgroundColor="background" />
 	</screen>
-	<screen name="menu_scan" position="0,0" size="1280,720" title="Service searching" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="menu_scan" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap position="center,center" size="544,592" zPosition="-2" pixmap="MetropolisHD/podloga.png" alphatest="off" borderWidth="1" borderColor="un666666" />
 		<widget source="global.CurrentTime" render="Label" position="916,218" size="321,29" zPosition="1" font="Replacement; 22" halign="center" backgroundColor="background" transparent="1" foregroundColor="green">
 			<convert type="ClockToText">Format: %A - %d.%m.%Y</convert>
@@ -540,7 +540,7 @@
 		<widget source="global.CurrentTime" render="Label" position="1096,150" size="141,46" font="Regular; 45" valign="center" halign="left" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
 			<convert type="ClockToText">Format::%M</convert>
 		</widget>
-		<widget source="Title" render="Label" position="380,72" size="522,41" zPosition="1" halign="center" font="Replacement; 26" foregroundColor="red" backgroundColor="background" transparent="1" />
+		<widget source="title" render="Label" position="380,72" size="522,41" zPosition="1" halign="center" font="Replacement; 26" foregroundColor="red" backgroundColor="background" transparent="1" />
 		<widget source="menu" render="Listbox" enableWrapAround="1" position="381,125" size="522,475" zPosition="1" scrollbarMode="showNever" selectionPixmap="MetropolisHD/menu/sel631x46.png" transparent="1" backgroundPixmap="MetropolisHD/menu/bg40x40.png">
 			<convert type="TemplatedMultiContent">
 {"template": [ MultiContentEntryText(pos = (40,6), size = (425,32), flags = RT_HALIGN_CENTER, text =0) ],
