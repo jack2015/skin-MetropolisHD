@@ -64,6 +64,12 @@
 		<font filename="DroidSans.ttf" name="Regular" scale="100" />
 		<font filename="OpenSans-Regular.ttf" name="OpenSans" scale="100" />
 	</fonts>
+	<subtitles>
+		<sub name="Subtitle_TTX" font="Regular;38" foregroundColor="white" shadowColor="#40101010" shadowOffset="-3,-3" />
+		<sub name="Subtitle_Regular" font="Regular;38" foregroundColor="white" shadowColor="#40101010" shadowOffset="-3,-3" />
+		<sub name="Subtitle_Bold" font="Replacement;40" foregroundColor="white" shadowColor="#40101010" shadowOffset="-3,-3" />
+		<sub name="Subtitle_Italic" font="Regular;38" foregroundColor="white" shadowColor="#40101010" shadowOffset="-3,-3" />
+	</subtitles>
 	<windowstyle type="skinned" id="0">
 		<title offset="40,14" font="Replacement;26" />
 		<color name="Background" color="podloga" />
@@ -1587,12 +1593,6 @@ MultiContentEntryText(pos = (50, 28), size = (480, 40), font = 1, flags = RT_HAL
 	<screen name="Subtitles" position="300,150" size="680,435" title="Subtitle Selection" backgroundColor="podloga">
 		<widget name="config" position="20,20" size="640,385" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button1080x25.png" transparent="1" />
 	</screen>
-	<subtitles>
-		<sub name="Subtitle_TTX" font="Regular;38" foregroundColor="white" shadowColor="#40101010" shadowOffset="-3,-3" />
-		<sub name="Subtitle_Regular" font="Regular;38" foregroundColor="white" shadowColor="#40101010" shadowOffset="-3,-3" />
-		<sub name="Subtitle_Bold" font="Replacement;40" foregroundColor="white" shadowColor="#40101010" shadowOffset="-3,-3" />
-		<sub name="Subtitle_Italic" font="Regular;38" foregroundColor="white" shadowColor="#40101010" shadowOffset="-3,-3" />
-	</subtitles>
 	<screen name="SubtitleDisplay" position="0,0" size="1280,720" zPosition="-1" flags="wfNoBorder" backgroundColor="transparent" />
 	<screen name="TimerEdit" position="90,100" size="1100,560" title="Timer Edit" backgroundColor="podloga">
 		<widget name="description" position="10,10" size="1080,40" font="Regular;25" backgroundColor="podloga" />
