@@ -719,14 +719,14 @@ from enigma import eSize, ePoint
 orgwidth = self.instance.size().width()
 orgpos = self.instance.position()
 textsize = self["text"].getSize()
-textsize = (textsize[0] + 80, textsize[1] + 80)
+textsize = (textsize[0] + 80, textsize[1] + 40)
 count = len(self.list)
-if count &gt; 10:
+if count > 10:
 	count = 10
 offset = 25 * count
 wsizex = textsize[0] + 80
-wsizey = textsize[1] + offset + 10
-if (640 &gt; wsizex):
+wsizey = textsize[1] + offset +10
+if (640 > wsizex):
 	wsizex = 640
 wsize = (wsizex, wsizey)
 self.instance.resize(eSize(*wsize))
@@ -735,7 +735,7 @@ listsize = (wsizex - 20, 25 * count)
 self["list"].instance.move(ePoint(10, textsize[1]))
 self["list"].instance.resize(eSize(*listsize))
 newwidth = wsize[0]
-self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3)))
+self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count > 7 and 2 or 3)))
 		</applet>
 	</screen>
 	<screen name="Console" position="90,100" size="1100,560" title="Command execution..." backgroundColor="podloga">
