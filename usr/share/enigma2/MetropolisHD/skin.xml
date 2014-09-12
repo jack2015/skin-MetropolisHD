@@ -1299,9 +1299,9 @@ MultiContentEntryText(pos = (50, 28), size = (480, 40), font = 1, flags = RT_HAL
 		<widget name="config" position="center,163" size="871,425" selectionPixmap="MetropolisHD/menu/button1080x25.png" transparent="1" />
 	</screen>
 	<screen name="NumberZap" position="center,355" size="400,90" title="Channel" backgroundColor="podloga">;
-		<widget source="channel" render="Label" position="30,15" size="130,28" halign="left" font="Regular;25" />
-		<widget source="number" render="Label" position="190,15" size="80,28" halign="left" font="Regular;25" />
-		<widget source="servicename" render="Label" position="30,60" size="360,28" halign="left" font="Regular;25" />
+		<widget name="channel" position="30,15" size="130,28" halign="left" font="Regular;25" />
+		<widget name="number" position="190,15" size="80,28" halign="left" font="Regular;25" />
+		<widget name="servicename" position="30,60" size="360,28" halign="left" font="Regular;25" />
 	</screen>
 	<screen name="ParentalControlChangePin" position="0,0" size="1280,720" title="Change pin code" flags="wfNoBorder" backgroundColor="transparent">
 		<widget source="Title" render="Label" position="center,72" size="582,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
