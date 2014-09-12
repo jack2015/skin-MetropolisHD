@@ -137,8 +137,7 @@
 		</widget>
 		<ePixmap position="670,645" size="73,40" zPosition="1" pixmap="MetropolisHD/infobar/ico_hd_off.png" alphatest="off" />
 		<widget source="session.CurrentService" render="Pixmap" position="670,645" size="73,40" zPosition="2" pixmap="MetropolisHD/infobar/ico_hd_on.png" alphatest="off">
-			<convert type="ServiceInfo">VideoWidth</convert>
-			<convert type="ValueRange">721,1980</convert>
+			<convert type="ServiceInfo">IsHD</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap pixmap="MetropolisHD/infobar/ico_dolby_off.png" position="751,645" size="73,40" zPosition="1" alphatest="off" />
