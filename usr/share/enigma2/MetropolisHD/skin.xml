@@ -813,7 +813,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count > 7 and 2 or 3)))
 		<eLabel name="new eLabel" position="991,478" size="75,22" text="..." font="Regular; 20" halign="center" transparent="1" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" valign="center" />
 		<eLabel name="new eLabel" position="991,109" size="75,22" text="..." font="Regular; 20" halign="center" transparent="1" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" valign="center" />
 	</screen>
-	<screen name="EPGSelectionMulti" position="0,0" size="1280,720" title="EPG Selection Multi" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="EPGSelectionMulti" position="0,0" size="1280,720" title="Multi-EPG bouquet selection" flags="wfNoBorder" backgroundColor="transparent">
 		<widget source="Title" render="Label" position="center,37" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
 		<ePixmap position="center,center" size="1178,656" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
 		<ePixmap pixmap="MetropolisHD/back1.png" position="center,33" size="1170,40" alphatest="blend" zPosition="-2" transparent="0" />
@@ -829,14 +829,14 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count > 7 and 2 or 3)))
 		<widget source="Event" render="Label" position="860,126" size="360,468" font="Regular;20" backgroundColor="transpBlack" transparent="1">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
-		<ePixmap pixmap="MetropolisHD/buttons/red30x30.png" position="110,630" size="250,35" alphatest="on" />
-		<ePixmap pixmap="MetropolisHD/buttons/green30x30.png" position="380,630" size="250,35" alphatest="on" />
-		<ePixmap pixmap="MetropolisHD/buttons/yellow30x30.png" position="650,630" size="250,35" alphatest="on" />
-		<ePixmap pixmap="MetropolisHD/buttons/blue30x30.png" position="920,630" size="250,35" alphatest="on" />
-		<widget name="key_red" position="160,625" size="220,35" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_green" position="430,625" size="220,35" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_yellow" position="700,625" size="220,35" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_blue" position="970,625" size="220,35" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="transpBlack" transparent="1" />
+		<widget name="key_red" position="285,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" text="All" />
+		<widget name="key_green" position="463,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
+		<widget name="key_yellow" position="641,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
+		<widget name="key_blue" position="819,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
+		<eLabel name="Red" position="285,645" size="178,1" foregroundColor="red" backgroundColor="red" />
+		<eLabel name="Green" position="463,645" size="178,1" foregroundColor="green" backgroundColor="green" />
+		<eLabel name="Yellow" position="641,645" size="178,1" foregroundColor="yellow" backgroundColor="yellow" />
+		<eLabel name="Blue" position="819,645" size="178,1" foregroundColor="blue" backgroundColor="blue" />
 		<ePixmap position="801,144" zPosition="2" size="29,451" pixmap="MetropolisHD/maxbar.png" alphatest="blend" transparent="1" />
 	</screen>
 	<screen name="EventView" position="center,-1" size="1280,720" title="Eventview" flags="wfNoBorder" backgroundColor="transparent">
