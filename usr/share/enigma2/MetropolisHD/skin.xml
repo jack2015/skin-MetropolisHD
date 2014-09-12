@@ -792,7 +792,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count > 7 and 2 or 3)))
 		<widget source="Event" render="Label" position="849,133" size="348,348" font="Regular;20" backgroundColor="transpBlack" transparent="1" halign="center" valign="top" foregroundColor="un21e2e2e2">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
-		<ePixmap position="672,112" zPosition="2" size="29,501" pixmap="MetropolisHD/maxbar.png" alphatest="blend" transparent="1" />
+		<ePixmap position="772,112" zPosition="2" size="29,501" pixmap="MetropolisHD/maxbar.png" alphatest="blend" transparent="1" />
 		<ePixmap position="842,center" size="362,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
 		<ePixmap pixmap="MetropolisHD/menu/sel_channel_selection_915x40.png" position="862,560" size="83,33" alphatest="off" zPosition="1" borderWidth="1" borderColor="un666666" />
 		<eLabel name="new eLabel" position="867,604" size="75,22" text="OK" font="Replacement; 20" halign="center" transparent="0" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center" />
