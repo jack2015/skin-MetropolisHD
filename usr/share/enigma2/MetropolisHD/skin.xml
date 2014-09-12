@@ -1653,8 +1653,8 @@ MultiContentEntryText(pos = (50, 28), size = (480, 40), font = 1, flags = RT_HAL
 			<convert type="StringList" />
 		</widget>
 	</screen>
-	<screen name="CutListEditor" position="0,0" size="1280,720" title="Cutlist editor" flags="wfNoBorder" backgroundColor="transparent">
-		<widget source="Title" render="Label" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
+	<screen name="CutListEditor" position="center,680" size="700,24" title="Cutlist editor..." flags="wfNoBorder" backgroundColor="transparent">
+		<!--widget source="Title" render="Label" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
 		<ePixmap position="center,center" size="1229,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
 		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="1220,40" alphatest="off" zPosition="-2" transparent="0" />
 		<eLabel position="80,125" size="310,420" zPosition="1" backgroundColor="grey" />
@@ -1678,9 +1678,9 @@ MultiContentEntryText(pos=(145,0), size=(145, 20), text = 2, flags = RT_HALIGN_R
 		<widget source="session.CurrentService" render="Label" position="450,550" size="790,25" zPosition="3" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1">
 			<convert type="ServicePosition">Position,Detailed</convert>
 		</widget>
-		<ePixmap pixmap="MetropolisHD/mp_buttons.png" position="100,582" size="260,32" zPosition="1" alphatest="blend" />
-		<widget name="Timeline" position="479,587" size="696,20" zPosition="3" backgroundColor="un808888" pointer="MetropolisHD/position_arrow.png:3,5" foregroundColor="black" />
-		<eLabel text="OK = Menu" position="1059,615" size="140,22" zPosition="1" font="Regular;20" backgroundColor="black" transparent="1" />
+		<ePixmap pixmap="MetropolisHD/mp_buttons.png" position="100,582" size="260,32" zPosition="1" alphatest="blend" /-->
+		<widget name="Timeline" position="2,2" size="696,20" zPosition="3" backgroundColor="un808888" pointer="MetropolisHD/position_arrow.png:3,5" foregroundColor="black" />
+		<!--eLabel text="OK = Menu" position="1059,615" size="140,22" zPosition="1" font="Regular;20" backgroundColor="black" transparent="1" /-->
 	</screen>
 	<screen name="MediaPlayer" position="center,center" size="1280,720" title="M e d i a  P l a y e r" flags="wfNoBorder" backgroundColor="transparent">
 		<widget source="Title" render="Label" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
