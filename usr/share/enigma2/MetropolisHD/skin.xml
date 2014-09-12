@@ -2452,8 +2452,8 @@ MultiContentEntryText(pos = (550, 3), size = (70, 24), font=1, flags = RT_HALIGN
 		<ePixmap position="570,525" size="100,40" zPosition="4" pixmap="~/plugin.png" alphatest="on" transparent="1" />
 		<widget name="title" position="0,0" size="0,0" />
 	</screen>&gt;
-	<screen name="PositionerSetup" position="center,center" size="1280,720" title="Positioner setup..." flags="wfNoBorder" backgroundColor="transparent">
-		<widget source="Title" render="Label" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
+	<screen name="PositionerSetup" position="center,center" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<eLabel text="Positioner setup" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
 		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
 		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
 		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
@@ -2482,8 +2482,8 @@ MultiContentEntryText(pos = (550, 3), size = (70, 24), font=1, flags = RT_HALIGN
 		<eLabel text="FEC:" position="297,500" size="150,24" font="Regular;22" backgroundColor="transpBlack" transparent="1" />
 		<widget name="fec_value" position="460,500" size="150,24" font="Regular;22" backgroundColor="transpBlack" transparent="1" />
 	</screen>
-	<screen name="AdapterSetup" position="0,0" size="1280,720" title="Network Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<widget source="Title" render="Label" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
+	<screen name="AdapterSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<eLabel text="Network setup" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
 		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
 		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
 		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
@@ -2511,8 +2511,8 @@ MultiContentEntryText(pos = (550, 3), size = (70, 24), font=1, flags = RT_HALIGN
 			<convert type="ConditionalShowHide" />
 		</widget>
 	</screen>
-	<screen name="AdapterSetupConfiguration" position="0,0" size="1280,720" title="Network Configuration..." flags="wfNoBorder" backgroundColor="transparent">
-		<widget source="Title" render="Label" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
+	<screen name="AdapterSetupConfiguration" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<eLabel text="Network configuration..." position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
 		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
 		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
 		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
@@ -2525,8 +2525,8 @@ MultiContentEntryText(pos = (550, 3), size = (70, 24), font=1, flags = RT_HALIGN
 		<widget source="Statustext" render="Label" position="329,570" size="200,30" zPosition="1" font="Regular;24" backgroundColor="transpBlack" transparent="1" />
 		<widget name="statuspic" position="512,575" size="15,16" pixmaps="MetropolisHD/buttons/button_green.png,MetropolisHD/buttons/button_green_off.png" zPosition="10" transparent="1" alphatest="on" />
 	</screen>
-	<screen name="NameserverSetup" position="0,0" size="1280,720" title="Nameserver Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<widget source="Title" render="Label" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
+	<screen name="NameserverSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<eLabel text="Nameserver setup" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
 		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
 		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
 		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
@@ -2539,8 +2539,8 @@ MultiContentEntryText(pos = (550, 3), size = (70, 24), font=1, flags = RT_HALIGN
 		<widget name="config" position="center,150" size="520,375" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button540x25.png" transparent="1" />
 		<widget source="introduction" render="Label" position="center,480" size="520,30" zPosition="1" font="Regular;24" halign="center" backgroundColor="transpBlack" transparent="1" />
 	</screen>
-	<screen name="NetworkAdapterSelection" position="0,0" size="1280,720" title="Select Network Adapter" flags="wfNoBorder" backgroundColor="transparent">
-		<widget source="Title" render="Label" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
+	<screen name="NetworkAdapterSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<eLabel text="Select a network adapter" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
 		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
 		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
 		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
@@ -2565,8 +2565,8 @@ MultiContentEntryPixmapAlphaTest(pos = (63, 46), size = (15, 16), png = 4), # in
 		</widget>
 		<widget source="introduction" render="Label" position="center,480" size="631,30" zPosition="1" font="Regular;24" backgroundColor="transpBlack" halign="center" transparent="1" />
 	</screen>
-	<screen name="NetworkAdapterTest" position="0,0" size="1280,720" title="Network test..." flags="wfNoBorder" backgroundColor="transparent">
-		<widget source="Title" render="Label" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
+	<screen name="NetworkAdapterTest" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<eLabel text="Network test..." position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
 		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
 		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
 		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
@@ -2610,8 +2610,8 @@ MultiContentEntryPixmapAlphaTest(pos = (63, 46), size = (15, 16), png = 4), # in
 		<widget name="EditSettings_Text" position="760,527" size="160,40" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" backgroundColor="transpGrey" />
 		<widget name="InfoText" position="376,129" size="550,430" zPosition="3" font="Regular;22" halign="center" valign="center" backgroundColor="background2" transparent="0" />
 	</screen>
-	<screen name="NetworkBrowser" position="0,0" size="1280,720" title="Network Neighbourhood" flags="wfNoBorder" backgroundColor="transparent">
-		<widget source="Title" render="Label" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
+	<screen name="NetworkBrowser" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<eLabel text="Network Neighbourhood" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
 		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
 		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
 		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
@@ -2640,7 +2640,7 @@ MultiContentEntryPixmapAlphaTest(pos = (110, 6), size = (48, 48), png = 6), # in
 		</widget>
 		<widget source="infotext" render="Label" position="center,480" size="631,30" zPosition="1" font="Regular;21" halign="center" valign="center" backgroundColor="un25062748" transparent="1" />
 	</screen>
-	<screen name="ScanIP" position="90,100" size="1100,560" title="Scan IP">
+	<screen name="ScanIP" position="90,100" size="1100,560">
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
 		<ePixmap pixmap="MetropolisHD/buttons/red30x30.png" position="155,525" size="250,35" alphatest="on" />
 		<ePixmap pixmap="MetropolisHD/buttons/green30x30.png" position="425,525" size="250,35" alphatest="on" />
@@ -2650,7 +2650,7 @@ MultiContentEntryPixmapAlphaTest(pos = (110, 6), size = (48, 48), png = 6), # in
 		<widget source="key_yellow" render="Label" position="745,525" size="220,35" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="transpBlack" transparent="1" />
 		<widget name="config" position="20,50" size="1060,25" scrollbarMode="showOnDemand" />
 	</screen>
-	<screen name="UserManager" position="90,100" size="1100,560" title="UserManager">
+	<screen name="UserManager" position="90,100" size="1100,560">
 		<widget source="config" render="Listbox" position="10,20" size="750,420" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 {"template": [
@@ -2670,7 +2670,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		<widget source="key_red" render="Label" position="530,525" size="220,35" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="transpBlack" transparent="1" />
 		<widget source="key_yellow" render="Label" position="880,525" size="220,35" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="transpBlack" transparent="1" />
 	</screen>
-	<screen name="UserDialog" position="90,100" size="1100,560" title="UserDialog">
+	<screen name="UserDialog" position="90,100" size="1100,560">
 		<widget name="config" position="20,20" zPosition="1" size="740,300" scrollbarMode="showOnDemand" />
 		<eLabel position="780,0" size="2,518" backgroundColor="grey" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
@@ -2680,7 +2680,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		<widget name="VKeyIcon" pixmap="MetropolisHD/vkey_icon.png" position="1020,450" zPosition="10" size="60,48" transparent="1" alphatest="on" />
 		<widget name="HelpWindow" position="180,450" zPosition="1" size="1,1" transparent="1" alphatest="on" />
 	</screen>
-	<screen name="AutoMountEdit" position="90,100" size="1100,560" title="MountEdit">
+	<screen name="AutoMountEdit" position="90,100" size="1100,560">
 		<widget name="config" position="20,20" zPosition="1" size="740,300" scrollbarMode="showOnDemand" />
 		<eLabel position="780,0" size="2,518" backgroundColor="grey" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
@@ -2690,8 +2690,8 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		<widget name="VKeyIcon" pixmap="MetropolisHD/vkey_icon.png" position="1020,450" zPosition="10" size="60,48" transparent="1" alphatest="on" />
 		<widget name="HelpWindow" position="180,450" zPosition="1" size="1,1" transparent="1" alphatest="on" />
 	</screen>
-	<screen name="AutoMountManager" position="0,0" size="1280,720" title="AutoMountManager" flags="wfNoBorder" backgroundColor="transparent">
-		<widget source="Title" render="Label" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
+	<screen name="AutoMountManager" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<eLabel text="Auto Mount Manager" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
 		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
 		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
 		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
@@ -2711,8 +2711,8 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		</widget>
 		<widget source="introduction" render="Label" position="center,568" size="700,30" font="Regular;22" halign="center" backgroundColor="background" transparent="1" />
 	</screen>
-	<screen name="AutoMountView" position="0,0" size="1280,720" title="MountView" flags="wfNoBorder" backgroundColor="transparent">
-		<widget source="Title" render="Label" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
+	<screen name="AutoMountView" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<eLabel text="Mount View" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
 		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
 		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
 		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
@@ -2741,7 +2741,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		</widget>
 		<widget source="introduction" render="Label" position="center,578" size="700,30" font="Regular;22" halign="center" backgroundColor="background" transparent="1" />
 	</screen>
-	<screen name="HarddiskSetup" position="340,134" size="600,502" title="Harddisk">
+	<screen name="HarddiskSetup" position="340,134" size="600,502">
 		<eLabel position="0,0" size="600,2" backgroundColor="grey" zPosition="5" />
 		<widget name="model" position="10,20" size="580,28" font="Regular;25" halign="center" />
 		<widget name="capacity" position="10,60" size="580,28" font="Regular;25" halign="center" />
@@ -2761,8 +2761,8 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		<widget name="key8" position="162,79" size="160,40" font="Console;21" halign="center" valign="center" backgroundColor="darkgrey" transparent="1" />
 		<widget name="key9" position="322,82" size="160,40" font="Console;21" halign="center" valign="center" backgroundColor="darkgrey" transparent="1" />
 	</screen>
-	<screen name="CrashlogAutoSubmitConfiguration" position="0,0" size="1280,720" title="CrashlogAutoSubmit settings..." flags="wfNoBorder" backgroundColor="transparent">
-		<widget source="Title" render="Label" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
+	<screen name="CrashlogAutoSubmitConfiguration" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<eLabel text="CrashlogAutoSubmit settings..." position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
 		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
 		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
 		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
@@ -2775,15 +2775,15 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		<widget name="HelpWindow" position="180,445" zPosition="1" size="1,1" transparent="1" />
 		<widget source="status" render="Label" position="630,438" size="330,160" zPosition="1" font="Regular;22" backgroundColor="transpBlack" foregroundColor="green" halign="center" transparent="1" />
 	</screen>
-	<screen name="CiSelection" position="0,0" size="1280,720" title="Common Interface" flags="wfNoBorder" backgroundColor="transparent">
-		<widget source="Title" render="Label" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
+	<screen name="CiSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<eLabel text="Common Interface" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
 		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
 		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
 		<widget name="text" position="center,150" size="631,30" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
 		<widget name="entries" position="center,200" size="631,300" scrollbarMode="showOnDemand" zPosition="2" selectionPixmap="MetropolisHD/menu/button540x25.png" transparent="1" />
 	</screen>
-	<screen name="CIselectMainMenu" position="0,0" size="1280,720" title="CI assignment" flags="wfNoBorder" backgroundColor="transparent">
-		<widget source="Title" render="Label" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
+	<screen name="CIselectMainMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<eLabel text="CI assignment" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
 		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
 		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
 		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
@@ -2793,8 +2793,8 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		<eLabel name="Green" position="460,645" size="178,1" foregroundColor="green" backgroundColor="green" />
 		<widget name="CiList" position="center,150" size="631,300" scrollbarMode="showOnDemand" zPosition="2" selectionPixmap="MetropolisHD/menu/button540x25.png" transparent="1" />
 	</screen>
-	<screen name="RecordPathsSettings" position="0,0" size="1280,720" title="Recording paths" flags="wfNoBorder" backgroundColor="transparent">
-		<widget source="Title" render="Label" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
+	<screen name="RecordPathsSettings" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<eLabel text="Recording paths" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
 		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
 		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
 		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
@@ -2804,7 +2804,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		<eLabel name="Green" position="460,645" size="178,1" foregroundColor="green" backgroundColor="green" />
 		<widget name="config" position="center,163" size="701,187" selectionPixmap="MetropolisHD/menu/button1080x25.png" zPosition="2" transparent="1" />
 	</screen>
-	<screen name="InputDeviceSetup" position="center,center" size="560,440" title="Input device setup">
+	<screen name="InputDeviceSetup" position="center,center" size="560,440">
 		<ePixmap pixmap="MetropolisHD/buttons/red30x30.png" position="0,0" size="150,30" alphatest="on" />
 		<ePixmap pixmap="MetropolisHD/buttons/green30x30.png" position="140,0" size="150,30" alphatest="on" />
 		<ePixmap pixmap="MetropolisHD/buttons/yellow30x30.png" position="280,0" size="150,30" alphatest="on" />
@@ -2817,7 +2817,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		<ePixmap pixmap="MetropolisHD/div-h.png" position="0,400" zPosition="1" size="560,2" />
 		<widget source="introduction" render="Label" position="5,410" size="550,30" zPosition="10" font="Regular;21" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
 	</screen>
-	<screen name="VideoEnhancementSetup" position="center,center" size="660,440" title="VideoEnhancementSetup">
+	<screen name="VideoEnhancementSetup" position="center,center" size="660,440">
 		<ePixmap pixmap="MetropolisHD/buttons/red30x30.png" position="5,403" size="35,35" alphatest="on" />
 		<ePixmap pixmap="MetropolisHD/buttons/green30x30.png" position="165,403" size="35,35" alphatest="on" />
 		<ePixmap pixmap="MetropolisHD/buttons/yellow30x30.png" position="325,403" size="35,35" alphatest="on" />
@@ -2830,7 +2830,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		<ePixmap pixmap="MetropolisHD/div-h.png" position="0,399" zPosition="1" size="660,2" />
 		<widget source="introduction" render="Label" position="5,360" size="650,30" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
 	</screen>
-	<screen name="VideoEnhancementPreview" position="360,140" size="560,170" title="VideoEnhancementPreview">
+	<screen name="VideoEnhancementPreview" position="360,140" size="560,170">
 		<ePixmap pixmap="MetropolisHD/buttons/red30x30.png" position="200,130" size="35,35" alphatest="on" />
 		<ePixmap pixmap="MetropolisHD/buttons/green30x30.png" position="350,130" size="35,35" alphatest="on" />
 		<widget source="key_red" render="Label" position="200,134" zPosition="1" size="120,35" font="Regular;22" halign="left" backgroundColor="transpBlack" transparent="1" />
@@ -2839,7 +2839,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		<ePixmap pixmap="MetropolisHD/div-h.png" position="0,120" zPosition="1" size="560,2" />
 		<widget source="introduction" render="Label" position="5,90" size="550,30" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
 	</screen>
-	<screen name="FancontrolConfiguration" position="center,center" size="560,300" title="Standbymode Fancontrol settings">
+	<screen name="FancontrolConfiguration" position="center,center" size="560,300">
 		<ePixmap pixmap="MetropolisHD/buttons/red30x30.png" position="200,260" size="35,35" alphatest="on" />
 		<ePixmap pixmap="MetropolisHD/buttons/green30x30.png" position="350,260" size="35,35" alphatest="on" />
 		<widget source="key_red" render="Label" position="200,263" zPosition="1" size="120,35" font="Regular;22" halign="left" backgroundColor="transpBlack" transparent="1" />
