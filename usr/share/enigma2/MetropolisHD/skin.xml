@@ -113,7 +113,7 @@
 		<color name="WindowTitleForeground" color="white" />
 		<color name="WindowTitleBackground" color="black" />
 	</windowstyle>
-	<screen name="InfoBar" flags="wfNoBorder" position="center,center" size="1280,720" title="Open Pli" backgroundColor="transparent">
+	<screen name="InfoBar" flags="wfNoBorder" position="center,center" size="1280,720" backgroundColor="transparent">
 		<eLabel text="AGC:" position="1037,641" size="50,22" font="Replacement; 17" backgroundColor="transpGrey" transparent="1" foregroundColor="yellow" halign="right" />
 		<widget source="session.FrontendStatus" render="Label" position="1092,641" size="50,22" font="Replacement; 17" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
 			<convert type="FrontendInfo">AGC</convert>
@@ -223,15 +223,15 @@
 			<convert type="ClockToText">InMinutes</convert>
 		</widget>
 	</screen>
-	<screen name="UnhandledKey" position="center,200" size="64, 64" title="UnhandledKey" zPosition="100" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="UnhandledKey" position="center,200" size="64, 64" zPosition="100" flags="wfNoBorder" backgroundColor="transparent">
 		<widget alphatest="off" name="UnhandledKeyPixmap" pixmap="MetropolisHD/error.png" position="6,2" size="53,65" transparent="0" />
 	</screen>
-	<screen name="Volume" position="center,40" zPosition="1" size="349,41" title="Volume" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
+	<screen name="Volume" position="center,40" zPosition="1" size="349,41" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
 		<ePixmap pixmap="MetropolisHD/vol_back.png" position="1,0" size="346,39" alphatest="off" zPosition="1" transparent="0" />
 		<widget name="Volume" pixmap="MetropolisHD/vol.png" position="1,0" zPosition="2" size="346,39" transparent="1" alphatest="off" />
 		<widget source="global.CurrentTime" render="MetVolume" zPosition="3" position="1,1" size="346,38" font="Replacement;28" valign="center" halign="center" foregroundColor="white" backgroundColor="podloga" transparent="1" />
 	</screen>
-	<screen name="Mute" position="67,50" size="64,64" title="Mute" backgroundColor="transparent" zPosition="10" flags="wfNoBorder" transparent="0">
+	<screen name="Mute" position="67,50" size="64,64" backgroundColor="transparent" zPosition="10" flags="wfNoBorder" transparent="0">
 		<ePixmap pixmap="MetropolisHD/mute.png" position="1,1" size="64,64" zPosition="-5" alphatest="off" />
 	</screen>
 	<screen name="menu_mainmenu" position="center,center" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -546,7 +546,7 @@
 		<eLabel name="new eLabel" position="0,114" size="3,160" backgroundColor="background" />
 		<ePixmap position="128,132" size="125,125" zPosition="-1" pixmap="MetropolisHD/menu/sat_search.png" transparent="0" alphatest="blend" />
 	</screen>
-	<screen name="About" position="0,0" size="1280,720" title="About" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="About" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<eLabel text="About" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
 		<widget name="AboutScrollLabel" position="center,130" size="705,430" halign="center" font="Regular;22" backgroundColor="transpBlack" transparent="1" />
 		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
@@ -564,8 +564,8 @@
 		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
 		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
 	</screen>
-	<screen name="ServiceInfo" position="0,0" size="1280,720" title="Serviceinfo" flags="wfNoBorder" backgroundColor="transparent">
-		<widget source="Title" render="Label" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
+	<screen name="ServiceInfo" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<eLabel text="Service info" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
 		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
 		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
 		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
@@ -579,7 +579,7 @@
 		<eLabel name="Blue" position="818,645" size="178,1" foregroundColor="blue" backgroundColor="blue" />
 		<widget name="infolist" position="center,115" size="680,491" selectionDisabled="1" scrollbarMode="showOnDemand" transparent="1" itemHeight="21" />
 	</screen>
-	<screen name="AudioSelection" position="300,180" size="680,330" title="Audio" backgroundColor="podloga" transparent="0">
+	<screen name="AudioSelection" position="300,180" size="680,330" backgroundColor="podloga" transparent="0">
 		<widget name="config" position="70,10" size="590,110" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpGrey" />
 		<widget source="key_red" render="Pixmap" pixmap="MetropolisHD/buttons/key_red.png" position="20,10" size="35,25" alphatest="on">
 			<convert type="ConditionalShowHide" />
@@ -618,8 +618,8 @@ MultiContentEntryText(pos = (535, 0), size = (105, 25),  font = 1, flags = RT_HA
 			</convert>
 		</widget>
 	</screen>
-	<screen name="BouquetSelector" position="0,0" size="1280,720" title="Choose bouquet" flags="wfNoBorder" backgroundColor="transparent">
-		<widget source="Title" render="Label" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
+	<screen name="BouquetSelector" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<eLabel text="Select a bouquet" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
 		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
 		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
 		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
@@ -634,14 +634,14 @@ MultiContentEntryText(pos = (535, 0), size = (105, 25),  font = 1, flags = RT_HA
 		<widget name="menu" position="center,114" size="720,490" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button580x25.png" transparent="1" />
 		<ePixmap position="973,center" zPosition="2" size="29,491" pixmap="MetropolisHD/maxbar.png" alphatest="blend" transparent="1" />
 	</screen>
-	<screen name="ChannelContextMenu" position="center,center" size="600,290" title="Channellist menu" backgroundColor="podloga">
+	<screen name="ChannelContextMenu" position="center,center" size="600,290" backgroundColor="podloga">
 		<widget name="menu" position="20,20" size="560,250" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button580x25.png" transparent="1" />
 	</screen>
-	<screen name="ChannelSelection" position="1,center" size="1280,720" title="Channel Selection" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
+	<screen name="ChannelSelection" position="1,center" size="1280,720" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
+		<eLabel text="Channel selection" position="67,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="background" transparent="1" />
 		<widget source="global.CurrentTime" render="Label" position="953,599" size="139,39" zPosition="1" font="Replacement; 36" halign="center" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2" valign="center">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
-		<widget source="Title" render="Label" position="67,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="background" transparent="1" />
 		<widget name="list" position="69,112" size="730,500" scrollbarMode="showNever" foregroundColorServiceNotAvail="#444444" colorServiceDescriptionSelected="hellgreen" serviceItemHeight="31" serviceNumberFont="Regular;20" serviceNameFont="Regular;20" serviceInfoFont="Regular;20" colorEventProgressbarBorderSelected="#000000" picServiceEventProgressbar="MetropolisHD/pl.png" selectionPixmap="MetropolisHD/menu/sel_channel_selection_915x40.png" zPosition="1" transparent="1" />
 		<widget name="key_red" position="77,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" text="All" />
 		<widget name="key_green" position="255,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
@@ -699,7 +699,7 @@ MultiContentEntryText(pos = (535, 0), size = (105, 25),  font = 1, flags = RT_HA
 		<ePixmap position="962,244" size="120,4" zPosition="1" pixmap="MetropolisHD/slider_back.png" alphatest="blend" />
 		<eLabel name="new eLabel" position="872,324" size="300,1" backgroundColor="un666666" />
 	</screen>
-	<screen name="ChannelSelectionRadio" position="98,141" size="1116,310" title="Channel Selection" backgroundColor="podloga">
+	<screen name="ChannelSelectionRadio" position="98,141" size="1116,310" backgroundColor="podloga">
 		<widget name="list" position="10,5" size="1096,257" scrollbarMode="showOnDemand" foregroundColorServiceNotAvail="#000000" colorServiceDescriptionSelected="#223974" serviceNumberFont="Regular;22" serviceNameFont="Regular;22" serviceInfoFont="Regular;22" colorEventProgressbarBorderSelected="#000000" picServiceEventProgressbar="MetropolisHD/pl.png" selectionPixmap="MetropolisHD/menu/button1096x30.png" transparent="1" />
 		<eLabel position="0,268" size="1116,2" backgroundColor="grey" />
 		<ePixmap pixmap="MetropolisHD/buttons/red30x30.png" position="40,275" size="35,35" alphatest="on" />
@@ -711,7 +711,7 @@ MultiContentEntryText(pos = (535, 0), size = (105, 25),  font = 1, flags = RT_HA
 		<widget name="key_yellow" position="630,278" size="220,35" zPosition="1" font="Regular;24" halign="left" backgroundColor="transpBlack" transparent="1" />
 		<widget name="key_blue" position="900,278" size="220,35" zPosition="1" font="Regular;24" halign="left" backgroundColor="transpBlack" transparent="1" />
 	</screen>
-	<screen name="ChoiceBox" position="200,100" size="550,400" title="Input" backgroundColor="podloga">
+	<screen name="ChoiceBox" position="200,100" size="550,400" backgroundColor="podloga">
 		<widget name="text" position="10,10" size="550,25" font="Regular;20" transparent="1" />
 		<widget name="list" position="0,30" size="550,335" scrollbarMode="showOnDemand" transparent="1" />
 		<applet type="onLayoutFinish">
@@ -738,7 +738,7 @@ newwidth = wsize[0]
 self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count > 7 and 2 or 3)))
 		</applet>
 	</screen>
-	<screen name="Console" position="90,100" size="1100,560" title="Command execution..." backgroundColor="podloga">
+	<screen name="Console" position="90,100" size="1100,560" backgroundColor="podloga">
 		<widget name="text" position="20,20" size="1060,520" font="Console;21" backgroundColor="podloga" />
 	</screen>
 	<screen name="clockDisplay" position="420,200" size="340,300" backgroundColor="podloga">
@@ -747,8 +747,8 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count > 7 and 2 or 3)))
 		<widget name="theClock" position="20,70" size="300,50" backgroundColor="podloga" />
 		<widget name="title" position="20,130" size="300,50" backgroundColor="podloga" />
 	</screen>
-	<screen name="DefaultSatLists" position="0,0" size="1280,720" title="Default services lists" flags="wfNoBorder" backgroundColor="transparent">
-		<widget source="Title" render="Label" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
+	<screen name="DefaultSatLists" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<eLabel text="Default services lists" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
 		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
 		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
 		<widget name="wizard" pixmap="MetropolisHD/wizard.png" position="428,150" zPosition="10" size="110,174" transparent="1" alphatest="on" />
@@ -760,7 +760,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count > 7 and 2 or 3)))
 		</widget>
 		<widget name="config" zPosition="1" position="center,430" size="520,200" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button580x25.png" transparent="1" />
 	</screen>
-	<screen name="DefaultWizard" position="340,134" size="600,502" title="Welcome..." backgroundColor="podloga">
+	<screen name="DefaultWizard" position="340,134" size="600,502" backgroundColor="podloga">
 		<widget name="wizard" pixmap="MetropolisHD/wizard.png" position="60,20" zPosition="10" size="110,174" transparent="1" alphatest="on" />
 		<widget name="text" position="200,50" size="340,270" font="Regular;23" backgroundColor="podloga" />
 		<ePixmap pixmap="MetropolisHD/buttons/button_red.png" position="40,223" size="15,16" alphatest="on" />
@@ -774,8 +774,8 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count > 7 and 2 or 3)))
 		<widget name="arrowup" pixmap="MetropolisHD/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on" />
 		<widget name="arrowup2" pixmap="MetropolisHD/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on" />
 	</screen>
-	<screen name="EPGSelection" position="center,center" size="1279,720" title="EPG Selection" flags="wfNoBorder" backgroundColor="transparent">
-		<widget source="Title" render="Label" position="68,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
+	<screen name="EPGSelection" position="center,center" size="1279,720" flags="wfNoBorder" backgroundColor="transparent">
+		<eLabel text="EPG selection" position="68,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
 		<ePixmap position="62,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
 		<ePixmap pixmap="MetropolisHD/back1.png" position="68,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
 		<eLabel name="new eLabel" position="67,613" size="716,1" backgroundColor="un666666" />
@@ -813,8 +813,8 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count > 7 and 2 or 3)))
 		<eLabel name="new eLabel" position="991,478" size="75,22" text="..." font="Regular; 20" halign="center" transparent="1" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" valign="center" />
 		<eLabel name="new eLabel" position="991,109" size="75,22" text="..." font="Regular; 20" halign="center" transparent="1" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" valign="center" />
 	</screen>
-	<screen name="EPGSelectionMulti" position="0,0" size="1280,720" title="Multi-EPG bouquet selection" flags="wfNoBorder" backgroundColor="transparent">
-		<widget source="Title" render="Label" position="center,37" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
+	<screen name="EPGSelectionMulti" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<eLabel text="Multi-EPG bouquet selection" position="center,37" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
 		<ePixmap position="center,center" size="1178,656" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
 		<ePixmap pixmap="MetropolisHD/back1.png" position="center,33" size="1170,40" alphatest="blend" zPosition="-2" transparent="0" />
 		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
@@ -839,8 +839,8 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count > 7 and 2 or 3)))
 		<eLabel name="Blue" position="819,645" size="178,1" foregroundColor="blue" backgroundColor="blue" />
 		<ePixmap position="801,144" zPosition="2" size="29,451" pixmap="MetropolisHD/maxbar.png" alphatest="blend" transparent="1" />
 	</screen>
-	<screen name="EventView" position="center,-1" size="1280,720" title="Eventview" flags="wfNoBorder" backgroundColor="transparent">
-		<widget source="Title" render="Label" position="68,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
+	<screen name="EventView" position="center,-1" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<eLabel text="Event view" position="68,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
 		<ePixmap position="62,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
 		<ePixmap pixmap="MetropolisHD/back1.png" position="68,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
 		<eLabel name="new eLabel" position="67,613" size="716,1" backgroundColor="un666666" />
