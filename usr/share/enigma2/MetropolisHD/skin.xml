@@ -208,7 +208,7 @@
 		<widget source="global.CurrentTime" render="Label" position="1035,533" size="186,30" font="OpenSans; 20" valign="center" halign="center" backgroundColor="transpGrey" transparent="1" foregroundColor="hellgreen">
 			<convert type="ClockToText">Format:%e. %B</convert>
 		</widget>
-		<ePixmap position="center,480" size="1273,250" pixmap="MetropolisHD/infobar/Sauve-back.png" zPosition="-1" alphatest="off" transparent="0" />
+		<ePixmap position="center,480" size="1273,250" pixmap="MetropolisHD/infobar/back.png" zPosition="-1" alphatest="off" transparent="0" />
 		<widget source="session.FrontendStatus" render="Progress" position="1140,623" zPosition="1" pixmap="MetropolisHD/snr.png" size="98,10" borderWidth="1" borderColor="darkgrey" transparent="0">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
