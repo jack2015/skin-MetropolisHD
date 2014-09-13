@@ -1102,12 +1102,12 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 		<ePixmap position="center,center" size="632,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
 		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="630,40" alphatest="off" zPosition="-2" transparent="0" />
 	</screen>
-	<screen name="MessageBox" position="center,center" size="600,10">
-		<widget name="text" position="65,8" size="520,0" font="Regular;22" />
+	<screen name="MessageBox" position="center,center" size="800,10" title="Message">
+		<widget name="text" position="65,8" size="680,0" font="Regular;22" />
 		<widget name="ErrorPixmap" pixmap="MetropolisHD/icons/input_error.png" position="5,5" size="53,53" alphatest="on" />
 		<widget name="QuestionPixmap" pixmap="MetropolisHD/icons/input_question.png" position="5,5" size="53,53" alphatest="on" />
 		<widget name="InfoPixmap" pixmap="MetropolisHD/icons/input_info.png" position="5,5" size="53,53" alphatest="on" />
-		<widget name="list" position="57,56" size="480,375" transparent="1" />
+		<widget name="list" position="57,56" size="760,375" transparent="1" />
 		<applet type="onLayoutFinish">
 from enigma import eSize, ePoint
 if self.timerRunning:
@@ -1149,12 +1149,12 @@ newwidth = wsize[0]
 self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (orgheight - wsizey)/2))
 		</applet>
 	</screen>
-	<screen name="MessageBoxSimple" position="center,center" size="600,10">
-		<widget name="text" position="65,8" size="520,0" font="Regular;22" />
+	<screen name="MessageBoxSimple" position="center,center" size="800,10" title="Message">
+		<widget name="text" position="65,8" size="680,0" font="Regular;22" />
 		<widget name="ErrorPixmap" pixmap="MetropolisHD/icons/input_error.png" position="5,5" size="53,53" alphatest="on" />
 		<widget name="QuestionPixmap" pixmap="MetropolisHD/icons/input_question.png" position="5,5" size="53,53" alphatest="on" />
 		<widget name="InfoPixmap" pixmap="MetropolisHD/icons/input_info.png" position="5,5" size="53,53" alphatest="on" />
-		<widget name="list" position="57,56" size="480,375" transparent="1" />
+		<widget name="list" position="57,56" size="760,375" transparent="1" />
 		<applet type="onLayoutFinish">
 from enigma import eSize, ePoint
 if self.timerRunning:
