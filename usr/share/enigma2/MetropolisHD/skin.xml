@@ -5,6 +5,8 @@
 	<!-- This skin and all it's graphics are free, do whatever you want with this skin but only for personal use, and don't tell it's yours, or your idea! -->
 	<!-- You can modify and redistribute it as long as you keep this License for the skin and all of your modifications. -->
 	<!-- If you want to contact me i usually hang on www.satforum.me or on e-mail sateliteacc([at])gmail.com  -->
+	<!-- Modified by pybear38 on 2014.09 http://www.patyanradio.com/img/  -->
+	<!-- Modified by Taapat https://github.com/Taapat/skin-MetropolisHD/commits/master  -->
 	<output id="0">
 		<resolution xres="1280" yres="720" bpp="32" />
 	</output>
