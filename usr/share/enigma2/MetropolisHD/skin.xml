@@ -791,6 +791,7 @@ MultiContentEntryText(pos = (535, 0), size = (105, 25),  font = 1, flags = RT_HA
 		<widget source="ServiceEvent" render="Label" position="883,546" size="312,26" font="Regular; 18" backgroundColor="transpGrey" transparent="1" halign="center" noWrap="1" valign="center" text="36.0E   DVB-S2  11234LC 27500 3/4 8PSK" zPosition="3" foregroundColor="un21e2e2e2">
 			<convert type="ServiceName2">%O  %s  %F %p %Y %f %M %b</convert>
 		</widget>
+		<ePixmap pixmap="MetropolisHD/chnsel/clock.png" position="851,228" size="32,32" alphatest="blend" zPosition="3" transparent="1" />
 		<widget source="ServiceEvent" render="Label" position="875,230" size="72,28" zPosition="2" halign="right" font="OpenSans; 20" foregroundColor="hellgreen" backgroundColor="black" transparent="1" valign="center">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText"></convert>
