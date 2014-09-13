@@ -783,7 +783,7 @@ MultiContentEntryText(pos = (535, 0), size = (105, 25),  font = 1, flags = RT_HA
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
 		<widget name="list" position="69,112" size="730,500" scrollbarMode="showOnDemand" foregroundColorServiceNotAvail="#444444" colorServiceDescriptionSelected="hellgreen" serviceItemHeight="31" serviceNumberFont="Regular;20" serviceNameFont="Regular;20" serviceInfoFont="Regular;20" colorEventProgressbarBorderSelected="#000000" picServiceEventProgressbar="MetropolisHD/pl.png" selectionPixmap="MetropolisHD/menu/sel_channel_selection_915x40.png" zPosition="1" transparent="1" />
-		<ePixmap position="772,112" zPosition="2" size="29,501" pixmap="MetropolisHD/maxbar.png" alphatest="blend" transparent="1" />
+		<ePixmap position="774,112" zPosition="2" size="29,501" pixmap="MetropolisHD/maxbar.png" alphatest="blend" transparent="1" />
 		<widget name="key_red" position="77,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" text="All" />
 		<widget name="key_green" position="255,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
 		<widget name="key_yellow" position="433,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
