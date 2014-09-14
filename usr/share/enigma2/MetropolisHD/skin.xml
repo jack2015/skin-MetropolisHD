@@ -472,14 +472,6 @@
 			<convert type="MenuEntryCompare">timer_edit</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/media_player.png" position="128,132" size="125,125" alphatest="blend">
-			<convert type="MenuEntryCompare">media_player</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/dvd_player.png" position="128,132" size="125,125" alphatest="blend">
-			<convert type="MenuEntryCompare">dvd_player</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
 		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/setup.png" position="128,132" size="125,125" alphatest="blend">
 			<convert type="MenuEntryCompare">system_selection</convert>
 			<convert type="ConditionalShowHide" />
