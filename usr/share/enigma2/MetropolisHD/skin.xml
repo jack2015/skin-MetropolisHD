@@ -2507,7 +2507,7 @@ MultiContentEntryText(pos = (310, 1), size = (160, 24), font=1, flags = RT_HALIG
 	<screen name="MyTubeVideoHelpScreen" position="300,90" size="680,570" title="MyTubePlayerHelpScreen...">
 		<widget name="detailtext" position="10,10" size="660,500" zPosition="3" font="Regular;22" transparent="1" halign="left" valign="top" />
 		<eLabel position="0,518" size="680,2" backgroundColor="grey" />
-		<widget name="key_red" position="246,526" size="220,35" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="transpBlack" transparent="1" />
+		<widget name="key_red" position="246,526" size="220,35" zPosition="1" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
 		<eLabel name="Red" position="246,560" size="178,1" foregroundColor="red" backgroundColor="red" />
 		<ePixmap position="570,525" size="100,40" zPosition="4" pixmap="~/plugin.png" alphatest="on" transparent="1" />
 		<widget name="title" position="0,0" size="0,0" />
@@ -2541,7 +2541,7 @@ MultiContentEntryText(pos = (0, 35), size = (740, 65), font=2, flags = RT_HALIGN
 		</widget>
 		<widget name="detailtext" position="350,225" size="730,280" zPosition="10" font="Regular;22" foregroundColor="white" backgroundColor="black" transparent="1" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
-		<widget name="key_red" position="434,526" size="220,35" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="transpBlack" transparent="1" />
+		<widget name="key_red" position="455,526" size="178,35" zPosition="1" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
 		<eLabel name="Red" position="455,560" size="178,1" foregroundColor="red" backgroundColor="red" />
 		<ePixmap position="980,525" size="100,40" zPosition="4" pixmap="~/plugin.png" alphatest="on" transparent="1" />
 		<widget name="thumbnail" position="0,0" size="180,135" alphatest="on" /># fake entry for dynamic thumbnail resizing, currently there is no other way doing this.
@@ -2584,7 +2584,7 @@ MultiContentEntryText(pos = (550, 3), size = (70, 24), font=1, flags = RT_HALIGN
 			</convert>
 		</widget>
 		<eLabel position="0,518" size="680,2" backgroundColor="grey" />
-		<widget name="key_red" position="246,526" size="220,35" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="transpBlack" transparent="1" />
+		<widget name="key_red" position="246,526" size="220,35" zPosition="1" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
 		<eLabel name="Red" position="246,560" size="178,1" foregroundColor="red" backgroundColor="red" />
 		<ePixmap position="570,525" size="100,40" zPosition="4" pixmap="~/plugin.png" alphatest="on" transparent="1" />
 		<widget name="title" position="0,0" size="0,0" />
