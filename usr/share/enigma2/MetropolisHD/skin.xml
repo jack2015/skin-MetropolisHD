@@ -162,7 +162,7 @@
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.RecordState" render="Pixmap" pixmap="MetropolisHD/icons/ico_rec_on.png" position="586,645" size="38,38" zPosition="2" alphatest="blend">
+		<widget source="session.RecordState" render="Pixmap" pixmap="MetropolisHD/infobar/ico_rec_on.png" position="586,645" size="38,38" zPosition="2" alphatest="blend">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="185,550" size="70,30" halign="right" font="OpenSans; 20" foregroundColor="yellow" backgroundColor="transpGrey" transparent="1" valign="center">
@@ -276,6 +276,9 @@
 		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/infobar/ico_crypt_on.png" position="994,645" size="31,40" zPosition="2" alphatest="off">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.RecordState" render="Pixmap" pixmap="MetropolisHD/infobar/ico_rec_on.png" position="586,645" size="38,38" zPosition="2" alphatest="blend">
+			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="185,550" size="70,30" halign="right" font="OpenSans; 20" foregroundColor="yellow" backgroundColor="transpGrey" transparent="1" valign="center">
 			<convert type="EventTime">StartTime</convert>
