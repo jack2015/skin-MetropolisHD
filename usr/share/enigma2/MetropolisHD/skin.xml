@@ -132,32 +132,27 @@
 		<widget source="session.CurrentService" render="Picon" position="70,572" size="100,60" zPosition="10" transparent="1" alphatest="blend">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		<ePixmap pixmap="MetropolisHD/infobar/ico_sub_off.png" position="632,645" size="31,40" zPosition="1" alphatest="off" />
+		<ePixmap pixmap="MetropolisHD/infobar/icons_off.png" position="630,644" size="397,41" zPosition="1" alphatest="blend" transparent="1" />
 		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/infobar/ico_sub_on.png" position="632,645" size="31,40" zPosition="2" alphatest="off">
 			<convert type="ServiceInfo">SubservicesAvailable</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap position="670,645" size="73,40" zPosition="1" pixmap="MetropolisHD/infobar/ico_hd_off.png" alphatest="off" />
 		<widget source="session.CurrentService" render="Pixmap" position="670,645" size="73,40" zPosition="2" pixmap="MetropolisHD/infobar/ico_hd_on.png" alphatest="off">
 			<convert type="ServiceInfo">IsHD</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="MetropolisHD/infobar/ico_dolby_off.png" position="751,645" size="73,40" zPosition="1" alphatest="off" />
 		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/infobar/ico_dolby_on.png" position="751,645" size="73,40" zPosition="2" alphatest="off">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="MetropolisHD/infobar/ico_format_off.png" position="832,645" size="73,40" zPosition="1" alphatest="off" />
 		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/infobar/ico_format_on.png" position="832,645" size="73,40" zPosition="2" alphatest="off">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="MetropolisHD/infobar/ico_txt_off.png" position="913,645" size="73,40" zPosition="1" alphatest="off" />
 		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/infobar/ico_txt_on.png" position="913,645" size="73,40" zPosition="2" alphatest="off">
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="MetropolisHD/infobar/ico_crypt_off.png" position="994,645" size="31,40" zPosition="1" alphatest="off" />
 		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/infobar/ico_crypt_on.png" position="994,645" size="31,40" zPosition="2" alphatest="off">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
@@ -247,32 +242,27 @@
 		<widget source="session.CurrentService" render="Picon" position="70,572" size="100,60" zPosition="10" transparent="1" alphatest="blend">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		<ePixmap pixmap="MetropolisHD/infobar/ico_sub_off.png" position="632,645" size="31,40" zPosition="1" alphatest="off" />
+		<ePixmap pixmap="MetropolisHD/infobar/icons_off.png" position="630,644" size="397,41" zPosition="1" alphatest="blend" transparent="1" />
 		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/infobar/ico_sub_on.png" position="632,645" size="31,40" zPosition="2" alphatest="off">
 			<convert type="ServiceInfo">SubservicesAvailable</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap position="670,645" size="73,40" zPosition="1" pixmap="MetropolisHD/infobar/ico_hd_off.png" alphatest="off" />
 		<widget source="session.CurrentService" render="Pixmap" position="670,645" size="73,40" zPosition="2" pixmap="MetropolisHD/infobar/ico_hd_on.png" alphatest="off">
 			<convert type="ServiceInfo">IsHD</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="MetropolisHD/infobar/ico_dolby_off.png" position="751,645" size="73,40" zPosition="1" alphatest="off" />
 		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/infobar/ico_dolby_on.png" position="751,645" size="73,40" zPosition="2" alphatest="off">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="MetropolisHD/infobar/ico_format_off.png" position="832,645" size="73,40" zPosition="1" alphatest="off" />
 		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/infobar/ico_format_on.png" position="832,645" size="73,40" zPosition="2" alphatest="off">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="MetropolisHD/infobar/ico_txt_off.png" position="913,645" size="73,40" zPosition="1" alphatest="off" />
 		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/infobar/ico_txt_on.png" position="913,645" size="73,40" zPosition="2" alphatest="off">
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="MetropolisHD/infobar/ico_crypt_off.png" position="994,645" size="31,40" zPosition="1" alphatest="off" />
 		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/infobar/ico_crypt_on.png" position="994,645" size="31,40" zPosition="2" alphatest="off">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
