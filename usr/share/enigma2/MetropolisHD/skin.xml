@@ -379,7 +379,7 @@
 			<convert type="ClockToText">Format::%M</convert>
 		</widget>
 		<widget source="title" render="Label" position="380,72" size="522,41" zPosition="1" halign="center" font="Replacement; 24" foregroundColor="red" backgroundColor="background" transparent="1" />
-		<widget source="menu" render="Listbox" enableWrapAround="1" position="381,125" size="522,475" zPosition="1" scrollbarMode="showNever" selectionPixmap="MetropolisHD/menu/sel631x46.png" transparent="1" backgroundPixmap="MetropolisHD/menu/bg40x40.png">
+		<widget source="menu" render="Listbox" enableWrapAround="1" position="381,117" size="522,500" zPosition="1" scrollbarMode="showNever" selectionPixmap="MetropolisHD/menu/sel631x46.png" transparent="1" backgroundPixmap="MetropolisHD/menu/bg40x40.png">
 			<convert type="TemplatedMultiContent">
 {"template": [ MultiContentEntryText(pos = (40,6), size = (425,32), flags = RT_HALIGN_CENTER, text =0) ],
 "fonts": [gFont("Regular",25)],
@@ -428,7 +428,7 @@
 			<convert type="ClockToText">Format::%M</convert>
 		</widget>
 		<widget source="title" render="Label" position="380,72" size="522,41" zPosition="1" halign="center" font="Replacement; 26" foregroundColor="red" backgroundColor="background" transparent="1" />
-		<widget source="menu" render="Listbox" enableWrapAround="1" position="381,125" size="522,475" zPosition="1" scrollbarMode="showNever" selectionPixmap="MetropolisHD/menu/sel631x46.png" transparent="1" backgroundPixmap="MetropolisHD/menu/bg40x40.png">
+		<widget source="menu" render="Listbox" enableWrapAround="1" position="381,117" size="522,500" zPosition="1" scrollbarMode="showNever" selectionPixmap="MetropolisHD/menu/sel631x46.png" transparent="1" backgroundPixmap="MetropolisHD/menu/bg40x40.png">
 			<convert type="TemplatedMultiContent">
 {"template": [ MultiContentEntryText(pos = (40,6), size = (425,32), flags = RT_HALIGN_CENTER, text =0) ],
 "fonts": [gFont("Regular",25)],
@@ -497,7 +497,7 @@
 			<convert type="ClockToText">Format::%M</convert>
 		</widget>
 		<widget source="title" render="Label" position="380,72" size="522,41" zPosition="1" halign="center" font="Replacement; 26" foregroundColor="red" backgroundColor="background" transparent="1" />
-		<widget source="menu" render="Listbox" enableWrapAround="1" position="381,125" size="522,475" zPosition="1" scrollbarMode="showNever" selectionPixmap="MetropolisHD/menu/sel631x46.png" transparent="1" backgroundPixmap="MetropolisHD/menu/bg40x40.png">
+		<widget source="menu" render="Listbox" enableWrapAround="1" position="381,117" size="522,500" zPosition="1" scrollbarMode="showNever" selectionPixmap="MetropolisHD/menu/sel631x46.png" transparent="1" backgroundPixmap="MetropolisHD/menu/bg40x40.png">
 			<convert type="TemplatedMultiContent">
 {"template": [ MultiContentEntryText(pos = (40,6), size = (425,32), flags = RT_HALIGN_CENTER, text =0) ],
 "fonts": [gFont("Regular",25)],
@@ -526,7 +526,7 @@
 			<convert type="ClockToText">Format::%M</convert>
 		</widget>
 		<widget source="title" render="Label" position="380,72" size="522,41" zPosition="1" halign="center" font="Replacement; 26" foregroundColor="red" backgroundColor="background" transparent="1" />
-		<widget source="menu" render="Listbox" enableWrapAround="1" position="381,125" size="522,475" zPosition="1" scrollbarMode="showNever" selectionPixmap="MetropolisHD/menu/sel631x46.png" transparent="1" backgroundPixmap="MetropolisHD/menu/bg40x40.png">
+		<widget source="menu" render="Listbox" enableWrapAround="1" position="381,117" size="522,500" zPosition="1" scrollbarMode="showNever" selectionPixmap="MetropolisHD/menu/sel631x46.png" transparent="1" backgroundPixmap="MetropolisHD/menu/bg40x40.png">
 			<convert type="TemplatedMultiContent">
 {"template": [ MultiContentEntryText(pos = (40,6), size = (425,32), flags = RT_HALIGN_CENTER, text =0) ],
 "fonts": [gFont("Regular",25)],
@@ -567,7 +567,7 @@
 			<convert type="ClockToText">Format::%M</convert>
 		</widget>
 		<widget source="title" render="Label" position="380,72" size="522,41" zPosition="1" halign="center" font="Replacement; 26" foregroundColor="red" backgroundColor="background" transparent="1" />
-		<widget source="menu" render="Listbox" enableWrapAround="1" position="381,125" size="522,475" zPosition="1" scrollbarMode="showNever" selectionPixmap="MetropolisHD/menu/sel631x46.png" transparent="1" backgroundPixmap="MetropolisHD/menu/bg40x40.png">
+		<widget source="menu" render="Listbox" enableWrapAround="1" position="381,117" size="522,500" zPosition="1" scrollbarMode="showNever" selectionPixmap="MetropolisHD/menu/sel631x46.png" transparent="1" backgroundPixmap="MetropolisHD/menu/bg40x40.png">
 			<convert type="TemplatedMultiContent">
 {"template": [ MultiContentEntryText(pos = (40,6), size = (425,32), flags = RT_HALIGN_CENTER, text =0) ],
 "fonts": [gFont("Regular",25)],
@@ -616,7 +616,7 @@
 			<convert type="ClockToText">Format::%M</convert>
 		</widget>
 		<widget source="title" render="Label" position="380,72" size="522,41" zPosition="1" halign="center" font="Replacement; 26" foregroundColor="red" backgroundColor="background" transparent="1" />
-		<widget source="menu" render="Listbox" enableWrapAround="1" position="381,125" size="522,475" zPosition="1" scrollbarMode="showNever" selectionPixmap="MetropolisHD/menu/sel631x46.png" transparent="1" backgroundPixmap="MetropolisHD/menu/bg40x40.png">
+		<widget source="menu" render="Listbox" enableWrapAround="1" position="381,117" size="522,500" zPosition="1" scrollbarMode="showNever" selectionPixmap="MetropolisHD/menu/sel631x46.png" transparent="1" backgroundPixmap="MetropolisHD/menu/bg40x40.png">
 			<convert type="TemplatedMultiContent">
 {"template": [ MultiContentEntryText(pos = (40,6), size = (425,32), flags = RT_HALIGN_CENTER, text =0) ],
 "fonts": [gFont("Regular",25)],
@@ -653,7 +653,7 @@
 			<convert type="ClockToText">Format::%M</convert>
 		</widget>
 		<widget source="title" render="Label" position="380,72" size="522,41" zPosition="1" halign="center" font="Replacement; 26" foregroundColor="red" backgroundColor="background" transparent="1" />
-		<widget source="menu" render="Listbox" enableWrapAround="1" position="381,125" size="522,475" zPosition="1" scrollbarMode="showNever" selectionPixmap="MetropolisHD/menu/sel631x46.png" transparent="1" backgroundPixmap="MetropolisHD/menu/bg40x40.png">
+		<widget source="menu" render="Listbox" enableWrapAround="1" position="381,117" size="522,500" zPosition="1" scrollbarMode="showNever" selectionPixmap="MetropolisHD/menu/sel631x46.png" transparent="1" backgroundPixmap="MetropolisHD/menu/bg40x40.png">
 			<convert type="TemplatedMultiContent">
 {"template": [ MultiContentEntryText(pos = (40,6), size = (425,32), flags = RT_HALIGN_CENTER, text =0) ],
 "fonts": [gFont("Regular",25)],
