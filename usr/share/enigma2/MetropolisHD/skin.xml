@@ -520,6 +520,7 @@
 		<ePixmap position="911,113" size="369,162" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
 		<eLabel name="new eLabel" position="380,605" size="518,1" backgroundColor="un666666" />
 		<eLabel name="new eLabel" position="0,114" size="3,160" backgroundColor="background" />
+		<ePixmap position="128,132" size="128,128" zPosition="-1" pixmap="MetropolisHD/menu/setup.png" transparent="0" alphatest="blend" />
 	</screen>
 	<screen name="menu_harddisk" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap position="center,center" size="544,592" zPosition="-2" pixmap="MetropolisHD/podloga.png" alphatest="off" borderWidth="1" borderColor="un666666" />
