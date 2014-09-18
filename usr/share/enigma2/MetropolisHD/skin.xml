@@ -681,7 +681,7 @@
 	</screen>
 	<screen name="About" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<eLabel text="About" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<widget name="AboutScrollLabel" position="center,130" size="705,430" halign="center" font="Regular;22" backgroundColor="transpBlack" transparent="1" />
+		<widget name="AboutScrollLabel" position="center,130" size="705,410" halign="center" font="Regular;22" backgroundColor="transpBlack" transparent="1" />
 		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
 		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
 		<ePixmap pixmap="MetropolisHD/metropolishd_logo.png" position="center,550" size="743,50" alphatest="off" zPosition="3" transparent="1" />
