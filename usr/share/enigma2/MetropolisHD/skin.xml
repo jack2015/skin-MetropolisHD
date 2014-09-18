@@ -415,6 +415,10 @@
 			<convert type="MenuEntryCompare">timer_edit</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/scart.png" position="128,132" size="125,125" alphatest="blend">
+			<convert type="MenuEntryCompare">ChangeVideoPort</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
 		<ePixmap position="911,113" size="369,162" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
 		<eLabel name="new eLabel" position="380,605" size="518,1" backgroundColor="un666666" />
 		<eLabel name="new eLabel" position="0,114" size="3,160" backgroundColor="background" />
