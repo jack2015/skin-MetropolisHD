@@ -5,7 +5,7 @@
 
 	<screen name="ButtonTemplate_RGYB_BigLeft">
 		<eLabel name="Line" position="69,613" size="732,1" backgroundColor="un666666" />
-		<widget name="key_red" position="69,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" text="All" />
+		<widget name="key_red" position="69,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
 		<widget name="key_green" position="253,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
 		<widget name="key_yellow" position="437,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
 		<widget name="key_blue" position="621,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
@@ -14,6 +14,23 @@
 		<eLabel name="Yellow" position="437,648" size="180,1" foregroundColor="yellow" backgroundColor="yellow" />
 		<eLabel name="Blue" position="621,648" size="180,1" foregroundColor="blue" backgroundColor="blue" />
 	</screen>
+
+	<screen name="ButtonTemplate_RG_Midle">
+		<eLabel name="Line" position="center,613" size="716,1" backgroundColor="un666666" />
+		<widget source="key_red" render="Label" position="380,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
+		<widget source="key_green" render="Label" position="650,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
+		<eLabel name="Red" position="415,648" size="180,1" foregroundColor="red" backgroundColor="red" />
+		<eLabel name="Green" position="685,648" size="180,1" foregroundColor="green" backgroundColor="green" />
+	</screen>
+
+	<screen name="ButtonTemplate_RG_Small">
+		<eLabel name="Line" position="20,460" size="560,1" backgroundColor="un666666" />
+		<widget source="key_red" render="Label" position="40,460" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
+		<widget source="key_green" render="Label" position="310,460" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
+		<eLabel name="Red" position="75,495" size="180,1" foregroundColor="red" backgroundColor="red" />
+		<eLabel name="Green" position="345,495" size="180,1" foregroundColor="green" backgroundColor="green" />
+	</screen>
+
 
 	<screen name="Big2PanelsTemplate">
 		<ePixmap position="62,center" size="745,592" zPosition="-10" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
@@ -50,6 +67,44 @@
 		</widget>
 		<eLabel name="Menu" position="867,565" size="75,22" text="Menu" font="Replacement; 20" halign="center" transparent="0" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center" />
 		<eLabel name="Exit" position="867,604" size="75,22" text="Exit" font="Replacement; 20" halign="center" transparent="0" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center" />
+	</screen>
+
+	<screen name="MenuTemplate">
+		<ePixmap position="center,center" size="544,592" zPosition="-2" pixmap="MetropolisHD/podloga.png" alphatest="off" borderWidth="1" borderColor="un666666" />
+		<ePixmap pixmap="MetropolisHD/back1.png" position="380,71" size="526,42" alphatest="off" zPosition="-1" transparent="0" />
+		<ePixmap position="-25,113" size="394,162" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
+		<ePixmap position="911,113" size="369,162" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
+		<widget source="title" render="Label" position="380,72" size="522,41" zPosition="1" halign="center" font="Replacement; 26" foregroundColor="red" backgroundColor="background" transparent="1" />
+		<widget source="menu" render="Listbox" enableWrapAround="1" position="380,117" size="522,500" zPosition="1" scrollbarMode="showNever" selectionPixmap="MetropolisHD/menu/sel631x46.png" transparent="1" backgroundPixmap="MetropolisHD/menu/bg40x40.png">
+			<convert type="TemplatedMultiContent">
+				{"template": [ MultiContentEntryText(pos = (40,6), size = (425,32), flags = RT_HALIGN_CENTER, text =0) ],
+				"fonts": [gFont("Regular",25)],
+				"itemHeight":55 }
+			</convert>
+		</widget>
+		<eLabel name="Line" position="380,605" size="522,1" backgroundColor="un666666" />
+		<widget source="session.CurrentService" render="Label" position="380,611" size="522,34" font="Replacement; 22" backgroundColor="transpGrey" transparent="1" halign="center" foregroundColor="yellow" zPosition="3" valign="center">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="958,140" size="139,83" font="Regular; 80" valign="center" halign="right" backgroundColor="transpGrey" transparent="1" text="22" foregroundColor="un21e2e2e2">
+			<convert type="ClockToText">Format:%H</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1096,150" size="141,46" font="Regular; 45" valign="center" halign="left" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
+			<convert type="ClockToText">Format::%M</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="916,218" size="321,29" zPosition="1" font="Replacement; 22" halign="center" backgroundColor="background" transparent="1" foregroundColor="green">
+			<convert type="ClockToText">Format: %A - %d.%m.%Y</convert>
+		</widget>
+	</screen>
+
+	<screen name="MidleScreenTemplate">
+		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
+		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
+	</screen>
+
+	<screen name="MidleScreen_RG_Template">
+		<panel name="MidleScreenTemplate"/>
+		<panel name="ButtonTemplate_RG_Midle"/>
 	</screen>
 
 </skin>

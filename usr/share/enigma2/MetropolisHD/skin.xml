@@ -7,9 +7,11 @@
 	<!-- If you want to contact me i usually hang on www.satforum.me or on e-mail sateliteacc([at])gmail.com  -->
 	<!-- Modified by pybear38 on 2014.09 http://www.patyanradio.com/img/  -->
 	<!-- Modified by Taapat https://github.com/Taapat/skin-MetropolisHD/commits/master  -->
+
 	<output id="0">
 		<resolution xres="1280" yres="720" bpp="32" />
 	</output>
+
 	<colors>
 		<color name="background" value="#25040f28" />
 		<color name="background2" value="#00333333" />
@@ -58,6 +60,7 @@
 		<color name="white" value="#00ffffff" />
 		<color name="yellow" value="#00bab329" />
 	</colors>
+
 	<fonts>
 		<font filename="lcd.ttf" name="LCD" scale="100" />
 		<font filename="Army_Regular_L.ttf" name="Army" scale="100" />
@@ -66,12 +69,14 @@
 		<font filename="DroidSans.ttf" name="Regular" scale="100" />
 		<font filename="OpenSans-Regular.ttf" name="OpenSans" scale="100" />
 	</fonts>
+
 	<subtitles>
 		<sub name="Subtitle_TTX" font="Regular;38" foregroundColor="white" shadowColor="#40101010" shadowOffset="-3,-3" />
 		<sub name="Subtitle_Regular" font="Regular;38" foregroundColor="white" shadowColor="#40101010" shadowOffset="-3,-3" />
 		<sub name="Subtitle_Bold" font="Replacement;40" foregroundColor="white" shadowColor="#40101010" shadowOffset="-3,-3" />
 		<sub name="Subtitle_Italic" font="Regular;38" foregroundColor="white" shadowColor="#40101010" shadowOffset="-3,-3" />
 	</subtitles>
+
 	<windowstyle type="skinned" id="0">
 		<title offset="40,14" font="Replacement;26" />
 		<color name="Background" color="podloga" />
@@ -101,6 +106,7 @@
 			<pixmap pos="bpBottom" filename="MetropolisHD/h-white.png" />
 		</borderset>
 	</windowstyle>
+
 	<windowstyle type="skinned" id="1">
 		<color name="Background" color="black" />
 		<color name="LabelForeground" color="white" />
@@ -115,7 +121,9 @@
 		<color name="WindowTitleForeground" color="white" />
 		<color name="WindowTitleBackground" color="black" />
 	</windowstyle>
+
 	<include filename="skin_templates.xml"/>
+
 	<screen name="InfoBar" flags="wfNoBorder" position="center,center" size="1280,720" backgroundColor="transparent">
 		<eLabel text="AGC:" position="1037,641" size="50,22" font="Replacement; 17" backgroundColor="transpGrey" transparent="1" foregroundColor="yellow" halign="right" />
 		<widget source="session.FrontendStatus" render="Label" position="1092,641" size="50,22" font="Replacement; 17" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
@@ -371,31 +379,9 @@
 	<screen name="Mute" position="67,50" size="64,64" backgroundColor="transparent" zPosition="10" flags="wfNoBorder" transparent="0">
 		<ePixmap pixmap="MetropolisHD/mute.png" position="1,1" size="64,64" zPosition="-5" alphatest="off" />
 	</screen>
+
 	<screen name="menu_mainmenu" position="center,center" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="center,center" size="544,592" zPosition="-2" pixmap="MetropolisHD/podloga.png" alphatest="off" borderWidth="1" borderColor="un666666" />
-		<widget source="global.CurrentTime" render="Label" position="916,218" size="321,29" zPosition="1" font="Replacement; 22" halign="center" backgroundColor="background" transparent="1" foregroundColor="green">
-			<convert type="ClockToText">Format: %A - %d.%m.%Y</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1096,150" size="141,46" font="Regular; 24" valign="center" halign="left" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
-			<convert type="ClockToText">Format::%M</convert>
-		</widget>
-		<widget source="title" render="Label" position="380,72" size="522,41" zPosition="1" halign="center" font="Replacement; 24" foregroundColor="red" backgroundColor="background" transparent="1" />
-		<widget source="menu" render="Listbox" enableWrapAround="1" position="381,117" size="522,500" zPosition="1" scrollbarMode="showNever" selectionPixmap="MetropolisHD/menu/sel631x46.png" transparent="1" backgroundPixmap="MetropolisHD/menu/bg40x40.png">
-			<convert type="TemplatedMultiContent">
-{"template": [ MultiContentEntryText(pos = (40,6), size = (425,32), flags = RT_HALIGN_CENTER, text =0) ],
-"fonts": [gFont("Regular",25)],
-"itemHeight":55
-}
-			</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="398,611" size="494,34" font="Replacement; 22" backgroundColor="transpGrey" transparent="1" halign="center" foregroundColor="yellow" zPosition="3" valign="center">
-			<convert type="ServiceName">Name</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="958,140" size="139,83" font="Regular; 80" valign="center" halign="right" backgroundColor="transpGrey" transparent="1" text="22" foregroundColor="un21e2e2e2">
-			<convert type="ClockToText">Format:%H</convert>
-		</widget>
-		<ePixmap position="-25,113" size="394,162" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<ePixmap pixmap="MetropolisHD/back1.png" position="380,71" size="526,42" alphatest="off" zPosition="-1" transparent="0" />
+		<panel name="MenuTemplate"/>
 		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/shutdown.png" position="128,132" size="125,125" alphatest="blend">
 			<convert type="MenuEntryCompare">standby_restart_list</convert>
 			<convert type="ConditionalShowHide" />
@@ -420,35 +406,10 @@
 			<convert type="MenuEntryCompare">ChangeVideoPort</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap position="911,113" size="369,162" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<eLabel name="new eLabel" position="380,605" size="518,1" backgroundColor="un666666" />
-		<eLabel name="new eLabel" position="0,114" size="3,160" backgroundColor="background" />
 	</screen>
+
 	<screen name="menu_setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="center,center" size="544,592" zPosition="-2" pixmap="MetropolisHD/podloga.png" alphatest="off" borderWidth="1" borderColor="un666666" />
-		<widget source="global.CurrentTime" render="Label" position="916,218" size="321,29" zPosition="1" font="Replacement; 22" halign="center" backgroundColor="background" transparent="1" foregroundColor="green">
-			<convert type="ClockToText">Format: %A - %d.%m.%Y</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1096,150" size="141,46" font="Regular; 45" valign="center" halign="left" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
-			<convert type="ClockToText">Format::%M</convert>
-		</widget>
-		<widget source="title" render="Label" position="380,72" size="522,41" zPosition="1" halign="center" font="Replacement; 26" foregroundColor="red" backgroundColor="background" transparent="1" />
-		<widget source="menu" render="Listbox" enableWrapAround="1" position="381,117" size="522,500" zPosition="1" scrollbarMode="showNever" selectionPixmap="MetropolisHD/menu/sel631x46.png" transparent="1" backgroundPixmap="MetropolisHD/menu/bg40x40.png">
-			<convert type="TemplatedMultiContent">
-{"template": [ MultiContentEntryText(pos = (40,6), size = (425,32), flags = RT_HALIGN_CENTER, text =0) ],
-"fonts": [gFont("Regular",25)],
-"itemHeight":55
-}
-			</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="398,611" size="494,34" font="Replacement; 22" backgroundColor="transpGrey" transparent="1" halign="center" foregroundColor="yellow" zPosition="3" valign="center">
-			<convert type="ServiceName">Name</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="958,140" size="139,83" font="Regular; 80" valign="center" halign="right" backgroundColor="transpGrey" transparent="1" text="22" foregroundColor="un21e2e2e2">
-			<convert type="ClockToText">Format:%H</convert>
-		</widget>
-		<ePixmap position="-25,113" size="394,162" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<ePixmap pixmap="MetropolisHD/back1.png" position="380,71" size="526,42" alphatest="off" zPosition="-1" transparent="0" />
+		<panel name="MenuTemplate"/>
 		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/shutdown.png" position="128,132" size="125,125" alphatest="blend">
 			<convert type="MenuEntryCompare">standby_restart_list</convert>
 			<convert type="ConditionalShowHide" />
@@ -489,68 +450,15 @@
 			<convert type="MenuEntryCompare">factory_reset</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap position="911,113" size="369,162" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<eLabel name="new eLabel" position="380,605" size="518,1" backgroundColor="un666666" />
-		<eLabel name="new eLabel" position="0,114" size="3,160" backgroundColor="background" />
 	</screen>
+
 	<screen name="menu_system" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="center,center" size="544,592" zPosition="-2" pixmap="MetropolisHD/podloga.png" alphatest="off" borderWidth="1" borderColor="un666666" />
-		<widget source="global.CurrentTime" render="Label" position="916,218" size="321,29" zPosition="1" font="Replacement; 22" halign="center" backgroundColor="background" transparent="1" foregroundColor="green">
-			<convert type="ClockToText">Format: %A - %d.%m.%Y</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1096,150" size="141,46" font="Regular; 45" valign="center" halign="left" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
-			<convert type="ClockToText">Format::%M</convert>
-		</widget>
-		<widget source="title" render="Label" position="380,72" size="522,41" zPosition="1" halign="center" font="Replacement; 26" foregroundColor="red" backgroundColor="background" transparent="1" />
-		<widget source="menu" render="Listbox" enableWrapAround="1" position="381,117" size="522,500" zPosition="1" scrollbarMode="showNever" selectionPixmap="MetropolisHD/menu/sel631x46.png" transparent="1" backgroundPixmap="MetropolisHD/menu/bg40x40.png">
-			<convert type="TemplatedMultiContent">
-{"template": [ MultiContentEntryText(pos = (40,6), size = (425,32), flags = RT_HALIGN_CENTER, text =0) ],
-"fonts": [gFont("Regular",25)],
-"itemHeight":55
-}
-			</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="398,611" size="494,34" font="Replacement; 22" backgroundColor="transpGrey" transparent="1" halign="center" foregroundColor="yellow" zPosition="3" valign="center">
-			<convert type="ServiceName">Name</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="958,140" size="139,83" font="Regular; 80" valign="center" halign="right" backgroundColor="transpGrey" transparent="1" text="22" foregroundColor="un21e2e2e2">
-			<convert type="ClockToText">Format:%H</convert>
-		</widget>
-		<ePixmap position="-25,113" size="394,162" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<ePixmap pixmap="MetropolisHD/back1.png" position="380,71" size="526,42" alphatest="off" zPosition="-1" transparent="0" />
-		<ePixmap position="911,113" size="369,162" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<eLabel name="new eLabel" position="380,605" size="518,1" backgroundColor="un666666" />
-		<eLabel name="new eLabel" position="0,114" size="3,160" backgroundColor="background" />
+		<panel name="MenuTemplate"/>
 		<ePixmap position="128,132" size="128,128" zPosition="-1" pixmap="MetropolisHD/menu/setup.png" transparent="0" alphatest="blend" />
 	</screen>
+
 	<screen name="menu_harddisk" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="center,center" size="544,592" zPosition="-2" pixmap="MetropolisHD/podloga.png" alphatest="off" borderWidth="1" borderColor="un666666" />
-		<widget source="global.CurrentTime" render="Label" position="916,218" size="321,29" zPosition="1" font="Replacement; 22" halign="center" backgroundColor="background" transparent="1" foregroundColor="green">
-			<convert type="ClockToText">Format: %A - %d.%m.%Y</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1096,150" size="141,46" font="Regular; 45" valign="center" halign="left" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
-			<convert type="ClockToText">Format::%M</convert>
-		</widget>
-		<widget source="title" render="Label" position="380,72" size="522,41" zPosition="1" halign="center" font="Replacement; 26" foregroundColor="red" backgroundColor="background" transparent="1" />
-		<widget source="menu" render="Listbox" enableWrapAround="1" position="381,117" size="522,500" zPosition="1" scrollbarMode="showNever" selectionPixmap="MetropolisHD/menu/sel631x46.png" transparent="1" backgroundPixmap="MetropolisHD/menu/bg40x40.png">
-			<convert type="TemplatedMultiContent">
-{"template": [ MultiContentEntryText(pos = (40,6), size = (425,32), flags = RT_HALIGN_CENTER, text =0) ],
-"fonts": [gFont("Regular",25)],
-"itemHeight":55
-}
-			</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="398,611" size="494,34" font="Replacement; 22" backgroundColor="transpGrey" transparent="1" halign="center" foregroundColor="yellow" zPosition="3" valign="center">
-			<convert type="ServiceName">Name</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="958,140" size="139,83" font="Regular; 80" valign="center" halign="right" backgroundColor="transpGrey" transparent="1" text="22" foregroundColor="un21e2e2e2">
-			<convert type="ClockToText">Format:%H</convert>
-		</widget>
-		<ePixmap position="-25,113" size="394,162" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<ePixmap pixmap="MetropolisHD/back1.png" position="380,71" size="526,42" alphatest="off" zPosition="-1" transparent="0" />
-		<ePixmap position="911,113" size="369,162" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<eLabel name="new eLabel" position="380,605" size="518,1" backgroundColor="un666666" />
-		<eLabel name="new eLabel" position="0,114" size="3,160" backgroundColor="background" />
+		<panel name="MenuTemplate"/>
 		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/hdd.png" position="128,132" size="125,125" alphatest="blend">
 			<convert type="MenuEntryCompare">harddisk_init</convert>
 			<convert type="ConditionalShowHide" />
@@ -564,34 +472,9 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 	</screen>
+
 	<screen name="menu_shutdown" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="center,center" size="544,592" zPosition="-2" pixmap="MetropolisHD/podloga.png" alphatest="off" borderWidth="1" borderColor="un666666" />
-		<widget source="global.CurrentTime" render="Label" position="916,218" size="321,29" zPosition="1" font="Replacement; 22" halign="center" backgroundColor="background" transparent="1" foregroundColor="green">
-			<convert type="ClockToText">Format: %A - %d.%m.%Y</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1096,150" size="141,46" font="Regular; 45" valign="center" halign="left" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
-			<convert type="ClockToText">Format::%M</convert>
-		</widget>
-		<widget source="title" render="Label" position="380,72" size="522,41" zPosition="1" halign="center" font="Replacement; 26" foregroundColor="red" backgroundColor="background" transparent="1" />
-		<widget source="menu" render="Listbox" enableWrapAround="1" position="381,117" size="522,500" zPosition="1" scrollbarMode="showNever" selectionPixmap="MetropolisHD/menu/sel631x46.png" transparent="1" backgroundPixmap="MetropolisHD/menu/bg40x40.png">
-			<convert type="TemplatedMultiContent">
-{"template": [ MultiContentEntryText(pos = (40,6), size = (425,32), flags = RT_HALIGN_CENTER, text =0) ],
-"fonts": [gFont("Regular",25)],
-"itemHeight":55
-}
-			</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="398,611" size="494,34" font="Replacement; 22" backgroundColor="transpGrey" transparent="1" halign="center" foregroundColor="yellow" zPosition="3" valign="center">
-			<convert type="ServiceName">Name</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="958,140" size="139,83" font="Regular; 80" valign="center" halign="right" backgroundColor="transpGrey" transparent="1" text="22" foregroundColor="un21e2e2e2">
-			<convert type="ClockToText">Format:%H</convert>
-		</widget>
-		<ePixmap position="-25,113" size="394,162" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<ePixmap pixmap="MetropolisHD/back1.png" position="380,71" size="526,42" alphatest="off" zPosition="-1" transparent="0" />
-		<ePixmap position="911,113" size="369,162" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<eLabel name="new eLabel" position="380,605" size="518,1" backgroundColor="un666666" />
-		<eLabel name="new eLabel" position="0,114" size="3,160" backgroundColor="background" />
+		<panel name="MenuTemplate"/>
 		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/shutdown.png" position="128,132" size="128,125" alphatest="blend">
 			<convert type="MenuEntryCompare">deep_standby</convert>
 			<convert type="ConditionalShowHide" />
@@ -613,31 +496,9 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 	</screen>
+
 	<screen name="menu_information" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="center,center" size="544,592" zPosition="-2" pixmap="MetropolisHD/podloga.png" alphatest="off" borderWidth="1" borderColor="un666666" />
-		<widget source="global.CurrentTime" render="Label" position="916,218" size="321,29" zPosition="1" font="Replacement; 22" halign="center" backgroundColor="background" transparent="1" foregroundColor="green">
-			<convert type="ClockToText">Format: %A - %d.%m.%Y</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1096,150" size="141,46" font="Regular; 45" valign="center" halign="left" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
-			<convert type="ClockToText">Format::%M</convert>
-		</widget>
-		<widget source="title" render="Label" position="380,72" size="522,41" zPosition="1" halign="center" font="Replacement; 26" foregroundColor="red" backgroundColor="background" transparent="1" />
-		<widget source="menu" render="Listbox" enableWrapAround="1" position="381,117" size="522,500" zPosition="1" scrollbarMode="showNever" selectionPixmap="MetropolisHD/menu/sel631x46.png" transparent="1" backgroundPixmap="MetropolisHD/menu/bg40x40.png">
-			<convert type="TemplatedMultiContent">
-{"template": [ MultiContentEntryText(pos = (40,6), size = (425,32), flags = RT_HALIGN_CENTER, text =0) ],
-"fonts": [gFont("Regular",25)],
-"itemHeight":55
-}
-			</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="398,611" size="494,34" font="Replacement; 22" backgroundColor="transpGrey" transparent="1" halign="center" foregroundColor="yellow" zPosition="3" valign="center">
-			<convert type="ServiceName">Name</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="958,140" size="139,83" font="Regular; 80" valign="center" halign="right" backgroundColor="transpGrey" transparent="1" text="22" foregroundColor="un21e2e2e2">
-			<convert type="ClockToText">Format:%H</convert>
-		</widget>
-		<ePixmap position="-25,113" size="394,162" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<ePixmap pixmap="MetropolisHD/back1.png" position="380,71" size="526,42" alphatest="off" zPosition="-1" transparent="0" />
+		<panel name="MenuTemplate"/>
 		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/info.png" position="128,132" size="125,125" alphatest="blend">
 			<convert type="MenuEntryCompare">about_screen</convert>
 			<convert type="ConditionalShowHide" />
@@ -646,58 +507,26 @@
 			<convert type="MenuEntryCompare">service_info_screen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap position="911,113" size="369,162" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<eLabel name="new eLabel" position="380,605" size="518,1" backgroundColor="un666666" />
-		<eLabel name="new eLabel" position="0,114" size="3,160" backgroundColor="background" />
 	</screen>
+
 	<screen name="menu_scan" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="center,center" size="544,592" zPosition="-2" pixmap="MetropolisHD/podloga.png" alphatest="off" borderWidth="1" borderColor="un666666" />
-		<widget source="global.CurrentTime" render="Label" position="916,218" size="321,29" zPosition="1" font="Replacement; 22" halign="center" backgroundColor="background" transparent="1" foregroundColor="green">
-			<convert type="ClockToText">Format: %A - %d.%m.%Y</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1096,150" size="141,46" font="Regular; 45" valign="center" halign="left" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
-			<convert type="ClockToText">Format::%M</convert>
-		</widget>
-		<widget source="title" render="Label" position="380,72" size="522,41" zPosition="1" halign="center" font="Replacement; 26" foregroundColor="red" backgroundColor="background" transparent="1" />
-		<widget source="menu" render="Listbox" enableWrapAround="1" position="381,117" size="522,500" zPosition="1" scrollbarMode="showNever" selectionPixmap="MetropolisHD/menu/sel631x46.png" transparent="1" backgroundPixmap="MetropolisHD/menu/bg40x40.png">
-			<convert type="TemplatedMultiContent">
-{"template": [ MultiContentEntryText(pos = (40,6), size = (425,32), flags = RT_HALIGN_CENTER, text =0) ],
-"fonts": [gFont("Regular",25)],
-"itemHeight":55
-}
-			</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="398,611" size="494,34" font="Replacement; 22" backgroundColor="transpGrey" transparent="1" halign="center" foregroundColor="yellow" zPosition="3" valign="center">
-			<convert type="ServiceName">Name</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="958,140" size="139,83" font="Regular; 80" valign="center" halign="right" backgroundColor="transpGrey" transparent="1" text="22" foregroundColor="un21e2e2e2">
-			<convert type="ClockToText">Format:%H</convert>
-		</widget>
-		<ePixmap position="-25,113" size="394,162" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<ePixmap pixmap="MetropolisHD/back1.png" position="380,71" size="526,42" alphatest="off" zPosition="-1" transparent="0" />
-		<ePixmap position="911,113" size="369,162" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<eLabel name="new eLabel" position="380,605" size="518,1" backgroundColor="un666666" />
-		<eLabel name="new eLabel" position="0,114" size="3,160" backgroundColor="background" />
+		<panel name="MenuTemplate"/>
 		<ePixmap position="128,132" size="125,125" zPosition="-1" pixmap="MetropolisHD/menu/sat_search.png" transparent="0" alphatest="blend" />
 	</screen>
+
 	<screen name="About" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MidleScreen_RG_Template"/>
 		<eLabel text="About" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
 		<widget name="AboutScrollLabel" position="center,130" size="705,410" halign="center" font="Regular;22" backgroundColor="transpBlack" transparent="1" />
-		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
 		<ePixmap pixmap="MetropolisHD/metropolishd_logo.png" position="center,550" size="743,50" alphatest="off" zPosition="3" transparent="1" />
-		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
-		<widget source="key_red" render="Label" position="393,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="key_green" render="Label" position="664,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="393,645" size="250,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="664,645" size="250,1" foregroundColor="green" backgroundColor="green" />
 	</screen>
+
 	<screen name="CommitInfo" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MidleScreenTemplate"/>
 		<eLabel text="Latest Commits" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
 		<widget name="AboutScrollLabel" position="center,130" size="705,499" halign="center" font="Regular;22" backgroundColor="transpBlack" transparent="1" />
-		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
-		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
 	</screen>
+
 	<screen name="ServiceInfo" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<eLabel text="Service info" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
 		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
@@ -1352,18 +1181,14 @@ MultiContentEntryText(pos = (50, 28), size = (480, 40), font = 1, flags = RT_HAL
 		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="630,40" alphatest="off" zPosition="-2" transparent="0" />
 		<widget name="config" position="center,132" size="530,467" selectionPixmap="MetropolisHD/menu/button540x25.png" transparent="1" foregroundColor="un21e2e2e2" />
 	</screen>
+
 	<screen name="PluginBrowser" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MidleScreen_RG_Template"/>
 		<eLabel text="Plugin browser" position="271,64" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
 		<widget name="list" position="302,106" size="670,504" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button880x70.png" transparent="1" itemHeight="50" />
 		<ePixmap position="951,105" zPosition="2" size="29,506" pixmap="MetropolisHD/maxbar.png" alphatest="blend" transparent="1" />
-		<ePixmap position="center,center" size="745,607" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<ePixmap pixmap="MetropolisHD/back1.png" position="270,60" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
-		<eLabel name="new eLabel" position="center,620" size="716,1" backgroundColor="un666666" />
-		<widget name="red" position="424,620" size="220,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="green" position="656,620" size="220,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red1" position="424,652" size="220,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green1" position="656,652" size="220,1" foregroundColor="green" backgroundColor="green" />
 	</screen>
+
 	<screen name="RadioInfoBar" position="82,480" size="1116,192" backgroundColor="podloga">
 		<eLabel position="1,1" zPosition="1" size="1114,2" backgroundColor="grey" />
 		<eLabel position="1,189" zPosition="1" size="1114,2" backgroundColor="grey" />
@@ -1522,19 +1347,15 @@ MultiContentEntryText(pos = (50, 28), size = (480, 40), font = 1, flags = RT_HAL
 		<widget name="scan_progress" position="20,140" size="560,20" pixmap="MetropolisHD/progress_big.png" borderWidth="1" borderColor="uncccccc" />
 		<widget name="servicelist" position="20,175" size="560,300" selectionDisabled="1" transparent="1" />
 	</screen>
+
 	<screen name="Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MidleScreen_RG_Template"/>
 		<eLabel text="Setup" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
-		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
-		<eLabel name="new eLabel" position="center,526" size="716,1" backgroundColor="un666666" />
-		<widget source="key_red" render="Label" position="393,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="key_green" render="Label" position="664,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="393,645" size="250,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="664,645" size="250,1" foregroundColor="green" backgroundColor="green" />
+		<eLabel name="Line" position="center,526" size="716,1" backgroundColor="un666666" />
 		<widget name="config" position="center,115" size="722,400" zPosition="2" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="transpBlack" selectionPixmap="MetropolisHD/menu/button1080x25.png" transparent="1" />
 		<widget name="description" position="center,530" size="722,80" zPosition="2" font="Regular; 22" valign="top" backgroundColor="transpBlack" transparent="1" />
 	</screen>
+
 	<screen name="SimpleChannelSelection" position="90,100" size="1100,560" backgroundColor="podloga">
 		<widget name="list" position="10,20" size="1080,475" scrollbarMode="showOnDemand" transparent="1" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
@@ -1842,17 +1663,13 @@ MultiContentEntryText(pos=(190,2), size=(80, 20), text = 2, flags = RT_HALIGN_CE
 		<eLabel name="Green" position="357,555" size="178,1" foregroundColor="green" backgroundColor="green" />
 		<eLabel name="Blue" position="714,555" size="178,1" foregroundColor="blue" backgroundColor="blue" />
 	</screen>
+
 	<screen name="FileBrowser" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MidleScreen_RG_Template"/>
 		<eLabel text="File Browser" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
-		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
-		<widget name="key_red" position="283,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_green" position="460,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="283,645" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="460,645" size="178,1" foregroundColor="green" backgroundColor="green" />
 		<widget name="filelist" position="center,150" size="700,433" zPosition="1" scrollbarMode="showOnDemand" enableWrapAround="1" selectionPixmap="MetropolisHD/menu/button540x24.png" transparent="1" />
 	</screen>
+
 	<screen name="DVDPlayer" position="center,549" size="1280,155" backgroundColor="transparent" flags="wfNoBorder">
 		<ePixmap position="center,1" size="1100,140" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
 		<ePixmap pixmap="MetropolisHD/back1.png" position="272,5" size="745,40" alphatest="off" zPosition="-2" transparent="0" />
@@ -1972,11 +1789,8 @@ MultiContentEntryText(pos = (360, 7), size = (215, 30), flags = RT_HALIGN_LEFT, 
 		</widget>
 	</screen>
 	<screen name="Pic_Setup" position="340,134" size="600,502">
+		<panel name="ButtonTemplate_RG_Small"/>
 		<widget name="config" position="20,10" size="560,450" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button580x25.png" transparent="1" />
-		<widget name="key_red" position="133,462" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_green" position="311,462" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="133,496" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="312,496" size="178,1" foregroundColor="green" backgroundColor="green" />
 	</screen>
 	<screen name="VlcMediaListScreen" position="90,100" size="1100,560">
 		<widget name="filelist_button_sel" pixmap="MetropolisHD/epg_now.png" position="0,0" zPosition="3" size="1100,35" alphatest="on" />
@@ -2059,14 +1873,10 @@ MultiContentEntryText(pos = (360, 7), size = (215, 30), flags = RT_HALIGN_LEFT, 
 		</widget>
 		<widget name="config" position="460,370" size="730,150" zPosition="1" transparent="1" scrollbarMode="showOnDemand" backgroundColor="transpGrey" />
 	</screen>
+
 	<screen name="UpdatePluginMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MidleScreen_RG_Template"/>
 		<eLabel text="Software management" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
-		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
-		<widget source="key_red" render="Label" position="283,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="283,645" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="460,645" size="178,1" foregroundColor="green" backgroundColor="green" />
 		<widget source="menu" render="Listbox" position="center,114" size="631,325" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/sel631x42.png" backgroundPixmap="MetropolisHD/menu/bg40x40.png" transparent="1">
 			<convert type="TemplatedMultiContent">
 {"template": [
@@ -2087,9 +1897,10 @@ MultiContentEntryText(pos = (0, 0), size = (480, 200), flags = RT_HALIGN_CENTER|
 }
 			</convert>
 		</widget>
-		<widget source="key_green" render="Label" position="460,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
 	</screen>
+
 	<screen name="PacketManager" position="240,125" size="800,502">
+		<panel name="ButtonTemplate_RG_Small"/>
 		<widget source="list" render="Listbox" position="5,15" size="790,420" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 {"template": [
@@ -2111,11 +1922,8 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 58), size = (0, 0), png = 5), # index
 		<eLabel position="5,314" size="762,2" backgroundColor="darkgrey" zPosition="2" />
 		<eLabel position="5,374" size="762,2" backgroundColor="darkgrey" zPosition="2" />
 		<eLabel position="5,434" size="762,2" backgroundColor="darkgrey" zPosition="2" />
-		<widget name="key_red" position="233,455" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_green" position="411,455" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="233,489" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="411,489" size="178,1" foregroundColor="green" backgroundColor="green" />
 	</screen>
+
 	<screen name="Ipkg" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<eLabel text="Installing Software..." position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
 		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
@@ -2143,15 +1951,13 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 58), size = (0, 0), png = 5), # index
 		<eLabel name="Red" position="565,648" size="178,1" foregroundColor="red" backgroundColor="red" />
 		<widget name="languagetext" position="545,613" size="220,35" zPosition="1" font="Regular;22" halign="left" valign="center" backgroundColor="transpBlack" transparent="1" />
 	</screen>
+
 	<screen name="IpkgInstaller" position="340,125" size="600,502">
+		<panel name="ButtonTemplate_RG_Small"/>
 		<widget name="list" position="10,9" size="580,400" scrollbarMode="showOnDemand" />
-		<eLabel position="0,450" size="600,2" backgroundColor="grey" zPosition="5" />
 		<widget source="introduction" render="Label" position="10,420" size="580,26" zPosition="2" font="Regular;22" halign="center" valign="center" backgroundColor="black" transparent="1" />
-		<widget name="key_red" position="130,458" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_green" position="308,458" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="130,491" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="308,491" size="178,1" foregroundColor="green" backgroundColor="green" />
 	</screen>
+
 	<screen name="IPKGSource" position="60,125" size="1160,100">
 		<widget name="key_red" position="388,54" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
 		<widget name="key_green" position="607,54" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
@@ -2159,17 +1965,13 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 58), size = (0, 0), png = 5), # index
 		<eLabel name="Green" position="607,89" size="178,1" foregroundColor="green" backgroundColor="green" />
 		<widget name="text" position="5,10" size="1150,25" font="Regular;22" foregroundColor="white" />
 	</screen>
+
 	<screen name="IPKGMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MidleScreen_RG_Template"/>
 		<eLabel text="Select upgrade source to edit." position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
-		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
-		<widget source="key_red" render="Label" position="283,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="key_green" render="Label" position="460,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="283,645" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="460,645" size="178,1" foregroundColor="green" backgroundColor="green" />
 		<widget name="filelist" position="center,150" size="629,400" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button540x25.png" transparent="1" />
 	</screen>
+
 	<screen name="RestoreMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<eLabel text="Restore backups" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
 		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
@@ -2238,15 +2040,10 @@ MultiContentEntryPixmapAlphaTest(pos = (0, 38), size = (570, 2), png = 3), # ind
 		<widget source="status" render="Label" position="center,520" zPosition="1" size="540,30" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
 		<ePixmap position="989,138" zPosition="2" size="29,361" pixmap="MetropolisHD/maxbar.png" alphatest="blend" transparent="1" />
 	</screen>
+
 	<screen name="PluginManagerInfo" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MidleScreen_RG_Template"/>
 		<eLabel text="Plugin manager activity information" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
-		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
-		<widget source="key_red" render="Label" position="283,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="key_green" render="Label" position="460,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="283,645" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="460,645" size="178,1" foregroundColor="green" backgroundColor="green" />
 		<widget source="list" render="Listbox" position="center,149" size="648,300" scrollbarMode="showOnDemand" selectionDisabled="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 {"template": [
@@ -2262,6 +2059,7 @@ MultiContentEntryPixmapAlphaTest(pos = (0, 48), size = (550, 2), png = 3), # ind
 		</widget>
 		<widget source="status" render="Label" position="center,468" zPosition="1" size="550,30" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
 	</screen>
+
 	<screen name="UpdatePlugin" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<eLabel text="Software update" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
 		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
@@ -2447,16 +2245,14 @@ MultiContentEntryText(pos = (0, 1), size = (340, 24), font=0, flags = RT_HALIGN_
 			</convert>
 		</widget>
 	</screen>
-	<screen name="MyTubeSettingsScreen" position="300,90" size="680,570" title="MyTubeSettingsScreen">
-		<widget name="config" position="10,10" size="660,500" zPosition="3" scrollbarMode="showOnDemand" transparent="1" />
-		<ePixmap position="570,473" size="100,40" zPosition="4" pixmap="~/plugin.png" alphatest="on" transparent="1" />
-		<eLabel position="0,518" size="680,2" backgroundColor="grey" />
-		<widget source="key_red" render="Label" position="173,526" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="key_green" render="Label" position="351,526" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="173,560" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="351,560" size="178,1" foregroundColor="green" backgroundColor="green" />
+
+	<screen name="MyTubeSettingsScreen" position="340,104" size="600,532" title="MyTubeSettingsScreen">
+		<panel name="ButtonTemplate_RG_Small"/>
+		<widget name="config" position="20,10" size="560,450" zPosition="3" scrollbarMode="showOnDemand" transparent="1" />
+		<ePixmap position="20,430" size="100,40" zPosition="4" pixmap="~/plugin.png" alphatest="on" transparent="1" />
 		<widget name="title" position="0,0" size="0,0" />
 	</screen>
+
 	<screen name="MyTubeTasksScreen" position="300,90" size="680,570" title="MyTubeTasksScreen">
 		<widget name="title" position="80,60" size="800,32" font="Regular;27" halign="center" backgroundColor="unb67a2" transparent="1" />
 		<widget source="tasklist" render="Listbox" position="10,10" size="660,410" zPosition="3" scrollbarMode="showOnDemand" transparent="1">
@@ -2787,20 +2583,16 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		<widget name="key8" position="162,79" size="160,40" font="Console;21" halign="center" valign="center" backgroundColor="darkgrey" transparent="1" />
 		<widget name="key9" position="322,82" size="160,40" font="Console;21" halign="center" valign="center" backgroundColor="darkgrey" transparent="1" />
 	</screen>
+
 	<screen name="CrashlogAutoSubmitConfiguration" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MidleScreen_RG_Template"/>
 		<eLabel text="CrashlogAutoSubmit settings..." position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
-		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
-		<widget source="key_red" render="Label" position="283,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="key_green" render="Label" position="460,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="283,645" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="460,645" size="178,1" foregroundColor="green" backgroundColor="green" />
 		<widget name="config" position="329,135" size="631,300" zPosition="2" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="transpBlack" selectionPixmap="MetropolisHD/menu/button1080x25.png" transparent="1" />
 		<widget name="VKeyIcon" pixmap="MetropolisHD/buttons/key_text.png" position="288,556" zPosition="10" size="60,48" transparent="1" alphatest="on" />
 		<widget name="HelpWindow" position="180,445" zPosition="1" size="1,1" transparent="1" />
 		<widget source="status" render="Label" position="630,438" size="330,160" zPosition="1" font="Regular;22" backgroundColor="transpBlack" foregroundColor="green" halign="center" transparent="1" />
 	</screen>
+
 	<screen name="CiSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<eLabel text="Common Interface" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
 		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
@@ -2808,28 +2600,19 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		<widget name="text" position="center,150" size="631,30" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
 		<widget name="entries" position="center,200" size="631,300" scrollbarMode="showOnDemand" zPosition="2" selectionPixmap="MetropolisHD/menu/button540x25.png" transparent="1" />
 	</screen>
+
 	<screen name="CIselectMainMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MidleScreen_RG_Template"/>
 		<eLabel text="CI assignment" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
-		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
-		<widget source="key_red" render="Label" position="283,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="key_green" render="Label" position="460,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="283,645" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="460,645" size="178,1" foregroundColor="green" backgroundColor="green" />
 		<widget name="CiList" position="center,150" size="631,300" scrollbarMode="showOnDemand" zPosition="2" selectionPixmap="MetropolisHD/menu/button540x25.png" transparent="1" />
 	</screen>
+
 	<screen name="RecordPathsSettings" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MidleScreen_RG_Template"/>
 		<eLabel text="Recording paths" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
-		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
-		<widget source="key_red" render="Label" position="283,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="key_green" render="Label" position="460,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="283,645" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="460,645" size="178,1" foregroundColor="green" backgroundColor="green" />
 		<widget name="config" position="center,163" size="701,187" selectionPixmap="MetropolisHD/menu/button1080x25.png" zPosition="2" transparent="1" />
 	</screen>
+
 	<screen name="InputDeviceSetup" position="center,center" size="560,440">
 		<widget source="key_red" render="Label" position="0,1" size="150,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
 		<widget source="key_green" render="Label" position="137,1" size="150,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
