@@ -528,20 +528,11 @@
 	</screen>
 
 	<screen name="ServiceInfo" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MidleScreen_RGYB_Template"/>
 		<eLabel text="Service info" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
-		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
-		<widget name="key_red" position="283,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_green" position="460,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_yellow" position="639,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_blue" position="818,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="283,645" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="460,645" size="178,1" foregroundColor="green" backgroundColor="green" />
-		<eLabel name="Yellow" position="639,645" size="178,1" foregroundColor="yellow" backgroundColor="yellow" />
-		<eLabel name="Blue" position="818,645" size="178,1" foregroundColor="blue" backgroundColor="blue" />
 		<widget name="infolist" position="center,115" size="680,491" selectionDisabled="1" scrollbarMode="showOnDemand" transparent="1" itemHeight="21" />
 	</screen>
+
 	<screen name="AudioSelection" position="300,180" size="680,330" backgroundColor="podloga" transparent="0">
 		<widget name="config" position="70,10" size="590,110" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpGrey" />
 		<widget source="key_red" render="Pixmap" pixmap="MetropolisHD/buttons/key_red.png" position="20,10" size="35,25" alphatest="on">
@@ -581,22 +572,14 @@ MultiContentEntryText(pos = (535, 0), size = (105, 25),  font = 1, flags = RT_HA
 			</convert>
 		</widget>
 	</screen>
+
 	<screen name="BouquetSelector" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MidleScreen_RGYB_Template"/>
 		<eLabel text="Select a bouquet" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
-		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
-		<widget name="key_red" position="283,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_green" position="460,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_yellow" position="639,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_blue" position="818,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="283,645" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="460,645" size="178,1" foregroundColor="green" backgroundColor="green" />
-		<eLabel name="Yellow" position="639,645" size="178,1" foregroundColor="yellow" backgroundColor="yellow" />
-		<eLabel name="Blue" position="818,645" size="178,1" foregroundColor="blue" backgroundColor="blue" />
 		<widget name="menu" position="center,114" size="720,490" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button580x25.png" transparent="1" />
 		<ePixmap position="973,center" zPosition="2" size="29,491" pixmap="MetropolisHD/maxbar.png" alphatest="blend" transparent="1" />
 	</screen>
+
 	<screen name="ChannelContextMenu" position="center,center" size="600,290" backgroundColor="podloga">
 		<widget name="menu" position="20,20" size="560,250" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button580x25.png" transparent="1" />
 	</screen>
@@ -655,18 +638,11 @@ MultiContentEntryText(pos = (535, 0), size = (105, 25),  font = 1, flags = RT_HA
 		<eLabel name="Line" position="872,324" size="300,1" backgroundColor="un666666" />
 	</screen>
 
-	<screen name="ChannelSelectionRadio" position="98,141" size="1116,310" backgroundColor="podloga">
-		<widget name="list" position="10,5" size="1096,257" scrollbarMode="showOnDemand" foregroundColorServiceNotAvail="#000000" colorServiceDescriptionSelected="#223974" serviceNumberFont="Regular;22" serviceNameFont="Regular;22" serviceInfoFont="Regular;22" colorEventProgressbarBorderSelected="#000000" picServiceEventProgressbar="MetropolisHD/pl.png" selectionPixmap="MetropolisHD/menu/button1096x30.png" transparent="1" />
-		<eLabel position="0,268" size="1116,2" backgroundColor="grey" />
-		<widget name="key_red" position="194,268" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_green" position="371,268" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_yellow" position="549,268" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_blue" position="728,268" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="194,303" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="371,303" size="178,1" foregroundColor="green" backgroundColor="green" />
-		<eLabel name="Yellow" position="549,303" size="178,1" foregroundColor="yellow" backgroundColor="yellow" />
-		<eLabel name="Blue" position="728,303" size="178,1" foregroundColor="blue" backgroundColor="blue" />
+	<screen name="ChannelSelectionRadio" position="90,100" size="1100,560" backgroundColor="podloga">
+		<panel name="ButtonTemplate_RGYB_Big"/>
+		<widget name="list" position="20,10" size="1060,500" scrollbarMode="showOnDemand" foregroundColorServiceNotAvail="#000000" colorServiceDescriptionSelected="#223974" serviceNumberFont="Regular;22" serviceNameFont="Regular;22" serviceInfoFont="Regular;22" colorEventProgressbarBorderSelected="#000000" picServiceEventProgressbar="MetropolisHD/pl.png" selectionPixmap="MetropolisHD/menu/button1096x30.png" transparent="1" />
 	</screen>
+
 	<screen name="ChoiceBox" position="center,100" size="550,400" backgroundColor="podloga">
 		<widget name="text" position="20,10" size="510,25" font="Regular;20" transparent="1" />
 		<widget name="list" position="20,40" size="510,335" scrollbarMode="showOnDemand" transparent="1" />
@@ -751,10 +727,8 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count > 7 and 2 or 3)))
 	</screen>
 
 	<screen name="EPGSelectionMulti" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="BigScreen_RGYB_Template"/>
 		<eLabel text="Multi-EPG bouquet selection" position="center,37" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<ePixmap position="center,center" size="1178,656" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<ePixmap pixmap="MetropolisHD/back1.png" position="center,33" size="1170,40" alphatest="blend" zPosition="-2" transparent="0" />
-		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
 		<widget name="list" position="60,145" size="768,450" zPosition="2" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="transpBlack" selectionPixmap="MetropolisHD/menu/button1080x25.png" transparent="1" />
 		<widget name="now_button_sel" pixmap="MetropolisHD/epg_now.png" position="60,75" zPosition="3" size="1100,35" alphatest="on" />
 		<widget name="next_button_sel" pixmap="MetropolisHD/epg_next.png" position="60,75" zPosition="3" size="1100,35" alphatest="on" />
@@ -766,14 +740,6 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count > 7 and 2 or 3)))
 		<widget source="Event" render="Label" position="860,126" size="360,468" font="Regular;20" backgroundColor="transpBlack" transparent="1">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
-		<widget name="key_red" position="285,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" text="All" />
-		<widget name="key_green" position="463,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_yellow" position="641,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_blue" position="819,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="285,645" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="463,645" size="178,1" foregroundColor="green" backgroundColor="green" />
-		<eLabel name="Yellow" position="641,645" size="178,1" foregroundColor="yellow" backgroundColor="yellow" />
-		<eLabel name="Blue" position="819,645" size="178,1" foregroundColor="blue" backgroundColor="blue" />
 		<ePixmap position="801,144" zPosition="2" size="29,451" pixmap="MetropolisHD/maxbar.png" alphatest="blend" transparent="1" />
 	</screen>
 
@@ -791,10 +757,8 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count > 7 and 2 or 3)))
 	</screen>
 
 	<screen name="GraphMultiEPG" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="BigScreen_RGYB_Template"/>
 		<eLabel text="Electronic Program Guide" position="center,36" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<ePixmap position="center,center" size="1229,654" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<ePixmap pixmap="MetropolisHD/back1.png" position="center,32" size="1220,40" alphatest="blend" zPosition="-2" transparent="0" />
-		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
 		<widget name="timeline_text" position="center,85" size="1180,26" />
 		<widget name="list" position="center,120" size="1160,300" scrollbarMode="showOnDemand" EntryBorderColor="#cccccc" EntryBackgroundColor="#253a50" EntryBackgroundColorSelected="#54799e" transparent="1" />
 		<eLabel position="60,120" size="1140,1" backgroundColor="darkgrey" />
@@ -829,19 +793,12 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count > 7 and 2 or 3)))
 		<widget source="Event" render="Label" position="473,440" zPosition="1" size="750,160" font="Regular;18" foregroundColor="foreground">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
-		<widget name="key_red" position="285,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" text="All" />
-		<widget name="key_green" position="463,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_yellow" position="641,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_blue" position="819,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="285,645" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="463,645" size="178,1" foregroundColor="green" backgroundColor="green" />
-		<eLabel name="Yellow" position="641,645" size="178,1" foregroundColor="yellow" backgroundColor="yellow" />
-		<eLabel name="Blue" position="819,645" size="178,1" foregroundColor="blue" backgroundColor="blue" />
 		<widget source="Event" render="Label" position="60,510" zPosition="1" size="400,25" font="Regular;22" halign="center">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Format:(%A)</convert>
 		</widget>
 	</screen>
+
 	<screen name="HarddiskSelection" position="340,134" size="600,502" backgroundColor="podloga">
 		<eLabel position="0,0" size="600,2" backgroundColor="grey" zPosition="5" />
 		<widget name="hddlist" position="10,12" size="580,475" transparent="1" />
@@ -1031,7 +988,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	<screen name="MovieContextMenu" position="340,180" size="600,400" backgroundColor="podloga">
 		<widget name="menu" position="20,20" size="560,360" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button580x25.png" transparent="1" />
 	</screen>
+
 	<screen name="MovieLocationBox" position="90,100" size="1100,560" backgroundColor="podloga">
+		<panel name="ButtonTemplate_RGYB_Big"/>
 		<widget name="text" position="10,10" size="1080,27" font="Regular;23" />
 		<eLabel position="10,50" size="20,27" backgroundColor="darkgrey" />
 		<widget name="target" position="30,50" size="1060,27" valign="center" font="Regular;24" foregroundColor="black" backgroundColor="darkgrey" />
@@ -1039,17 +998,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<eLabel position="10,345" size="20,27" backgroundColor="darkgrey" />
 		<widget name="textbook" position="30,345" size="1060,27" valign="center" font="Regular;24" foregroundColor="black" backgroundColor="darkgrey" />
 		<widget name="booklist" position="30,380" zPosition="2" size="1060,125" scrollbarMode="showOnDemand" />
-		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
-		<widget name="key_red" position="206,519" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" text="All" />
-		<widget name="key_green" position="384,519" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_yellow" position="562,519" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_blue" position="740,519" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="206,552" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="384,552" size="178,1" foregroundColor="green" backgroundColor="green" />
-		<eLabel name="Yellow" position="562,552" size="178,1" foregroundColor="yellow" backgroundColor="yellow" />
-		<eLabel name="Blue" position="740,552" size="178,1" foregroundColor="blue" backgroundColor="blue" />
 	</screen>
+
 	<screen name="LocationBox" position="90,100" size="1100,560" backgroundColor="podloga">
+		<panel name="ButtonTemplate_RGYB_Big"/>
 		<widget name="text" position="10,10" size="1080,27" font="Regular;23" backgroundColor="podloga" />
 		<eLabel position="10,50" size="20,27" backgroundColor="darkgrey" />
 		<widget name="target" position="30,50" size="1060,27" valign="center" font="Regular;24" foregroundColor="black" backgroundColor="darkgrey" />
@@ -1057,15 +1009,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<eLabel position="10,345" size="20,27" backgroundColor="darkgrey" />
 		<widget name="textbook" position="30,345" size="1060,27" valign="center" font="Regular;24" foregroundColor="black" backgroundColor="darkgrey" />
 		<widget name="booklist" position="30,380" zPosition="2" size="1040,125" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button1080x25.png" transparent="1" />
-		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
-		<widget name="key_red" position="185,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" text="All" />
-		<widget name="key_green" position="363,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_yellow" position="541,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_blue" position="719,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="185,553" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="363,553" size="178,1" foregroundColor="green" backgroundColor="green" />
-		<eLabel name="Yellow" position="541,553" size="178,1" foregroundColor="yellow" backgroundColor="yellow" />
-		<eLabel name="Blue" position="719,553" size="178,1" foregroundColor="blue" backgroundColor="blue" />
 	</screen>
 
 	<screen name="DVDMovieSelection" position="0,0" size="1278,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -1087,18 +1030,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	</screen>
 
 	<screen name="SuomipoekaMenu" position="90,100" size="1100,560" backgroundColor="podloga">
+		<panel name="ButtonTemplate_RGYB_Big"/>
 		<widget name="config" position="10,10" size="1080,500" scrollbarMode="showOnDemand" transparent="1" />
-		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
-		<widget name="key_red" position="179,515" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_green" position="357,515" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_yellow" position="536,515" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_blue" position="714,515" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="179,549" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="357,549" size="178,1" foregroundColor="green" backgroundColor="green" />
-		<eLabel name="Yellow" position="535,549" size="178,1" foregroundColor="yellow" backgroundColor="yellow" />
-		<eLabel name="Blue" position="714,549" size="178,1" foregroundColor="blue" backgroundColor="blue" />
 	</screen>
+
 	<screen name="MovieSelectionSP" position="90,100" size="1100,560" backgroundColor="podloga">
+		<panel name="ButtonTemplate_RGYB_Big"/>
 		<eLabel position="780,0" size="2,518" backgroundColor="grey" />
 		<widget name="list" position="10,20" size="760,460" scrollbarMode="showOnDemand" transparent="1" />
 		<widget name="DescriptionBorder" position="0,0" size="0,0" />
@@ -1125,16 +1062,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 			<convert type="ClockToText">Format:- %H:%M </convert>
 		</widget>
 		<widget name="FileSize" position="790,210" size="300,22" font="Regular;22" halign="center" backgroundColor="podloga" />
-		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
-		<widget name="key_red" position="179,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_green" position="357,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_yellow" position="536,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_blue" position="714,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="179,555" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="357,555" size="178,1" foregroundColor="green" backgroundColor="green" />
-		<eLabel name="Yellow" position="535,555" size="178,1" foregroundColor="yellow" backgroundColor="yellow" />
-		<eLabel name="Blue" position="714,555" size="178,1" foregroundColor="blue" backgroundColor="blue" />
 	</screen>
+
 	<screen name="NimSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<eLabel text="Select a tuner" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
 		<widget source="nimlist" render="Listbox" position="center,122" size="662,493" selectionPixmap="MetropolisHD/menu/button880x70.png" transparent="1">
@@ -1357,17 +1286,10 @@ MultiContentEntryText(pos = (50, 28), size = (480, 40), font = 1, flags = RT_HAL
 	</screen>
 
 	<screen name="SimpleChannelSelection" position="90,100" size="1100,560" backgroundColor="podloga">
+		<panel name="ButtonTemplate_RGYB_Big"/>
 		<widget name="list" position="10,20" size="1080,475" scrollbarMode="showOnDemand" transparent="1" />
-		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
-		<widget name="key_red" position="179,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_green" position="357,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_yellow" position="536,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_blue" position="714,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="179,555" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="357,555" size="178,1" foregroundColor="green" backgroundColor="green" />
-		<eLabel name="Yellow" position="535,555" size="178,1" foregroundColor="yellow" backgroundColor="yellow" />
-		<eLabel name="Blue" position="714,555" size="178,1" foregroundColor="blue" backgroundColor="blue" />
 	</screen>
+
 	<screen name="SkinSelector" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<eLabel text="Select a skin" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
 		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
@@ -1435,62 +1357,40 @@ MultiContentEntryText(pos = (50, 28), size = (480, 40), font = 1, flags = RT_HAL
 		<widget name="end" position="708,150" size="72,35" font="Regular;25" backgroundColor="podloga" />
 		<widget name="apply" position="210,240" size="250,35" backgroundColor="podloga" />
 	</screen>
+
 	<screen name="TimerEditList" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MidleScreen_RGYB_Template"/>
 		<eLabel text="Timer editor" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
-		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
-		<widget name="key_red" position="283,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_green" position="460,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_yellow" position="639,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_blue" position="818,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="283,645" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="460,645" size="178,1" foregroundColor="green" backgroundColor="green" />
-		<eLabel name="Yellow" position="639,645" size="178,1" foregroundColor="yellow" backgroundColor="yellow" />
-		<eLabel name="Blue" position="818,645" size="178,1" foregroundColor="blue" backgroundColor="blue" />
 		<widget name="timerlist" position="center,130" size="611,463" scrollbarMode="showOnDemand" transparent="1" />
 	</screen>
+
 	<screen name="TimerEntry" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MidleScreenTemplate"/>
 		<eLabel text="Timer entry" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
-		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
-		<widget name="canceltext" position="469,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="oktext" position="656,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="469,645" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="656,645" size="178,1" foregroundColor="green" backgroundColor="green" />
+		<eLabel name="Line" position="center,613" size="716,1" backgroundColor="un666666" />
+		<widget name="canceltext" position="40,460" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
+		<widget name="oktext" position="310,460" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
+		<eLabel name="Red" position="75,495" size="180,1" foregroundColor="red" backgroundColor="red" />
+		<eLabel name="Green" position="345,495" size="180,1" foregroundColor="green" backgroundColor="green" />
 		<widget name="config" position="center,150" size="676,425" zPosition="2" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="transpGrey" selectionPixmap="MetropolisHD/menu/button1080x25.png" transparent="1" font="Regular; 20" foregroundColor="un21e2e2e2" />
 	</screen>
+
 	<screen name="TimerLog" position="90,100" size="1100,560" backgroundColor="podloga">
+		<panel name="ButtonTemplate_RGYB_Big"/>
 		<widget name="loglist" position="10,10" size="1080,350" scrollbarMode="showOnDemand" transparent="1" />
 		<eLabel position="0,370" size="1100,2" backgroundColor="grey" />
 		<widget name="logentry" position="10,380" size="1080,130" font="Regular;20" transparent="1" />
-		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
-		<widget name="key_red" position="179,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_green" position="357,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_yellow" position="536,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_blue" position="714,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="179,555" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="357,555" size="178,1" foregroundColor="green" backgroundColor="green" />
-		<eLabel name="Yellow" position="535,555" size="178,1" foregroundColor="yellow" backgroundColor="yellow" />
-		<eLabel name="Blue" position="714,555" size="178,1" foregroundColor="blue" backgroundColor="blue" />
 	</screen>
+
 	<screen name="TimerSanityConflict" position="90,100" size="1100,560">
+		<panel name="ButtonTemplate_RGYB_Big"/>
 		<widget name="list" position="10,10" size="530,80" scrollbarMode="showOnDemand" />
 		<eLabel position="0,325" size="1100,2" backgroundColor="grey" />
 		<eLabel position="549,0" size="2,325" backgroundColor="grey" />
 		<widget name="timer1" position="10,100" size="530,225" scrollbarMode="showNever" />
 		<widget name="timer2" position="560,100" size="530,225" scrollbarMode="showNever" />
-		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
-		<widget name="key_red" position="179,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_green" position="357,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_yellow" position="536,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_blue" position="714,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="179,555" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="357,555" size="178,1" foregroundColor="green" backgroundColor="green" />
-		<eLabel name="Yellow" position="535,555" size="178,1" foregroundColor="yellow" backgroundColor="yellow" />
-		<eLabel name="Blue" position="714,555" size="178,1" foregroundColor="blue" backgroundColor="blue" />
 	</screen>
+
 	<screen name="TimerSelection" position="90,100" size="1100,560">
 		<widget name="timerlist" position="10,20" size="1080,350" scrollbarMode="showOnDemand" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
@@ -1595,19 +1495,13 @@ MultiContentEntryText(pos=(145,0), size=(145, 20), text = 2, flags = RT_HALIGN_R
 		<eLabel name="Red" position="379,555" size="178,1" foregroundColor="red" backgroundColor="red" />
 		<eLabel name="Green" position="557,555" size="178,1" foregroundColor="green" backgroundColor="green" />
 	</screen>
+
 	<screen name="ProjectSettings" position="90,100" size="1100,560">
+		<panel name="ButtonTemplate_RGYB_Big"/>
 		<widget name="config" position="10,10" size="1080,350" scrollbarMode="showOnDemand" enableWrapAround="1" />
 		<widget source="info" render="Label" position="10,380" size="1080,100" font="Regular;20" />
-		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
-		<widget name="key_red" position="179,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_green" position="357,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_yellow" position="536,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_blue" position="714,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="179,555" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="357,555" size="178,1" foregroundColor="green" backgroundColor="green" />
-		<eLabel name="Yellow" position="535,555" size="178,1" foregroundColor="yellow" backgroundColor="yellow" />
-		<eLabel name="Blue" position="714,555" size="178,1" foregroundColor="blue" backgroundColor="blue" />
 	</screen>
+
 	<screen name="DVDToolbox" position="90,100" size="1100,560">
 		<widget source="info" render="Label" position="20,60" size="1060,100" font="Regular;22" />
 		<widget name="details" position="20,200" size="1060,200" font="Regular;20" />
@@ -1761,21 +1655,15 @@ MultiContentEntryText(pos = (470, 20), size = (48, 20), font = 1, flags = RT_HAL
 		<widget source="space_bar_dual" render="Progress" position="10,446" size="540,24" borderWidth="1" backgroundColor="un254f7497" />
 		<widget source="space_label_dual" render="Label" position="10,449" size="540,22" zPosition="2" font="Regular;18" halign="center" transparent="1" foregroundColor="black" />
 	</screen>
+
 	<screen name="picshow" position="90,100" size="1100,560">
+		<panel name="ButtonTemplate_RGYB_Big"/>
 		<eLabel text="Picture player" position="20,20" size="260,160" font="Regular;20" transparent="1" />
 		<widget name="thn" position="20,200" size="260,300" alphatest="on" />
-		<eLabel position="300,0" size="2,518" backgroundColor="grey" />
+		<eLabel position="300,0" size="2,500" backgroundColor="grey" />
 		<widget name="filelist" position="320,20" size="760,480" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button1080x25.png" transparent="1" />
-		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
-		<widget name="key_red" position="179,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_green" position="357,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_yellow" position="536,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_blue" position="714,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="179,555" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="357,555" size="178,1" foregroundColor="green" backgroundColor="green" />
-		<eLabel name="Yellow" position="535,555" size="178,1" foregroundColor="yellow" backgroundColor="yellow" />
-		<eLabel name="Blue" position="714,555" size="178,1" foregroundColor="blue" backgroundColor="blue" />
 	</screen>
+
 	<screen name="Pic_Exif" position="340,134" size="600,502">
 		<widget name="key_red" position="215,450" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
 		<eLabel name="Red" position="215,485" size="178,1" foregroundColor="red" backgroundColor="red" />
@@ -1792,7 +1680,9 @@ MultiContentEntryText(pos = (360, 7), size = (215, 30), flags = RT_HALIGN_LEFT, 
 		<panel name="ButtonTemplate_RG_Small"/>
 		<widget name="config" position="20,10" size="560,450" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button580x25.png" transparent="1" />
 	</screen>
+
 	<screen name="VlcMediaListScreen" position="90,100" size="1100,560">
+		<panel name="ButtonTemplate_RGYB_Big"/>
 		<widget name="filelist_button_sel" pixmap="MetropolisHD/epg_now.png" position="0,0" zPosition="3" size="1100,35" alphatest="on" />
 		<widget name="playlist_button_sel" pixmap="MetropolisHD/epg_next.png" position="0,0" zPosition="3" size="1100,35" alphatest="on" />
 		<widget name="filelist_text" position="32,7" zPosition="4" size="250,25" font="Regular;20" halign="center" backgroundColor="transpBlack" transparent="1" />
@@ -1800,42 +1690,20 @@ MultiContentEntryText(pos = (360, 7), size = (215, 30), flags = RT_HALIGN_LEFT, 
 		<widget name="filelist" position="10,45" size="530,460" zPosition="3" scrollbarMode="showOnDemand" />
 		<eLabel position="550,45" size="1,460" backgroundColor="grey" />
 		<widget name="playlist" position="560,45" size="530,460" zPosition="3" scrollbarMode="showOnDemand" />
-		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
-		<widget name="key_red" position="179,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_green" position="357,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_yellow" position="536,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_blue" position="714,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="179,555" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="357,555" size="178,1" foregroundColor="green" backgroundColor="green" />
-		<eLabel name="Yellow" position="535,555" size="178,1" foregroundColor="yellow" backgroundColor="yellow" />
-		<eLabel name="Blue" position="714,555" size="178,1" foregroundColor="blue" backgroundColor="blue" />
 	</screen>
+
 	<screen name="VlcServerListScreen" position="90,100" size="1100,560">
+		<panel name="ButtonTemplate_RGYB_Big"/>
 		<widget name="serverlabel" position="10,10" size="1080,25" font="Regular;22" transparent="1" />
 		<eLabel position="10,43" size="1080,2" backgroundColor="grey" />
 		<widget name="serverlist" position="10,50" size="1080,437" scrollbarMode="showOnDemand" />
-		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
-		<widget name="key_red" position="179,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_green" position="357,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_yellow" position="536,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_blue" position="714,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="179,555" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="357,555" size="178,1" foregroundColor="green" backgroundColor="green" />
-		<eLabel name="Yellow" position="535,555" size="178,1" foregroundColor="yellow" backgroundColor="yellow" />
-		<eLabel name="Blue" position="714,555" size="178,1" foregroundColor="blue" backgroundColor="blue" />
 	</screen>
+
 	<screen name="VlcServerConfigScreen" position="90,100" size="1100,560">
+		<panel name="ButtonTemplate_RGYB_Big"/>
 		<widget name="config" position="10,10" size="1080,500" scrollbarMode="showOnDemand" transparent="1" />
-		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
-		<widget name="key_red" position="179,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_green" position="357,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_yellow" position="536,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_blue" position="714,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="179,555" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="357,555" size="178,1" foregroundColor="green" backgroundColor="green" />
-		<eLabel name="Yellow" position="535,555" size="178,1" foregroundColor="yellow" backgroundColor="yellow" />
-		<eLabel name="Blue" position="714,555" size="178,1" foregroundColor="blue" backgroundColor="blue" />
 	</screen>
+
 	<screen name="InputBox" position="365,250" size="550,90">
 		<widget name="text" position="10,20" size="550,25" font="Regular;23" />
 		<widget name="input" position="10,55" size="550,25" font="Regular;20" />
@@ -1973,51 +1841,28 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 58), size = (0, 0), png = 5), # index
 	</screen>
 
 	<screen name="RestoreMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MidleScreen_RGY_Template"/>
 		<eLabel text="Restore backups" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
-		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
-		<widget source="key_red" render="Label" position="283,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="key_green" render="Label" position="460,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="key_yellow" render="Label" position="639,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="283,645" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="460,645" size="178,1" foregroundColor="green" backgroundColor="green" />
-		<eLabel name="Yellow" position="639,645" size="178,1" foregroundColor="yellow" backgroundColor="yellow" />
 		<widget name="filelist" position="center,150" size="640,400" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button540x25.png" transparent="1" />
 	</screen>
+
 	<screen name="BackupSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MidleScreen_RGY_Template"/>
 		<eLabel text="Select files/folders to backup" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
-		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
-		<widget source="key_red" render="Label" position="283,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="key_green" render="Label" position="460,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="key_yellow" render="Label" position="639,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="283,645" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="460,645" size="178,1" foregroundColor="green" backgroundColor="green" />
-		<eLabel name="Yellow" position="639,645" size="178,1" foregroundColor="yellow" backgroundColor="yellow" />
 		<widget name="checkList" position="center,150" size="654,400" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button540x25.png" transparent="1" />
 	</screen>
+
 	<screen name="BackupScreen" position="340,125" size="600,502">
 		<widget name="config" position="10,10" size="580,425" zPosition="3" scrollbarMode="showOnDemand" />
 	</screen>
 	<screen name="RestoreScreen" position="340,125" size="600,502">
 		<widget name="config" position="10,10" size="580,425" zPosition="3" scrollbarMode="showOnDemand" />
 	</screen>
+
 	<screen name="PluginManager" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MidleScreen_RGYB_Template"/>
 		<eLabel text="Extensions management" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<ePixmap position="center,center" size="814,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="800,40" alphatest="off" zPosition="-2" transparent="0" />
-		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
-		<widget source="key_red" render="Label" position="283,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="key_green" render="Label" position="460,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="key_yellow" render="Label" position="639,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="key_blue" render="Label" position="818,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="283,645" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="460,645" size="178,1" foregroundColor="green" backgroundColor="green" />
-		<eLabel name="Yellow" position="639,645" size="178,1" foregroundColor="yellow" backgroundColor="yellow" />
-		<eLabel name="Blue" position="818,645" size="178,1" foregroundColor="blue" backgroundColor="blue" />
-		<widget source="list" render="Listbox" position="center,139" size="748,360" scrollbarMode="showOnDemand" transparent="1">
+		<widget source="list" render="Listbox" position="center,139" size="708,360" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
 {"templates":
 {"default": (51,[
@@ -2038,7 +1883,7 @@ MultiContentEntryPixmapAlphaTest(pos = (0, 38), size = (570, 2), png = 3), # ind
 			</convert>
 		</widget>
 		<widget source="status" render="Label" position="center,520" zPosition="1" size="540,30" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
-		<ePixmap position="989,138" zPosition="2" size="29,361" pixmap="MetropolisHD/maxbar.png" alphatest="blend" transparent="1" />
+		<ePixmap position="968,138" zPosition="2" size="29,361" pixmap="MetropolisHD/maxbar.png" alphatest="blend" transparent="1" />
 	</screen>
 
 	<screen name="PluginManagerInfo" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -2274,19 +2119,11 @@ MultiContentEntryText(pos = (550, 3), size = (70, 24), font=1, flags = RT_HALIGN
 		<ePixmap position="570,525" size="100,40" zPosition="4" pixmap="~/plugin.png" alphatest="on" transparent="1" />
 		<widget name="title" position="0,0" size="0,0" />
 	</screen>&gt;
+
 	<screen name="PositionerSetup" position="center,center" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MidleScreen_RGYB_Template"/>
 		<eLabel text="Positioner setup" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
 		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
-		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
-		<widget name="key_red" position="283,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_green" position="460,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_yellow" position="639,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_blue" position="818,612" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red1" position="283,645" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green1" position="460,645" size="178,1" foregroundColor="green" backgroundColor="green" />
-		<eLabel name="Yellow1" position="639,645" size="178,1" foregroundColor="yellow" backgroundColor="yellow" />
-		<eLabel name="Blue1" position="818,645" size="178,1" foregroundColor="blue" backgroundColor="blue" />
 		<widget name="list" position="299,132" size="683,183" selectionPixmap="MetropolisHD/menu/button540x25.png" transparent="1" />
 		<widget name="snr_db" position="350,320" size="200,24" halign="center" valign="center" font="Regular;22" backgroundColor="transpBlack" transparent="1" />
 		<eLabel text="SNR:" position="297,350" size="80,24" font="Regular;22" backgroundColor="transpBlack" transparent="1" />
@@ -2304,6 +2141,7 @@ MultiContentEntryText(pos = (550, 3), size = (70, 24), font=1, flags = RT_HALIGN
 		<eLabel text="FEC:" position="297,500" size="150,24" font="Regular;22" backgroundColor="transpBlack" transparent="1" />
 		<widget name="fec_value" position="460,500" size="150,24" font="Regular;22" backgroundColor="transpBlack" transparent="1" />
 	</screen>
+
 	<screen name="AdapterSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<eLabel text="Network setup" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
 		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
@@ -2347,31 +2185,17 @@ MultiContentEntryText(pos = (550, 3), size = (70, 24), font=1, flags = RT_HALIGN
 		<widget source="Statustext" render="Label" position="329,570" size="200,30" zPosition="1" font="Regular;24" backgroundColor="transpBlack" transparent="1" />
 		<widget name="statuspic" position="512,575" size="15,16" pixmaps="MetropolisHD/buttons/button_green.png,MetropolisHD/buttons/button_green_off.png" zPosition="10" transparent="1" alphatest="on" />
 	</screen>
+
 	<screen name="NameserverSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MidleScreen_RGY_Template"/>
 		<eLabel text="Nameserver setup" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
-		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
-		<widget source="key_red" render="Label" position="283,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="key_green" render="Label" position="460,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="key_yellow" render="Label" position="639,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="283,645" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="460,645" size="178,1" foregroundColor="green" backgroundColor="green" />
-		<eLabel name="Yellow" position="639,645" size="178,1" foregroundColor="yellow" backgroundColor="yellow" />
 		<widget name="config" position="center,150" size="520,375" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button540x25.png" transparent="1" />
 		<widget source="introduction" render="Label" position="center,480" size="520,30" zPosition="1" font="Regular;24" halign="center" backgroundColor="transpBlack" transparent="1" />
 	</screen>
+
 	<screen name="NetworkAdapterSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MidleScreen_RGY_Template"/>
 		<eLabel text="Select a network adapter" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
-		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
-		<widget source="key_red" render="Label" position="283,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="key_green" render="Label" position="460,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="key_yellow" render="Label" position="639,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="283,645" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="460,645" size="178,1" foregroundColor="green" backgroundColor="green" />
-		<eLabel name="Yellow" position="639,645" size="178,1" foregroundColor="yellow" backgroundColor="yellow" />
 		<widget source="list" render="Listbox" position="center,150" size="631,280" zPosition="10" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent"><!--  iface, name, description, interfacepng, defaultpng, activepng, divpng  -->
 {"template": [
@@ -2387,64 +2211,48 @@ MultiContentEntryPixmapAlphaTest(pos = (63, 46), size = (15, 16), png = 4), # in
 		</widget>
 		<widget source="introduction" render="Label" position="center,480" size="631,30" zPosition="1" font="Regular;24" backgroundColor="transpBlack" halign="center" transparent="1" />
 	</screen>
+
 	<screen name="NetworkAdapterTest" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MidleScreen_RGY_Template"/>
 		<eLabel text="Network test..." position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
-		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
-		<widget source="key_red" render="Label" position="283,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="key_green" render="Label" position="460,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="key_yellow" render="Label" position="639,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="283,645" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="460,645" size="178,1" foregroundColor="green" backgroundColor="green" />
-		<eLabel name="Yellow" position="639,645" size="178,1" foregroundColor="yellow" backgroundColor="yellow" />
-		<widget name="Adaptertext" position="395,130" size="310,25" zPosition="1" font="Regular;22" transparent="1" backgroundColor="transpGrey" />
+		<widget name="Adaptertext" position="395,130" size="310,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#1cff1c" />
 		<widget name="Adapter" position="395,160" size="310,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#f23d21,#1cff1c" transparent="1" backgroundColor="transpGrey" />
 		<widget name="AdapterInfo_OK" position="710,145" size="38,31" zPosition="2" pixmap="MetropolisHD/icons/lock_on.png" alphatest="on" />
 		<widget name="AdapterInfo" position="760,137" size="160,40" zPosition="1" pixmaps="MetropolisHD/menu/select300_45black.png,MetropolisHD/menu/button160x40.png" backgroundColor="transpGrey" />
 		<widget name="AdapterInfo_Text" position="760,137" size="160,40" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" backgroundColor="transpGrey" />
 		<eLabel position="395,190" size="520,1" backgroundColor="darkgrey" />
-		<widget name="Networktext" position="395,210" size="310,25" zPosition="1" font="Regular;22" transparent="1" backgroundColor="transpGrey" />
+		<widget name="Networktext" position="395,210" size="310,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#1cff1c" />
 		<widget name="Network" position="395,240" size="310,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#f23d21,#1cff1c" transparent="1" backgroundColor="transpGrey" />
 		<widget name="NetworkInfo_Check" position="710,225" size="38,31" zPosition="2" pixmaps="MetropolisHD/icons/lock_on.png,MetropolisHD/icons/lock_error.png" alphatest="on" />
 		<widget name="NetworkInfo" position="760,217" size="160,40" zPosition="1" pixmaps="MetropolisHD/menu/select300_45black.png,MetropolisHD/menu/button160x40.png" backgroundColor="transpGrey" />
 		<widget name="NetworkInfo_Text" position="760,217" size="160,40" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" backgroundColor="transpGrey" />
 		<eLabel position="395,280" size="520,1" backgroundColor="darkgrey" />
-		<widget name="Dhcptext" position="395,290" size="310,25" zPosition="1" font="Regular;22" transparent="1" backgroundColor="transpGrey" />
+		<widget name="Dhcptext" position="395,290" size="310,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#1cff1c" />
 		<widget name="Dhcp" position="395,320" size="310,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#f23d21,#1cff1c" transparent="1" backgroundColor="transpGrey" />
 		<widget name="DhcpInfo_Check" position="710,315" size="38,31" zPosition="2" pixmaps="MetropolisHD/icons/lock_on.png,MetropolisHD/icons/lock_error.png" alphatest="on" />
 		<widget name="DhcpInfo" position="760,297" size="160,40" zPosition="1" pixmaps="MetropolisHD/menu/select300_45black.png,MetropolisHD/menu/button160x40.png" backgroundColor="transpGrey" />
 		<widget name="DhcpInfo_Text" position="760,297" size="160,40" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" backgroundColor="transpGrey" />
 		<eLabel position="395,360" size="520,1" backgroundColor="darkgrey" />
-		<widget name="IPtext" position="395,370" size="310,25" zPosition="1" font="Regular;22" transparent="1" backgroundColor="transpGrey" />
+		<widget name="IPtext" position="395,370" size="310,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#1cff1c" />
 		<widget name="IP" position="395,400" size="310,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#f23d21,#1cff1c" transparent="1" backgroundColor="transpGrey" />
 		<widget name="IPInfo_Check" position="710,385" size="38,31" zPosition="2" pixmaps="MetropolisHD/icons/lock_on.png,MetropolisHD/icons/lock_error.png" alphatest="on" />
-		<widget name="IPInfo" position="760,367" size="160,40" zPosition="1" pixmaps="MetropolisHD/menu/select300_45black.png,MetropolisHD/menu/button160x40.png" backgroundColor="transpGrey" />
-		<widget name="IPInfo_Text" position="760,367" size="160,40" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" backgroundColor="transpGrey" />
+		<widget name="IPInfo" position="760,377" size="160,40" zPosition="1" pixmaps="MetropolisHD/menu/select300_45black.png,MetropolisHD/menu/button160x40.png" backgroundColor="transpGrey" />
+		<widget name="IPInfo_Text" position="760,377" size="160,40" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" backgroundColor="transpGrey" />
 		<eLabel position="395,440" size="520,1" backgroundColor="darkgrey" />
-		<widget name="DNStext" position="395,450" size="310,25" zPosition="1" font="Regular;22" transparent="1" backgroundColor="transpGrey" />
+		<widget name="DNStext" position="395,450" size="310,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#1cff1c" />
 		<widget name="DNS" position="395,480" size="310,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#f23d21,#1cff1c" transparent="1" backgroundColor="transpGrey" />
 		<widget name="DNSInfo_Check" position="710,465" size="38,31" zPosition="2" pixmaps="MetropolisHD/icons/lock_on.png,MetropolisHD/icons/lock_error.png" alphatest="on" />
 		<widget name="DNSInfo" position="760,457" size="160,40" zPosition="1" pixmaps="MetropolisHD/menu/select300_45black.png,MetropolisHD/menu/button160x40.png" backgroundColor="transpGrey" />
 		<widget name="DNSInfo_Text" position="760,457" size="160,40" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" backgroundColor="transpGrey" />
 		<eLabel position="395,520" size="520,1" backgroundColor="darkgrey" />
-		<widget name="EditSettingsButton" position="760,527" size="160,40" zPosition="1" pixmaps="MetropolisHD/menu/select300_45black.png,MetropolisHD/menu/button160x40.png" backgroundColor="transpGrey" />
-		<widget name="EditSettings_Text" position="760,527" size="160,40" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" backgroundColor="transpGrey" />
+		<widget name="EditSettingsButton" position="760,527" size="180,40" zPosition="1" pixmaps="MetropolisHD/menu/select300_45black.png,MetropolisHD/menu/button160x40.png" backgroundColor="transpGrey" />
+		<widget name="EditSettings_Text" position="760,527" size="180,40" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" backgroundColor="transpGrey" />
 		<widget name="InfoText" position="376,129" size="550,430" zPosition="3" font="Regular;22" halign="center" valign="center" backgroundColor="background2" transparent="0" />
 	</screen>
+
 	<screen name="NetworkBrowser" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MidleScreen_RGYB_Template"/>
 		<eLabel text="Network Neighbourhood" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
-		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
-		<widget source="key_red" render="Label" position="283,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="key_green" render="Label" position="460,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="key_yellow" render="Label" position="639,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="key_blue" render="Label" position="818,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="283,645" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="460,645" size="178,1" foregroundColor="green" backgroundColor="green" />
-		<eLabel name="Yellow" position="639,645" size="178,1" foregroundColor="yellow" backgroundColor="yellow" />
-		<eLabel name="Blue" position="818,645" size="178,1" foregroundColor="blue" backgroundColor="blue" />
 		<widget source="list" render="Listbox" position="center,150" size="631,300" zPosition="1" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
 {"template": [
@@ -2462,6 +2270,7 @@ MultiContentEntryPixmapAlphaTest(pos = (110, 6), size = (48, 48), png = 6), # in
 		</widget>
 		<widget source="infotext" render="Label" position="center,480" size="631,30" zPosition="1" font="Regular;21" halign="center" valign="center" backgroundColor="un25062748" transparent="1" />
 	</screen>
+
 	<screen name="ScanIP" position="90,100" size="1100,560">
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
 		<widget name="key_red" position="279,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
@@ -2626,19 +2435,13 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		<ePixmap pixmap="MetropolisHD/div-h.png" position="0,400" zPosition="1" size="560,2" />
 		<widget source="introduction" render="Label" position="5,410" size="550,30" zPosition="10" font="Regular;21" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
 	</screen>
+
 	<screen name="VideoEnhancementSetup" position="center,center" size="660,440">
-		<widget name="key_red" position="10,396" size="160,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_green" position="170,396" size="160,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_yellow" position="330,396" size="160,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="key_blue" position="490,396" size="160,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<eLabel name="Red" position="10,430" size="160,1" foregroundColor="red" backgroundColor="red" />
-		<eLabel name="Green" position="170,430" size="160,1" foregroundColor="green" backgroundColor="green" />
-		<eLabel name="Yellow" position="330,430" size="160,1" foregroundColor="yellow" backgroundColor="yellow" />
-		<eLabel name="Blue" position="490,430" size="160,1" foregroundColor="blue" backgroundColor="blue" />
+		<panel name="ButtonTemplate_RGYB_Small"/>
 		<widget name="config" position="5,5" size="650,350" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button640x25.png" transparent="1" />
-		<ePixmap pixmap="MetropolisHD/div-h.png" position="0,399" zPosition="1" size="660,2" />
 		<widget source="introduction" render="Label" position="5,360" size="650,30" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
 	</screen>
+
 	<screen name="VideoEnhancementPreview" position="360,140" size="560,170">
 		<widget name="key_red" position="124,126" size="160,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
 		<widget name="key_green" position="286,126" size="160,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
