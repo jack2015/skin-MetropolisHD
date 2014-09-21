@@ -1533,7 +1533,7 @@ MultiContentEntryText(pos = (50, 28), size = (480, 40), font = 1, flags = RT_HAL
 		<eLabel name="Red" position="393,645" size="250,1" foregroundColor="red" backgroundColor="red" />
 		<eLabel name="Green" position="664,645" size="250,1" foregroundColor="green" backgroundColor="green" />
 		<widget name="config" position="center,115" size="722,400" zPosition="2" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="transpBlack" selectionPixmap="MetropolisHD/menu/button1080x25.png" transparent="1" />
-		<widget name="description" position="center,530" size="722,100" zPosition="2" font="Regular; 22" valign="top" backgroundColor="transpBlack" transparent="1" />
+		<widget name="description" position="center,530" size="722,80" zPosition="2" font="Regular; 22" valign="top" backgroundColor="transpBlack" transparent="1" />
 	</screen>
 	<screen name="SimpleChannelSelection" position="90,100" size="1100,560" backgroundColor="podloga">
 		<widget name="list" position="10,20" size="1080,475" scrollbarMode="showOnDemand" transparent="1" />
