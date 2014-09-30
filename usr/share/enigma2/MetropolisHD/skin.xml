@@ -402,7 +402,7 @@
 			<convert type="MenuEntryCompare">timer_edit</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/scart.png" position="128,132" size="125,125" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/YPbPr.png" position="128,128" size="125,125" alphatest="blend">
 			<convert type="MenuEntryCompare">ChangeVideoPort</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
