@@ -1802,10 +1802,9 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 58), size = (0, 0), png = 5), # index
 		<widget name="package" position="center,180" size="540,20" font="Regular;18" halign="center" valign="center" backgroundColor="un25062748" transparent="1" />
 		<widget name="status" position="center,210" size="540,45" font="Regular;20" halign="center" valign="center" backgroundColor="un25062748" transparent="1" />
 	</screen>
-	<screen name="ImageWizard" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+
+	<screen name="ImageWizard" position="0,0" size="1280,720" flags="wfNoBorder">
 		<eLabel text="Welcome..." position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
-		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
 		<widget name="text" position="460,116" size="340,330" font="Regular;22" transparent="1" />
 		<widget source="list" render="Listbox" position="312,437" size="490,180" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button540x25.png" transparent="1">
 			<convert type="StringList" />
@@ -1813,10 +1812,6 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 58), size = (0, 0), png = 5), # index
 		<widget name="config" position="323,438" zPosition="1" size="440,180" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button540x25.png" />
 		<widget name="wizard" pixmap="MetropolisHD/wizard.png" position="304,161" zPosition="10" size="110,174" alphatest="on" />
 		<widget name="rc" pixmaps="MetropolisHD/rc.png,MetropolisHD/rcold.png" position="846,117" zPosition="1" size="154,500" alphatest="on" />
-		<widget name="arrowdown" pixmap="MetropolisHD/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
-		<widget name="arrowdown2" pixmap="MetropolisHD/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
-		<widget name="arrowup" pixmap="MetropolisHD/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
-		<widget name="arrowup2" pixmap="MetropolisHD/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
 		<eLabel name="Red" position="565,648" size="178,1" foregroundColor="red" backgroundColor="red" />
 		<widget name="languagetext" position="545,613" size="220,35" zPosition="1" font="Regular;22" halign="left" valign="center" backgroundColor="transpBlack" transparent="1" />
 	</screen>
@@ -2095,7 +2090,7 @@ MultiContentEntryText(pos = (0, 1), size = (340, 24), font=0, flags = RT_HALIGN_
 	<screen name="MyTubeSettingsScreen" position="340,104" size="600,532" title="MyTubeSettingsScreen">
 		<panel name="ButtonTemplate_RG_Small"/>
 		<widget name="config" position="20,10" size="560,450" zPosition="3" scrollbarMode="showOnDemand" transparent="1" />
-		<ePixmap position="20,430" size="100,40" zPosition="4" pixmap="~/plugin.png" alphatest="on" transparent="1" />
+		<ePixmap position="20,410" size="100,40" zPosition="4" pixmap="~/plugin.png" alphatest="on" transparent="1" />
 		<widget name="title" position="0,0" size="0,0" />
 	</screen>
 
