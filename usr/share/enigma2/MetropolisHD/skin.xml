@@ -584,8 +584,8 @@ MultiContentEntryText(pos = (535, 0), size = (105, 25),  font = 1, flags = RT_HA
 		<widget name="menu" position="20,20" size="560,250" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button580x25.png" transparent="1" />
 	</screen>
 
-	<screen name="ChannelSelection" position="1,center" size="1280,720" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
-		<eLabel text="Channel selection" position="67,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="background" transparent="1" />
+	<screen name="ChannelSelection" position="1,center" size="1280,720" title="Channel Selection" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
+		<widget source="Title" render="Label" position="67,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="background" transparent="1" />
 		<panel name="Big2PanelsTemplate"/>
 		<widget source="global.CurrentTime" render="Label" position="953,599" size="139,39" zPosition="1" font="Replacement; 36" halign="center" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2" valign="center">
 			<convert type="ClockToText">Format:%H:%M</convert>
