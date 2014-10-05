@@ -608,17 +608,17 @@ MultiContentEntryText(pos = (535, 0), size = (105, 25),  font = 1, flags = RT_HA
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
-		<ePixmap pixmap="MetropolisHD/buttons/sel.png" position="1099,600" size="83,33" alphatest="off" zPosition="1" borderWidth="1" borderColor="un666666"/>
 		<ePixmap pixmap="MetropolisHD/chnsel/info.png" position="851,544" size="32,32" alphatest="off" zPosition="3"/>
 		<widget source="ServiceEvent" render="NextEpgInfo" position="887,271" size="309,45" font="Replacement; 22" halign="left" foregroundColor="yellow"/>
 		<widget source="ServiceEvent" render="Label" position="854,332" zPosition="3" size="340,200" font="Regular; 20" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1" valign="top">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
+		<ePixmap pixmap="MetropolisHD/chnsel/calendar.png" position="851,274" size="32,32" alphatest="off" zPosition="3" transparent="0"/>
 		<eLabel name="Line" position="872,225" size="300,1" backgroundColor="un666666"/>
 		<eLabel name="EPG" position="869,605" size="75,22" text="EPG" font="Replacement; 20" halign="center" transparent="0" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
-		<ePixmap pixmap="MetropolisHD/chnsel/calendar.png" position="851,274" size="32,32" alphatest="off" zPosition="3" transparent="0"/>
+		<ePixmap pixmap="MetropolisHD/buttons/sel.png" position="864,600" size="83,33" alphatest="off" zPosition="1" borderWidth="1" borderColor="un666666"/>
 		<eLabel name="MENU" position="1103,605" size="75,22" text="MENU" font="Replacement; 20" halign="center" transparent="0" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
-		<ePixmap pixmap="MetropolisHD/buttons/sel.png" position="864,600" size="83,33" alphatest="blend" zPosition="1" borderWidth="1" borderColor="un666666"/>
+		<ePixmap pixmap="MetropolisHD/buttons/sel.png" position="1099,600" size="83,33" alphatest="off" zPosition="1" borderWidth="1" borderColor="un666666"/>
 		<eLabel name="Line" position="872,582" size="300,1" backgroundColor="un666666"/>
 		<eLabel name="Line" position="872,261" size="300,1" backgroundColor="un666666"/>
 		<eLabel name="Line" position="872,538" size="300,1" backgroundColor="un666666"/>
