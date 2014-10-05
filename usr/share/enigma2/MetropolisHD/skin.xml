@@ -1282,7 +1282,7 @@ MultiContentEntryText(pos = (50, 28), size = (480, 40), font = 1, flags = RT_HAL
 	</screen>
 
 	<screen name="Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="MidleScreen_RG_Template"/>
+		<panel name="MidleScreen_RGS_Template"/>
 		<eLabel text="Setup" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<eLabel name="Line" position="center,526" size="716,1" backgroundColor="un666666"/>
 		<widget name="config" position="center,115" size="722,400" zPosition="2" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="transpBlack" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
@@ -1747,7 +1747,7 @@ MultiContentEntryText(pos = (360, 7), size = (215, 30), flags = RT_HALIGN_LEFT, 
 	</screen>
 
 	<screen name="UpdatePluginMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="MidleScreen_RG_Template"/>
+		<panel name="MidleScreen_RGS_Template"/>
 		<eLabel text="Software management" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget source="menu" render="Listbox" position="center,114" size="631,325" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/buttons/sel.png" backgroundPixmap="MetropolisHD/menu/bg40x40.png" transparent="1">
 			<convert type="TemplatedMultiContent">
@@ -1772,7 +1772,7 @@ MultiContentEntryText(pos = (0, 0), size = (480, 200), flags = RT_HALIGN_CENTER|
 	</screen>
 
 	<screen name="PacketManager" position="240,125" size="800,502">
-		<panel name="ButtonTemplate_RG_Small"/>
+		<panel name="ButtonTemplate_RGS_Small"/>
 		<widget source="list" render="Listbox" position="5,15" size="790,420" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/slider_vert.png">
 			<convert type="TemplatedMultiContent">
 {"template": [
@@ -1820,21 +1820,21 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 58), size = (0, 0), png = 5), # index
 	</screen>
 
 	<screen name="IpkgInstaller" position="340,125" size="600,502">
-		<panel name="ButtonTemplate_RG_Small"/>
+		<panel name="ButtonTemplate_RGBS_Small"/>
 		<widget name="list" position="10,9" size="580,400" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/slider_vert.png"/>
 		<widget source="introduction" render="Label" position="10,420" size="580,26" zPosition="2" font="Regular;22" halign="center" valign="center" backgroundColor="black" transparent="1"/>
 	</screen>
 
 	<screen name="IPKGSource" position="60,125" size="1160,100">
-		<widget name="key_red" position="388,54" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget name="key_green" position="607,54" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget source="key_red" render="Label" position="388,54" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget source="key_green" render="Label" position="607,54" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
 		<eLabel name="Red" position="388,89" size="178,1" foregroundColor="red" backgroundColor="red"/>
 		<eLabel name="Green" position="607,89" size="178,1" foregroundColor="green" backgroundColor="green"/>
 		<widget name="text" position="5,10" size="1150,25" font="Regular;22" foregroundColor="white"/>
 	</screen>
 
 	<screen name="IPKGMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="MidleScreen_RG_Template"/>
+		<panel name="MidleScreen_RGS_Template"/>
 		<eLabel text="Select upgrade source to edit." position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="filelist" position="center,150" size="629,400" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
 	</screen>
@@ -1885,7 +1885,7 @@ MultiContentEntryPixmapAlphaTest(pos = (0, 38), size = (570, 2), png = 3), # ind
 	</screen>
 
 	<screen name="PluginManagerInfo" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="MidleScreen_RG_Template"/>
+		<panel name="MidleScreen_RGS_Template"/>
 		<eLabel text="Plugin manager activity information" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget source="list" render="Listbox" position="center,149" size="648,300" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/slider_vert.png" selectionDisabled="1" transparent="1">
 			<convert type="TemplatedMultiContent">
@@ -2419,7 +2419,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 	</screen>
 
 	<screen name="RecordPathsSettings" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="MidleScreen_RG_Template"/>
+		<panel name="MidleScreen_RGS_Template"/>
 		<eLabel text="Recording paths" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="config" position="center,163" size="701,187" selectionPixmap="MetropolisHD/buttons/sel.png" zPosition="2" transparent="1"/>
 	</screen>
