@@ -1022,7 +1022,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget name="movie_sort" pixmaps="MetropolisHD/icons/az.png,MetropolisHD/icons/newtop.png,MetropolisHD/icons/shuffle.png,MetropolisHD/icons/za.png,MetropolisHD/icons/oldtop.png,MetropolisHD/icons/faz.png,MetropolisHD/icons/fza.png,MetropolisHD/icons/newtop.png" position="76,576" zPosition="2" size="35,20" transparent="1" alphatest="on"/>
 		<widget name="movie_off" pixmaps="MetropolisHD/icons/ask.png,MetropolisHD/icons/movielist.png,MetropolisHD/icons/quit.png,MetropolisHD/icons/pause.png,MetropolisHD/icons/playlist.png,MetropolisHD/icons/playlistquit.png,MetropolisHD/icons/loop.png,MetropolisHD/icons/rep.png" position="125,576" zPosition="2" size="35,20" transparent="1" alphatest="on"/>
 		<widget name="waitingtext" position="74,575" size="720,30" zPosition="3" halign="center" font="Regular;24" backgroundColor="transpBlack" shadowColor="black" shadowOffset="-3,-3"/>
+		<widget name="chosenletter" position="74,575" size="720,30" zPosition="3" halign="center" font="Regular;24" backgroundColor="transpBlack" shadowColor="black" shadowOffset="-3,-3" transparent="1"/>
 		<widget name="freeDiskSpace" position="170,575" size="620,30" zPosition="2" halign="center" font="Regular;24" backgroundColor="transpBlack" shadowColor="black" shadowOffset="-3,-3" transparent="1"/>
+		<widget name="DescriptionBorder" position="0,0" size="0,0" />
 	</screen>
 
 	<screen name="SuomipoekaMenu" position="90,100" size="1100,560" backgroundColor="podloga">
