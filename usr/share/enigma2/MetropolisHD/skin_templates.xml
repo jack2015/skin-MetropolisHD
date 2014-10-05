@@ -119,7 +119,7 @@
 		<ePixmap position="-25,113" size="394,162" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
 		<ePixmap position="911,113" size="369,162" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
 		<widget source="title" render="Label" position="380,72" size="522,41" zPosition="1" halign="center" font="Replacement; 26" foregroundColor="red" backgroundColor="background" transparent="1" />
-		<widget source="menu" render="Listbox" enableWrapAround="1" position="380,117" size="522,500" zPosition="1" scrollbarMode="showNever" selectionPixmap="MetropolisHD/menu/sel631x46.png" transparent="1" backgroundPixmap="MetropolisHD/menu/bg40x40.png">
+		<widget source="menu" render="Listbox" enableWrapAround="1" position="380,117" size="522,500" zPosition="1" scrollbarMode="showNever" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1" backgroundPixmap="MetropolisHD/menu/bg40x40.png">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (40,6), size = (425,32), flags = RT_HALIGN_CENTER, text =0) ],
 				"fonts": [gFont("Regular",25)],
