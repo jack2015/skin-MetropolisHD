@@ -1110,7 +1110,7 @@ MultiContentEntryText(pos = (50, 28), size = (480, 40), font = 1, flags = RT_HAL
 	<screen name="PluginBrowser" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RG_Template"/>
 		<eLabel text="Plugin browser" position="271,64" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<widget name="list" position="302,106" size="670,504" scrollbarMode="showOnDemand" backgroundColorSelected="MetropolisHD/menu/button880x70.png" transparent="1" itemHeight="50" sliderPixmap="MetropolisHD/menu/button25x1080.png"/>
+		<widget name="list" position="302,106" size="670,504" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button880x70.png" transparent="1" itemHeight="50" sliderPixmap="MetropolisHD/menu/button25x1080.png"/>
 	</screen>
 
 	<screen name="RadioInfoBar" position="82,480" size="1116,192" backgroundColor="podloga">
