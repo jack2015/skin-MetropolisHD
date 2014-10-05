@@ -530,11 +530,11 @@
 	<screen name="ServiceInfo" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGYB_Template"/>
 		<eLabel text="Service info" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<widget name="infolist" position="center,115" size="680,491" selectionDisabled="1" scrollbarMode="showOnDemand" transparent="1" itemHeight="21" />
+		<widget name="infolist" position="center,115" size="680,491" selectionDisabled="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" transparent="1" itemHeight="21" />
 	</screen>
 
 	<screen name="AudioSelection" position="300,180" size="680,330" backgroundColor="podloga" transparent="0">
-		<widget name="config" position="70,10" size="590,110" scrollbarMode="showOnDemand" transparent="1" backgroundColor="transpGrey" />
+		<widget name="config" position="70,10" size="590,110" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" transparent="1" backgroundColor="transpGrey" />
 		<widget source="key_red" render="Pixmap" pixmap="MetropolisHD/buttons/key_red.png" position="20,10" size="35,25" alphatest="on">
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -548,7 +548,7 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap pixmap="MetropolisHD/div-h.png" position="20,112" zPosition="10" size="640,2" />
-		<widget source="streams" render="Listbox" scrollbarMode="showOnDemand" position="20,120" size="640,200" zPosition="3" transparent="1">
+		<widget source="streams" render="Listbox" scrollbarMode="showOnDemand" position="20,120" size="640,200" zPosition="3" transparent="1" sliderPixmap="MetropolisHD/menu/button25x1080.png">
 			<convert type="TemplatedMultiContent">
 {"templates":
 {"default": (25, [
@@ -576,12 +576,11 @@ MultiContentEntryText(pos = (535, 0), size = (105, 25),  font = 1, flags = RT_HA
 	<screen name="BouquetSelector" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGYB_Template"/>
 		<eLabel text="Select a bouquet" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<widget name="menu" position="center,114" size="720,490" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button580x25.png" transparent="1" />
-		<ePixmap position="973,center" zPosition="2" size="29,491" pixmap="MetropolisHD/maxbar.png" alphatest="blend" transparent="1" />
+		<widget name="menu" position="center,114" size="720,490" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" selectionPixmap="MetropolisHD/menu/button580x25.png" transparent="1" />
 	</screen>
 
 	<screen name="ChannelContextMenu" position="center,center" size="600,290" backgroundColor="podloga">
-		<widget name="menu" position="20,20" size="560,250" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button580x25.png" transparent="1" />
+		<widget name="menu" position="20,20" size="560,250" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" selectionPixmap="MetropolisHD/menu/button580x25.png" transparent="1" />
 	</screen>
 
 	<screen name="ChannelSelection" position="1,center" size="1280,720" title="Channel Selection" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
@@ -590,8 +589,7 @@ MultiContentEntryText(pos = (535, 0), size = (105, 25),  font = 1, flags = RT_HA
 		<widget source="global.CurrentTime" render="Label" position="953,599" size="139,39" zPosition="1" font="Replacement; 36" halign="center" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2" valign="center">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
-		<widget name="list" position="69,112" size="730,500" scrollbarMode="showOnDemand" foregroundColorServiceNotAvail="#444444" colorServiceDescriptionSelected="hellgreen" serviceItemHeight="31" serviceNumberFont="Regular;20" serviceNameFont="Regular;20" serviceInfoFont="Regular;20" colorEventProgressbarBorderSelected="#000000" picServiceEventProgressbar="MetropolisHD/pl.png" selectionPixmap="MetropolisHD/menu/sel_channel_selection_915x40.png" zPosition="1" transparent="1" />
-		<ePixmap position="774,112" zPosition="2" size="29,501" pixmap="MetropolisHD/maxbar.png" alphatest="blend" transparent="1" />
+		<widget name="list" position="69,112" size="730,500" scrollbarMode="showOnDemand" foregroundColorServiceNotAvail="#444444" colorServiceDescriptionSelected="hellgreen" serviceItemHeight="31" serviceNumberFont="Regular;20" serviceNameFont="Regular;20" serviceInfoFont="Regular;20" colorEventProgressbarBorderSelected="#000000" picServiceEventProgressbar="MetropolisHD/pl.png" selectionPixmap="MetropolisHD/menu/sel_channel_selection_915x40.png" zPosition="1" transparent="1"  sliderPixmap="MetropolisHD/menu/button25x1080.png"/>
 		<widget source="ServiceEvent" render="Label" position="890,70" size="270,35" font="Replacement;22" backgroundColor="transpGrey" transparent="1" halign="center" foregroundColor="yellow" zPosition="3" valign="center">
 			<convert type="ServiceName">Name</convert>
 		</widget>
@@ -640,12 +638,12 @@ MultiContentEntryText(pos = (535, 0), size = (105, 25),  font = 1, flags = RT_HA
 
 	<screen name="ChannelSelectionRadio" position="90,100" size="1100,560" backgroundColor="podloga">
 		<panel name="ButtonTemplate_RGYB_Big"/>
-		<widget name="list" position="20,10" size="1060,500" scrollbarMode="showOnDemand" foregroundColorServiceNotAvail="#000000" colorServiceDescriptionSelected="#223974" serviceNumberFont="Regular;22" serviceNameFont="Regular;22" serviceInfoFont="Regular;22" colorEventProgressbarBorderSelected="#000000" picServiceEventProgressbar="MetropolisHD/pl.png" selectionPixmap="MetropolisHD/menu/button1096x30.png" transparent="1" />
+		<widget name="list" position="20,10" size="1060,500" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" foregroundColorServiceNotAvail="#000000" colorServiceDescriptionSelected="#223974" serviceNumberFont="Regular;22" serviceNameFont="Regular;22" serviceInfoFont="Regular;22" colorEventProgressbarBorderSelected="#000000" picServiceEventProgressbar="MetropolisHD/pl.png" selectionPixmap="MetropolisHD/menu/button1096x30.png" transparent="1" />
 	</screen>
 
 	<screen name="ChoiceBox" position="center,100" size="550,400" backgroundColor="podloga">
 		<widget name="text" position="20,10" size="510,25" font="Regular;20" transparent="1" />
-		<widget name="list" position="20,40" size="510,335" scrollbarMode="showOnDemand" transparent="1" />
+		<widget name="list" position="20,40" size="510,335" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" transparent="1" />
 		<applet type="onLayoutFinish">
 from enigma import eSize, ePoint
 orgwidth = self.instance.size().width()
@@ -687,20 +685,20 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count > 7 and 2 or 3)))
 		<widget name="text" position="552,180" size="310,340" font="Regular;23" transparent="1" />
 		<ePixmap pixmap="MetropolisHD/buttons/button_red.png" position="406,353" size="15,16" alphatest="on" />
 		<widget name="languagetext" position="438,348" size="120,30" font="Regular;20" transparent="1" />
-		<widget source="list" render="Listbox" position="90,430" size="520,200" scrollbarMode="showOnDemand" transparent="1">
+		<widget source="list" render="Listbox" position="90,430" size="520,200" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" transparent="1">
 			<convert type="StringList" />
 		</widget>
-		<widget name="config" zPosition="1" position="center,430" size="520,200" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button580x25.png" transparent="1" />
+		<widget name="config" zPosition="1" position="center,430" size="520,200" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" selectionPixmap="MetropolisHD/menu/button580x25.png" transparent="1" />
 	</screen>
 	<screen name="DefaultWizard" position="340,134" size="600,502" backgroundColor="podloga">
 		<widget name="wizard" pixmap="MetropolisHD/wizard.png" position="60,20" zPosition="10" size="110,174" transparent="1" alphatest="on" />
 		<widget name="text" position="200,50" size="340,270" font="Regular;23" backgroundColor="podloga" />
 		<ePixmap pixmap="MetropolisHD/buttons/button_red.png" position="40,223" size="15,16" alphatest="on" />
 		<widget name="languagetext" position="70,220" size="120,30" font="Regular;20" />
-		<widget source="list" render="Listbox" position="20,300" size="560,200" scrollbarMode="showOnDemand">
+		<widget source="list" render="Listbox" position="20,300" size="560,200" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png">
 			<convert type="StringList" />
 		</widget>
-		<widget name="config" zPosition="1" position="20,300" size="560,200" scrollbarMode="showOnDemand" backgroundColor="podloga" />
+		<widget name="config" zPosition="1" position="20,300" size="560,200" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" backgroundColor="podloga" />
 		<widget name="rc" pixmap="MetropolisHD/rc.png" position="600,502" zPosition="10" size="154,471" transparent="1" alphatest="on" />
 		<widget name="arrowdown" pixmap="MetropolisHD/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on" />
 		<widget name="arrowup" pixmap="MetropolisHD/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on" />
@@ -712,8 +710,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count > 7 and 2 or 3)))
 		<panel name="Big2PanelsTemplate"/>
 		<panel name="Big2PanelsSecondPanelTemplate"/>
 		<eLabel name="EPG" position="867,565" size="75,22" text="EPG" font="Replacement; 20" halign="center" transparent="0" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center" />
-		<widget name="list" position="75,115" size="722,490" zPosition="2" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="transpBlack" selectionPixmap="MetropolisHD/menu/button1080x25.png" transparent="1" />
-		<ePixmap position="772,112" zPosition="2" size="29,495" pixmap="MetropolisHD/maxbar.png" alphatest="blend" transparent="1" />
+		<widget name="list" position="75,115" size="722,490" zPosition="2" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="transpBlack" selectionPixmap="MetropolisHD/menu/button1080x25.png" transparent="1" sliderPixmap="MetropolisHD/menu/button25x1080.png"/>
 		<widget source="Event" render="Label" position="849,133" size="348,348" font="Regular;20" backgroundColor="transpBlack" transparent="1" halign="center" valign="top" foregroundColor="un21e2e2e2">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
@@ -730,7 +727,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count > 7 and 2 or 3)))
 	<screen name="EPGSelectionMulti" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigScreen_RGYB_Template"/>
 		<eLabel text="Multi-EPG bouquet selection" position="center,37" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<widget name="list" position="60,145" size="768,450" zPosition="2" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="transpBlack" selectionPixmap="MetropolisHD/menu/button1080x25.png" transparent="1" />
+		<widget name="list" position="60,145" size="768,450" zPosition="2" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="transpBlack" selectionPixmap="MetropolisHD/menu/button1080x25.png" transparent="1" sliderPixmap="MetropolisHD/menu/button25x1080.png"/>
 		<widget name="now_button_sel" pixmap="MetropolisHD/epg_now.png" position="60,75" zPosition="3" size="1100,35" alphatest="on" />
 		<widget name="next_button_sel" pixmap="MetropolisHD/epg_next.png" position="60,75" zPosition="3" size="1100,35" alphatest="on" />
 		<widget name="more_button_sel" pixmap="MetropolisHD/epg_more.png" position="60,75" zPosition="3" size="1100,35" alphatest="on" />
@@ -741,7 +738,6 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count > 7 and 2 or 3)))
 		<widget source="Event" render="Label" position="860,126" size="360,468" font="Regular;20" backgroundColor="transpBlack" transparent="1">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
-		<ePixmap position="801,144" zPosition="2" size="29,451" pixmap="MetropolisHD/maxbar.png" alphatest="blend" transparent="1" />
 	</screen>
 
 	<screen name="EventView" position="center,-1" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -761,7 +757,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count > 7 and 2 or 3)))
 		<panel name="BigScreen_RGYB_Template"/>
 		<eLabel text="Electronic Program Guide" position="center,36" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
 		<widget name="timeline_text" position="center,85" size="1180,26" />
-		<widget name="list" position="center,120" size="1160,300" scrollbarMode="showOnDemand" EntryBorderColor="#cccccc" EntryBackgroundColor="#253a50" EntryBackgroundColorSelected="#54799e" transparent="1" />
+		<widget name="list" position="center,120" size="1160,300" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" EntryBorderColor="#cccccc" EntryBackgroundColor="#253a50" EntryBackgroundColorSelected="#54799e" transparent="1" />
 		<eLabel position="60,120" size="1140,1" backgroundColor="darkgrey" />
 		<eLabel position="60,170" size="1140,1" backgroundColor="darkgrey" />
 		<eLabel position="60,220" size="1140,1" backgroundColor="darkgrey" />
@@ -813,7 +809,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count > 7 and 2 or 3)))
 		<eLabel text="help..." position="center,63" size="740,50" font="Replacement; 26" halign="center" backgroundColor="transpGrey" transparent="1" foregroundColor="hellgreen" />
 		<widget name="rc" position="212,135" size="154,473" pixmaps="MetropolisHD/rc.png,MetropolisHD/rcold.png" zPosition="10" alphatest="on" backgroundColor="podloga" />
 		<widget name="long_key" position="210,615" size="300,30" font="Regular;24" halign="center" foregroundColor="yellow" backgroundColor="transpBlack" transparent="1" />
-		<widget name="list" position="375,136" size="701,474" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button740x40.png" transparent="1" />
+		<widget name="list" position="375,136" size="701,474" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" selectionPixmap="MetropolisHD/menu/button740x40.png" transparent="1" />
 		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MetropolisHD/arrowdown.png" zPosition="11" alphatest="on" />
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="MetropolisHD/arrowdown.png" zPosition="11" alphatest="on" />
 		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="MetropolisHD/arrowup.png" zPosition="11" alphatest="on" />
@@ -832,7 +828,6 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 }
 			</convert>
 		</widget>
-		<ePixmap position="904,114" zPosition="2" size="29,509" pixmap="MetropolisHD/maxbar.png" alphatest="blend" transparent="1" />
 		<ePixmap position="center,center" size="632,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
 		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="630,40" alphatest="off" zPosition="-2" transparent="0" />
 	</screen>
@@ -987,7 +982,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<ePixmap pixmap="MetropolisHD/chnsel/ico_dolby_off.png" position="108,14" size="65,24" zPosition="1" alphatest="blend" />
 	</screen>
 	<screen name="MovieContextMenu" position="340,180" size="600,400" backgroundColor="podloga">
-		<widget name="menu" position="20,20" size="560,360" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button580x25.png" transparent="1" />
+		<widget name="menu" position="20,20" size="560,360" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" selectionPixmap="MetropolisHD/menu/button580x25.png" transparent="1" />
 	</screen>
 
 	<screen name="MovieLocationBox" position="90,100" size="1100,560" backgroundColor="podloga">
@@ -995,10 +990,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget name="text" position="10,10" size="1080,27" font="Regular;23" />
 		<eLabel position="10,50" size="20,27" backgroundColor="darkgrey" />
 		<widget name="target" position="30,50" size="1060,27" valign="center" font="Regular;24" foregroundColor="black" backgroundColor="darkgrey" />
-		<widget name="filelist" position="30,85" zPosition="1" size="1060,200" scrollbarMode="showOnDemand" selectionDisabled="1" />
+		<widget name="filelist" position="30,85" zPosition="1" size="1060,200" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" selectionDisabled="1" />
 		<eLabel position="10,345" size="20,27" backgroundColor="darkgrey" />
 		<widget name="textbook" position="30,345" size="1060,27" valign="center" font="Regular;24" foregroundColor="black" backgroundColor="darkgrey" />
-		<widget name="booklist" position="30,380" zPosition="2" size="1060,125" scrollbarMode="showOnDemand" />
+		<widget name="booklist" position="30,380" zPosition="2" size="1060,125" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" />
 	</screen>
 
 	<screen name="LocationBox" position="90,100" size="1100,560" backgroundColor="podloga">
@@ -1006,10 +1001,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget name="text" position="10,10" size="1080,27" font="Regular;23" backgroundColor="podloga" />
 		<eLabel position="10,50" size="20,27" backgroundColor="darkgrey" />
 		<widget name="target" position="30,50" size="1060,27" valign="center" font="Regular;24" foregroundColor="black" backgroundColor="darkgrey" />
-		<widget name="filelist" position="30,85" zPosition="1" size="1040,200" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button1080x25.png" transparent="1" />
+		<widget name="filelist" position="30,85" zPosition="1" size="1040,200" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" selectionPixmap="MetropolisHD/menu/button1080x25.png" transparent="1" />
 		<eLabel position="10,345" size="20,27" backgroundColor="darkgrey" />
 		<widget name="textbook" position="30,345" size="1060,27" valign="center" font="Regular;24" foregroundColor="black" backgroundColor="darkgrey" />
-		<widget name="booklist" position="30,380" zPosition="2" size="1040,125" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button1080x25.png" transparent="1" />
+		<widget name="booklist" position="30,380" zPosition="2" size="1040,125" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" selectionPixmap="MetropolisHD/menu/button1080x25.png" transparent="1" />
 	</screen>
 
 	<screen name="DVDMovieSelection" position="0,0" size="1278,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -1032,13 +1027,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
 	<screen name="SuomipoekaMenu" position="90,100" size="1100,560" backgroundColor="podloga">
 		<panel name="ButtonTemplate_RGYB_Big"/>
-		<widget name="config" position="10,10" size="1080,500" scrollbarMode="showOnDemand" transparent="1" />
+		<widget name="config" position="10,10" size="1080,500" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" transparent="1" />
 	</screen>
 
 	<screen name="MovieSelectionSP" position="90,100" size="1100,560" backgroundColor="podloga">
 		<panel name="ButtonTemplate_RGYB_Big"/>
 		<eLabel position="780,0" size="2,518" backgroundColor="grey" />
-		<widget name="list" position="10,20" size="760,460" scrollbarMode="showOnDemand" transparent="1" />
+		<widget name="list" position="10,20" size="760,460" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" transparent="1" />
 		<widget name="DescriptionBorder" position="0,0" size="0,0" />
 		<widget source="Service" render="Label" position="790,30" zPosition="1" size="300,50" font="Regular;24" halign="center" foregroundColor="white" backgroundColor="podloga">
 			<convert type="MovieInfo">RecordServiceName</convert>
@@ -1115,8 +1110,7 @@ MultiContentEntryText(pos = (50, 28), size = (480, 40), font = 1, flags = RT_HAL
 	<screen name="PluginBrowser" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RG_Template"/>
 		<eLabel text="Plugin browser" position="271,64" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<widget name="list" position="302,106" size="670,504" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button880x70.png" transparent="1" itemHeight="50" />
-		<ePixmap position="951,105" zPosition="2" size="29,506" pixmap="MetropolisHD/maxbar.png" alphatest="blend" transparent="1" />
+		<widget name="list" position="302,106" size="670,504" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button880x70.png" transparent="1" itemHeight="50" sliderPixmap="MetropolisHD/menu/button25x1080.png"/>
 	</screen>
 
 	<screen name="RadioInfoBar" position="82,480" size="1116,192" backgroundColor="podloga">
@@ -1245,7 +1239,7 @@ MultiContentEntryText(pos = (50, 28), size = (480, 40), font = 1, flags = RT_HAL
 			<convert type="FrontendInfo">LOCK</convert>
 			<convert type="ConditionalShowHide">Invert</convert>
 		</widget>
-		<widget name="config" position="center,294" size="590,298" scrollbarMode="showOnDemand" zPosition="1" selectionPixmap="MetropolisHD/menu/button580x25.png" transparent="1" />
+		<widget name="config" position="center,294" size="590,298" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" zPosition="1" selectionPixmap="MetropolisHD/menu/button580x25.png" transparent="1" />
 		<widget name="introduction" position="center,598" size="520,50" font="Regular;20" halign="center" transparent="1" />
 	</screen>
 	<screen name="ScanSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -1260,7 +1254,7 @@ MultiContentEntryText(pos = (50, 28), size = (480, 40), font = 1, flags = RT_HAL
 		<ePixmap position="center,center" size="745,515" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
 		<ePixmap pixmap="MetropolisHD/back1.png" position="center,108" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
 		<widget name="header" position="center,170" size="520,25" font="Regular;23" backgroundColor="transpBlack" transparent="1" />
-		<widget name="config" position="center,215" size="520,325" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button540x25.png" transparent="1" />
+		<widget name="config" position="center,215" size="520,325" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" selectionPixmap="MetropolisHD/menu/button540x25.png" transparent="1" />
 		<widget name="footer" position="center,545" size="520,25" font="Regular;22" halign="center" backgroundColor="transpBlack" transparent="1" />
 	</screen>
 	<screen name="ServiceScan" position="340,134" size="600,502" backgroundColor="podloga">
@@ -1297,7 +1291,7 @@ MultiContentEntryText(pos = (50, 28), size = (480, 40), font = 1, flags = RT_HAL
 
 	<screen name="SimpleChannelSelection" position="90,100" size="1100,560" backgroundColor="podloga">
 		<panel name="ButtonTemplate_RGYB_Big"/>
-		<widget name="list" position="10,20" size="1080,475" scrollbarMode="showOnDemand" transparent="1" />
+		<widget name="list" position="10,20" size="1080,475" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" transparent="1" />
 	</screen>
 
 	<screen name="SkinSelector" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -1307,7 +1301,7 @@ MultiContentEntryText(pos = (50, 28), size = (480, 40), font = 1, flags = RT_HAL
 		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
 		<widget source="key_red" render="Label" position="283,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
 		<eLabel name="Red" position="283,645" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<widget name="SkinList" position="286,130" size="424,415" scrollbarMode="showOnDemand" zPosition="2" selectionPixmap="MetropolisHD/menu/button540x25.png" transparent="1" />
+		<widget name="SkinList" position="286,130" size="424,415" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" zPosition="2" selectionPixmap="MetropolisHD/menu/button540x25.png" transparent="1" />
 		<widget name="Preview" position="721,130" size="280,210" alphatest="blend" backgroundColor="podloga" />
 		<widget source="introduction" render="Label" position="center,578" size="340,24" zPosition="10" font="Regular;20" halign="center" backgroundColor="transpBlack" transparent="1" />
 	</screen>
@@ -1317,10 +1311,10 @@ MultiContentEntryText(pos = (50, 28), size = (480, 40), font = 1, flags = RT_HAL
 		<widget name="text" position="200,50" size="340,270" font="Regular;23" backgroundColor="podloga" />
 		<ePixmap pixmap="MetropolisHD/buttons/button_red.png" position="40,223" size="15,16" alphatest="on" />
 		<widget name="languagetext" position="70,220" size="120,30" font="Regular;20" backgroundColor="podloga" />
-		<widget source="list" render="Listbox" position="20,300" size="560,200" scrollbarMode="showOnDemand" zPosition="2" selectionPixmap="MetropolisHD/menu/button580x25.png" transparent="1">
+		<widget source="list" render="Listbox" position="20,300" size="560,200" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" zPosition="2" selectionPixmap="MetropolisHD/menu/button580x25.png" transparent="1">
 			<convert type="StringList" />
 		</widget>
-		<widget name="config" zPosition="1" position="20,300" size="560,200" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button580x25.png" transparent="1" />
+		<widget name="config" zPosition="1" position="20,300" size="560,200" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" selectionPixmap="MetropolisHD/menu/button580x25.png" transparent="1" />
 		<widget name="rc" pixmap="MetropolisHD/rc.png" position="600,0" zPosition="10" size="154,500" transparent="1" alphatest="on" />
 		<widget name="arrowdown" pixmap="MetropolisHD/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on" />
 		<widget name="arrowdown2" pixmap="MetropolisHD/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on" />
@@ -1356,7 +1350,7 @@ MultiContentEntryText(pos = (50, 28), size = (480, 40), font = 1, flags = RT_HAL
 		</widget>
 	</screen>
 	<screen name="Subtitles" position="300,150" size="680,435" backgroundColor="podloga">
-		<widget name="config" position="20,20" size="640,385" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button1080x25.png" transparent="1" />
+		<widget name="config" position="20,20" size="640,385" zPosition="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" selectionPixmap="MetropolisHD/menu/button1080x25.png" transparent="1" />
 	</screen>
 	<screen name="SubtitleDisplay" position="0,0" size="1280,720" zPosition="-1" flags="wfNoBorder" backgroundColor="transparent" />
 	<screen name="TimerEdit" position="90,100" size="1100,560" backgroundColor="podloga">
@@ -1371,7 +1365,7 @@ MultiContentEntryText(pos = (50, 28), size = (480, 40), font = 1, flags = RT_HAL
 	<screen name="TimerEditList" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGYB_Template"/>
 		<eLabel text="Timer editor" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<widget name="timerlist" position="center,130" size="611,463" scrollbarMode="showOnDemand" transparent="1" />
+		<widget name="timerlist" position="center,130" size="611,463" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" transparent="1" />
 	</screen>
 
 	<screen name="TimerEntry" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -1382,19 +1376,19 @@ MultiContentEntryText(pos = (50, 28), size = (480, 40), font = 1, flags = RT_HAL
 		<widget name="oktext" position="310,460" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
 		<eLabel name="Red" position="75,495" size="180,1" foregroundColor="red" backgroundColor="red" />
 		<eLabel name="Green" position="345,495" size="180,1" foregroundColor="green" backgroundColor="green" />
-		<widget name="config" position="center,150" size="676,425" zPosition="2" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="transpGrey" selectionPixmap="MetropolisHD/menu/button1080x25.png" transparent="1" font="Regular; 20" foregroundColor="un21e2e2e2" />
+		<widget name="config" position="center,150" size="676,425" zPosition="2" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" backgroundColor="transpGrey" selectionPixmap="MetropolisHD/menu/button1080x25.png" transparent="1" font="Regular; 20" foregroundColor="un21e2e2e2" />
 	</screen>
 
 	<screen name="TimerLog" position="90,100" size="1100,560" backgroundColor="podloga">
 		<panel name="ButtonTemplate_RGYB_Big"/>
-		<widget name="loglist" position="10,10" size="1080,350" scrollbarMode="showOnDemand" transparent="1" />
+		<widget name="loglist" position="10,10" size="1080,350" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" transparent="1" />
 		<eLabel position="0,370" size="1100,2" backgroundColor="grey" />
 		<widget name="logentry" position="10,380" size="1080,130" font="Regular;20" transparent="1" />
 	</screen>
 
 	<screen name="TimerSanityConflict" position="90,100" size="1100,560">
 		<panel name="ButtonTemplate_RGYB_Big"/>
-		<widget name="list" position="10,10" size="530,80" scrollbarMode="showOnDemand" />
+		<widget name="list" position="10,10" size="530,80" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" />
 		<eLabel position="0,325" size="1100,2" backgroundColor="grey" />
 		<eLabel position="549,0" size="2,325" backgroundColor="grey" />
 		<widget name="timer1" position="10,100" size="530,225" scrollbarMode="showNever" />
@@ -1402,7 +1396,7 @@ MultiContentEntryText(pos = (50, 28), size = (480, 40), font = 1, flags = RT_HAL
 	</screen>
 
 	<screen name="TimerSelection" position="90,100" size="1100,560">
-		<widget name="timerlist" position="10,20" size="1080,350" scrollbarMode="showOnDemand" />
+		<widget name="timerlist" position="10,20" size="1080,350" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
 	</screen>
 	<screen name="VideoFinetune" position="0,0" size="1280,720" backgroundColor="transpBlack">
@@ -1411,7 +1405,7 @@ MultiContentEntryText(pos = (50, 28), size = (480, 40), font = 1, flags = RT_HAL
 	<screen name="Menu" position="340,134" size="600,502">
 		<eLabel text="Main menu" position="10,10" size="580,35" font="Regular;27" halign="center" />
 		<eLabel position="10,50" size="580,2" backgroundColor="grey" zPosition="5" />
-		<widget source="menu" render="Listbox" position="10,55" size="580,450" scrollbarMode="showOnDemand">
+		<widget source="menu" render="Listbox" position="10,55" size="580,450" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png">
 			<convert type="StringList" />
 		</widget>
 	</screen>
@@ -1421,7 +1415,7 @@ MultiContentEntryText(pos = (50, 28), size = (480, 40), font = 1, flags = RT_HAL
 		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="1220,40" alphatest="off" zPosition="-2" transparent="0" />
 		<eLabel position="80,125" size="310,420" zPosition="1" backgroundColor="grey" />
 		<eLabel position="81,126" size="308,418" zPosition="2" backgroundColor="black" />
-		<widget source="cutlist" render="Listbox" position="90,135" size="290,400" zPosition="3" scrollbarMode="showOnDemand" enableWrapAround="1">
+		<widget source="cutlist" render="Listbox" position="90,135" size="290,400" zPosition="3" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" enableWrapAround="1">
 			<convert type="TemplatedMultiContent">
 {"template": [
 MultiContentEntryText(size=(145, 20), text = 1, backcolor = MultiContentTemplateColor(3)),
@@ -1451,10 +1445,10 @@ MultiContentEntryText(pos=(145,0), size=(145, 20), text = 2, flags = RT_HALIGN_R
 		<ePixmap pixmap="MetropolisHD/menu/sel_channel_selection_915x40.png" position="1120,489" size="83,33" alphatest="off" zPosition="1" borderWidth="1" borderColor="un666666" />
 		<ePixmap position="70,120" size="560,360" pixmap="MetropolisHD/mp.png" zPosition="-1" alphatest="off" />
 		<eLabel text="Filelist" position="75,129" size="500,32" zPosition="5" font="Regular;28" halign="center" foregroundColor="blue" backgroundColor="black" transparent="1" />
-		<widget name="filelist" position="80,170" size="540,285" scrollbarMode="showOnDemand" backgroundColor="transpBlack" zPosition="2" selectionPixmap="MetropolisHD/menu/button540x24.png" transparent="1" />
+		<widget name="filelist" position="80,170" size="540,285" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" backgroundColor="transpBlack" zPosition="2" selectionPixmap="MetropolisHD/menu/button540x24.png" transparent="1" />
 		<ePixmap position="650,120" size="560,360" pixmap="MetropolisHD/mp.png" zPosition="-1" alphatest="off" />
 		<eLabel text="Playlist" position="655,129" size="500,32" zPosition="5" font="Regular;28" halign="center" foregroundColor="blue" backgroundColor="black" transparent="1" />
-		<widget name="playlist" position="660,170" size="540,285" scrollbarMode="showOnDemand" selectionDisabled="1" backgroundColor="transpBlack" zPosition="2" selectionPixmap="MetropolisHD/menu/button540x24.png" transparent="1" />
+		<widget name="playlist" position="660,170" size="540,285" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" selectionDisabled="1" backgroundColor="transpBlack" zPosition="2" selectionPixmap="MetropolisHD/menu/button540x24.png" transparent="1" />
 		<widget name="title" position="300,475" size="680,30" font="Regular;26" valign="top" transparent="1" backgroundColor="transpBlack" />
 		<eLabel position="290,515" size="700,2" backgroundColor="white" />
 		<widget name="artisttext" position="300,525" size="100,25" font="Regular;20" valign="top" backgroundColor="transpBlack" transparent="1" />
@@ -1488,7 +1482,7 @@ MultiContentEntryText(pos=(145,0), size=(145, 20), text = 2, flags = RT_HALIGN_R
 		<widget source="info" render="Label" position="20,20" size="260,200" font="Regular;21" transparent="1" />
 		<widget source="info2" render="Label" position="20,240" size="260,260" font="Regular;21" transparent="1" />
 		<eLabel position="300,0" size="2,518" backgroundColor="grey" />
-		<widget name="config" position="320,20" size="760,475" zPosition="3" scrollbarMode="showOnDemand" />
+		<widget name="config" position="320,20" size="760,475" zPosition="3" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
 		<widget name="key_red" position="179,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
 		<widget name="key_green" position="357,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
@@ -1498,7 +1492,7 @@ MultiContentEntryText(pos=(145,0), size=(145, 20), text = 2, flags = RT_HALIGN_R
 		<eLabel name="Blue" position="714,555" size="178,1" foregroundColor="blue" backgroundColor="blue" />
 	</screen>
 	<screen name="WebIfConfigScreen" position="90,100" size="1100,560">
-		<widget name="config" position="10,20" size="1080,475" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button1080x25.png" transparent="1" />
+		<widget name="config" position="10,20" size="1080,475" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" selectionPixmap="MetropolisHD/menu/button1080x25.png" transparent="1" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
 		<widget name="key_red" position="379,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
 		<widget name="key_green" position="557,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
@@ -1508,7 +1502,7 @@ MultiContentEntryText(pos=(145,0), size=(145, 20), text = 2, flags = RT_HALIGN_R
 
 	<screen name="ProjectSettings" position="90,100" size="1100,560">
 		<panel name="ButtonTemplate_RGYB_Big"/>
-		<widget name="config" position="10,10" size="1080,350" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget name="config" position="10,10" size="1080,350" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" enableWrapAround="1" />
 		<widget source="info" render="Label" position="10,380" size="1080,100" font="Regular;20" />
 	</screen>
 
@@ -1531,7 +1525,7 @@ MultiContentEntryText(pos=(145,0), size=(145, 20), text = 2, flags = RT_HALIGN_R
 		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="1220,40" alphatest="off" zPosition="-2" transparent="0" />
 		<eLabel position="80,125" size="300,420" zPosition="1" backgroundColor="grey" />
 		<eLabel position="81,126" size="298,418" zPosition="2" backgroundColor="black" />
-		<widget source="cutlist" position="90,135" zPosition="3" size="280,400" scrollbarMode="showOnDemand" render="Listbox">
+		<widget source="cutlist" position="90,135" zPosition="3" size="280,400" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" render="Listbox">
 			<convert type="TemplatedMultiContent">
 {"template": [
 MultiContentEntryText(pos=(10,2), size=(170, 20), text = 1, backcolor = MultiContentTemplateColor(3)),
@@ -1558,7 +1552,7 @@ MultiContentEntryText(pos=(190,2), size=(80, 20), text = 2, flags = RT_HALIGN_CE
 		<widget name="thumbnail" position="20,20" size="260,160" alphatest="on" />
 		<widget source="serviceinfo" render="Label" position="320,20" size="740,160" font="Regular;21" backgroundColor="un252b4247" transparent="1" />
 		<eLabel position="0,200" size="1100,2" backgroundColor="grey" />
-		<widget name="config" position="20,210" size="1060,300" scrollbarMode="showOnDemand" />
+		<widget name="config" position="20,210" size="1060,300" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
 		<widget name="key_red" position="179,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
 		<widget name="key_green" position="357,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
@@ -1571,7 +1565,7 @@ MultiContentEntryText(pos=(190,2), size=(80, 20), text = 2, flags = RT_HALIGN_CE
 	<screen name="FileBrowser" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RG_Template"/>
 		<eLabel text="File Browser" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<widget name="filelist" position="center,150" size="700,433" zPosition="1" scrollbarMode="showOnDemand" enableWrapAround="1" selectionPixmap="MetropolisHD/menu/button540x24.png" transparent="1" />
+		<widget name="filelist" position="center,150" size="700,433" zPosition="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" enableWrapAround="1" selectionPixmap="MetropolisHD/menu/button540x24.png" transparent="1" />
 	</screen>
 
 	<screen name="DVDPlayer" position="center,549" size="1280,155" backgroundColor="transparent" flags="wfNoBorder">
@@ -1644,7 +1638,7 @@ MultiContentEntryText(pos=(190,2), size=(80, 20), text = 2, flags = RT_HALIGN_CE
 		<eLabel name="Blue" position="430,36" size="120,1" foregroundColor="blue" backgroundColor="blue" />
 		<widget source="title_label" render="Label" position="10,48" size="540,38" font="Regular;18" transparent="1" />
 		<widget source="error_label" render="Label" position="10,48" size="540,296" zPosition="3" font="Regular;20" transparent="1" />
-		<widget source="titles" render="Listbox" scrollbarMode="showOnDemand" position="10,86" size="546,296" zPosition="3" transparent="1">
+		<widget source="titles" render="Listbox" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" position="10,86" size="546,296" zPosition="3" transparent="1">
 			<convert type="TemplatedMultiContent">
 {"template": [
 MultiContentEntryText(pos = (0, 0), size = (360, 20), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 Title,
@@ -1671,13 +1665,13 @@ MultiContentEntryText(pos = (470, 20), size = (48, 20), font = 1, flags = RT_HAL
 		<eLabel text="Picture player" position="20,20" size="260,160" font="Regular;20" transparent="1" />
 		<widget name="thn" position="20,200" size="260,300" alphatest="on" />
 		<eLabel position="300,0" size="2,500" backgroundColor="grey" />
-		<widget name="filelist" position="320,20" size="760,480" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button1080x25.png" transparent="1" />
+		<widget name="filelist" position="320,20" size="760,480" zPosition="3" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" selectionPixmap="MetropolisHD/menu/button1080x25.png" transparent="1" />
 	</screen>
 
 	<screen name="Pic_Exif" position="340,134" size="600,502">
 		<widget name="key_red" position="215,450" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
 		<eLabel name="Red" position="215,485" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<widget source="menu" render="Listbox" position="10,10" size="580,425" zPosition="3" scrollbarMode="showOnDemand" transparent="1" selectionDisabled="1">
+		<widget source="menu" render="Listbox" position="10,10" size="580,425" zPosition="3" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" transparent="1" selectionDisabled="1">
 			<convert type="TemplatedMultiContent">
 {"template": [  MultiContentEntryText(pos = (5, 7), size = (350, 30), flags = RT_HALIGN_LEFT, text = 0),
 MultiContentEntryText(pos = (360, 7), size = (215, 30), flags = RT_HALIGN_LEFT, text = 1)],
@@ -1688,7 +1682,7 @@ MultiContentEntryText(pos = (360, 7), size = (215, 30), flags = RT_HALIGN_LEFT, 
 	</screen>
 	<screen name="Pic_Setup" position="340,134" size="600,502">
 		<panel name="ButtonTemplate_RG_Small"/>
-		<widget name="config" position="20,10" size="560,450" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button580x25.png" transparent="1" />
+		<widget name="config" position="20,10" size="560,450" zPosition="3" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" selectionPixmap="MetropolisHD/menu/button580x25.png" transparent="1" />
 	</screen>
 
 	<screen name="VlcMediaListScreen" position="90,100" size="1100,560">
@@ -1697,21 +1691,21 @@ MultiContentEntryText(pos = (360, 7), size = (215, 30), flags = RT_HALIGN_LEFT, 
 		<widget name="playlist_button_sel" pixmap="MetropolisHD/epg_next.png" position="0,0" zPosition="3" size="1100,35" alphatest="on" />
 		<widget name="filelist_text" position="32,7" zPosition="4" size="250,25" font="Regular;20" halign="center" backgroundColor="transpBlack" transparent="1" />
 		<widget name="playlist_text" position="282,7" zPosition="4" size="250,25" font="Regular;20" halign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="filelist" position="10,45" size="530,460" zPosition="3" scrollbarMode="showOnDemand" />
+		<widget name="filelist" position="10,45" size="530,460" zPosition="3" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" />
 		<eLabel position="550,45" size="1,460" backgroundColor="grey" />
-		<widget name="playlist" position="560,45" size="530,460" zPosition="3" scrollbarMode="showOnDemand" />
+		<widget name="playlist" position="560,45" size="530,460" zPosition="3" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" />
 	</screen>
 
 	<screen name="VlcServerListScreen" position="90,100" size="1100,560">
 		<panel name="ButtonTemplate_RGYB_Big"/>
 		<widget name="serverlabel" position="10,10" size="1080,25" font="Regular;22" transparent="1" />
 		<eLabel position="10,43" size="1080,2" backgroundColor="grey" />
-		<widget name="serverlist" position="10,50" size="1080,437" scrollbarMode="showOnDemand" />
+		<widget name="serverlist" position="10,50" size="1080,437" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" />
 	</screen>
 
 	<screen name="VlcServerConfigScreen" position="90,100" size="1100,560">
 		<panel name="ButtonTemplate_RGYB_Big"/>
-		<widget name="config" position="10,10" size="1080,500" scrollbarMode="showOnDemand" transparent="1" />
+		<widget name="config" position="10,10" size="1080,500" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" transparent="1" />
 	</screen>
 
 	<screen name="InputBox" position="365,250" size="550,90">
@@ -1720,12 +1714,12 @@ MultiContentEntryText(pos = (360, 7), size = (215, 30), flags = RT_HALIGN_LEFT, 
 	</screen>
 	<screen name="DreamPackageWizard" position="280,70" size="720,576" flags="wfNoBorder">
 		<widget name="text" position="153,50" size="340,270" font="Regular;23" />
-		<widget source="list" render="Listbox" position="50,300" size="440,200" scrollbarMode="showOnDemand">
+		<widget source="list" render="Listbox" position="50,300" size="440,200" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png">
 			<convert type="StringList" />
 		</widget>
 		<ePixmap pixmap="MetropolisHD/buttons/button_red.png" position="40,225" size="15,16" alphatest="on" />
 		<widget name="languagetext" position="55,225" size="95,30" font="Regular;18" />
-		<widget name="config" position="50,300" zPosition="1" size="440,200" transparent="1" scrollbarMode="showOnDemand" />
+		<widget name="config" position="50,300" zPosition="1" size="440,200" transparent="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" />
 		<!--widget name="stepslider" position="50,500" zPosition="1" borderWidth="2" size="440,20" backgroundColor="darkgrey" /-->
 		<widget name="wizard" pixmap="MetropolisHD/wizard.png" position="40,50" zPosition="10" size="110,174" transparent="1" alphatest="on" />
 		<widget name="rc" pixmap="MetropolisHD/rc.png" position="745,55" zPosition="10" size="154,427" transparent="1" alphatest="on" />
@@ -1746,10 +1740,10 @@ MultiContentEntryText(pos = (360, 7), size = (215, 30), flags = RT_HALIGN_LEFT, 
 		<ePixmap pixmap="MetropolisHD/buttons/button_red.png" zPosition="0" position="430,313" size="15,16" transparent="1" alphatest="on" />
 		<widget name="languagetext" position="455,305" size="190,35" font="Regular;21" zPosition="2" halign="left" valign="center" backgroundColor="transpBlack" transparent="1" />
 		<widget name="text" position="640,120" size="500,240" font="Regular;23" backgroundColor="background" transparent="1" />
-		<widget source="list" render="Listbox" position="460,370" size="730,150" scrollbarMode="showOnDemand">
+		<widget source="list" render="Listbox" position="460,370" size="730,150" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png">
 			<convert type="StringList" />
 		</widget>
-		<widget name="config" position="460,370" size="730,150" zPosition="1" transparent="1" scrollbarMode="showOnDemand" backgroundColor="transpGrey" />
+		<widget name="config" position="460,370" size="730,150" zPosition="1" transparent="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" backgroundColor="transpGrey" />
 	</screen>
 
 	<screen name="UpdatePluginMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -1765,7 +1759,7 @@ MultiContentEntryText(pos = (70, 9), size = (425, 30), flags = RT_HALIGN_LEFT, t
 }
 			</convert>
 		</widget>
-		<widget source="menu" render="Listbox" position="321,424" size="631,159" zPosition="3" scrollbarMode="showOnDemand" selectionDisabled="1" transparent="1">
+		<widget source="menu" render="Listbox" position="321,424" size="631,159" zPosition="3" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" selectionDisabled="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 {"template": [
 MultiContentEntryText(pos = (0, 0), size = (480, 200), flags = RT_HALIGN_CENTER|RT_WRAP, text = 2), # index 0 is the MenuText,
@@ -1779,7 +1773,7 @@ MultiContentEntryText(pos = (0, 0), size = (480, 200), flags = RT_HALIGN_CENTER|
 
 	<screen name="PacketManager" position="240,125" size="800,502">
 		<panel name="ButtonTemplate_RG_Small"/>
-		<widget source="list" render="Listbox" position="5,15" size="790,420" scrollbarMode="showOnDemand">
+		<widget source="list" render="Listbox" position="5,15" size="790,420" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png">
 			<convert type="TemplatedMultiContent">
 {"template": [
 MultiContentEntryText(pos = (5, 5), size = (690, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
@@ -1815,10 +1809,10 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 58), size = (0, 0), png = 5), # index
 	<screen name="ImageWizard" position="0,0" size="1280,720" flags="wfNoBorder">
 		<eLabel text="Welcome..." position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
 		<widget name="text" position="460,116" size="340,330" font="Regular;22" transparent="1" />
-		<widget source="list" render="Listbox" position="312,437" size="490,180" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button540x25.png" transparent="1">
+		<widget source="list" render="Listbox" position="312,437" size="490,180" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" selectionPixmap="MetropolisHD/menu/button540x25.png" transparent="1">
 			<convert type="StringList" />
 		</widget>
-		<widget name="config" position="323,438" zPosition="1" size="440,180" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button540x25.png" />
+		<widget name="config" position="323,438" zPosition="1" size="440,180" transparent="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" selectionPixmap="MetropolisHD/menu/button540x25.png" />
 		<widget name="wizard" pixmap="MetropolisHD/wizard.png" position="304,161" zPosition="10" size="110,174" alphatest="on" />
 		<widget name="rc" pixmaps="MetropolisHD/rc.png,MetropolisHD/rcold.png" position="846,117" zPosition="1" size="154,500" alphatest="on" />
 		<eLabel name="Red" position="565,648" size="178,1" foregroundColor="red" backgroundColor="red" />
@@ -1827,7 +1821,7 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 58), size = (0, 0), png = 5), # index
 
 	<screen name="IpkgInstaller" position="340,125" size="600,502">
 		<panel name="ButtonTemplate_RG_Small"/>
-		<widget name="list" position="10,9" size="580,400" scrollbarMode="showOnDemand" />
+		<widget name="list" position="10,9" size="580,400" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" />
 		<widget source="introduction" render="Label" position="10,420" size="580,26" zPosition="2" font="Regular;22" halign="center" valign="center" backgroundColor="black" transparent="1" />
 	</screen>
 
@@ -1842,32 +1836,32 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 58), size = (0, 0), png = 5), # index
 	<screen name="IPKGMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RG_Template"/>
 		<eLabel text="Select upgrade source to edit." position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<widget name="filelist" position="center,150" size="629,400" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button540x25.png" transparent="1" />
+		<widget name="filelist" position="center,150" size="629,400" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" selectionPixmap="MetropolisHD/menu/button540x25.png" transparent="1" />
 	</screen>
 
 	<screen name="RestoreMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGY_Template"/>
 		<eLabel text="Restore backups" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<widget name="filelist" position="center,150" size="640,400" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button540x25.png" transparent="1" />
+		<widget name="filelist" position="center,150" size="640,400" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" selectionPixmap="MetropolisHD/menu/button540x25.png" transparent="1" />
 	</screen>
 
 	<screen name="BackupSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGY_Template"/>
 		<eLabel text="Select files/folders to backup" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<widget name="checkList" position="center,150" size="654,400" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button540x25.png" transparent="1" />
+		<widget name="checkList" position="center,150" size="654,400" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" selectionPixmap="MetropolisHD/menu/button540x25.png" transparent="1" />
 	</screen>
 
 	<screen name="BackupScreen" position="340,125" size="600,502">
-		<widget name="config" position="10,10" size="580,425" zPosition="3" scrollbarMode="showOnDemand" />
+		<widget name="config" position="10,10" size="580,425" zPosition="3" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" />
 	</screen>
 	<screen name="RestoreScreen" position="340,125" size="600,502">
-		<widget name="config" position="10,10" size="580,425" zPosition="3" scrollbarMode="showOnDemand" />
+		<widget name="config" position="10,10" size="580,425" zPosition="3" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" />
 	</screen>
 
 	<screen name="PluginManager" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGYB_Template"/>
 		<eLabel text="Extensions management" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<widget source="list" render="Listbox" position="center,139" size="708,360" scrollbarMode="showOnDemand" transparent="1">
+		<widget source="list" render="Listbox" position="center,139" size="708,360" scrollbarMode="showOnDemand" transparent="1" sliderPixmap="MetropolisHD/menu/button25x1080.png">
 			<convert type="TemplatedMultiContent">
 {"templates":
 {"default": (51,[
@@ -1888,13 +1882,12 @@ MultiContentEntryPixmapAlphaTest(pos = (0, 38), size = (570, 2), png = 3), # ind
 			</convert>
 		</widget>
 		<widget source="status" render="Label" position="center,520" zPosition="1" size="540,30" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
-		<ePixmap position="968,138" zPosition="2" size="29,361" pixmap="MetropolisHD/maxbar.png" alphatest="blend" transparent="1" />
 	</screen>
 
 	<screen name="PluginManagerInfo" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RG_Template"/>
 		<eLabel text="Plugin manager activity information" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<widget source="list" render="Listbox" position="center,149" size="648,300" scrollbarMode="showOnDemand" selectionDisabled="1" transparent="1">
+		<widget source="list" render="Listbox" position="center,149" size="648,300" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" selectionDisabled="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 {"template": [
 MultiContentEntryText(pos = (50, 0), size = (150, 26), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
@@ -1987,7 +1980,7 @@ MultiContentEntryPixmapAlphaTest(pos = (0, 48), size = (550, 2), png = 3), # ind
 		<widget source="global.CurrentTime" render="Label" position="870,10" zPosition="2" size="120,30" font="Regular;26" halign="center">
 			<convert type="ClockToText"></convert>
 		</widget>
-		<widget source="feedlist" render="Listbox" position="500,55" size="600,462" zPosition="1" scrollbarMode="showOnDemand" transparent="1">
+		<widget source="feedlist" render="Listbox" position="500,55" size="600,462" zPosition="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" transparent="1">
 			<convert type="TemplatedMultiContent">
 {"templates":
 {"default": (67,[
@@ -2029,7 +2022,7 @@ MultiContentEntryText(pos = (10, 22), size = (560, 46), font=3, flags = RT_HALIG
 	</screen>
 	<screen name="MyTubeSuggestionsListScreen" position="90,150" zPosition="6" size="480,260" flags="wfNoBorder">
 		<ePixmap position="0,0" zPosition="-1" size="460,160" alphatest="on" transparent="1" backgroundColor="transparent" />
-		<widget source="suggestionslist" render="Listbox" position="10,5" zPosition="7" size="480,250" scrollbarMode="showOnDemand" transparent="1">
+		<widget source="suggestionslist" render="Listbox" position="10,5" zPosition="7" size="480,250" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" transparent="1">
 			<convert type="TemplatedMultiContent">
 {"template": [
 MultiContentEntryText(pos = (0, 1), size = (300, 24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
@@ -2084,7 +2077,7 @@ MultiContentEntryText(pos = (0, 35), size = (740, 65), font=2, flags = RT_HALIGN
 		<widget name="thumbnail" position="0,0" size="180,135" alphatest="on" /># fake entry for dynamic thumbnail resizing, currently there is no other way doing this.
 	</screen>
 	<screen name="MyTubeHistoryScreen" position="90,157" zPosition="6" size="480,365" flags="wfNoBorder">
-		<widget source="historylist" render="Listbox" position="10,5" zPosition="7" size="460,355" scrollbarMode="showOnDemand" transparent="1">
+		<widget source="historylist" render="Listbox" position="10,5" zPosition="7" size="460,355" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" transparent="1">
 			<convert type="TemplatedMultiContent">
 {"template": [
 MultiContentEntryText(pos = (0, 1), size = (340, 24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
@@ -2098,14 +2091,14 @@ MultiContentEntryText(pos = (0, 1), size = (340, 24), font=0, flags = RT_HALIGN_
 
 	<screen name="MyTubeSettingsScreen" position="340,104" size="600,532" title="MyTubeSettingsScreen">
 		<panel name="ButtonTemplate_RG_Small"/>
-		<widget name="config" position="20,10" size="560,450" zPosition="3" scrollbarMode="showOnDemand" transparent="1" />
+		<widget name="config" position="20,10" size="560,450" zPosition="3" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" transparent="1" />
 		<ePixmap position="20,410" size="100,40" zPosition="4" pixmap="~/plugin.png" alphatest="on" transparent="1" />
 		<widget name="title" position="0,0" size="0,0" />
 	</screen>
 
 	<screen name="MyTubeTasksScreen" position="300,90" size="680,570" title="MyTubeTasksScreen">
 		<widget name="title" position="80,60" size="800,32" font="Regular;27" halign="center" backgroundColor="unb67a2" transparent="1" />
-		<widget source="tasklist" render="Listbox" position="10,10" size="660,410" zPosition="3" scrollbarMode="showOnDemand" transparent="1">
+		<widget source="tasklist" render="Listbox" position="10,10" size="660,410" zPosition="3" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" transparent="1">
 			<convert type="TemplatedMultiContent">
 {"template": [
 MultiContentEntryText(pos = (10, 3), size = (200, 24), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the name
@@ -2158,7 +2151,7 @@ MultiContentEntryText(pos = (550, 3), size = (70, 24), font=1, flags = RT_HALIGN
 		<eLabel name="blue" position="460,645" size="178,1" foregroundColor="blue" backgroundColor="blue" />
 		<widget source="Adaptertext" render="Label" position="380,150" size="140,25" zPosition="1" font="Regular;22" halign="left" backgroundColor="transpBlack" transparent="1" />
 		<widget source="Adapter" render="Label" position="520,150" size="380,25" zPosition="1" font="Regular;22" halign="right" backgroundColor="transpBlack" transparent="1" />
-		<widget name="config" position="center,179" size="520,150" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button540x25.png" transparent="1" />
+		<widget name="config" position="center,179" size="520,150" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" selectionPixmap="MetropolisHD/menu/button540x25.png" transparent="1" />
 		<widget source="introduction2" render="Label" position="center,540" size="520,30" zPosition="1" font="Regular;24" backgroundColor="transpBlack" halign="center" transparent="1" />
 		<widget source="introduction" render="Label" position="380,360" size="300,25" font="Regular;22" backgroundColor="transpBlack" halign="left" transparent="1" />
 		<widget source="IPtext" render="Label" position="380,390" size="140,22" zPosition="1" font="Regular;20" halign="left" backgroundColor="transpBlack" transparent="1" />
@@ -2185,7 +2178,7 @@ MultiContentEntryText(pos = (550, 3), size = (70, 24), font=1, flags = RT_HALIGN
 		<eLabel name="Red" position="283,645" size="178,1" foregroundColor="red" backgroundColor="red" />
 		<widget source="IFtext" render="Label" position="330,150" size="140,25" zPosition="10" font="Regular;22" backgroundColor="transpBlack" transparent="1" />
 		<widget source="IF" render="Label" position="470,150" size="473,25" zPosition="10" font="Regular;22" backgroundColor="transpBlack" transparent="1" />
-		<widget name="menulist" position="330,200" size="615,200" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button540x25.png" transparent="1" />
+		<widget name="menulist" position="330,200" size="615,200" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" selectionPixmap="MetropolisHD/menu/button540x25.png" transparent="1" />
 		<widget source="description" render="Label" position="330,410" size="615,150" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />&gt;
 		<widget source="Statustext" render="Label" position="329,570" size="200,30" zPosition="1" font="Regular;24" backgroundColor="transpBlack" transparent="1" />
 		<widget name="statuspic" position="512,575" size="15,16" pixmaps="MetropolisHD/buttons/button_green.png,MetropolisHD/buttons/button_green_off.png" zPosition="10" transparent="1" alphatest="on" />
@@ -2194,14 +2187,14 @@ MultiContentEntryText(pos = (550, 3), size = (70, 24), font=1, flags = RT_HALIGN
 	<screen name="NameserverSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGY_Template"/>
 		<eLabel text="Nameserver setup" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<widget name="config" position="center,150" size="520,375" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button540x25.png" transparent="1" />
+		<widget name="config" position="center,150" size="520,375" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" selectionPixmap="MetropolisHD/menu/button540x25.png" transparent="1" />
 		<widget source="introduction" render="Label" position="center,480" size="520,30" zPosition="1" font="Regular;24" halign="center" backgroundColor="transpBlack" transparent="1" />
 	</screen>
 
 	<screen name="NetworkAdapterSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGY_Template"/>
 		<eLabel text="Select a network adapter" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<widget source="list" render="Listbox" position="center,150" size="631,280" zPosition="10" scrollbarMode="showOnDemand" transparent="1">
+		<widget source="list" render="Listbox" position="center,150" size="631,280" zPosition="10" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" transparent="1">
 			<convert type="TemplatedMultiContent"><!--  iface, name, description, interfacepng, defaultpng, activepng, divpng  -->
 {"template": [
 MultiContentEntryText(pos = (85, 6), size = (410, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1), # index 1 is the interfacename
@@ -2258,7 +2251,7 @@ MultiContentEntryPixmapAlphaTest(pos = (63, 46), size = (15, 16), png = 4), # in
 	<screen name="NetworkBrowser" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGYB_Template"/>
 		<eLabel text="Network Neighbourhood" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<widget source="list" render="Listbox" position="center,150" size="631,300" zPosition="1" scrollbarMode="showOnDemand" transparent="1">
+		<widget source="list" render="Listbox" position="center,150" size="631,300" zPosition="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" transparent="1">
 			<convert type="TemplatedMultiContent">
 {"template": [
 MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 1), # index 1 is the expandable/expanded/verticalline icon
@@ -2284,10 +2277,10 @@ MultiContentEntryPixmapAlphaTest(pos = (110, 6), size = (48, 48), png = 6), # in
 		<eLabel name="Red" position="279,555" size="178,1" foregroundColor="red" backgroundColor="red" />
 		<eLabel name="Green" position="457,555" size="178,1" foregroundColor="green" backgroundColor="green" />
 		<eLabel name="Yellow" position="635,555" size="178,1" foregroundColor="yellow" backgroundColor="yellow" />
-		<widget name="config" position="20,50" size="1060,25" scrollbarMode="showOnDemand" />
+		<widget name="config" position="20,50" size="1060,25" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" />
 	</screen>
 	<screen name="UserManager" position="90,100" size="1100,560">
-		<widget source="config" render="Listbox" position="10,20" size="750,420" scrollbarMode="showOnDemand">
+		<widget source="config" render="Listbox" position="10,20" size="750,420" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png">
 			<convert type="TemplatedMultiContent">
 {"template": [
 MultiContentEntryText(pos = (80, 7), size = (650, 50), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
@@ -2307,7 +2300,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		<eLabel name="Yellow" position="635,555" size="178,1" foregroundColor="yellow" backgroundColor="yellow" />
 	</screen>
 	<screen name="UserDialog" position="90,100" size="1100,560">
-		<widget name="config" position="20,20" zPosition="1" size="740,300" scrollbarMode="showOnDemand" />
+		<widget name="config" position="20,20" zPosition="1" size="740,300" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" />
 		<eLabel position="780,0" size="2,518" backgroundColor="grey" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
 		<widget source="introduction" render="Label" position="20,525" size="400,30" zPosition="10" font="Regular;24" halign="center" />
@@ -2317,7 +2310,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		<widget name="HelpWindow" position="180,450" zPosition="1" size="1,1" transparent="1" alphatest="on" />
 	</screen>
 	<screen name="AutoMountEdit" position="90,100" size="1100,560">
-		<widget name="config" position="20,20" zPosition="1" size="740,300" scrollbarMode="showOnDemand" />
+		<widget name="config" position="20,20" zPosition="1" size="740,300" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" />
 		<eLabel position="780,0" size="2,518" backgroundColor="grey" />
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey" />
 		<widget name="key_red" position="849,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
@@ -2333,7 +2326,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666" />
 		<widget source="key_red" render="Label" position="283,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
 		<eLabel name="Red" position="283,645" size="178,1" foregroundColor="red" backgroundColor="red" />
-		<widget source="config" render="Listbox" position="center,120" size="700,445" scrollbarMode="showOnDemand" backgroundColor="background" transparent="1">
+		<widget source="config" render="Listbox" position="center,120" size="700,445" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" backgroundColor="background" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (60, 5), size = (620, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
@@ -2360,7 +2353,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		<widget source="legend2" render="Label" position="center,118" size="400,60" font="Regular;20" halign="center" valign="center" transparent="1" backgroundColor="transpGrey" />
 		<widget source="legend3" render="Label" position="868,118" size="120,60" font="Regular;20" halign="center" valign="center" transparent="1" backgroundColor="transpGrey" />
 		<eLabel position="center,195" size="700,2" backgroundColor="grey" />
-		<widget source="config" render="Listbox" position="center,210" size="700,360" scrollbarMode="showOnDemand" transparent="1">
+		<widget source="config" render="Listbox" position="center,210" size="700,360" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryPixmapAlphaTest(pos = (40, 6), size = (48, 48), png = 0), # index 0 is the isMounted pixmap
@@ -2405,7 +2398,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 	<screen name="CrashlogAutoSubmitConfiguration" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RG_Template"/>
 		<eLabel text="CrashlogAutoSubmit settings..." position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<widget name="config" position="329,135" size="631,300" zPosition="2" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="transpBlack" selectionPixmap="MetropolisHD/menu/button1080x25.png" transparent="1" />
+		<widget name="config" position="329,135" size="631,300" zPosition="2" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" backgroundColor="transpBlack" selectionPixmap="MetropolisHD/menu/button1080x25.png" transparent="1" />
 		<widget name="VKeyIcon" pixmap="MetropolisHD/buttons/key_text.png" position="288,556" zPosition="10" size="60,48" transparent="1" alphatest="on" />
 		<widget name="HelpWindow" position="180,445" zPosition="1" size="1,1" transparent="1" />
 		<widget source="status" render="Label" position="630,438" size="330,160" zPosition="1" font="Regular;22" backgroundColor="transpBlack" foregroundColor="green" halign="center" transparent="1" />
@@ -2416,13 +2409,13 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666" />
 		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0" />
 		<widget name="text" position="center,150" size="631,30" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget name="entries" position="center,200" size="631,300" scrollbarMode="showOnDemand" zPosition="2" selectionPixmap="MetropolisHD/menu/button540x25.png" transparent="1" />
+		<widget name="entries" position="center,200" size="631,300" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" zPosition="2" selectionPixmap="MetropolisHD/menu/button540x25.png" transparent="1" />
 	</screen>
 
 	<screen name="CIselectMainMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RG_Template"/>
 		<eLabel text="CI assignment" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1" />
-		<widget name="CiList" position="center,150" size="631,300" scrollbarMode="showOnDemand" zPosition="2" selectionPixmap="MetropolisHD/menu/button540x25.png" transparent="1" />
+		<widget name="CiList" position="center,150" size="631,300" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" zPosition="2" selectionPixmap="MetropolisHD/menu/button540x25.png" transparent="1" />
 	</screen>
 
 	<screen name="RecordPathsSettings" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -2440,14 +2433,14 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		<eLabel name="Green" position="150,36" size="120,1" foregroundColor="green" backgroundColor="green" />
 		<eLabel name="Yellow" position="290,36" size="120,1" foregroundColor="yellow" backgroundColor="yellow" />
 		<eLabel name="Blue" position="430,36" size="120,1" foregroundColor="blue" backgroundColor="blue" />
-		<widget name="config" position="5,50" size="550,350" scrollbarMode="showOnDemand" />
+		<widget name="config" position="5,50" size="550,350" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" />
 		<ePixmap pixmap="MetropolisHD/div-h.png" position="0,400" zPosition="1" size="560,2" />
 		<widget source="introduction" render="Label" position="5,410" size="550,30" zPosition="10" font="Regular;21" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
 	</screen>
 
 	<screen name="VideoEnhancementSetup" position="center,center" size="660,440">
 		<panel name="ButtonTemplate_RGYB_Small"/>
-		<widget name="config" position="5,5" size="650,350" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button640x25.png" transparent="1" />
+		<widget name="config" position="5,5" size="650,350" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" selectionPixmap="MetropolisHD/menu/button640x25.png" transparent="1" />
 		<widget source="introduction" render="Label" position="5,360" size="650,30" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
 	</screen>
 
@@ -2456,7 +2449,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		<widget name="key_green" position="286,126" size="160,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
 		<eLabel name="Red" position="124,160" size="160,1" foregroundColor="red" backgroundColor="red" />
 		<eLabel name="Green" position="286,160" size="160,1" foregroundColor="green" backgroundColor="green" />
-		<widget name="config" position="5,5" size="550,80" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/menu/button560x25.png" />
+		<widget name="config" position="5,5" size="550,80" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" selectionPixmap="MetropolisHD/menu/button560x25.png" />
 		<ePixmap pixmap="MetropolisHD/div-h.png" position="0,120" zPosition="1" size="560,2" />
 		<widget source="introduction" render="Label" position="5,90" size="550,30" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
 	</screen>
@@ -2465,7 +2458,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		<widget name="key_green" position="286,255" size="160,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
 		<eLabel name="Red" position="124,290" size="160,1" foregroundColor="red" backgroundColor="red" />
 		<eLabel name="Green" position="286,290" size="160,1" foregroundColor="green" backgroundColor="green" />
-		<widget name="config" zPosition="2" position="5,50" size="550,200" scrollbarMode="showOnDemand" transparent="1" selectionPixmap="MetropolisHD/menu/button560x25.png" />
+		<widget name="config" zPosition="2" position="5,50" size="550,200" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/menu/button25x1080.png" transparent="1" selectionPixmap="MetropolisHD/menu/button560x25.png" />
 		<ePixmap pixmap="MetropolisHD/div-h.png" position="0,250" zPosition="1" size="560,2" />
 	</screen>
 	<screen name="StandbySummary" position="0,0" size="132,64">
