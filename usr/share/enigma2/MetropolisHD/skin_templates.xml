@@ -60,10 +60,19 @@
 		<eLabel name="Yellow" position="740,648" size="160,1" foregroundColor="yellow" backgroundColor="yellow"/>
 	</screen>
 
-	<screen name="ButtonTemplate_Midle">
+	<screen name="ButtonTemplate_Midle_R">
+		<eLabel name="Line" position="center,613" size="716,1" backgroundColor="un666666"/>
+		<eLabel name="Red" position="center,648" size="180,1" foregroundColor="red" backgroundColor="red"/>
+	</screen>
+
+	<screen name="ButtonTemplate_Midle_RG">
 		<eLabel name="Line" position="center,613" size="716,1" backgroundColor="un666666"/>
 		<eLabel name="Red" position="415,648" size="180,1" foregroundColor="red" backgroundColor="red"/>
 		<eLabel name="Green" position="685,648" size="180,1" foregroundColor="green" backgroundColor="green"/>
+	</screen>
+
+	<screen name="ButtonTemplate_RS_Midle">
+		<widget source="key_red" render="Label" position="center,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
 	</screen>
 
 	<screen name="ButtonTemplate_RG_Midle">
@@ -191,13 +200,19 @@
 
 	<screen name="MidleScreen_RG_Template">
 		<panel name="MidleScreenTemplate"/>
-		<panel name="ButtonTemplate_Midle"/>
+		<panel name="ButtonTemplate_Midle_RG"/>
 		<panel name="ButtonTemplate_RG_Midle"/>
+	</screen>
+
+	<screen name="MidleScreen_RS_Template">
+		<panel name="MidleScreenTemplate"/>
+		<panel name="ButtonTemplate_Midle_R"/>
+		<panel name="ButtonTemplate_RS_Midle"/>
 	</screen>
 
 	<screen name="MidleScreen_RGS_Template">
 		<panel name="MidleScreenTemplate"/>
-		<panel name="ButtonTemplate_Midle"/>
+		<panel name="ButtonTemplate_Midle_RG"/>
 		<panel name="ButtonTemplate_RGS_Midle"/>
 	</screen>
 

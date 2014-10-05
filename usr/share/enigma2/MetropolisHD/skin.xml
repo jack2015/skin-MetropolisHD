@@ -1747,7 +1747,7 @@ MultiContentEntryText(pos = (360, 7), size = (215, 30), flags = RT_HALIGN_LEFT, 
 	</screen>
 
 	<screen name="UpdatePluginMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="MidleScreen_RGS_Template"/>
+		<panel name="MidleScreen_RS_Template"/>
 		<eLabel text="Software management" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget source="menu" render="Listbox" position="center,114" size="631,325" scrollbarMode="showOnDemand" selectionPixmap="MetropolisHD/buttons/sel.png" backgroundPixmap="MetropolisHD/menu/bg40x40.png" transparent="1">
 			<convert type="TemplatedMultiContent">
