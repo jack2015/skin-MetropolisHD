@@ -450,6 +450,10 @@
 			<convert type="MenuEntryCompare">factory_reset</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/setup.png" position="128,132" size="125,125" alphatest="blend">
+			<convert type="MenuEntryCompare">software_update</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
 	</screen>
 
 	<screen name="menu_system" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
