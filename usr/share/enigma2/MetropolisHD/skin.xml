@@ -1296,7 +1296,7 @@ MultiContentEntryText(pos = (50, 28), size = (480, 40), font = 1, flags = RT_HAL
 		<panel name="MidleScreen_RGS_Template"/>
 		<eLabel text="Setup" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<eLabel name="Line" position="center,526" size="716,1" backgroundColor="un666666"/>
-		<widget name="config" position="center,115" size="722,400" zPosition="2" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="transpBlack" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
+		<widget name="config" position="center,115" size="722,400" zPosition="2" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/slider_vert.png" backgroundColor="transpBlack" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
 		<widget name="description" position="center,530" size="722,80" zPosition="2" font="Regular; 22" valign="top" backgroundColor="transpBlack" transparent="1"/>
 	</screen>
 
