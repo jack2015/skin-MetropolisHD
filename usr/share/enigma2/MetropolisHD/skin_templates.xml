@@ -27,6 +27,18 @@
 		<eLabel name="Blue" position="825,648" size="170,1" foregroundColor="blue" backgroundColor="blue"/>
 	</screen>
 
+	<screen name="ButtonTemplate_RGYBS">
+		<eLabel name="Line" position="center,613" size="720,1" backgroundColor="un666666"/>
+		<widget source="key_red" render="Label" position="280,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget source="key_green" render="Label" position="460,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget source="key_yellow" render="Label" position="640,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget source="key_blue" render="Label" position="820,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<eLabel name="Red" position="285,648" size="170,1" foregroundColor="red" backgroundColor="red"/>
+		<eLabel name="Green" position="465,648" size="170,1" foregroundColor="green" backgroundColor="green"/>
+		<eLabel name="Yellow" position="645,648" size="170,1" foregroundColor="yellow" backgroundColor="yellow"/>
+		<eLabel name="Blue" position="825,648" size="170,1" foregroundColor="blue" backgroundColor="blue"/>
+	</screen>
+
 	<screen name="ButtonTemplate_RGYB_Small">
 		<eLabel name="Line" position="10,397" size="640,1" backgroundColor="un666666"/>
 		<widget name="key_red" position="10,397" size="160,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
@@ -191,6 +203,11 @@
 	<screen name="MidleScreen_RGYB_Template">
 		<panel name="MidleScreenTemplate"/>
 		<panel name="ButtonTemplate_RGYB"/>
+	</screen>
+
+	<screen name="MidleScreen_RGYBS_Template">
+		<panel name="MidleScreenTemplate"/>
+		<panel name="ButtonTemplate_RGYBS"/>
 	</screen>
 
 	<screen name="MidleScreen_RGY_Template">
