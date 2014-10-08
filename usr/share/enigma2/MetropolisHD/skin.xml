@@ -831,6 +831,11 @@ MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
 		<ePixmap position="center,center" size="632,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666"/>
 		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="630,40" alphatest="off" zPosition="-2" transparent="0"/>
 	</screen>
+
+	<screen name="TextBox" position="center,center" size="550,400" title="Message">
+		<widget name="text" position="center,center" size="480,380" font="Regular;22"/>
+	</screen>
+
 	<screen name="MessageBox" position="center,center" size="800,10" title="Message">
 		<widget name="text" position="65,8" size="680,0" font="Regular;22"/>
 		<widget name="ErrorPixmap" pixmap="MetropolisHD/icons/input_error.png" position="5,5" size="53,53" alphatest="on"/>
