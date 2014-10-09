@@ -534,7 +534,7 @@
 	<screen name="ServiceInfo" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGYB_Template"/>
 		<eLabel text="Service info" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<widget name="infolist" position="center,115" size="680,491" selectionDisabled="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/slider_vert.png" transparent="1" itemHeight="21"/>
+		<widget name="infolist" position="center,115" size="680,491" selectionDisabled="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/slider_vert.png" transparent="1" itemHeight="31"/>
 	</screen>
 
 	<screen name="AudioSelection" position="300,180" size="680,330" backgroundColor="podloga" transparent="0">
