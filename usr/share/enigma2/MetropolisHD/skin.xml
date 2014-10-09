@@ -1870,7 +1870,7 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 58), size = (0, 0), png = 5), # index
 	</screen>
 
 	<screen name="PluginManager" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="MidleScreen_RGYB_Template"/>
+		<panel name="MidleScreen_RGYBS_Template"/>
 		<eLabel text="Extensions management" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget source="list" render="Listbox" position="center,139" size="708,360" scrollbarMode="showOnDemand" transparent="1" sliderPixmap="MetropolisHD/slider_vert.png">
 			<convert type="TemplatedMultiContent">
