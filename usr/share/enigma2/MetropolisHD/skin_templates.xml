@@ -199,6 +199,11 @@
 		</widget>
 	</screen>
 
+	<screen name="MinimalScreenTemplate">
+		<ePixmap position="center,center" size="620,420" zPosition="-10" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666"/>
+		<ePixmap pixmap="MetropolisHD/back1.png" position="center,155" size="612,40" alphatest="off" zPosition="-9" transparent="0"/>
+	</screen>
+
 	<screen name="MidleScreenTemplate">
 		<ePixmap position="center,center" size="745,592" zPosition="-10" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666"/>
 		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-9" transparent="0"/>
