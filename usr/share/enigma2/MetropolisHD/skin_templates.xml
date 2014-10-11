@@ -39,22 +39,20 @@
 		<widget source="key_blue" render="Label" position="820,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
 	</screen>
 
-		<eLabel name="Red" position="285,648" size="170,1" foregroundColor="red" backgroundColor="red"/>
-		<eLabel name="Green" position="465,648" size="170,1" foregroundColor="green" backgroundColor="green"/>
-		<eLabel name="Yellow" position="645,648" size="170,1" foregroundColor="yellow" backgroundColor="yellow"/>
-		<eLabel name="Blue" position="825,648" size="170,1" foregroundColor="blue" backgroundColor="blue"/>
-	</screen>
-
-	<screen name="ButtonTemplate_RGYB_Small">
+	<screen name="ButtonTemplate_Small_RGYB">
 		<eLabel name="Line" position="10,397" size="640,1" backgroundColor="un666666"/>
-		<widget name="key_red" position="10,397" size="160,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget name="key_green" position="170,397" size="160,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget name="key_yellow" position="330,397" size="160,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget name="key_blue" position="490,397" size="160,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
 		<eLabel name="Red" position="30,432" size="120,1" foregroundColor="red" backgroundColor="red"/>
 		<eLabel name="Green" position="190,432" size="120,1" foregroundColor="green" backgroundColor="green"/>
 		<eLabel name="Yellow" position="350,432" size="120,1" foregroundColor="yellow" backgroundColor="yellow"/>
 		<eLabel name="Blue" position="510,432" size="120,1" foregroundColor="blue" backgroundColor="blue"/>
+	</screen>
+
+	<screen name="ButtonTemplate_RGYB_Small">
+		<panel name="ButtonTemplate_Small_RGYB"/>
+		<widget name="key_red" position="10,397" size="160,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget name="key_green" position="170,397" size="160,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget name="key_yellow" position="330,397" size="160,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget name="key_blue" position="490,397" size="160,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
 	</screen>
 
 	<screen name="ButtonTemplate_RGYB_Big">
@@ -92,22 +90,37 @@
 		<eLabel name="Red" position="center,648" size="180,1" foregroundColor="red" backgroundColor="red"/>
 	</screen>
 
+	<screen name="ButtonTemplate_RS_Midle">
+		<panel name="ButtonTemplate_Midle_R"/>
+		<widget source="key_red" render="Label" position="center,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+	</screen>
+
+	<screen name="ButtonTemplate_Minimal_RG">
+		<eLabel name="Line" position="center,523" size="600,1" backgroundColor="un666666"/>
+		<eLabel name="Red" position="415,558" size="180,1" foregroundColor="red" backgroundColor="red"/>
+		<eLabel name="Green" position="685,558" size="180,1" foregroundColor="green" backgroundColor="green"/>
+	</screen>
+
+	<screen name="ButtonTemplate_RGS_Minimal">
+		<panel name="ButtonTemplate_Minimal_RG"/>
+		<widget source="key_red" render="Label" position="380,523" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget source="key_green" render="Label" position="650,523" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+	</screen>
+
 	<screen name="ButtonTemplate_Midle_RG">
 		<eLabel name="Line" position="center,613" size="716,1" backgroundColor="un666666"/>
 		<eLabel name="Red" position="415,648" size="180,1" foregroundColor="red" backgroundColor="red"/>
 		<eLabel name="Green" position="685,648" size="180,1" foregroundColor="green" backgroundColor="green"/>
 	</screen>
 
-	<screen name="ButtonTemplate_RS_Midle">
-		<widget source="key_red" render="Label" position="center,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-	</screen>
-
 	<screen name="ButtonTemplate_RG_Midle">
+		<panel name="ButtonTemplate_Midle_RG"/>
 		<widget name="key_red" position="380,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="key_green" position="650,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
 	</screen>
 
 	<screen name="ButtonTemplate_RGS_Midle">
+		<panel name="ButtonTemplate_Midle_RG"/>
 		<widget source="key_red" render="Label" position="380,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
 		<widget source="key_green" render="Label" position="650,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
 	</screen>
@@ -220,6 +233,11 @@
 		<ePixmap pixmap="MetropolisHD/back1.png" position="center,33" size="1170,40" alphatest="blend" zPosition="-9" transparent="0"/>
 	</screen>
 
+	<screen name="MinimalScreen_RGS_Template">
+		<panel name="MinimalScreenTemplate"/>
+		<panel name="ButtonTemplate_RGS_Minimal"/>
+	</screen>
+
 	<screen name="MidleScreen_RGYB_Template">
 		<panel name="MidleScreenTemplate"/>
 		<panel name="ButtonTemplate_RGYB"/>
@@ -242,19 +260,16 @@
 
 	<screen name="MidleScreen_RG_Template">
 		<panel name="MidleScreenTemplate"/>
-		<panel name="ButtonTemplate_Midle_RG"/>
 		<panel name="ButtonTemplate_RG_Midle"/>
 	</screen>
 
 	<screen name="MidleScreen_RS_Template">
 		<panel name="MidleScreenTemplate"/>
-		<panel name="ButtonTemplate_Midle_R"/>
 		<panel name="ButtonTemplate_RS_Midle"/>
 	</screen>
 
 	<screen name="MidleScreen_RGS_Template">
 		<panel name="MidleScreenTemplate"/>
-		<panel name="ButtonTemplate_Midle_RG"/>
 		<panel name="ButtonTemplate_RGS_Midle"/>
 	</screen>
 
