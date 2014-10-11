@@ -1088,12 +1088,13 @@ MultiContentEntryText(pos = (50, 28), size = (480, 40), font = 1, flags = RT_HAL
 		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0"/>
 		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666"/>
 	</screen>
+
 	<screen name="NimSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MidleScreen_RGYB_Template"/>
 		<eLabel text="Reception settings" position="center,87" size="841,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<ePixmap position="center,center" size="903,557" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666"/>
-		<ePixmap pixmap="MetropolisHD/back1.png" position="center,84" size="896,40" alphatest="off" zPosition="-2" transparent="0"/>
-		<widget name="config" position="center,163" size="871,425" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
+		<widget name="config" position="center,114" size="720,490" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
 	</screen>
+
 	<screen name="NumberZap" position="center,355" size="400,90" backgroundColor="podloga">;
 		<widget name="channel" position="30,5" size="130,28" halign="left" font="Regular;25"/>
 		<widget name="number" position="190,5" size="80,28" halign="left" font="Regular;25"/>
