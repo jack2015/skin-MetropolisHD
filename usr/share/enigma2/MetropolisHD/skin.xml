@@ -821,20 +821,17 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count> 7 and 2 or 3)))
 	</screen>
 
 	<screen name="LanguageSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MidleScreenTemplate"/>
 		<eLabel text="Language selection" position="center,72" size="630,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<widget source="languages" render="Listbox" position="center,116" size="580,510" scrollbarMode="showNever" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1">
+		<widget source="languages" render="Listbox" position="center,120" size="725,505" scrollbarMode="showNever" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1">
 			<convert type="TemplatedMultiContent">
-{"template": [
-MultiContentEntryText(pos = (100, 10), size = (420, 30), flags = RT_HALIGN_CENTER, text = 1),
-MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2),
-],
-"fonts": [gFont("Regular", 25)],
-"itemHeight": 50
-}
+				{"template": [
+					MultiContentEntryText(pos = (300, 10), size = (420, 30), flags = RT_HALIGN_LEFT, text = 1),
+					MultiContentEntryPixmap(pos = (200, 5), size = (60, 40), png = 2),],
+				"fonts": [gFont("Regular", 25)],
+				"itemHeight": 50 }
 			</convert>
 		</widget>
-		<ePixmap position="center,center" size="632,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666"/>
-		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="630,40" alphatest="off" zPosition="-2" transparent="0"/>
 	</screen>
 
 	<screen name="TextBox" position="center,center" size="550,400" title="Message">
