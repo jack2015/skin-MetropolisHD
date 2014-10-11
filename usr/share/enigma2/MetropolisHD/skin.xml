@@ -807,18 +807,19 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count> 7 and 2 or 3)))
 	<screen name="HarddiskWait" position="340,134" size="600,502" backgroundColor="podloga">
 		<widget name="wait" position="10,12" size="580,120" font="Regular;23" backgroundColor="podloga"/>
 	</screen>
+
 	<screen name="HelpMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="center,center" size="885,592" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666"/>
-		<ePixmap pixmap="MetropolisHD/back1.png" position="center,68" size="880,40" alphatest="off" zPosition="-2" transparent="0"/>
-		<eLabel text="help..." position="center,63" size="740,50" font="Replacement; 26" halign="center" backgroundColor="transpGrey" transparent="1" foregroundColor="hellgreen"/>
-		<widget name="rc" position="212,135" size="154,473" pixmaps="MetropolisHD/rc.png,MetropolisHD/rcold.png" zPosition="10" alphatest="on" backgroundColor="podloga"/>
+		<panel name="MidleScreenTemplate"/>
+		<eLabel text="help..." position="center,70" size="740,50" font="Replacement; 26" halign="center" backgroundColor="transpGrey" transparent="1" foregroundColor="hellgreen"/>
+		<widget name="rc" position="300,120" size="154,500" pixmaps="skin_default/rc.png,skin_default/rcold.png" zPosition="10" alphatest="on" backgroundColor="podloga"/>
 		<widget name="long_key" position="210,615" size="300,30" font="Regular;24" halign="center" foregroundColor="yellow" backgroundColor="transpBlack" transparent="1"/>
-		<widget name="list" position="375,136" size="701,474" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
+		<widget name="list" position="440,120" size="550,495" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
 		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="MetropolisHD/arrowdown.png" zPosition="11" alphatest="on"/>
 		<widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="MetropolisHD/arrowdown.png" zPosition="11" alphatest="on"/>
 		<widget name="arrowup" position="-100,-100" size="37,70" pixmap="MetropolisHD/arrowup.png" zPosition="11" alphatest="on"/>
 		<widget name="arrowup2" position="-100,-100" size="37,70" pixmap="MetropolisHD/arrowup.png" zPosition="11" alphatest="on"/>
 	</screen>
+
 	<screen name="LanguageSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<eLabel text="Language selection" position="center,72" size="630,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget source="languages" render="Listbox" position="center,116" size="580,510" scrollbarMode="showNever" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1">
