@@ -2525,6 +2525,20 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		<widget name="config" position="center,210" size="580,200" halign="left" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/slider_vert.png" backgroundColor="transpBlack" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
 	</screen>
 
+	<screen name="TV3PlayMenu" position="0,0" size="1280,720" title="TV3 Play" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MidleScreen_RGS_Template"/>
+		<widget source="Title" render="Label" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget source="list" render="Listbox" position="285,120" size="400,450" zPosition="10"  enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/slider_vert.png" transparent="1" selectionPixmap="MetropolisHD/buttons/sel.png">
+			<convert type="TemplatedMultiContent">
+			{
+				"template": [MultiContentEntryText(pos=(10, 1), size=(340, 30), font=0, flags=RT_HALIGN_LEFT, text=0)],
+				"fonts": [gFont("Regular", 20)],
+				"itemHeight": 30
+			}
+			</convert>
+		</widget>
+		<widget name="pic" position="720,120" size="250,141" alphatest="blend" transparent="0"/>
+		<widget name="cur" position="700,270" size="295,330" halign="center" font="Regular;26" foregroundColor="yellow"/>
 	</screen>
 </skin>
 
