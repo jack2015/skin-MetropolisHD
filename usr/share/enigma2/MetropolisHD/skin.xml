@@ -2232,36 +2232,37 @@ MultiContentEntryPixmapAlphaTest(pos = (63, 46), size = (15, 16), png = 4), # in
 		<widget name="Adaptertext" position="395,130" size="310,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#1cff1c"/>
 		<widget name="Adapter" position="395,160" size="310,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#f23d21,#1cff1c" transparent="1" backgroundColor="transpGrey"/>
 		<widget name="AdapterInfo_OK" position="710,145" size="38,31" zPosition="2" pixmap="MetropolisHD/icons/lock_on.png" alphatest="on"/>
-		<widget name="AdapterInfo" position="760,137" size="160,40" zPosition="1" pixmaps="MetropolisHD/menu/select300_45black.png,MetropolisHD/menu/button160x40.png" backgroundColor="transpGrey"/>
+		<widget name="AdapterInfo" position="760,137" size="160,40" zPosition="1" pixmaps="MetropolisHD/menu/select300_45black.png,MetropolisHD/buttons/sel.png" backgroundColor="transpGrey"/>
 		<widget name="AdapterInfo_Text" position="760,137" size="160,40" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" backgroundColor="transpGrey"/>
 		<eLabel position="395,190" size="520,1" backgroundColor="darkgrey"/>
 		<widget name="Networktext" position="395,210" size="310,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#1cff1c"/>
 		<widget name="Network" position="395,240" size="310,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#f23d21,#1cff1c" transparent="1" backgroundColor="transpGrey"/>
 		<widget name="NetworkInfo_Check" position="710,225" size="38,31" zPosition="2" pixmaps="MetropolisHD/icons/lock_on.png,MetropolisHD/icons/lock_error.png" alphatest="on"/>
-		<widget name="NetworkInfo" position="760,217" size="160,40" zPosition="1" pixmaps="MetropolisHD/menu/select300_45black.png,MetropolisHD/menu/button160x40.png" backgroundColor="transpGrey"/>
+		<widget name="NetworkInfo" position="760,217" size="160,40" zPosition="1" pixmaps="MetropolisHD/menu/select300_45black.png,MetropolisHD/buttons/sel.png" backgroundColor="transpGrey"/>
 		<widget name="NetworkInfo_Text" position="760,217" size="160,40" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" backgroundColor="transpGrey"/>
 		<eLabel position="395,280" size="520,1" backgroundColor="darkgrey"/>
 		<widget name="Dhcptext" position="395,290" size="310,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#1cff1c"/>
 		<widget name="Dhcp" position="395,320" size="310,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#f23d21,#1cff1c" transparent="1" backgroundColor="transpGrey"/>
 		<widget name="DhcpInfo_Check" position="710,315" size="38,31" zPosition="2" pixmaps="MetropolisHD/icons/lock_on.png,MetropolisHD/icons/lock_error.png" alphatest="on"/>
-		<widget name="DhcpInfo" position="760,297" size="160,40" zPosition="1" pixmaps="MetropolisHD/menu/select300_45black.png,MetropolisHD/menu/button160x40.png" backgroundColor="transpGrey"/>
+		<widget name="DhcpInfo" position="760,297" size="160,40" zPosition="1" pixmaps="MetropolisHD/menu/select300_45black.png,MetropolisHD/buttons/sel.png" backgroundColor="transpGrey"/>
 		<widget name="DhcpInfo_Text" position="760,297" size="160,40" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" backgroundColor="transpGrey"/>
 		<eLabel position="395,360" size="520,1" backgroundColor="darkgrey"/>
 		<widget name="IPtext" position="395,370" size="310,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#1cff1c"/>
 		<widget name="IP" position="395,400" size="310,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#f23d21,#1cff1c" transparent="1" backgroundColor="transpGrey"/>
 		<widget name="IPInfo_Check" position="710,385" size="38,31" zPosition="2" pixmaps="MetropolisHD/icons/lock_on.png,MetropolisHD/icons/lock_error.png" alphatest="on"/>
-		<widget name="IPInfo" position="760,377" size="160,40" zPosition="1" pixmaps="MetropolisHD/menu/select300_45black.png,MetropolisHD/menu/button160x40.png" backgroundColor="transpGrey"/>
+		<widget name="IPInfo" position="760,377" size="160,40" zPosition="1" pixmaps="MetropolisHD/menu/select300_45black.png,MetropolisHD/buttons/sel.png" backgroundColor="transpGrey"/>
 		<widget name="IPInfo_Text" position="760,377" size="160,40" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" backgroundColor="transpGrey"/>
 		<eLabel position="395,440" size="520,1" backgroundColor="darkgrey"/>
 		<widget name="DNStext" position="395,450" size="310,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#1cff1c"/>
 		<widget name="DNS" position="395,480" size="310,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#f23d21,#1cff1c" transparent="1" backgroundColor="transpGrey"/>
 		<widget name="DNSInfo_Check" position="710,465" size="38,31" zPosition="2" pixmaps="MetropolisHD/icons/lock_on.png,MetropolisHD/icons/lock_error.png" alphatest="on"/>
-		<widget name="DNSInfo" position="760,457" size="160,40" zPosition="1" pixmaps="MetropolisHD/menu/select300_45black.png,MetropolisHD/menu/button160x40.png" backgroundColor="transpGrey"/>
+		<widget name="DNSInfo" position="760,457" size="160,40" zPosition="1" pixmaps="MetropolisHD/menu/select300_45black.png,MetropolisHD/buttons/sel.png" backgroundColor="transpGrey"/>
 		<widget name="DNSInfo_Text" position="760,457" size="160,40" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" backgroundColor="transpGrey"/>
 		<eLabel position="395,520" size="520,1" backgroundColor="darkgrey"/>
-		<widget name="EditSettingsButton" position="760,527" size="180,40" zPosition="1" pixmaps="MetropolisHD/menu/select300_45black.png,MetropolisHD/menu/button160x40.png" backgroundColor="transpGrey"/>
-		<widget name="EditSettings_Text" position="760,527" size="180,40" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" backgroundColor="transpGrey"/>
+		<widget name="EditSettingsButton" position="760,527" size="160,40" zPosition="1" pixmaps="MetropolisHD/menu/select300_45black.png,MetropolisHD/buttons/sel.png" backgroundColor="transpGrey"/>
+		<widget name="EditSettings_Text" position="760,527" size="160,40" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" backgroundColor="transpGrey"/>
 		<widget name="InfoText" position="376,129" size="550,430" zPosition="3" font="Regular;22" halign="center" valign="center" backgroundColor="background2" transparent="0"/>
+		<widget name="InfoTextBorder" position="366,119" size="570,450"/>
 	</screen>
 
 	<screen name="NetworkBrowser" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
