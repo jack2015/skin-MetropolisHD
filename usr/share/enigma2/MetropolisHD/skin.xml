@@ -537,8 +537,8 @@
 		<widget name="infolist" position="center,115" size="680,491" selectionDisabled="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/slider_vert.png" transparent="1" itemHeight="31"/>
 	</screen>
 
-	<screen name="AudioSelection" position="300,180" size="680,330" backgroundColor="podloga" transparent="0">
-		<widget name="config" position="70,10" size="590,110" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/slider_vert.png" transparent="1" backgroundColor="transpGrey"/>
+	<screen name="AudioSelection" position="center,center" size="680,330" backgroundColor="podloga" transparent="0"  title="Audio">
+		<widget name="config" position="70,10" size="590,110" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1" backgroundColor="transpGrey"/>
 		<widget source="key_red" render="Pixmap" pixmap="MetropolisHD/buttons/key_red.png" position="20,10" size="35,25" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
