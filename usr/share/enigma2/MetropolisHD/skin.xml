@@ -1676,18 +1676,17 @@ MultiContentEntryText(pos = (470, 20), size = (48, 20), font = 1, flags = RT_HAL
 		<widget source="space_label_dual" render="Label" position="10,449" size="540,22" zPosition="2" font="Regular;18" halign="center" transparent="1" foregroundColor="black"/>
 	</screen>
 
-	<screen name="picshow" position="90,100" size="1100,560">
-		<panel name="ButtonTemplate_RGYB_Big"/>
-		<eLabel text="Picture player" position="20,20" size="260,160" font="Regular;20" transparent="1"/>
-		<widget name="thn" position="20,200" size="260,300" alphatest="on"/>
-		<eLabel position="300,0" size="2,500" backgroundColor="grey"/>
-		<widget name="filelist" position="320,20" size="760,480" zPosition="3" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
+	<screen name="picshow" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MidleScreen_RGYS_Template"/>
+		<eLabel text="Picture player" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget name="thn" position="290,100" size="260,300" alphatest="on"/>
+		<widget name="filelist" position="570,center" size="420,465" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/slider_vert.png" transparent="1" selectionPixmap="MetropolisHD/buttons/sel.png"/>
 	</screen>
 
-	<screen name="Pic_Exif" position="340,134" size="600,502">
-		<widget name="key_red" position="215,450" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<eLabel name="Red" position="215,485" size="178,1" foregroundColor="red" backgroundColor="red"/>
-		<widget source="menu" render="Listbox" position="10,10" size="580,425" zPosition="3" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1" selectionDisabled="1">
+	<screen name="Pic_Exif" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="Info">
+		<panel name="MidleScreen_RS_Template"/>
+		<widget source="Title" render="Label" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget source="menu" render="Listbox" position="center,center" size="705,425" zPosition="3" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/slider_vert.png" transparent="1" selectionDisabled="1">
 			<convert type="TemplatedMultiContent">
 {"template": [  MultiContentEntryText(pos = (5, 7), size = (350, 30), flags = RT_HALIGN_LEFT, text = 0),
 MultiContentEntryText(pos = (360, 7), size = (215, 30), flags = RT_HALIGN_LEFT, text = 1)],
