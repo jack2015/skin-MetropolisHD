@@ -1928,12 +1928,17 @@ MultiContentEntryPixmapAlphaTest(pos = (0, 48), size = (550, 2), png = 3), # ind
 		<widget source="package" render="Label" position="center,180" size="540,20" font="Regular;18" halign="center" valign="center" backgroundColor="un25062748" transparent="1"/>
 		<widget source="status" render="Label" position="center,210" size="540,45" font="Regular;20" halign="center" valign="center" backgroundColor="un25062748" transparent="1"/>
 	</screen>
-	<screen name="VirtualKeyBoard" position="360,140" size="560,350" zPosition="99">
+
+	<screen name="VirtualKeyBoard" position="center,center" size="560,350" zPosition="99" title="Virtual keyboard">
 		<ePixmap pixmap="MetropolisHD/vkey_text.png" position="9,35" zPosition="-4" size="542,52" alphatest="on"/>
+		<widget source="country" render="Pixmap" position="490,0" size="60,40" alphatest="on">
+			<convert type="ValueToPixmap">LanguageCode</convert>
+		</widget>
 		<widget name="header" position="10,10" size="500,20" font="Regular;20" transparent="1" noWrap="1"/>
 		<widget name="text" position="12,35" size="536,46" font="Regular;38" transparent="1" noWrap="1" halign="right"/>
 		<widget name="list" position="10,100" size="540,225" selectionDisabled="1" transparent="1"/>
 	</screen>
+
 	<screen name="MyTubePlayer" position="0,549" size="1280,155" backgroundColor="transparent2" flags="wfNoBorder">
 		<ePixmap position="center,1" size="1100,140" zPosition="-3" pixmap="MetropolisHD/podloga.png" transparent="0" borderWidth="1" borderColor="un666666"/>
 		<ePixmap pixmap="MetropolisHD/back1.png" position="272,5" size="745,40" alphatest="off" zPosition="-2" transparent="0"/>
