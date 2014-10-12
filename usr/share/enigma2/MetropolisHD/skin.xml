@@ -1384,15 +1384,15 @@ MultiContentEntryText(pos = (50, 28), size = (480, 40), font = 1, flags = RT_HAL
 		<widget name="timerlist" position="center,130" size="611,463" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
 	</screen>
 
-	<screen name="TimerEntry" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="TimerEntry" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent"  title="Timer entry">
 		<panel name="MidleScreenTemplate"/>
-		<eLabel text="Timer entry" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<eLabel name="Line" position="center,613" size="716,1" backgroundColor="un666666"/>
-		<widget name="canceltext" position="40,460" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget name="oktext" position="310,460" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<eLabel name="Red" position="75,495" size="180,1" foregroundColor="red" backgroundColor="red"/>
-		<eLabel name="Green" position="345,495" size="180,1" foregroundColor="green" backgroundColor="green"/>
+		<panel name="ButtonTemplate_Midle_RGYB"/>
+		<widget source="Title" render="Label" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="config" position="center,150" size="676,425" zPosition="2" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/slider_vert.png" backgroundColor="transpGrey" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1" font="Regular; 20" foregroundColor="un21e2e2e2"/>
+		<widget name="canceltext" position="280,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget name="oktext" position="460,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget name="key_yellow" position="640,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget name="key_blue" position="820,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
 	</screen>
 
 	<screen name="TimerLog" position="90,100" size="1100,560" backgroundColor="podloga">
