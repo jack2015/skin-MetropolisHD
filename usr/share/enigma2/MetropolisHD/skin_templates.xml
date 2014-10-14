@@ -113,6 +113,12 @@
 		<eLabel name="Green" position="685,648" size="180,1" foregroundColor="green" backgroundColor="green"/>
 	</screen>
 
+	<screen name="ButtonTemplate_CancelOK_Midle">
+		<panel name="ButtonTemplate_Midle_RG"/>
+		<widget name="canceltext" position="380,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget name="oktext" position="650,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+	</screen>
+
 	<screen name="ButtonTemplate_RG_Midle">
 		<panel name="ButtonTemplate_Midle_RG"/>
 		<widget name="key_red" position="380,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
@@ -256,6 +262,11 @@
 	<screen name="MidleScreen_RGYS_Template">
 		<panel name="MidleScreenTemplate"/>
 		<panel name="ButtonTemplate_RGYS"/>
+	</screen>
+
+	<screen name="MidleScreen_CancelOK_Template">
+		<panel name="MidleScreenTemplate"/>
+		<panel name="ButtonTemplate_CancelOK_Midle"/>
 	</screen>
 
 	<screen name="MidleScreen_RG_Template">

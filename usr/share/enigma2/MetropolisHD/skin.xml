@@ -813,6 +813,12 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count> 7 and 2 or 3)))
 		<widget name="timeline_now" position="60,145" zPosition="2" size="15,446" pixmap="MetropolisHD/timeline-now.png" alphatest="on"/>
 	</screen>
 
+	<screen name="GraphMultiEpgSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="Electronic Program Guide Setup">
+		<panel name="MidleScreen_CancelOK_Template"/>
+		<widget source="Title" render="Label" position="center,72" size="740,50" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget name="config" position="center,120" size="700,490" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
+	</screen>
+
 	<screen name="HarddiskSelection" position="340,134" size="600,502" backgroundColor="podloga">
 		<eLabel position="0,0" size="600,2" backgroundColor="grey" zPosition="5"/>
 		<widget name="hddlist" position="10,12" size="580,475" transparent="1"/>
