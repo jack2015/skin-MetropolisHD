@@ -371,11 +371,13 @@
 	<screen name="UnhandledKey" position="center,200" size="64, 64" zPosition="100" flags="wfNoBorder" backgroundColor="transparent">
 		<widget alphatest="off" name="UnhandledKeyPixmap" pixmap="MetropolisHD/error.png" position="6,2" size="53,65" transparent="0"/>
 	</screen>
+
 	<screen name="Volume" position="center,40" zPosition="1" size="349,41" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
 		<ePixmap pixmap="MetropolisHD/vol_back.png" position="1,0" size="346,39" alphatest="off" zPosition="1" transparent="0"/>
-		<widget name="Volume" pixmap="MetropolisHD/vol.png" position="1,0" zPosition="2" size="346,39" transparent="1" alphatest="off"/>
+		<widget name="Volume" pixmap="MetropolisHD/vol.png" position="1,0" zPosition="2" size="346,39" transparent="1"/>
 		<widget source="global.CurrentTime" render="MetVolume" zPosition="3" position="1,1" size="346,38" font="Replacement;28" valign="center" halign="center" foregroundColor="white" backgroundColor="podloga" transparent="1"/>
 	</screen>
+
 	<screen name="Mute" position="67,50" size="64,64" backgroundColor="transparent" zPosition="10" flags="wfNoBorder" transparent="0">
 		<ePixmap pixmap="MetropolisHD/mute.png" position="1,1" size="64,64" zPosition="-5" alphatest="off"/>
 	</screen>
