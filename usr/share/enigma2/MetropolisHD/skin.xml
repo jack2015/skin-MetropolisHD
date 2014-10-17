@@ -923,8 +923,11 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count> 7 and 2 or 3)))
 		<eLabel name="new eLabel" position="center,97" size="610,2" backgroundColor="un666666"/>
 		<ePixmap pixmap="MetropolisHD/chnsel/ico_dolby_off.png" position="108,14" size="65,24" zPosition="1" alphatest="blend"/>
 	</screen>
-	<screen name="MovieContextMenu" position="340,180" size="600,400" backgroundColor="podloga">
-		<widget name="menu" position="20,20" size="560,360" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
+
+	<screen name="MovieContextMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="Movielist menu">
+		<panel name="MinimalScreen_YB_Template"/>
+		<widget source="Title" render="Label" position="center,155" size="600,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget name="menu" position="center,210" size="580,300" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
 	</screen>
 
 	<screen name="MovieLocationBox" position="90,100" size="1100,560" backgroundColor="podloga">
