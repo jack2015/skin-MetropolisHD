@@ -580,9 +580,9 @@ MultiContentEntryText(pos = (535, 0), size = (105, 25),  font = 1, flags = RT_HA
 	</screen>
 
 	<screen name="BouquetSelector" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="MidleScreen_RGYB_Template"/>
+		<panel name="MidleScreenTemplate"/>
 		<eLabel text="Select a bouquet" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<widget name="menu" position="center,114" size="720,490" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
+		<widget name="menu" position="center,114" size="700,526" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
 	</screen>
 
 	<screen name="ChannelContextMenu" position="center,center" size="600,290" backgroundColor="podloga">
