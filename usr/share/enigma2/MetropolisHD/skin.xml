@@ -615,7 +615,7 @@ MultiContentEntryText(pos = (535, 0), size = (105, 25),  font = 1, flags = RT_HA
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
 		<ePixmap pixmap="MetropolisHD/chnsel/info.png" position="851,544" size="32,32" alphatest="off" zPosition="3"/>
-		<widget source="ServiceEvent" render="NextEpgInfo" position="887,271" size="309,45" font="Replacement; 22" halign="left" foregroundColor="yellow"/>
+		<widget source="ServiceEvent" render="NextEpgInfo" position="887,266" size="309,50" font="Replacement; 22" halign="left" valign="center" foregroundColor="yellow"/>
 		<widget source="ServiceEvent" render="Label" position="854,332" zPosition="3" size="340,200" font="Regular; 20" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1" valign="top">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
