@@ -930,6 +930,12 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count> 7 and 2 or 3)))
 		<widget name="menu" position="center,210" size="580,300" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
 	</screen>
 
+	<screen name="MovieBrowserConfiguration" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="Movie Browser Configuration">
+		<panel name="MidleScreen_RG_Template"/>
+		<widget source="Title" render="Label" position="center,72" size="740,50" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget name="config" position="center,120" size="700,490" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
+	</screen>
+
 	<screen name="MovieLocationBox" position="90,100" size="1100,560" backgroundColor="podloga">
 		<panel name="ButtonTemplate_RGYB_Big"/>
 		<widget name="text" position="10,10" size="1080,27" font="Regular;23"/>
