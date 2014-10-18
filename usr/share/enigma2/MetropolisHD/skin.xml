@@ -533,6 +533,13 @@
 		<widget name="AboutScrollLabel" position="center,130" size="705,499" halign="center" font="Regular;22" backgroundColor="transpBlack" transparent="1"/>
 	</screen>
 
+	<screen name="TranslationInfo" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MinimalScreenTemplate"/>
+		<eLabel text="Translation" position="center,158" size="600,34" zPosition="2" halign="center" font="Replacement; 24" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget source="TranslatorName" render="Label" position="center,200" size="580,40" font="Regular;26" foregroundColor="yellow" halign="center" transparent="1"/>
+		<widget source="TranslationInfo" render="Label" position="center,250" size="580,300" font="Regular;22" halign="center" transparent="1"/>
+	</screen>
+
 	<screen name="ServiceInfo" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGYB_Template"/>
 		<eLabel text="Service info" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
