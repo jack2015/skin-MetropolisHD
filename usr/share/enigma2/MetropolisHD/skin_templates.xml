@@ -131,6 +131,12 @@
 		<widget name="oktext" position="650,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
 	</screen>
 
+	<screen name="ButtonTemplate_CancelScan_Midle">
+		<panel name="ButtonTemplate_Midle_RG"/>
+		<eLabel text="Cancel" position="380,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<eLabel text="Scan" position="650,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+	</screen>
+
 	<screen name="ButtonTemplate_RG_Midle">
 		<panel name="ButtonTemplate_Midle_RG"/>
 		<widget name="key_red" position="380,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
@@ -236,6 +242,12 @@
 		</widget>
 	</screen>
 
+	<screen name="ScanTemplate">
+		<panel name="MidleScreen_CancelScan_Template"/>
+		<widget name="header" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget name="config" position="center,130" size="680,290" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
+	</screen>
+
 	<screen name="MinimalScreenTemplate">
 		<ePixmap position="center,center" size="620,420" zPosition="-10" pixmap="MetropolisHD/window/podloga.png" transparent="0" borderWidth="1" borderColor="un666666"/>
 		<ePixmap pixmap="MetropolisHD/window/back.png" position="center,155" size="612,40" alphatest="off" zPosition="-9" transparent="0"/>
@@ -284,6 +296,11 @@
 	<screen name="MidleScreen_CancelOK_Template">
 		<panel name="MidleScreenTemplate"/>
 		<panel name="ButtonTemplate_CancelOK_Midle"/>
+	</screen>
+
+	<screen name="MidleScreen_CancelScan_Template">
+		<panel name="MidleScreenTemplate"/>
+		<panel name="ButtonTemplate_CancelScan_Midle"/>
 	</screen>
 
 	<screen name="MidleScreen_RG_Template">
