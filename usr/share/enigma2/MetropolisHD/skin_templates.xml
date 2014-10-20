@@ -67,15 +67,6 @@
 		<eLabel name="Blue" position="735,548" size="170,1" foregroundColor="blue" backgroundColor="blue"/>
 	</screen>
 
-	<screen name="ButtonTemplate_RGY">
-		<widget name="key_red" position="380,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" transparent="1"/>
-		<widget name="key_green" position="center,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" transparent="1"/>
-		<widget name="key_yellow" position="730,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" transparent="1"/>
-		<eLabel name="Red" position="390,648" size="160,1" foregroundColor="red" backgroundColor="red"/>
-		<eLabel name="Green" position="center,648" size="160,1" foregroundColor="green" backgroundColor="green"/>
-		<eLabel name="Yellow" position="740,648" size="160,1" foregroundColor="yellow" backgroundColor="yellow"/>
-	</screen>
-
 	<screen name="ButtonTemplate_RGYS">
 		<widget source="key_red" render="Label" position="380,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" transparent="1"/>
 		<widget source="key_green" render="Label" position="center,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" transparent="1"/>
@@ -99,6 +90,13 @@
 		<eLabel name="Line" position="center,523" size="600,1" backgroundColor="un666666"/>
 		<eLabel name="Red" position="415,558" size="180,1" foregroundColor="red" backgroundColor="red"/>
 		<eLabel name="Green" position="685,558" size="180,1" foregroundColor="green" backgroundColor="green"/>
+	</screen>
+
+	<screen name="ButtonTemplate_Minimal_RGY">
+		<eLabel name="Line" position="center,523" size="600,1" backgroundColor="un666666"/>
+		<eLabel name="Red" position="360,558" size="180,1" foregroundColor="red" backgroundColor="red"/>
+		<eLabel name="Green" position="center,558" size="180,1" foregroundColor="green" backgroundColor="green"/>
+		<eLabel name="Yellow" position="740,558" size="180,1" foregroundColor="yellow" backgroundColor="yellow"/>
 	</screen>
 
 	<screen name="ButtonTemplate_Minimal_YB">
@@ -281,11 +279,6 @@
 	<screen name="MidleScreen_RGYBS_Template">
 		<panel name="MidleScreenTemplate"/>
 		<panel name="ButtonTemplate_RGYBS"/>
-	</screen>
-
-	<screen name="MidleScreen_RGY_Template">
-		<panel name="MidleScreenTemplate"/>
-		<panel name="ButtonTemplate_RGY"/>
 	</screen>
 
 	<screen name="MidleScreen_RGYS_Template">
