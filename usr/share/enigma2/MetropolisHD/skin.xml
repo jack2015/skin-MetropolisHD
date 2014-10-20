@@ -768,25 +768,25 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count> 7 and 2 or 3)))
 		<widget name="timeline4" position="60,120" zPosition="1" size="1,300" pixmap="MetropolisHD/window/timeline.png"/>
 		<widget name="timeline5" position="60,120" zPosition="1" size="1,300" pixmap="MetropolisHD/window/timeline.png"/>
 		<widget name="timeline_now" position="60,110" zPosition="2" size="15,311" pixmap="MetropolisHD/window/timeline-now.png" alphatest="on"/>
-		<widget source="Event" render="Label" position="60,440" zPosition="1" size="400,60" font="Regular;24" halign="center" backgroundColor="podloga">
+		<widget source="Event" render="Label" position="60,440" zPosition="1" size="400,60" font="Regular;24" halign="center" backgroundColor="transpGrey" transparent="1">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="Event" render="Label" position="190,545" zPosition="1" size="60,22" font="Regular;20" halign="right">
+		<widget source="Event" render="Label" position="190,545" zPosition="1" size="60,22" font="Regular;20" halign="right" backgroundColor="transpGrey" transparent="1">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">
 			</convert>
 		</widget>
-		<widget source="Event" render="Label" position="254,545" zPosition="1" size="70,22" font="Regular;20" halign="left">
+		<widget source="Event" render="Label" position="254,545" zPosition="1" size="70,22" font="Regular;20" halign="left" backgroundColor="transpGrey" transparent="1">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
 		<widget source="Event" render="Progress" position="106,573" zPosition="1" pixmap="MetropolisHD/window/progress.png" size="300,15" borderWidth="1" borderColor="uncccccc">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<widget source="Event" render="Label" position="473,440" zPosition="1" size="750,160" font="Regular;18" foregroundColor="foreground">
+		<widget source="Event" render="Label" position="473,440" zPosition="1" size="750,160" font="Regular;18" foregroundColor="foreground" backgroundColor="transpGrey" transparent="1">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
-		<widget source="Event" render="Label" position="60,510" zPosition="1" size="400,25" font="Regular;22" halign="center">
+		<widget source="Event" render="Label" position="60,510" zPosition="1" size="400,25" font="Regular;22" halign="center" backgroundColor="transpGrey" transparent="1">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Format:(%A)</convert>
 		</widget>
