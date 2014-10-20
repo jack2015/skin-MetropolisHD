@@ -260,7 +260,7 @@
 
 	<screen name="BigScreenTemplate">
 		<ePixmap position="center,30" size="1178,627" zPosition="-10" pixmap="MetropolisHD/window/podloga.png" transparent="0" borderWidth="1" borderColor="un666666"/>
-		<ePixmap pixmap="MetropolisHD/window/back.png" position="center,33" size="1170,40" alphatest="blend" zPosition="-9" transparent="0"/>
+		<ePixmap pixmap="MetropolisHD/window/back.png" position="center,33" size="1170,40" alphatest="off" zPosition="-9" transparent="0"/>
 	</screen>
 
 	<screen name="MinimalScreen_RGS_Template">

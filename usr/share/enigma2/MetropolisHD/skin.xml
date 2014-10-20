@@ -141,7 +141,7 @@
 		<widget source="session.CurrentService" render="Picon" position="70,572" size="100,60" zPosition="10" transparent="1" alphatest="blend">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		<ePixmap pixmap="MetropolisHD/infobar/icons_off.png" position="630,644" size="397,41" zPosition="1" alphatest="blend" transparent="1"/>
+		<ePixmap pixmap="MetropolisHD/infobar/icons_off.png" position="630,644" size="397,41" zPosition="1" alphatest="on" transparent="1"/>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/infobar/ico_sub_on.png" position="632,645" size="31,40" zPosition="2" alphatest="off">
 			<convert type="ServiceInfo">SubservicesAvailable</convert>
 			<convert type="ConditionalShowHide"/>
@@ -166,7 +166,7 @@
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="session.RecordState" render="Pixmap" pixmap="MetropolisHD/infobar/ico_rec_on.png" position="586,645" size="38,38" zPosition="2" alphatest="blend">
+		<widget source="session.RecordState" render="Pixmap" pixmap="MetropolisHD/infobar/ico_rec_on.png" position="586,645" size="38,38" zPosition="2" alphatest="on">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="185,550" size="70,30" halign="right" font="OpenSans; 20" foregroundColor="yellow" backgroundColor="transpGrey" transparent="1" valign="center">
@@ -252,7 +252,7 @@
 		<widget source="session.CurrentService" render="Picon" position="70,572" size="100,60" zPosition="10" transparent="1" alphatest="blend">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		<ePixmap pixmap="MetropolisHD/infobar/icons_off.png" position="630,644" size="397,41" zPosition="1" alphatest="blend" transparent="1"/>
+		<ePixmap pixmap="MetropolisHD/infobar/icons_off.png" position="630,644" size="397,41" zPosition="1" alphatest="on" transparent="1"/>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/infobar/ico_sub_on.png" position="632,645" size="31,40" zPosition="2" alphatest="off">
 			<convert type="ServiceInfo">SubservicesAvailable</convert>
 			<convert type="ConditionalShowHide"/>
@@ -277,7 +277,7 @@
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="session.RecordState" render="Pixmap" pixmap="MetropolisHD/infobar/ico_rec_on.png" position="586,645" size="38,38" zPosition="2" alphatest="blend">
+		<widget source="session.RecordState" render="Pixmap" pixmap="MetropolisHD/infobar/ico_rec_on.png" position="586,645" size="38,38" zPosition="2" alphatest="on">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="185,550" size="70,30" halign="right" font="OpenSans; 20" foregroundColor="yellow" backgroundColor="transpGrey" transparent="1" valign="center">
@@ -383,7 +383,7 @@
 		<widget source="ServiceEvent" render="Label" position="883,546" size="312,26" font="Regular; 18" backgroundColor="transpGrey" transparent="1" halign="center" noWrap="1" valign="center" text="36.0E   DVB-S2  11234LC 27500 3/4 8PSK" zPosition="3" foregroundColor="un21e2e2e2">
 			<convert type="ServiceName2">%O  %s  %F %p %Y %f %M %b</convert>
 		</widget>
-		<ePixmap pixmap="MetropolisHD/chnsel/clock.png" position="851,228" size="32,32" alphatest="blend" zPosition="3" transparent="1"/>
+		<ePixmap pixmap="MetropolisHD/chnsel/clock.png" position="851,228" size="32,32" alphatest="on" zPosition="3" transparent="1"/>
 		<widget source="ServiceEvent" render="Label" position="875,230" size="72,28" zPosition="2" halign="right" font="OpenSans; 20" foregroundColor="hellgreen" backgroundColor="black" transparent="1" valign="center">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText"></convert>
@@ -396,7 +396,7 @@
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
 		<ePixmap pixmap="MetropolisHD/chnsel/info.png" position="851,544" size="32,32" alphatest="off" zPosition="3"/>
-		<widget source="ServiceEvent" render="NextEpgInfo" position="887,266" size="309,50" font="Replacement; 22" halign="left" valign="center" foregroundColor="yellow"/>
+		<widget source="ServiceEvent" render="NextEpgInfo" position="887,266" size="309,50" font="Replacement; 22" halign="left" valign="center" foregroundColor="yellow" backgroundColor="transpGrey" transparent="1"/>
 		<widget source="ServiceEvent" render="Label" position="854,332" zPosition="3" size="340,200" font="Regular; 20" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1" valign="top">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
@@ -413,18 +413,18 @@
 		<widget source="ServiceEvent" render="Picon" position="910,160" size="100,60" zPosition="10" transparent="1" alphatest="blend">
 			<convert type="ServiceName2">Reference</convert>
 		</widget>
-		<widget source="ServiceEvent" render="PiconProv" position="1035,160" size="100,60" zPosition="10" transparent="1" alphatest="on">
+		<widget source="ServiceEvent" render="PiconProv" position="1035,160" size="100,60" zPosition="10" transparent="1" alphatest="blend">
 			<convert type="ServiceName2">Provider</convert>
 		</widget>
 		<widget source="ServiceEvent" render="Progress" position="962,243" size="120,4" zPosition="2" pixmap="MetropolisHD/window/slider.png" transparent="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<ePixmap position="962,244" size="120,4" zPosition="1" pixmap="MetropolisHD/window/slider_back.png" alphatest="blend"/>
+		<ePixmap position="962,244" size="120,4" zPosition="1" pixmap="MetropolisHD/window/slider_back.png" alphatest="off"/>
 		<eLabel name="Line" position="872,324" size="300,1" backgroundColor="un666666"/>
 	</screen>
 
 	<screen name="UnhandledKey" position="center,200" size="64, 64" zPosition="100" flags="wfNoBorder" backgroundColor="transparent">
-		<widget alphatest="off" name="UnhandledKeyPixmap" pixmap="MetropolisHD/icons/error.png" position="6,2" size="53,65" transparent="0"/>
+		<widget alphatest="on" name="UnhandledKeyPixmap" pixmap="MetropolisHD/icons/error.png" position="6,2" size="53,65" transparent="0"/>
 	</screen>
 
 	<screen name="Volume" position="center,40" zPosition="1" size="349,41" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
@@ -434,32 +434,32 @@
 	</screen>
 
 	<screen name="Mute" position="67,50" size="64,64" backgroundColor="transparent" zPosition="10" flags="wfNoBorder" transparent="0">
-		<ePixmap pixmap="MetropolisHD/window/mute.png" position="1,1" size="64,64" zPosition="-5" alphatest="off"/>
+		<ePixmap pixmap="MetropolisHD/window/mute.png" position="1,1" size="64,64" zPosition="-5" alphatest="on"/>
 	</screen>
 
 	<screen name="menu_mainmenu" position="center,center" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuTemplate"/>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/shutdown.png" position="128,132" size="125,125" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/shutdown.png" position="128,132" size="125,125" alphatest="on">
 			<convert type="MenuEntryCompare">standby_restart_list</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/setup.png" position="128,132" size="125,125" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/setup.png" position="128,132" size="125,125" alphatest="on">
 			<convert type="MenuEntryCompare">setup_selection</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/plugins.png" position="128,132" size="125,125" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/plugins.png" position="128,132" size="125,125" alphatest="on">
 			<convert type="MenuEntryCompare">plugin_selection</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/information.png" position="128,132" size="125,125" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/information.png" position="128,132" size="125,125" alphatest="on">
 			<convert type="MenuEntryCompare">info_screen</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/timer.png" position="128,132" size="125,125" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/timer.png" position="128,132" size="125,125" alphatest="on">
 			<convert type="MenuEntryCompare">timer_edit</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/YPbPr.png" position="128,128" size="125,125" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/YPbPr.png" position="128,128" size="125,125" alphatest="on">
 			<convert type="MenuEntryCompare">ChangeVideoPort</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -467,47 +467,47 @@
 
 	<screen name="menu_setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuTemplate"/>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/shutdown.png" position="128,132" size="125,125" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/shutdown.png" position="128,132" size="125,125" alphatest="on">
 			<convert type="MenuEntryCompare">standby_restart_list</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/setup.png" position="128,132" size="125,125" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/setup.png" position="128,132" size="125,125" alphatest="on">
 			<convert type="MenuEntryCompare">setup_selection</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/plugins.png" position="128,132" size="125,125" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/plugins.png" position="128,132" size="125,125" alphatest="on">
 			<convert type="MenuEntryCompare">plugin_selection</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/information.png" position="128,132" size="125,125" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/information.png" position="128,132" size="125,125" alphatest="on">
 			<convert type="MenuEntryCompare">info_screen</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/scart.png" position="128,132" size="125,125" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/scart.png" position="128,132" size="125,125" alphatest="on">
 			<convert type="MenuEntryCompare">scart_switch</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/timer.png" position="128,132" size="125,125" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/timer.png" position="128,132" size="125,125" alphatest="on">
 			<convert type="MenuEntryCompare">timer_edit</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/setup.png" position="128,132" size="125,125" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/setup.png" position="128,132" size="125,125" alphatest="on">
 			<convert type="MenuEntryCompare">system_selection</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/sat_search.png" position="128,132" size="125,125" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/sat_search.png" position="128,132" size="125,125" alphatest="on">
 			<convert type="MenuEntryCompare">service_searching_selection</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/look.png" position="128,132" size="125,125" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/look.png" position="128,132" size="125,125" alphatest="on">
 			<convert type="MenuEntryCompare">parental_setup</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/reset.png" position="128,132" size="125,125" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/reset.png" position="128,132" size="125,125" alphatest="on">
 			<convert type="MenuEntryCompare">factory_reset</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/setup.png" position="128,132" size="125,125" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/setup.png" position="128,132" size="125,125" alphatest="on">
 			<convert type="MenuEntryCompare">software_update</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -515,20 +515,20 @@
 
 	<screen name="menu_system" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuTemplate"/>
-		<ePixmap position="128,132" size="128,128" zPosition="-1" pixmap="MetropolisHD/menu/setup.png" transparent="0" alphatest="blend"/>
+		<ePixmap position="128,132" size="128,128" zPosition="-1" pixmap="MetropolisHD/menu/setup.png" transparent="0" alphatest="on"/>
 	</screen>
 
 	<screen name="menu_harddisk" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuTemplate"/>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/hdd.png" position="128,132" size="125,125" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/hdd.png" position="128,132" size="125,125" alphatest="on">
 			<convert type="MenuEntryCompare">harddisk_init</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/hdd.png" position="128,132" size="125,125" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/hdd.png" position="128,132" size="125,125" alphatest="on">
 			<convert type="MenuEntryCompare">harddisk_check</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/hdd.png" position="128,132" size="125,125" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/hdd.png" position="128,132" size="125,125" alphatest="on">
 			<convert type="MenuEntryCompare">harddisk_setup</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -536,23 +536,23 @@
 
 	<screen name="menu_shutdown" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuTemplate"/>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/shutdown.png" position="128,132" size="128,125" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/shutdown.png" position="128,132" size="128,125" alphatest="on">
 			<convert type="MenuEntryCompare">deep_standby</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/reboot.png" position="128,132" size="125,125" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/reboot.png" position="128,132" size="125,125" alphatest="on">
 			<convert type="MenuEntryCompare">restart</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/restart.png" position="128,132" size="125,125" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/restart.png" position="128,132" size="125,125" alphatest="on">
 			<convert type="MenuEntryCompare">restart_enigma</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/shutdown.png" position="128,132" size="125,125" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/shutdown.png" position="128,132" size="125,125" alphatest="on">
 			<convert type="MenuEntryCompare">standby</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/timer.png" position="128,132" size="125,125" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/timer.png" position="128,132" size="125,125" alphatest="on">
 			<convert type="MenuEntryCompare">sleep</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -560,11 +560,11 @@
 
 	<screen name="menu_information" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuTemplate"/>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/info.png" position="128,132" size="125,125" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/info.png" position="128,132" size="125,125" alphatest="on">
 			<convert type="MenuEntryCompare">about_screen</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/information.png" position="128,132" size="125,125" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/information.png" position="128,132" size="125,125" alphatest="on">
 			<convert type="MenuEntryCompare">service_info_screen</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -572,7 +572,7 @@
 
 	<screen name="menu_scan" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuTemplate"/>
-		<ePixmap position="128,132" size="125,125" zPosition="-1" pixmap="MetropolisHD/menu/sat_search.png" transparent="0" alphatest="blend"/>
+		<ePixmap position="128,132" size="125,125" zPosition="-1" pixmap="MetropolisHD/menu/sat_search.png" transparent="0" alphatest="on"/>
 	</screen>
 
 	<screen name="About" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -729,9 +729,9 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count> 7 and 2 or 3)))
 		<panel name="BigScreen_RGYB_Template"/>
 		<eLabel text="Multi-EPG bouquet selection" position="center,37" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="list" position="60,145" size="768,450" zPosition="2" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="transpBlack" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
-		<widget name="now_button_sel" pixmap="MetropolisHD/window/epg_now.png" position="60,75" zPosition="3" size="1100,35" alphatest="on"/>
-		<widget name="next_button_sel" pixmap="MetropolisHD/window/epg_next.png" position="60,75" zPosition="3" size="1100,35" alphatest="on"/>
-		<widget name="more_button_sel" pixmap="MetropolisHD/window/epg_more.png" position="60,75" zPosition="3" size="1100,35" alphatest="on"/>
+		<widget name="now_button_sel" pixmap="MetropolisHD/window/epg_now.png" position="60,75" zPosition="3" size="1100,35" alphatest="off"/>
+		<widget name="next_button_sel" pixmap="MetropolisHD/window/epg_next.png" position="60,75" zPosition="3" size="1100,35" alphatest="off"/>
+		<widget name="more_button_sel" pixmap="MetropolisHD/window/epg_more.png" position="60,75" zPosition="3" size="1100,35" alphatest="off"/>
 		<widget name="now_text" position="52,82" zPosition="4" size="250,25" text="NOW" font="Regular;20" halign="center" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="next_text" position="322,82" zPosition="4" size="250,25" text="NEXT" font="Regular;20" halign="center" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="more_text" position="582,82" zPosition="4" size="250,25" text="MORE" font="Regular;20" halign="center" backgroundColor="transpBlack" transparent="1"/>
@@ -916,7 +916,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<ePixmap position="center,1" size="1100,140" zPosition="-3" pixmap="MetropolisHD/window/podloga.png" transparent="0" borderWidth="1" borderColor="un666666"/>
 		<ePixmap pixmap="MetropolisHD/window/back.png" position="272,5" size="745,40" alphatest="off" zPosition="-2" transparent="0"/>
 		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666"/>
-		<ePixmap position="1041,35" zPosition="-1" size="96,96" pixmap="MetropolisHD/icons/mplayer.png" alphatest="blend"/>
+		<ePixmap position="1041,35" zPosition="-1" size="96,96" pixmap="MetropolisHD/icons/mplayer.png" alphatest="off"/>
 		<widget source="global.CurrentTime" render="Label" position="930,7" size="185,34" font="Replacement; 24" valign="top" halign="right" backgroundColor="podloga" transparent="1" foregroundColor="yellow">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -926,16 +926,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget source="session.CurrentService" render="Label" position="center,12" size="668,24" font="Replacement; 22" backgroundColor="background" transparent="1" halign="center" foregroundColor="green">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/chnsel/ico_dolby_on.png" position="108,14" size="65,24" zPosition="2" alphatest="blend">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/chnsel/ico_dolby_on.png" position="108,14" size="65,24" zPosition="2" alphatest="on">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap pixmap="MetropolisHD/chnsel/ico_format_off.png" position="183,13" size="42,27" zPosition="1" alphatest="blend"/>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/chnsel/ico_format_on.png" position="183,13" size="42,27" zPosition="2" alphatest="blend">
+		<ePixmap pixmap="MetropolisHD/chnsel/ico_format_off.png" position="183,13" size="42,27" zPosition="1" alphatest="off"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/chnsel/ico_format_on.png" position="183,13" size="42,27" zPosition="2" alphatest="on">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="session.RecordState" render="Pixmap" pixmap="MetropolisHD/window/rec.png" position="242,16" size="12,12" zPosition="2" alphatest="blend">
+		<widget source="session.RecordState" render="Pixmap" pixmap="MetropolisHD/window/rec.png" position="242,16" size="12,12" zPosition="2" alphatest="on">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" font="Replacement; 15" position="120,115" size="54,20" halign="right" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1" text="1920">
@@ -960,13 +960,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget source="session.CurrentService" render="Label" position="825,56" size="120,30" font="Regular;26" halign="right" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1">
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
-		<ePixmap position="center,110" zPosition="1" size="200,25" pixmap="MetropolisHD/window/mp_buttons.png" alphatest="blend"/>
-		<ePixmap position="267,113" zPosition="2" size="27,27" pixmap="MetropolisHD/icons/icon_norec_light.png" alphatest="blend"/>
+		<ePixmap position="center,110" zPosition="1" size="200,25" pixmap="MetropolisHD/window/mp_buttons.png" alphatest="on"/>
+		<ePixmap position="267,113" zPosition="2" size="27,27" pixmap="MetropolisHD/icons/icon_norec_light.png" alphatest="on"/>
 		<widget source="session.RecordState" render="Pixmap" pixmap="MetropolisHD/icons/icon_rec_light.png" position="267,113" zPosition="3" size="19,19" alphatest="on">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 		<eLabel name="new eLabel" position="center,97" size="610,2" backgroundColor="un666666"/>
-		<ePixmap pixmap="MetropolisHD/chnsel/ico_dolby_off.png" position="108,14" size="65,24" zPosition="1" alphatest="blend"/>
+		<ePixmap pixmap="MetropolisHD/chnsel/ico_dolby_off.png" position="108,14" size="65,24" zPosition="1" alphatest="off"/>
 	</screen>
 
 	<screen name="MovieContextMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -1015,12 +1015,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<eLabel text="Select a movie" position="68,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<panel name="Big2PanelsTemplate"/>
 		<panel name="MovieSelectionSmallpanelTemplate"/>
-		<widget name="movie_sort" pixmaps="MetropolisHD/icons/az.png,MetropolisHD/icons/newtop.png,MetropolisHD/icons/shuffle.png,MetropolisHD/icons/za.png,MetropolisHD/icons/oldtop.png,MetropolisHD/icons/faz.png,MetropolisHD/icons/fza.png,MetropolisHD/icons/newtop.png" position="76,576" zPosition="2" size="35,20" transparent="1" alphatest="on"/>
-		<widget name="movie_off" pixmaps="MetropolisHD/icons/ask.png,MetropolisHD/icons/movielist.png,MetropolisHD/icons/quit.png,MetropolisHD/icons/pause.png,MetropolisHD/icons/playlist.png,MetropolisHD/icons/playlistquit.png,MetropolisHD/icons/loop.png,MetropolisHD/icons/rep.png" position="125,576" zPosition="2" size="35,20" transparent="1" alphatest="on"/>
+		<widget name="movie_sort" pixmaps="MetropolisHD/icons/az.png,MetropolisHD/icons/newtop.png,MetropolisHD/icons/shuffle.png,MetropolisHD/icons/za.png,MetropolisHD/icons/oldtop.png,MetropolisHD/icons/faz.png,MetropolisHD/icons/fza.png,MetropolisHD/icons/newtop.png" position="76,576" zPosition="2" size="35,20" transparent="1" alphatest="off"/>
+		<widget name="movie_off" pixmaps="MetropolisHD/icons/ask.png,MetropolisHD/icons/movielist.png,MetropolisHD/icons/quit.png,MetropolisHD/icons/pause.png,MetropolisHD/icons/playlist.png,MetropolisHD/icons/playlistquit.png,MetropolisHD/icons/loop.png,MetropolisHD/icons/rep.png" position="125,576" zPosition="2" size="35,20" transparent="1" alphatest="off"/>
 		<widget name="waitingtext" position="74,575" size="720,30" zPosition="3" halign="center" font="Regular;24" backgroundColor="transpBlack" shadowColor="black" shadowOffset="-3,-3"/>
 		<widget name="chosenletter" position="74,575" size="720,30" zPosition="3" halign="center" font="Regular;24" backgroundColor="transpBlack" shadowColor="black" shadowOffset="-3,-3" transparent="1"/>
 		<widget name="freeDiskSpace" position="170,575" size="620,30" zPosition="2" halign="center" font="Regular;24" backgroundColor="transpBlack" shadowColor="black" shadowOffset="-3,-3" transparent="1"/>
-		<widget name="DescriptionBorder" position="0,0" size="0,0" />
+		<widget name="DescriptionBorder" position="0,0" size="0,0"/>
 	</screen>
 
 	<screen name="SuomipoekaMenu" position="90,100" size="1100,560" backgroundColor="podloga">
@@ -1137,7 +1137,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget source="global.CurrentTime" render="Label" position="880,35" size="110,20" font="Regular;18" halign="right" backgroundColor="transpBlack" foregroundColor="grey" transparent="1">
 			<convert type="ClockToText">Format:%d.%m.%Y</convert>
 		</widget>
-		<widget source="session.RecordState" render="Pixmap" pixmap="MetropolisHD/window/rec.png" position="1020,38" size="12,13" zPosition="2" alphatest="blend">
+		<widget source="session.RecordState" render="Pixmap" pixmap="MetropolisHD/window/rec.png" position="1020,38" size="12,13" zPosition="2" alphatest="on">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 		<eLabel position="10,60" zPosition="1" size="1096,2" backgroundColor="white"/>
@@ -1157,7 +1157,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 			<convert type="EventTime">Remaining</convert>
 			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
-		<ePixmap position="200,97" size="840,12" zPosition="2" pixmap="MetropolisHD/window/slider_back.png" alphatest="blend"/>
+		<ePixmap position="200,97" size="840,12" zPosition="2" pixmap="MetropolisHD/window/slider_back.png" alphatest="off"/>
 		<widget source="session.Event_Now" render="Progress" pixmap="MetropolisHD/window/slider.png" position="200,97" size="840,12" zPosition="1" transparent="2">
 			<convert type="EventTime">Progress</convert>
 		</widget>
@@ -1254,17 +1254,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	</screen>
 
 	<screen name="ServiceScan" position="340,134" size="600,502" backgroundColor="podloga">
-		<widget source="FrontendInfo" render="Pixmap" pixmap="MetropolisHD/icons/scan-s.png" position="15,15" size="64,64" transparent="1" alphatest="on">
+		<widget source="FrontendInfo" render="Pixmap" pixmap="MetropolisHD/icons/scan-s.png" position="15,15" size="64,64" transparent="1" alphatest="off">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">0,0</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="FrontendInfo" render="Pixmap" pixmap="MetropolisHD/icons/scan-c.png" position="15,15" size="64,64" transparent="1" alphatest="on">
+		<widget source="FrontendInfo" render="Pixmap" pixmap="MetropolisHD/icons/scan-c.png" position="15,15" size="64,64" transparent="1" alphatest="off">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">1,1</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="FrontendInfo" render="Pixmap" pixmap="MetropolisHD/icons/scan-t.png" position="15,15" size="64,64" transparent="1" alphatest="on">
+		<widget source="FrontendInfo" render="Pixmap" pixmap="MetropolisHD/icons/scan-t.png" position="15,15" size="64,64" transparent="1" alphatest="off">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">2,2</convert>
 			<convert type="ConditionalShowHide"/>
@@ -1294,7 +1294,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<panel name="MidleScreen_RS_Template"/>
 		<eLabel text="Select a skin" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="SkinList" position="286,130" size="424,430" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" zPosition="2" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
-		<widget name="Preview" position="721,130" size="280,210" alphatest="blend" backgroundColor="podloga"/>
+		<widget name="Preview" position="721,130" size="280,210" alphatest="off" backgroundColor="podloga"/>
 		<widget source="introduction" render="Label" position="center,570" size="680,25" zPosition="10" font="Regular;22" halign="center" backgroundColor="transpBlack" transparent="1"/>
 	</screen>
 
@@ -1413,7 +1413,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	</screen>
 
 	<screen name="OverscanTestScreen" position="0,0" size="1280,720" backgroundColor="transpBlack">
-		<ePixmap pixmap="skin_default/overscan.png" position="0,0" size="1280,720" zPosition="1" alphatest="on"/>
+		<ePixmap pixmap="skin_default/overscan.png" position="0,0" size="1280,720" zPosition="1" alphatest="off"/>
 	</screen>
 
 	<screen name="Menu" position="340,134" size="600,502">
@@ -1448,7 +1448,7 @@ MultiContentEntryText(pos=(145,0), size=(145, 20), text = 2, flags = RT_HALIGN_R
 		<widget source="session.CurrentService" render="Label" position="450,550" size="790,25" zPosition="3" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1">
 			<convert type="ServicePosition">Position,Detailed</convert>
 		</widget>
-		<ePixmap pixmap="MetropolisHD/window/mp_buttons.png" position="100,582" size="260,32" zPosition="1" alphatest="blend" /-->
+		<ePixmap pixmap="MetropolisHD/window/mp_buttons.png" position="100,582" size="260,32" zPosition="1" alphatest="on" /-->
 		<widget name="Timeline" position="2,2" size="696,20" zPosition="3" backgroundColor="un808888" pointer="MetropolisHD/window/position_arrow.png:3,5" foregroundColor="black"/>
 		<!--eLabel text="OK = Menu" position="1059,615" size="140,22" zPosition="1" font="Regular;20" backgroundColor="black" transparent="1" /-->
 	</screen>
@@ -1471,9 +1471,9 @@ MultiContentEntryText(pos=(145,0), size=(145, 20), text = 2, flags = RT_HALIGN_R
 		<widget name="album" position="410,555" size="580,25" font="Regular;22" valign="top" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="yeartext" position="300,585" size="100,25" font="Regular;22" valign="top" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="year" position="410,585" size="580,25" font="Regular;22" valign="top" backgroundColor="transpBlack" transparent="1"/>
-		<widget name="coverArt" pixmap="MetropolisHD/icons/multimedia.png" position="130,490" size="128,128" transparent="1" alphatest="blend"/>
-		<widget name="repeat" position="1140,580" size="50,30" pixmaps="MetropolisHD/icons/repeat_off.png,MetropolisHD/icons/repeat_on.png" transparent="1" alphatest="blend"/>
-		<ePixmap position="center,621" size="600,22" pixmap="MetropolisHD/window/mpslider.png" zPosition="3" alphatest="blend"/>
+		<widget name="coverArt" pixmap="MetropolisHD/icons/multimedia.png" position="130,490" size="128,128" transparent="1" alphatest="off"/>
+		<widget name="repeat" position="1140,580" size="50,30" pixmaps="MetropolisHD/icons/repeat_off.png,MetropolisHD/icons/repeat_on.png" transparent="1" alphatest="off"/>
+		<ePixmap position="center,621" size="600,22" pixmap="MetropolisHD/window/mpslider.png" zPosition="3" alphatest="off"/>
 		<widget name="PositionGauge" position="365,625" size="552,14" zPosition="4" pointer="MetropolisHD/window/pointer.png:13,3" backgroundColor="transpBlack"/>
 		<widget source="session.CurrentService" render="Label" position="215,621" size="110,28" font="Regular;24" halign="right" valign="center" backgroundColor="transpBlack" transparent="1">
 			<convert type="ServicePosition">Position</convert>
@@ -1484,7 +1484,7 @@ MultiContentEntryText(pos=(145,0), size=(145, 20), text = 2, flags = RT_HALIGN_R
 		<widget source="session.CurrentService" render="Label" position="955,621" size="110,28" font="Regular;24" halign="left" valign="center" backgroundColor="transpBlack" transparent="1">
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
-		<ePixmap position="1040,618" zPosition="1" size="260,32" pixmap="MetropolisHD/window/mp_buttons.png" alphatest="blend"/>
+		<ePixmap position="1040,618" zPosition="1" size="260,32" pixmap="MetropolisHD/window/mp_buttons.png" alphatest="on"/>
 		<eLabel name="nowPlaying" position="0,0" size="0,0"/>
 		<widget name="genretext" position="0,0" size="0,0"/>
 		<widget name="genre" position="0,0" size="0,0"/>
@@ -1558,12 +1558,12 @@ MultiContentEntryText(pos=(190,2), size=(80, 20), text = 2, flags = RT_HALIGN_CE
 		<widget source="session.CurrentService" render="Label" position="450,550" size="790,25" zPosition="3" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1">
 			<convert type="ServicePosition">Position,Detailed</convert>
 		</widget>
-		<ePixmap pixmap="MetropolisHD/window/mp_buttons.png" position="100,582" size="260,32" zPosition="1" alphatest="blend"/>
+		<ePixmap pixmap="MetropolisHD/window/mp_buttons.png" position="100,582" size="260,32" zPosition="1" alphatest="on"/>
 		<widget name="Timeline" position="479,587" size="696,20" zPosition="3" backgroundColor="un808888" pointer="MetropolisHD/window/position_arrow.png:3,5" foregroundColor="black"/>
 		<eLabel text="OK = Menu" position="1060,630" size="140,22" zPosition="1" font="Regular;20" backgroundColor="black" transparent="1"/>
 	</screen>
 	<screen name="TitleProperties" position="90,100" size="1100,560">
-		<widget name="thumbnail" position="20,20" size="260,160" alphatest="on"/>
+		<widget name="thumbnail" position="20,20" size="260,160" alphatest="off"/>
 		<widget source="serviceinfo" render="Label" position="320,20" size="740,160" font="Regular;21" backgroundColor="un252b4247" transparent="1"/>
 		<eLabel position="0,200" size="1100,2" backgroundColor="grey"/>
 		<widget name="config" position="20,210" size="1060,300" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png"/>
@@ -1586,7 +1586,7 @@ MultiContentEntryText(pos=(190,2), size=(80, 20), text = 2, flags = RT_HALIGN_CE
 		<ePixmap position="center,1" size="1100,140" zPosition="-3" pixmap="MetropolisHD/window/podloga.png" transparent="0" borderWidth="1" borderColor="un666666"/>
 		<ePixmap pixmap="MetropolisHD/window/back.png" position="272,5" size="745,40" alphatest="off" zPosition="-2" transparent="0"/>
 		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666"/>
-		<ePixmap position="1041,35" zPosition="-1" size="96,96" pixmap="MetropolisHD/icons/mplayer.png" alphatest="blend"/>
+		<ePixmap position="1041,35" zPosition="-1" size="96,96" pixmap="MetropolisHD/icons/mplayer.png" alphatest="off"/>
 		<widget source="global.CurrentTime" render="Label" position="930,7" size="185,34" font="Replacement; 24" valign="top" halign="right" backgroundColor="podloga" transparent="1" foregroundColor="yellow">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1596,12 +1596,12 @@ MultiContentEntryText(pos=(190,2), size=(80, 20), text = 2, flags = RT_HALIGN_CE
 		<widget source="session.CurrentService" render="Label" position="center,12" size="668,24" font="Replacement; 22" backgroundColor="background" transparent="1" halign="center" foregroundColor="green">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/chnsel/ico_dolby_on.png" position="108,14" size="65,24" zPosition="2" alphatest="blend">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/chnsel/ico_dolby_on.png" position="108,14" size="65,24" zPosition="2" alphatest="on">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap pixmap="MetropolisHD/chnsel/ico_txt_off.png" position="183,13" size="42,27" zPosition="1" alphatest="blend"/>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/chnsel/ico_txt_on.png" position="183,13" size="42,27" zPosition="2" alphatest="blend">
+		<ePixmap pixmap="MetropolisHD/chnsel/ico_txt_off.png" position="183,13" size="42,27" zPosition="1" alphatest="off"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/chnsel/ico_txt_on.png" position="183,13" size="42,27" zPosition="2" alphatest="on">
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -1627,11 +1627,11 @@ MultiContentEntryText(pos=(190,2), size=(80, 20), text = 2, flags = RT_HALIGN_CE
 		<widget source="session.CurrentService" render="Label" position="825,56" size="120,30" font="Regular;26" halign="right" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1">
 			<convert type="ServicePosition">Remaining,ShowHours</convert>
 		</widget>
-		<ePixmap position="center,110" zPosition="1" size="200,25" pixmap="MetropolisHD/window/mp_buttons.png" alphatest="blend"/>
+		<ePixmap position="center,110" zPosition="1" size="200,25" pixmap="MetropolisHD/window/mp_buttons.png" alphatest="on"/>
 		<eLabel name="new eLabel" position="center,97" size="610,2" backgroundColor="un666666"/>
-		<ePixmap pixmap="MetropolisHD/chnsel/ico_dolby_off.png" position="108,14" size="65,24" zPosition="1" alphatest="blend"/>
-		<ePixmap position="146,58" size="70,35" zPosition="10" pixmap="MetropolisHD/icons/dvd.png" alphatest="blend"/>
-		<ePixmap pixmap="MetropolisHD/ico_dolby_on.png" position="24,6" size="57,20" zPosition="2" alphatest="blend"/>
+		<ePixmap pixmap="MetropolisHD/chnsel/ico_dolby_off.png" position="108,14" size="65,24" zPosition="1" alphatest="off"/>
+		<ePixmap position="146,58" size="70,35" zPosition="10" pixmap="MetropolisHD/icons/dvd.png" alphatest="off"/>
+		<ePixmap pixmap="MetropolisHD/ico_dolby_on.png" position="24,6" size="57,20" zPosition="2" alphatest="off"/>
 		<widget name="chapterLabel" position="797,107" size="60,24" font="Regular;20" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="audioLabel" position="861,107" size="60,24" font="Regular;20" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="subtitleLabel" position="925,107" size="60,24" font="Regular;20" backgroundColor="transpBlack" transparent="1"/>
@@ -1677,7 +1677,7 @@ MultiContentEntryText(pos = (470, 20), size = (48, 20), font = 1, flags = RT_HAL
 	<screen name="picshow" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGYS_Template"/>
 		<eLabel text="Picture player" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<widget name="thn" position="290,100" size="260,300" alphatest="on"/>
+		<widget name="thn" position="290,100" size="260,300" alphatest="off"/>
 		<widget name="filelist" position="570,center" size="420,465" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" transparent="1" selectionPixmap="MetropolisHD/buttons/sel.png"/>
 	</screen>
 
@@ -1701,8 +1701,8 @@ MultiContentEntryText(pos = (360, 7), size = (215, 30), flags = RT_HALIGN_LEFT, 
 
 	<screen name="VlcMediaListScreen" position="90,100" size="1100,560">
 		<panel name="ButtonTemplate_RGYB_Big"/>
-		<widget name="filelist_button_sel" pixmap="MetropolisHD/window/epg_now.png" position="0,0" zPosition="3" size="1100,35" alphatest="on"/>
-		<widget name="playlist_button_sel" pixmap="MetropolisHD/window/epg_next.png" position="0,0" zPosition="3" size="1100,35" alphatest="on"/>
+		<widget name="filelist_button_sel" pixmap="MetropolisHD/window/epg_now.png" position="0,0" zPosition="3" size="1100,35" alphatest="off"/>
+		<widget name="playlist_button_sel" pixmap="MetropolisHD/window/epg_next.png" position="0,0" zPosition="3" size="1100,35" alphatest="off"/>
 		<widget name="filelist_text" position="32,7" zPosition="4" size="250,25" font="Regular;20" halign="center" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="playlist_text" position="282,7" zPosition="4" size="250,25" font="Regular;20" halign="center" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="filelist" position="10,45" size="530,460" zPosition="3" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png"/>
@@ -1736,7 +1736,7 @@ MultiContentEntryText(pos = (360, 7), size = (215, 30), flags = RT_HALIGN_LEFT, 
 		<widget name="config" position="50,300" zPosition="1" size="440,200" transparent="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png"/>
 		<!--widget name="stepslider" position="50,500" zPosition="1" borderWidth="2" size="440,20" backgroundColor="darkgrey" /-->
 		<widget name="wizard" pixmap="MetropolisHD/window/wizard.png" position="40,50" zPosition="10" size="110,174" transparent="1" alphatest="on"/>
-		<widget name="rc" pixmap="skin_default/rc.png" position="745,55" zPosition="10" size="154,427" transparent="1" alphatest="on"/>
+		<widget name="rc" pixmap="skin_default/rc.png" position="745,55" zPosition="10" size="154,427" transparent="1" alphatest="off"/>
 		<widget name="arrowdown" pixmap="MetropolisHD/window/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
 		<widget name="arrowup" pixmap="MetropolisHD/window/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
 		<widget name="arrowup2" pixmap="MetropolisHD/window/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
@@ -1760,7 +1760,7 @@ MultiContentEntryText(pos = (360, 7), size = (215, 30), flags = RT_HALIGN_LEFT, 
 		<widget name="config" position="460,370" size="730,150" zPosition="1" transparent="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" backgroundColor="transpGrey"/>
 	</screen>
 
-	<screen name="UpdatePluginMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" >
+	<screen name="UpdatePluginMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RS_Template"/>
 		<eLabel text="Software management" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget source="menu" render="Listbox" position="center,114" size="631,325" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" backgroundPixmap="MetropolisHD/menu/bg40x40.png" transparent="1">
@@ -1928,20 +1928,20 @@ MultiContentEntryPixmapAlphaTest(pos = (0, 48), size = (550, 2), png = 3), # ind
 	</screen>
 
 	<screen name="VirtualKeyBoard" position="center,center" size="560,350" zPosition="99" title="Virtual keyboard">
-		<ePixmap pixmap="MetropolisHD/window/vkey_text.png" position="9,35" zPosition="-4" size="542,52" alphatest="on"/>
+		<ePixmap pixmap="MetropolisHD/window/vkey_text.png" position="9,45" zPosition="-4" size="542,52" alphatest="on"/>
 		<widget source="country" render="Pixmap" position="490,0" size="60,40" alphatest="on">
 			<convert type="ValueToPixmap">LanguageCode</convert>
 		</widget>
-		<widget name="header" position="10,10" size="500,20" font="Regular;20" transparent="1" noWrap="1"/>
-		<widget name="text" position="12,35" size="536,46" font="Regular;38" transparent="1" noWrap="1" halign="right"/>
-		<widget name="list" position="10,100" size="540,225" selectionDisabled="1" transparent="1"/>
+		<widget name="header" position="10,10" size="500,20" font="Regular;20" backgroundColor="transpGrey" transparent="1" noWrap="1"/>
+		<widget name="text" position="12,45" size="536,46" font="Regular;38" backgroundColor="transpGrey" transparent="1" noWrap="1" halign="right"/>
+		<widget name="list" position="10,110" size="540,225" selectionDisabled="1" transparent="1"/>
 	</screen>
 
 	<screen name="MyTubePlayer" position="0,549" size="1280,155" backgroundColor="transparent2" flags="wfNoBorder">
 		<ePixmap position="center,1" size="1100,140" zPosition="-3" pixmap="MetropolisHD/window/podloga.png" transparent="0" borderWidth="1" borderColor="un666666"/>
 		<ePixmap pixmap="MetropolisHD/window/back.png" position="272,5" size="745,40" alphatest="off" zPosition="-2" transparent="0"/>
 		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666"/>
-		<ePixmap position="1041,35" zPosition="-1" size="96,96" pixmap="MetropolisHD/icons/mplayer.png" alphatest="blend"/>
+		<ePixmap position="1041,35" zPosition="-1" size="96,96" pixmap="MetropolisHD/icons/mplayer.png" alphatest="off"/>
 		<widget source="global.CurrentTime" render="Label" position="930,7" size="185,34" font="Replacement; 24" valign="top" halign="right" backgroundColor="podloga" transparent="1" foregroundColor="yellow">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1951,16 +1951,16 @@ MultiContentEntryPixmapAlphaTest(pos = (0, 48), size = (550, 2), png = 3), # ind
 		<widget source="session.CurrentService" render="Label" position="center,12" size="668,24" font="Replacement; 22" backgroundColor="background" transparent="1" halign="center" foregroundColor="green">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/chnsel/ico_dolby_on.png" position="108,14" size="65,24" zPosition="2" alphatest="blend">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/chnsel/ico_dolby_on.png" position="108,14" size="65,24" zPosition="2" alphatest="on">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap pixmap="MetropolisHD/chnsel/ico_format_off.png" position="183,13" size="42,27" zPosition="1" alphatest="blend"/>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/chnsel/ico_format_on.png" position="183,13" size="42,27" zPosition="2" alphatest="blend">
+		<ePixmap pixmap="MetropolisHD/chnsel/ico_format_off.png" position="183,13" size="42,27" zPosition="1" alphatest="off"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/chnsel/ico_format_on.png" position="183,13" size="42,27" zPosition="2" alphatest="on">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="session.RecordState" render="Pixmap" pixmap="MetropolisHD/window/rec.png" position="242,16" size="12,12" zPosition="2" alphatest="blend">
+		<widget source="session.RecordState" render="Pixmap" pixmap="MetropolisHD/window/rec.png" position="242,16" size="12,12" zPosition="2" alphatest="on">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" font="Replacement; 15" position="120,115" size="54,20" halign="right" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1" text="1920">
@@ -1985,14 +1985,14 @@ MultiContentEntryPixmapAlphaTest(pos = (0, 48), size = (550, 2), png = 3), # ind
 		<widget source="session.CurrentService" render="Label" position="825,56" size="120,30" font="Regular;26" halign="right" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1">
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
-		<ePixmap position="center,110" zPosition="1" size="200,25" pixmap="MetropolisHD/window/mp_buttons.png" alphatest="blend"/>
-		<ePixmap position="267,113" zPosition="2" size="27,27" pixmap="MetropolisHD/icons/icon_norec_light.png" alphatest="blend"/>
+		<ePixmap position="center,110" zPosition="1" size="200,25" pixmap="MetropolisHD/window/mp_buttons.png" alphatest="on"/>
+		<ePixmap position="267,113" zPosition="2" size="27,27" pixmap="MetropolisHD/icons/icon_norec_light.png" alphatest="on"/>
 		<widget source="session.RecordState" render="Pixmap" pixmap="MetropolisHD/icons/icon_rec_light.png" position="267,113" zPosition="3" size="19,19" alphatest="on">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 		<eLabel name="new eLabel" position="center,97" size="610,2" backgroundColor="un666666"/>
-		<ePixmap pixmap="MetropolisHD/chnsel/ico_dolby_off.png" position="108,14" size="65,24" zPosition="1" alphatest="blend"/>
-		<ePixmap position="148,59" size="72,30" zPosition="10" pixmap="MetropolisHD/icons/you_tube.png" alphatest="blend" transparent="0"/>
+		<ePixmap pixmap="MetropolisHD/chnsel/ico_dolby_off.png" position="108,14" size="65,24" zPosition="1" alphatest="off"/>
+		<ePixmap position="148,59" size="72,30" zPosition="10" pixmap="MetropolisHD/icons/you_tube.png" alphatest="off" transparent="0"/>
 	</screen>
 	<screen name="MyTubePlayerMainScreen" position="90,90" size="1100,570">
 		<widget name="config" zPosition="2" position="7, 17" size="470,50" scrollbarMode="showNever" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
@@ -2023,7 +2023,7 @@ MultiContentEntryText(pos = (10, 22), size = (560, 46), font=3, flags = RT_HALIG
 		<eLabel position="2,52" size="1098,2" backgroundColor="grey" zPosition="10"/>
 		<eLabel position="490,52" size="2,467" backgroundColor="grey" zPosition="10"/>
 		<eLabel position="2,519" size="1098,2" backgroundColor="grey" zPosition="10"/>
-		<ePixmap position="995,5" size="100,40" zPosition="4" pixmap="~/plugin.png" alphatest="on" transparent="1"/>
+		<ePixmap position="995,5" size="100,40" zPosition="4" pixmap="~/plugin.png" alphatest="off" transparent="1"/>
 		<widget name="key_red" position="179,525" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="key_green" position="357,525" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="key_yellow" position="536,525" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
@@ -2034,13 +2034,13 @@ MultiContentEntryText(pos = (10, 22), size = (560, 46), font=3, flags = RT_HALIG
 		<eLabel text="Virtual Keyboard" position="715,525" size="220,35" zPosition="1" font="Regular;24" halign="left" valign="center" backgroundColor="transpBlack" transparent="1"/>
 		<eLabel text="INFO" position="620,10" size="70,30" zPosition="1" font="Regular;24" halign="left" backgroundColor="black" transparent="1"/>
 		<eLabel text="MENU" position="720,10" size="90,30" zPosition="1" font="Regular;24" halign="left" backgroundColor="black" transparent="1"/>
-		<widget name="thumbnail" position="0,0" size="100,75" alphatest="on"/># fake entry for dynamic thumbnail resizing, currently there is no other way doing this.
-		<widget name="HelpWindow" position="90,410" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
+		<widget name="thumbnail" position="0,0" size="100,75" alphatest="off"/># fake entry for dynamic thumbnail resizing, currently there is no other way doing this.
+		<widget name="HelpWindow" position="90,410" zPosition="1" size="1,1" transparent="1" alphatest="off"/>
 		<eLabel name="new eLabel" position="0, 0" size="10, 10"/>
 		<widget name="VKeyIcon" position="0,0" size="0,0"/>
 	</screen>
 	<screen name="MyTubeSuggestionsListScreen" position="90,150" zPosition="6" size="480,260" flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-1" size="460,160" alphatest="on" transparent="1" backgroundColor="transparent"/>
+		<ePixmap position="0,0" zPosition="-1" size="460,160" alphatest="off" transparent="1" backgroundColor="transparent"/>
 		<widget source="suggestionslist" render="Listbox" position="10,5" zPosition="7" size="480,250" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1">
 			<convert type="TemplatedMultiContent">
 {"template": [
@@ -2058,7 +2058,7 @@ MultiContentEntryText(pos = (310, 1), size = (160, 24), font=1, flags = RT_HALIG
 		<eLabel position="0,518" size="680,2" backgroundColor="grey"/>
 		<widget name="key_red" position="246,526" size="220,35" zPosition="1" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
 		<eLabel name="Red" position="246,560" size="178,1" foregroundColor="red" backgroundColor="red"/>
-		<ePixmap position="570,525" size="100,40" zPosition="4" pixmap="~/plugin.png" alphatest="on" transparent="1"/>
+		<ePixmap position="570,525" size="100,40" zPosition="4" pixmap="~/plugin.png" alphatest="off" transparent="1"/>
 		<widget name="title" position="0,0" size="0,0"/>
 	</screen>
 	<screen name="MyTubeVideoInfoScreen" position="90,90" size="1100,570" title="MyTubePlayerMainScreen...">
@@ -2092,8 +2092,8 @@ MultiContentEntryText(pos = (0, 35), size = (740, 65), font=2, flags = RT_HALIGN
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey"/>
 		<widget name="key_red" position="455,526" size="178,35" zPosition="1" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
 		<eLabel name="Red" position="455,560" size="178,1" foregroundColor="red" backgroundColor="red"/>
-		<ePixmap position="980,525" size="100,40" zPosition="4" pixmap="~/plugin.png" alphatest="on" transparent="1"/>
-		<widget name="thumbnail" position="0,0" size="180,135" alphatest="on"/># fake entry for dynamic thumbnail resizing, currently there is no other way doing this.
+		<ePixmap position="980,525" size="100,40" zPosition="4" pixmap="~/plugin.png" alphatest="off" transparent="1"/>
+		<widget name="thumbnail" position="0,0" size="180,135" alphatest="off"/># fake entry for dynamic thumbnail resizing, currently there is no other way doing this.
 	</screen>
 	<screen name="MyTubeHistoryScreen" position="90,157" zPosition="6" size="480,365" flags="wfNoBorder">
 		<widget source="historylist" render="Listbox" position="10,5" zPosition="7" size="460,355" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1">
@@ -2111,7 +2111,7 @@ MultiContentEntryText(pos = (0, 1), size = (340, 24), font=0, flags = RT_HALIGN_
 	<screen name="MyTubeSettingsScreen" position="340,104" size="600,532" title="MyTubeSettingsScreen">
 		<panel name="ButtonTemplate_RG_Small"/>
 		<widget name="config" position="20,10" size="560,450" zPosition="3" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
-		<ePixmap position="20,410" size="100,40" zPosition="4" pixmap="~/plugin.png" alphatest="on" transparent="1"/>
+		<ePixmap position="20,410" size="100,40" zPosition="4" pixmap="~/plugin.png" alphatest="off" transparent="1"/>
 		<widget name="title" position="0,0" size="0,0"/>
 	</screen>
 
@@ -2133,7 +2133,7 @@ MultiContentEntryText(pos = (550, 3), size = (70, 24), font=1, flags = RT_HALIGN
 		<eLabel position="0,518" size="680,2" backgroundColor="grey"/>
 		<widget name="key_red" position="246,526" size="220,35" zPosition="1" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
 		<eLabel name="Red" position="246,560" size="178,1" foregroundColor="red" backgroundColor="red"/>
-		<ePixmap position="570,525" size="100,40" zPosition="4" pixmap="~/plugin.png" alphatest="on" transparent="1"/>
+		<ePixmap position="570,525" size="100,40" zPosition="4" pixmap="~/plugin.png" alphatest="off" transparent="1"/>
 		<widget name="title" position="0,0" size="0,0"/>
 	</screen>&gt;
 
@@ -2183,7 +2183,7 @@ MultiContentEntryText(pos = (550, 3), size = (70, 24), font=1, flags = RT_HALIGN
 		<widget source="DNS1" render="Label" position="520,480" size="380,22" zPosition="1" font="Regular;20" backgroundColor="transpBlack" halign="right" transparent="1"/>
 		<widget source="DNS2text" render="Label" position="380,510" size="140,22" zPosition="1" font="Regular;20" halign="left" backgroundColor="transpBlack" transparent="1"/>
 		<widget source="DNS2" render="Label" position="520,510" size="380,22" zPosition="1" font="Regular;20" backgroundColor="transpBlack" halign="right" transparent="1"/>
-		<widget name="HelpWindow" position="680,465" zPosition="2" size="1,1" transparent="1" alphatest="on"/>
+		<widget name="HelpWindow" position="680,465" zPosition="2" size="1,1" transparent="1" alphatest="off"/>
 		<widget source="VKeyIcon" render="Pixmap" pixmap="MetropolisHD/buttons/key_text.png" position="919,582" zPosition="1" size="35,25" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -2232,39 +2232,39 @@ MultiContentEntryPixmapAlphaTest(pos = (63, 46), size = (15, 16), png = 4), # in
 	<screen name="NetworkAdapterTest" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGYS_Template"/>
 		<eLabel text="Network test..." position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<widget name="Adaptertext" position="395,130" size="310,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#1cff1c"/>
+		<widget name="Adaptertext" position="395,130" size="310,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#1cff1c" transparent="1"/>
 		<widget name="Adapter" position="395,160" size="310,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#f23d21,#1cff1c" transparent="1" backgroundColor="transpGrey"/>
 		<widget name="AdapterInfo_OK" position="710,145" size="38,31" zPosition="2" pixmap="MetropolisHD/icons/lock_on.png" alphatest="on"/>
 		<widget name="AdapterInfo" position="760,137" size="160,40" zPosition="1" pixmaps="MetropolisHD/menu/select300_45black.png,MetropolisHD/buttons/sel.png" backgroundColor="transpGrey"/>
 		<widget name="AdapterInfo_Text" position="760,137" size="160,40" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" backgroundColor="transpGrey"/>
 		<eLabel position="395,190" size="520,1" backgroundColor="darkgrey"/>
-		<widget name="Networktext" position="395,210" size="310,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#1cff1c"/>
+		<widget name="Networktext" position="395,210" size="310,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#1cff1c" transparent="1"/>
 		<widget name="Network" position="395,240" size="310,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#f23d21,#1cff1c" transparent="1" backgroundColor="transpGrey"/>
 		<widget name="NetworkInfo_Check" position="710,225" size="38,31" zPosition="2" pixmaps="MetropolisHD/icons/lock_on.png,MetropolisHD/icons/lock_error.png" alphatest="on"/>
 		<widget name="NetworkInfo" position="760,217" size="160,40" zPosition="1" pixmaps="MetropolisHD/menu/select300_45black.png,MetropolisHD/buttons/sel.png" backgroundColor="transpGrey"/>
 		<widget name="NetworkInfo_Text" position="760,217" size="160,40" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" backgroundColor="transpGrey"/>
 		<eLabel position="395,280" size="520,1" backgroundColor="darkgrey"/>
-		<widget name="Dhcptext" position="395,290" size="310,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#1cff1c"/>
+		<widget name="Dhcptext" position="395,290" size="310,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#1cff1c" transparent="1"/>
 		<widget name="Dhcp" position="395,320" size="310,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#f23d21,#1cff1c" transparent="1" backgroundColor="transpGrey"/>
 		<widget name="DhcpInfo_Check" position="710,315" size="38,31" zPosition="2" pixmaps="MetropolisHD/icons/lock_on.png,MetropolisHD/icons/lock_error.png" alphatest="on"/>
 		<widget name="DhcpInfo" position="760,297" size="160,40" zPosition="1" pixmaps="MetropolisHD/menu/select300_45black.png,MetropolisHD/buttons/sel.png" backgroundColor="transpGrey"/>
 		<widget name="DhcpInfo_Text" position="760,297" size="160,40" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" backgroundColor="transpGrey"/>
 		<eLabel position="395,360" size="520,1" backgroundColor="darkgrey"/>
-		<widget name="IPtext" position="395,370" size="310,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#1cff1c"/>
+		<widget name="IPtext" position="395,370" size="310,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#1cff1c" transparent="1"/>
 		<widget name="IP" position="395,400" size="310,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#f23d21,#1cff1c" transparent="1" backgroundColor="transpGrey"/>
 		<widget name="IPInfo_Check" position="710,385" size="38,31" zPosition="2" pixmaps="MetropolisHD/icons/lock_on.png,MetropolisHD/icons/lock_error.png" alphatest="on"/>
 		<widget name="IPInfo" position="760,377" size="160,40" zPosition="1" pixmaps="MetropolisHD/menu/select300_45black.png,MetropolisHD/buttons/sel.png" backgroundColor="transpGrey"/>
 		<widget name="IPInfo_Text" position="760,377" size="160,40" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" backgroundColor="transpGrey"/>
 		<eLabel position="395,440" size="520,1" backgroundColor="darkgrey"/>
-		<widget name="DNStext" position="395,450" size="310,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#1cff1c"/>
+		<widget name="DNStext" position="395,450" size="310,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#1cff1c" transparent="1"/>
 		<widget name="DNS" position="395,480" size="310,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#f23d21,#1cff1c" transparent="1" backgroundColor="transpGrey"/>
 		<widget name="DNSInfo_Check" position="710,465" size="38,31" zPosition="2" pixmaps="MetropolisHD/icons/lock_on.png,MetropolisHD/icons/lock_error.png" alphatest="on"/>
-		<widget name="DNSInfo" position="760,457" size="160,40" zPosition="1" pixmaps="MetropolisHD/menu/select300_45black.png,MetropolisHD/buttons/sel.png" backgroundColor="transpGrey"/>
+		<widget name="DNSInfo" position="760,457" size="160,40" zPosition="1" pixmaps="MetropolisHD/menu/select300_45black.png,MetropolisHD/buttons/sel.png" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="DNSInfo_Text" position="760,457" size="160,40" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" backgroundColor="transpGrey"/>
 		<eLabel position="395,520" size="520,1" backgroundColor="darkgrey"/>
 		<widget name="EditSettingsButton" position="760,527" size="160,40" zPosition="1" pixmaps="MetropolisHD/menu/select300_45black.png,MetropolisHD/buttons/sel.png" backgroundColor="transpGrey"/>
 		<widget name="EditSettings_Text" position="760,527" size="160,40" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff" backgroundColor="transpGrey"/>
-		<widget name="InfoText" position="376,129" size="550,430" zPosition="3" font="Regular;22" halign="center" valign="center" backgroundColor="background2" transparent="0"/>
+		<widget name="InfoText" position="376,129" size="550,430" zPosition="3" font="Regular;22" halign="center" valign="center" backgroundColor="background2"/>
 		<widget name="InfoTextBorder" position="366,119" size="570,450"/>
 	</screen>
 
@@ -2326,8 +2326,8 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		<widget source="introduction" render="Label" position="20,525" size="400,30" zPosition="10" font="Regular;24" halign="center"/>
 		<widget name="key_red" position="849,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
 		<eLabel name="Red" position="849,555" size="178,1" foregroundColor="red" backgroundColor="red"/>
-		<widget name="VKeyIcon" pixmap="MetropolisHD/icons/vkey_icon.png" position="1020,450" zPosition="10" size="60,48" transparent="1" alphatest="on"/>
-		<widget name="HelpWindow" position="180,450" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
+		<widget name="VKeyIcon" pixmap="MetropolisHD/icons/vkey_icon.png" position="1020,450" zPosition="10" size="60,48" transparent="1" alphatest="off"/>
+		<widget name="HelpWindow" position="180,450" zPosition="1" size="1,1" transparent="1" alphatest="off"/>
 	</screen>
 	<screen name="AutoMountEdit" position="90,100" size="1100,560">
 		<widget name="config" position="20,20" zPosition="1" size="740,300" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png"/>
@@ -2336,8 +2336,8 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		<widget name="key_red" position="849,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
 		<eLabel name="Red" position="849,555" size="178,1" foregroundColor="red" backgroundColor="red"/>
 		<widget source="introduction" render="Label" position="20,525" size="400,30" zPosition="10" font="Regular;24" halign="center"/>
-		<widget name="VKeyIcon" pixmap="MetropolisHD/icons/vkey_icon.png" position="1020,450" zPosition="10" size="60,48" transparent="1" alphatest="on"/>
-		<widget name="HelpWindow" position="180,450" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
+		<widget name="VKeyIcon" pixmap="MetropolisHD/icons/vkey_icon.png" position="1020,450" zPosition="10" size="60,48" transparent="1" alphatest="off"/>
+		<widget name="HelpWindow" position="180,450" zPosition="1" size="1,1" transparent="1" alphatest="off"/>
 	</screen>
 	<screen name="AutoMountManager" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<eLabel text="Auto Mount Manager" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
@@ -2517,8 +2517,8 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 			}
 			</convert>
 		</widget>
-		<eLabel text="Ecm info" halign="center" position="735,120" size="210,35" font="Regular;26" foregroundColor="yellow" backgroundColor="transpGrey" transparent="1" />
-		<widget name="status" position="675,160" size="320,440" font="Regular;20" halign="left" />
+		<eLabel text="Ecm info" halign="center" position="735,120" size="210,35" font="Regular;26" foregroundColor="yellow" backgroundColor="transpGrey" transparent="1"/>
+		<widget name="status" position="675,160" size="320,440" font="Regular;20" halign="left" backgroundColor="transpGrey" transparent="1"/>
 	</screen>
 
 	<screen name="ConfigEdit" position="0,0" size="1280,720" title="SoftCam path configuration" flags="wfNoBorder" backgroundColor="transparent">
@@ -2539,8 +2539,8 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 			}
 			</convert>
 		</widget>
-		<widget name="pic" position="720,120" size="250,141" alphatest="blend" transparent="0"/>
-		<widget name="cur" position="700,270" size="295,330" halign="center" font="Regular;26" foregroundColor="yellow"/>
+		<widget name="pic" position="720,120" size="250,141" alphatest="off" transparent="0"/>
+		<widget name="cur" position="700,270" size="295,330" halign="center" font="Regular;26" foregroundColor="yellow" backgroundColor="transpGrey" transparent="1"/>
 	</screen>
 
 	<screen name="EPGSearchSetup" position="0,0" size="1280,720" title="EPGSearch Setup" flags="wfNoBorder" backgroundColor="transparent">
@@ -2548,7 +2548,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		<widget source="Title" render="Label" position="center,155" size="600,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="config" position="center,210" size="580,450" halign="left" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" backgroundColor="transpBlack" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
 		<eLabel name="Line" position="center,456" size="600,1" backgroundColor="un666666"/>
-		<widget source="help" render="Label" position="center,460" size="580,60" font="Regular; 22" valign="top" backgroundColor="transpBlack"/>
+		<widget source="help" render="Label" position="center,460" size="580,60" font="Regular; 22" valign="top" backgroundColor="transpBlack" transparent="1"/>
 	</screen>
 </skin>
 
