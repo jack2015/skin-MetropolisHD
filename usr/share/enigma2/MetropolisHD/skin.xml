@@ -916,7 +916,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<ePixmap position="center,1" size="1100,140" zPosition="-3" pixmap="MetropolisHD/window/podloga.png" transparent="0" borderWidth="1" borderColor="un666666"/>
 		<ePixmap pixmap="MetropolisHD/window/back.png" position="272,5" size="745,40" alphatest="off" zPosition="-2" transparent="0"/>
 		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666"/>
-		<ePixmap position="1041,35" zPosition="-1" size="96,96" pixmap="MetropolisHD/icons/mplayer.png" alphatest="off"/>
+		<ePixmap position="1041,35" zPosition="-1" size="96,96" pixmap="MetropolisHD/icons/mplayer.png" alphatest="on"/>
 		<widget source="global.CurrentTime" render="Label" position="930,7" size="185,34" font="Replacement; 24" valign="top" halign="right" backgroundColor="podloga" transparent="1" foregroundColor="yellow">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1254,17 +1254,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	</screen>
 
 	<screen name="ServiceScan" position="340,134" size="600,502" backgroundColor="podloga">
-		<widget source="FrontendInfo" render="Pixmap" pixmap="MetropolisHD/icons/scan-s.png" position="15,15" size="64,64" transparent="1" alphatest="off">
+		<widget source="FrontendInfo" render="Pixmap" pixmap="MetropolisHD/icons/scan-s.png" position="15,15" size="64,64" transparent="1" alphatest="on">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">0,0</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="FrontendInfo" render="Pixmap" pixmap="MetropolisHD/icons/scan-c.png" position="15,15" size="64,64" transparent="1" alphatest="off">
+		<widget source="FrontendInfo" render="Pixmap" pixmap="MetropolisHD/icons/scan-c.png" position="15,15" size="64,64" transparent="1" alphatest="on">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">1,1</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="FrontendInfo" render="Pixmap" pixmap="MetropolisHD/icons/scan-t.png" position="15,15" size="64,64" transparent="1" alphatest="off">
+		<widget source="FrontendInfo" render="Pixmap" pixmap="MetropolisHD/icons/scan-t.png" position="15,15" size="64,64" transparent="1" alphatest="on">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">2,2</convert>
 			<convert type="ConditionalShowHide"/>
@@ -1457,10 +1457,10 @@ MultiContentEntryText(pos=(145,0), size=(145, 20), text = 2, flags = RT_HALIGN_R
 		<ePixmap position="center,center" size="1188,592" zPosition="-3" pixmap="MetropolisHD/window/podloga.png" transparent="0" borderWidth="1" borderColor="un666666"/>
 		<ePixmap pixmap="MetropolisHD/window/back.png" position="center,68" size="1180,40" alphatest="off" zPosition="-2" transparent="0"/>
 		<ePixmap pixmap="MetropolisHD/buttons/sel.png" position="1120,489" size="83,33" alphatest="off" zPosition="1" borderWidth="1" borderColor="un666666"/>
-		<ePixmap position="70,120" size="560,360" pixmap="MetropolisHD/window/mp.png" zPosition="-1" alphatest="off"/>
+		<ePixmap position="70,120" size="560,360" pixmap="MetropolisHD/window/mp.png" zPosition="-1" alphatest="on"/>
 		<eLabel text="Filelist" position="75,129" size="500,32" zPosition="5" font="Regular;28" halign="center" foregroundColor="blue" backgroundColor="black" transparent="1"/>
 		<widget name="filelist" position="80,170" size="540,285" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" backgroundColor="transpBlack" zPosition="2" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
-		<ePixmap position="650,120" size="560,360" pixmap="MetropolisHD/window/mp.png" zPosition="-1" alphatest="off"/>
+		<ePixmap position="650,120" size="560,360" pixmap="MetropolisHD/window/mp.png" zPosition="-1" alphatest="on"/>
 		<eLabel text="Playlist" position="655,129" size="500,32" zPosition="5" font="Regular;28" halign="center" foregroundColor="blue" backgroundColor="black" transparent="1"/>
 		<widget name="playlist" position="660,170" size="540,285" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionDisabled="1" backgroundColor="transpBlack" zPosition="2" transparent="1"/>
 		<widget name="title" position="300,475" size="680,30" font="Regular;26" valign="top" transparent="1" backgroundColor="transpBlack"/>
@@ -1471,8 +1471,8 @@ MultiContentEntryText(pos=(145,0), size=(145, 20), text = 2, flags = RT_HALIGN_R
 		<widget name="album" position="410,555" size="580,25" font="Regular;22" valign="top" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="yeartext" position="300,585" size="100,25" font="Regular;22" valign="top" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="year" position="410,585" size="580,25" font="Regular;22" valign="top" backgroundColor="transpBlack" transparent="1"/>
-		<widget name="coverArt" pixmap="MetropolisHD/icons/multimedia.png" position="130,490" size="128,128" transparent="1" alphatest="off"/>
-		<widget name="repeat" position="1140,580" size="50,30" pixmaps="MetropolisHD/icons/repeat_off.png,MetropolisHD/icons/repeat_on.png" transparent="1" alphatest="off"/>
+		<widget name="coverArt" pixmap="MetropolisHD/icons/multimedia.png" position="130,490" size="128,128" transparent="1" alphatest="on"/>
+		<widget name="repeat" position="1140,580" size="50,30" pixmaps="MetropolisHD/icons/repeat_off.png,MetropolisHD/icons/repeat_on.png" transparent="1" alphatest="on"/>
 		<ePixmap position="center,621" size="600,22" pixmap="MetropolisHD/window/mpslider.png" zPosition="3" alphatest="off"/>
 		<widget name="PositionGauge" position="365,625" size="552,14" zPosition="4" pointer="MetropolisHD/window/pointer.png:13,3" backgroundColor="transpBlack"/>
 		<widget source="session.CurrentService" render="Label" position="215,621" size="110,28" font="Regular;24" halign="right" valign="center" backgroundColor="transpBlack" transparent="1">
@@ -1586,7 +1586,7 @@ MultiContentEntryText(pos=(190,2), size=(80, 20), text = 2, flags = RT_HALIGN_CE
 		<ePixmap position="center,1" size="1100,140" zPosition="-3" pixmap="MetropolisHD/window/podloga.png" transparent="0" borderWidth="1" borderColor="un666666"/>
 		<ePixmap pixmap="MetropolisHD/window/back.png" position="272,5" size="745,40" alphatest="off" zPosition="-2" transparent="0"/>
 		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666"/>
-		<ePixmap position="1041,35" zPosition="-1" size="96,96" pixmap="MetropolisHD/icons/mplayer.png" alphatest="off"/>
+		<ePixmap position="1041,35" zPosition="-1" size="96,96" pixmap="MetropolisHD/icons/mplayer.png" alphatest="on"/>
 		<widget source="global.CurrentTime" render="Label" position="930,7" size="185,34" font="Replacement; 24" valign="top" halign="right" backgroundColor="podloga" transparent="1" foregroundColor="yellow">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1630,8 +1630,8 @@ MultiContentEntryText(pos=(190,2), size=(80, 20), text = 2, flags = RT_HALIGN_CE
 		<ePixmap position="center,110" zPosition="1" size="200,25" pixmap="MetropolisHD/window/mp_buttons.png" alphatest="on"/>
 		<eLabel name="new eLabel" position="center,97" size="610,2" backgroundColor="un666666"/>
 		<ePixmap pixmap="MetropolisHD/chnsel/ico_dolby_off.png" position="108,14" size="65,24" zPosition="1" alphatest="off"/>
-		<ePixmap position="146,58" size="70,35" zPosition="10" pixmap="MetropolisHD/icons/dvd.png" alphatest="off"/>
-		<ePixmap pixmap="MetropolisHD/ico_dolby_on.png" position="24,6" size="57,20" zPosition="2" alphatest="off"/>
+		<ePixmap position="146,58" size="70,35" zPosition="10" pixmap="MetropolisHD/icons/dvd.png" alphatest="on"/>
+		<ePixmap pixmap="MetropolisHD/ico_dolby_on.png" position="24,6" size="57,20" zPosition="2" alphatest="on"/>
 		<widget name="chapterLabel" position="797,107" size="60,24" font="Regular;20" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="audioLabel" position="861,107" size="60,24" font="Regular;20" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="subtitleLabel" position="925,107" size="60,24" font="Regular;20" backgroundColor="transpBlack" transparent="1"/>
@@ -1941,7 +1941,7 @@ MultiContentEntryPixmapAlphaTest(pos = (0, 48), size = (550, 2), png = 3), # ind
 		<ePixmap position="center,1" size="1100,140" zPosition="-3" pixmap="MetropolisHD/window/podloga.png" transparent="0" borderWidth="1" borderColor="un666666"/>
 		<ePixmap pixmap="MetropolisHD/window/back.png" position="272,5" size="745,40" alphatest="off" zPosition="-2" transparent="0"/>
 		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666"/>
-		<ePixmap position="1041,35" zPosition="-1" size="96,96" pixmap="MetropolisHD/icons/mplayer.png" alphatest="off"/>
+		<ePixmap position="1041,35" zPosition="-1" size="96,96" pixmap="MetropolisHD/icons/mplayer.png" alphatest="on"/>
 		<widget source="global.CurrentTime" render="Label" position="930,7" size="185,34" font="Replacement; 24" valign="top" halign="right" backgroundColor="podloga" transparent="1" foregroundColor="yellow">
 			<convert type="ClockToText">Default</convert>
 		</widget>
