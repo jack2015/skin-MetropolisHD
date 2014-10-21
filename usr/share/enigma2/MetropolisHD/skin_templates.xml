@@ -4,192 +4,201 @@
 	<!-- Templates -->
 
 	<screen name="ButtonTemplate_RGYB_BigLeft">
-		<eLabel name="Line" position="69,613" size="732,1" backgroundColor="un666666"/>
-		<widget name="key_red" position="69,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget name="key_green" position="253,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget name="key_yellow" position="437,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget name="key_blue" position="621,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<eLabel name="Red" position="69,648" size="180,1" foregroundColor="red" backgroundColor="red"/>
-		<eLabel name="Green" position="253,648" size="180,1" foregroundColor="green" backgroundColor="green"/>
-		<eLabel name="Yellow" position="437,648" size="180,1" foregroundColor="yellow" backgroundColor="yellow"/>
-		<eLabel name="Blue" position="621,648" size="180,1" foregroundColor="blue" backgroundColor="blue"/>
+		<eLabel name="Line" position="69,613" size="732,1" zPosition="2" backgroundColor="un666666"/>
+		<widget name="key_red" position="69,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_green" position="253,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_yellow" position="437,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_blue" position="621,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<eLabel name="Red" position="69,648" size="180,1" zPosition="2" foregroundColor="red" backgroundColor="red"/>
+		<eLabel name="Green" position="253,648" size="180,1" zPosition="2" foregroundColor="green" backgroundColor="green"/>
+		<eLabel name="Yellow" position="437,648" size="180,1" zPosition="2" foregroundColor="yellow" backgroundColor="yellow"/>
+		<eLabel name="Blue" position="621,648" size="180,1" zPosition="2" foregroundColor="blue" backgroundColor="blue"/>
 	</screen>
 
 	<screen name="ButtonTemplate_Midle_RGYB">
-		<eLabel name="Line" position="center,613" size="720,1" backgroundColor="un666666"/>
-		<eLabel name="Red" position="285,648" size="170,1" foregroundColor="red" backgroundColor="red"/>
-		<eLabel name="Green" position="465,648" size="170,1" foregroundColor="green" backgroundColor="green"/>
-		<eLabel name="Yellow" position="645,648" size="170,1" foregroundColor="yellow" backgroundColor="yellow"/>
-		<eLabel name="Blue" position="825,648" size="170,1" foregroundColor="blue" backgroundColor="blue"/>
+		<eLabel name="Line" position="center,613" size="720,1" zPosition="2" backgroundColor="un666666"/>
+		<eLabel name="Red" position="285,648" size="170,1" zPosition="2" foregroundColor="red" backgroundColor="red"/>
+		<eLabel name="Green" position="465,648" size="170,1" zPosition="2" foregroundColor="green" backgroundColor="green"/>
+		<eLabel name="Yellow" position="645,648" size="170,1" zPosition="2" foregroundColor="yellow" backgroundColor="yellow"/>
+		<eLabel name="Blue" position="825,648" size="170,1" zPosition="2" foregroundColor="blue" backgroundColor="blue"/>
 	</screen>
 
 	<screen name="ButtonTemplate_RGYB">
 		<panel name="ButtonTemplate_Midle_RGYB"/>
-		<widget name="key_red" position="280,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget name="key_green" position="460,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget name="key_yellow" position="640,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget name="key_blue" position="820,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget name="key_red" position="280,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_green" position="460,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_yellow" position="640,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_blue" position="820,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
 	</screen>
 
 	<screen name="ButtonTemplate_RGYBS">
 		<panel name="ButtonTemplate_Midle_RGYB"/>
-		<widget source="key_red" render="Label" position="280,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget source="key_green" render="Label" position="460,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget source="key_yellow" render="Label" position="640,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget source="key_blue" render="Label" position="820,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget source="key_red" render="Label" position="280,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="key_green" render="Label" position="460,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="key_yellow" render="Label" position="640,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="key_blue" render="Label" position="820,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
 	</screen>
 
 	<screen name="ButtonTemplate_Small_RGYB">
-		<eLabel name="Line" position="10,397" size="640,1" backgroundColor="un666666"/>
-		<eLabel name="Red" position="30,432" size="120,1" foregroundColor="red" backgroundColor="red"/>
-		<eLabel name="Green" position="190,432" size="120,1" foregroundColor="green" backgroundColor="green"/>
-		<eLabel name="Yellow" position="350,432" size="120,1" foregroundColor="yellow" backgroundColor="yellow"/>
-		<eLabel name="Blue" position="510,432" size="120,1" foregroundColor="blue" backgroundColor="blue"/>
+		<eLabel name="Line" position="10,397" size="640,1" zPosition="2" backgroundColor="un666666"/>
+		<eLabel name="Red" position="30,432" size="120,1" zPosition="2" foregroundColor="red" backgroundColor="red"/>
+		<eLabel name="Green" position="190,432" size="120,1" zPosition="2" foregroundColor="green" backgroundColor="green"/>
+		<eLabel name="Yellow" position="350,432" size="120,1" zPosition="2" foregroundColor="yellow" backgroundColor="yellow"/>
+		<eLabel name="Blue" position="510,432" size="120,1" zPosition="2" foregroundColor="blue" backgroundColor="blue"/>
 	</screen>
 
 	<screen name="ButtonTemplate_RGYB_Small">
 		<panel name="ButtonTemplate_Small_RGYB"/>
-		<widget name="key_red" position="10,397" size="160,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget name="key_green" position="170,397" size="160,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget name="key_yellow" position="330,397" size="160,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget name="key_blue" position="490,397" size="160,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget name="key_red" position="10,397" size="160,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_green" position="170,397" size="160,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_yellow" position="330,397" size="160,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_blue" position="490,397" size="160,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
 	</screen>
 
 	<screen name="ButtonTemplate_RGYB_Big">
-		<eLabel name="Line" position="190,513" size="720,1" backgroundColor="un666666"/>
-		<widget name="key_red" position="190,513" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget name="key_green" position="370,513" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget name="key_yellow" position="center,513" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget name="key_blue" position="730,513" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<eLabel name="Red" position="195,548" size="170,1" foregroundColor="red" backgroundColor="red"/>
-		<eLabel name="Green" position="375,548" size="170,1" foregroundColor="green" backgroundColor="green"/>
-		<eLabel name="Yellow" position="center,548" size="170,1" foregroundColor="yellow" backgroundColor="yellow"/>
-		<eLabel name="Blue" position="735,548" size="170,1" foregroundColor="blue" backgroundColor="blue"/>
+		<eLabel name="Line" position="190,513" size="720,1" zPosition="2" backgroundColor="un666666"/>
+		<widget name="key_red" position="190,513" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_green" position="370,513" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_yellow" position="center,513" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_blue" position="730,513" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<eLabel name="Red" position="195,548" size="170,1" zPosition="2" foregroundColor="red" backgroundColor="red"/>
+		<eLabel name="Green" position="375,548" size="170,1" zPosition="2" foregroundColor="green" backgroundColor="green"/>
+		<eLabel name="Yellow" position="center,548" size="170,1" zPosition="2" foregroundColor="yellow" backgroundColor="yellow"/>
+		<eLabel name="Blue" position="735,548" size="170,1" zPosition="2" foregroundColor="blue" backgroundColor="blue"/>
 	</screen>
 
 	<screen name="ButtonTemplate_RGYS">
-		<widget source="key_red" render="Label" position="380,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget source="key_green" render="Label" position="center,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget source="key_yellow" render="Label" position="730,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<eLabel name="Red" position="390,648" size="160,1" foregroundColor="red" backgroundColor="red"/>
-		<eLabel name="Green" position="center,648" size="160,1" foregroundColor="green" backgroundColor="green"/>
-		<eLabel name="Yellow" position="740,648" size="160,1" foregroundColor="yellow" backgroundColor="yellow"/>
+		<widget source="key_red" render="Label" position="380,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="key_green" render="Label" position="center,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="key_yellow" render="Label" position="730,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<eLabel name="Red" position="390,648" size="160,1" zPosition="2" foregroundColor="red" backgroundColor="red"/>
+		<eLabel name="Green" position="center,648" size="160,1" zPosition="2" foregroundColor="green" backgroundColor="green"/>
+		<eLabel name="Yellow" position="740,648" size="160,1" zPosition="2" foregroundColor="yellow" backgroundColor="yellow"/>
 	</screen>
 
 	<screen name="ButtonTemplate_Midle_R">
-		<eLabel name="Line" position="center,613" size="716,1" backgroundColor="un666666"/>
-		<eLabel name="Red" position="center,648" size="180,1" foregroundColor="red" backgroundColor="red"/>
+		<eLabel name="Line" position="center,613" size="716,1" zPosition="2" backgroundColor="un666666"/>
+		<eLabel name="Red" position="center,648" size="180,1" zPosition="2" foregroundColor="red" backgroundColor="red"/>
 	</screen>
 
 	<screen name="ButtonTemplate_RS_Midle">
 		<panel name="ButtonTemplate_Midle_R"/>
-		<widget source="key_red" render="Label" position="center,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget source="key_red" render="Label" position="center,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
 	</screen>
 
 	<screen name="ButtonTemplate_Minimal_RG">
-		<eLabel name="Line" position="center,523" size="600,1" backgroundColor="un666666"/>
-		<eLabel name="Red" position="415,558" size="180,1" foregroundColor="red" backgroundColor="red"/>
-		<eLabel name="Green" position="685,558" size="180,1" foregroundColor="green" backgroundColor="green"/>
+		<eLabel name="Line" position="center,523" size="600,1" zPosition="2" backgroundColor="un666666"/>
+		<eLabel name="Red" position="415,558" size="180,1" zPosition="2" foregroundColor="red" backgroundColor="red"/>
+		<eLabel name="Green" position="685,558" size="180,1" zPosition="2" foregroundColor="green" backgroundColor="green"/>
 	</screen>
 
 	<screen name="ButtonTemplate_Minimal_RGY">
-		<eLabel name="Line" position="center,523" size="600,1" backgroundColor="un666666"/>
-		<eLabel name="Red" position="360,558" size="180,1" foregroundColor="red" backgroundColor="red"/>
-		<eLabel name="Green" position="center,558" size="180,1" foregroundColor="green" backgroundColor="green"/>
-		<eLabel name="Yellow" position="740,558" size="180,1" foregroundColor="yellow" backgroundColor="yellow"/>
+		<eLabel name="Line" position="center,523" size="600,1" zPosition="2" backgroundColor="un666666"/>
+		<eLabel name="Red" position="360,558" size="180,1" zPosition="2" foregroundColor="red" backgroundColor="red"/>
+		<eLabel name="Green" position="center,558" size="180,1" zPosition="2" foregroundColor="green" backgroundColor="green"/>
+		<eLabel name="Yellow" position="740,558" size="180,1" zPosition="2" foregroundColor="yellow" backgroundColor="yellow"/>
 	</screen>
 
 	<screen name="ButtonTemplate_Minimal_YB">
-		<eLabel name="Line" position="center,523" size="600,1" backgroundColor="un666666"/>
-		<eLabel name="Yellow" position="415,558" size="180,1" foregroundColor="yellow" backgroundColor="yellow"/>
-		<eLabel name="Blue" position="685,558" size="180,1" foregroundColor="blue" backgroundColor="blue"/>
+		<eLabel name="Line" position="center,523" size="600,1" zPosition="2" backgroundColor="un666666"/>
+		<eLabel name="Yellow" position="415,558" size="180,1" zPosition="2" foregroundColor="yellow" backgroundColor="yellow"/>
+		<eLabel name="Blue" position="685,558" size="180,1" zPosition="2" foregroundColor="blue" backgroundColor="blue"/>
 	</screen>
 
 	<screen name="ButtonTemplate_RGS_Minimal">
 		<panel name="ButtonTemplate_Minimal_RG"/>
-		<widget source="key_red" render="Label" position="380,523" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget source="key_green" render="Label" position="650,523" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget source="key_red" render="Label" position="380,523" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="key_green" render="Label" position="650,523" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
 	</screen>
 
 	<screen name="ButtonTemplate_YB_Minimal">
 		<panel name="ButtonTemplate_Minimal_YB"/>
-		<widget name="key_yellow" position="380,523" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget name="key_blue" position="650,523" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget name="key_yellow" position="380,523" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_blue" position="650,523" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
 	</screen>
 
 	<screen name="ButtonTemplate_Midle_RG">
-		<eLabel name="Line" position="center,613" size="716,1" backgroundColor="un666666"/>
-		<eLabel name="Red" position="415,648" size="180,1" foregroundColor="red" backgroundColor="red"/>
-		<eLabel name="Green" position="685,648" size="180,1" foregroundColor="green" backgroundColor="green"/>
+		<eLabel name="Line" position="center,613" size="716,1" zPosition="2" backgroundColor="un666666"/>
+		<eLabel name="Red" position="415,648" size="180,1" zPosition="2" foregroundColor="red" backgroundColor="red"/>
+		<eLabel name="Green" position="685,648" size="180,1" zPosition="2" foregroundColor="green" backgroundColor="green"/>
 	</screen>
 
 	<screen name="ButtonTemplate_CancelOK_Midle">
 		<panel name="ButtonTemplate_Midle_RG"/>
-		<widget name="canceltext" position="380,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget name="oktext" position="650,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget name="canceltext" position="380,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="oktext" position="650,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
 	</screen>
 
 	<screen name="ButtonTemplate_CancelScan_Midle">
 		<panel name="ButtonTemplate_Midle_RG"/>
-		<eLabel text="Cancel" position="380,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<eLabel text="Scan" position="650,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<eLabel text="Cancel" position="380,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<eLabel text="Scan" position="650,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
 	</screen>
 
 	<screen name="ButtonTemplate_RG_Midle">
 		<panel name="ButtonTemplate_Midle_RG"/>
-		<widget name="key_red" position="380,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget name="key_green" position="650,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget name="key_red" position="380,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_green" position="650,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
 	</screen>
 
 	<screen name="ButtonTemplate_RGS_Midle">
 		<panel name="ButtonTemplate_Midle_RG"/>
-		<widget source="key_red" render="Label" position="380,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget source="key_green" render="Label" position="650,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget source="key_red" render="Label" position="380,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="key_green" render="Label" position="650,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
 	</screen>
 
 	<screen name="ButtonTemplate_Small_RG">
-		<eLabel name="Line" position="20,460" size="560,1" backgroundColor="un666666"/>
-		<eLabel name="Red" position="75,495" size="180,1" foregroundColor="red" backgroundColor="red"/>
-		<eLabel name="Green" position="345,495" size="180,1" foregroundColor="green" backgroundColor="green"/>
+		<eLabel name="Line" position="20,460" size="560,1" zPosition="2" backgroundColor="un666666"/>
+		<eLabel name="Red" position="75,495" size="180,1" zPosition="2" foregroundColor="red" backgroundColor="red"/>
+		<eLabel name="Green" position="345,495" size="180,1" zPosition="2" foregroundColor="green" backgroundColor="green"/>
 	</screen>
 
 	<screen name="ButtonTemplate_RG_Small">
 		<panel name="ButtonTemplate_Small_RG"/>
-		<widget name="key_red" position="40,460" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget name="key_green" position="310,460" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget name="key_red" position="40,460" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_green" position="310,460" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
 	</screen>
 
 	<screen name="ButtonTemplate_RGS_Small">
 		<panel name="ButtonTemplate_Small_RG"/>
-		<widget source="key_red" render="Label" position="40,460" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget source="key_green" render="Label" position="310,460" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget source="key_red" render="Label" position="40,460" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="key_green" render="Label" position="310,460" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
 	</screen>
 
 	<screen name="ButtonTemplate_RGBS_Small">
-		<eLabel name="Line" position="20,460" size="560,1" backgroundColor="un666666"/>
-		<widget source="key_red" render="Label" position="35,460" size="170,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget source="key_green" render="Label" position="center,460" size="170,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget source="key_blue" render="Label" position="395,460" size="170,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<eLabel name="Red" position="30,495" size="180,1" foregroundColor="red" backgroundColor="red"/>
-		<eLabel name="Green" position="center,495" size="180,1" foregroundColor="green" backgroundColor="green"/>
-		<eLabel name="Blue" position="390,495" size="180,1" foregroundColor="green" backgroundColor="green"/>
+		<eLabel name="Line" position="20,460" size="560,1" zPosition="2" backgroundColor="un666666"/>
+		<widget source="key_red" render="Label" position="35,460" size="170,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="key_green" render="Label" position="center,460" size="170,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="key_blue" render="Label" position="395,460" size="170,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<eLabel name="Red" position="30,495" size="180,1" zPosition="2" foregroundColor="red" backgroundColor="red"/>
+		<eLabel name="Green" position="center,495" size="180,1" zPosition="2" foregroundColor="green" backgroundColor="green"/>
+		<eLabel name="Blue" position="390,495" size="180,1" zPosition="2" foregroundColor="green" backgroundColor="green"/>
 	</screen>
 
 	<screen name="Big2PanelsTemplate">
 		<panel name="ButtonTemplate_RGYB_BigLeft"/>
-		<ePixmap position="62,center" size="745,592" zPosition="-10" pixmap="MetropolisHD/window/podloga.png" transparent="0" borderWidth="1" borderColor="un666666"/>
+		<eLabel position="62,center" size="745,592" zPosition="-10" borderWidth="1" borderColor="un666666" backgroundColor="podloga"/>
 		<ePixmap pixmap="MetropolisHD/window/back.png" position="68,68" size="737,40" alphatest="off" zPosition="-9" transparent="0"/>
-		<ePixmap position="842,center" size="362,592" zPosition="-10" pixmap="MetropolisHD/window/podloga.png" transparent="0" borderWidth="1" borderColor="un666666"/>
+		<eLabel name="Line" position="62,63" size="745,1" zPosition="2" backgroundColor="un666666"/>
+		<eLabel name="Line" position="62,656" size="745,1" zPosition="2" backgroundColor="un666666"/>
+		<eLabel name="Line" position="62,63" size="1,592" zPosition="2" backgroundColor="un666666"/>
+		<eLabel name="Line" position="807,63" size="1,592" zPosition="2" backgroundColor="un666666"/>
+		<eLabel position="842,center" size="362,592" zPosition="-10" borderWidth="1" borderColor="un666666" backgroundColor="podloga"/>
+		<ePixmap pixmap="MetropolisHD/window/back.png" position="848,68" size="345,40" alphatest="off" zPosition="-9" transparent="0"/>
+		<eLabel name="Line" position="842,63" size="362,1" zPosition="2" backgroundColor="un666666"/>
+		<eLabel name="Line" position="842,656" size="362,1" zPosition="2" backgroundColor="un666666"/>
+		<eLabel name="Line" position="842,63" size="1,592" zPosition="2" backgroundColor="un666666"/>
+		<eLabel name="Line" position="1204,63" size="1,592" zPosition="2" backgroundColor="un666666"/>
 	</screen>
 
 	<screen name="Big2PanelsSecondPanelTemplate">
-		<widget source="global.CurrentTime" render="Label" position="861,525" size="321,29" zPosition="1" font="Replacement; 22" halign="center" backgroundColor="background" transparent="1" foregroundColor="green">
+		<widget source="global.CurrentTime" render="Label" position="861,525" size="321,29" zPosition="1" font="Replacement; 22" halign="center" backgroundColor="podloga" foregroundColor="green">
 			<convert type="ClockToText">Format: %A - %d.%m.%Y</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="972,550" size="139,83" font="Regular; 80" valign="center" halign="right" backgroundColor="background" transparent="1" text="22" foregroundColor="un21e2e2e2">
+		<widget source="global.CurrentTime" render="Label" position="972,550" size="139,83" font="Regular; 80" valign="center" halign="right" backgroundColor="podloga" text="22" foregroundColor="un21e2e2e2">
 			<convert type="ClockToText">Format:%H</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1109,559" size="90,46" font="Regular; 45" valign="center" halign="left" backgroundColor="background" transparent="1" foregroundColor="un21e2e2e2">
+		<widget source="global.CurrentTime" render="Label" position="1109,559" size="90,46" font="Regular; 45" valign="center" halign="left" backgroundColor="podloga" foregroundColor="un21e2e2e2">
 			<convert type="ClockToText">Format::%M</convert>
 		</widget>
 	</screen>
@@ -198,12 +207,12 @@
 		<panel name="ButtonTemplate_RGYB_BigLeft"/>
 		<panel name="Big2PanelsSecondPanelTemplate"/>
 		<widget name="list" position="76,119" size="713,450" zPosition="2"  enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
-		<eLabel name="Description" position="847,71" size="352,30" text="Description" font="Replacement; 22" foregroundColor="yellow" backgroundColor="transpGrey" halign="center" transparent="1"/>
-		<widget source="Service" render="Label" position="847,107" zPosition="1" size="352,28" font="Regular;24" halign="center" backgroundColor="transpBlack" transparent="1">
+		<eLabel name="Description" position="847,71" size="352,30" text="Description" font="Replacement; 22" foregroundColor="yellow" backgroundColor="podloga" halign="center"/>
+		<widget source="Service" render="Label" position="847,107" zPosition="1" size="352,28" font="Regular;24" halign="center" backgroundColor="podloga">
 			<convert type="ServiceTime">Duration</convert>
 			<convert type="ClockToText">AsLength</convert>
 		</widget>
-		<widget source="Service" render="Label" position="848,140" zPosition="2" size="349,360" font="Regular;20" backgroundColor="transpBlack" transparent="1" halign="center">
+		<widget source="Service" render="Label" position="848,140" zPosition="2" size="349,360" font="Regular;20" backgroundColor="podloga" halign="center">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<eLabel name="Menu" position="867,565" size="75,22" text="Menu" font="Replacement; 20" halign="center" transparent="0" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
@@ -213,29 +222,34 @@
 	</screen>
 
 	<screen name="MenuTemplate">
-		<ePixmap position="center,center" size="544,592" zPosition="-2" pixmap="MetropolisHD/window/podloga.png" alphatest="off" borderWidth="1" borderColor="un666666"/>
+		<eLabel position="center,center" size="544,592" zPosition="-2" borderWidth="2" borderColor="un666666" backgroundColor="podloga"/>
 		<ePixmap pixmap="MetropolisHD/window/back.png" position="380,71" size="526,42" alphatest="off" zPosition="-1" transparent="0"/>
-		<ePixmap position="-25,113" size="394,162" zPosition="-3" pixmap="MetropolisHD/window/podloga.png" transparent="0" borderWidth="1" borderColor="un666666"/>
-		<ePixmap position="911,113" size="369,162" zPosition="-3" pixmap="MetropolisHD/window/podloga.png" transparent="0" borderWidth="1" borderColor="un666666"/>
-		<widget source="title" render="Label" position="380,72" size="522,41" zPosition="1" halign="center" font="Replacement; 26" foregroundColor="red" backgroundColor="background" transparent="1"/>
-		<widget source="menu" render="Listbox" enableWrapAround="1" position="380,117" size="522,500" zPosition="1" scrollbarMode="showNever" selectionPixmap="MetropolisHD/menu/sel_menu.png" transparent="1" backgroundPixmap="MetropolisHD/menu/bg40x40.png">
+		<eLabel name="Line" position="center,63" size="544,1" zPosition="2" backgroundColor="un666666"/>
+		<eLabel name="Line" position="center,656" size="544,1" zPosition="2" backgroundColor="un666666"/>
+		<eLabel name="Line" position="368,center" size="1,592" zPosition="2" backgroundColor="un666666"/>
+		<eLabel name="Line" position="911,center" size="1,592" zPosition="2" backgroundColor="un666666"/>
+		<eLabel name="Line" position="center,605" size="522,1" zPosition="2" backgroundColor="un666666"/>
+		<eLabel position="0,113" size="1280,162" zPosition="-5" backgroundColor="podloga"/>
+		<eLabel name="Line" position="center,113" size="1280,1" zPosition="-4" backgroundColor="un666666"/>
+		<eLabel name="Line" position="center,274" size="1280,1" zPosition="-4" backgroundColor="un666666"/>
+		<widget source="title" render="Label" position="380,74" size="522,41" zPosition="1" halign="center" font="Replacement; 26" foregroundColor="red" backgroundColor="podloga" transparent="1"/>
+		<widget source="menu" render="Listbox" enableWrapAround="1" position="380,117" size="522,500" zPosition="1" scrollbarMode="showNever" selectionPixmap="MetropolisHD/menu/sel_menu.png" backgroundPixmap="MetropolisHD/menu/bg40x40.png" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (40,6), size = (425,32), flags = RT_HALIGN_CENTER, text =0) ],
 				"fonts": [gFont("Regular",25)],
 				"itemHeight":55 }
 			</convert>
 		</widget>
-		<eLabel name="Line" position="380,605" size="522,1" backgroundColor="un666666"/>
-		<widget source="session.CurrentService" render="Label" position="380,611" size="522,34" font="Replacement; 22" backgroundColor="transpGrey" transparent="1" halign="center" foregroundColor="yellow" zPosition="3" valign="center">
+		<widget source="session.CurrentService" render="Label" position="380,611" size="522,34" font="Replacement; 22" backgroundColor="podloga" halign="center" foregroundColor="yellow" zPosition="3" valign="center">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="958,140" size="139,83" font="Regular; 80" valign="center" halign="right" backgroundColor="transpGrey" transparent="1" text="22" foregroundColor="un21e2e2e2">
+		<widget source="global.CurrentTime" render="Label" position="958,140" size="139,83" font="Regular; 80" valign="center" halign="right" backgroundColor="podloga" text="22" foregroundColor="un21e2e2e2">
 			<convert type="ClockToText">Format:%H</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1096,150" size="141,46" font="Regular; 45" valign="center" halign="left" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
+		<widget source="global.CurrentTime" render="Label" position="1096,150" size="141,46" font="Regular; 45" valign="center" halign="left" backgroundColor="podloga" foregroundColor="un21e2e2e2">
 			<convert type="ClockToText">Format::%M</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="916,218" size="321,29" zPosition="1" font="Replacement; 22" halign="center" backgroundColor="background" transparent="1" foregroundColor="green">
+		<widget source="global.CurrentTime" render="Label" position="920,218" size="321,29" zPosition="1" font="Replacement; 22" halign="center" backgroundColor="podloga" foregroundColor="green">
 			<convert type="ClockToText">Format: %A - %d.%m.%Y</convert>
 		</widget>
 	</screen>
@@ -247,18 +261,30 @@
 	</screen>
 
 	<screen name="MinimalScreenTemplate">
-		<ePixmap position="center,center" size="620,420" zPosition="-10" pixmap="MetropolisHD/window/podloga.png" transparent="0" borderWidth="1" borderColor="un666666"/>
+		<eLabel position="center,center" size="620,420" zPosition="-10" borderWidth="1" borderColor="un666666" backgroundColor="podloga"/>
 		<ePixmap pixmap="MetropolisHD/window/back.png" position="center,155" size="612,40" alphatest="off" zPosition="-9" transparent="0"/>
+		<eLabel name="Line" position="center,150" size="620,1" zPosition="2" backgroundColor="un666666"/>
+		<eLabel name="Line" position="center,570" size="620,1" zPosition="2" backgroundColor="un666666"/>
+		<eLabel name="Line" position="330,center" size="1,420" zPosition="2" backgroundColor="un666666"/>
+		<eLabel name="Line" position="949,center" size="1,420" zPosition="2" backgroundColor="un666666"/>
 	</screen>
 
 	<screen name="MidleScreenTemplate">
-		<ePixmap position="center,center" size="745,592" zPosition="-10" pixmap="MetropolisHD/window/podloga.png" transparent="0" borderWidth="1" borderColor="un666666"/>
+		<eLabel position="center,center" size="745,592" zPosition="-10" borderWidth="1" borderColor="un666666" backgroundColor="podloga"/>
 		<ePixmap pixmap="MetropolisHD/window/back.png" position="center,68" size="737,40" alphatest="off" zPosition="-9" transparent="0"/>
+		<eLabel name="Line" position="center,63" size="745,1" zPosition="2" backgroundColor="un666666"/>
+		<eLabel name="Line" position="center,656" size="745,1" zPosition="2" backgroundColor="un666666"/>
+		<eLabel name="Line" position="267,center" size="1,592" zPosition="2" backgroundColor="un666666"/>
+		<eLabel name="Line" position="1011,center" size="1,592" zPosition="2" backgroundColor="un666666"/>
 	</screen>
 
 	<screen name="BigScreenTemplate">
-		<ePixmap position="center,30" size="1178,627" zPosition="-10" pixmap="MetropolisHD/window/podloga.png" transparent="0" borderWidth="1" borderColor="un666666"/>
+		<eLabel position="center,30" size="1178,627" zPosition="-10" borderWidth="1" borderColor="un666666" backgroundColor="podloga"/>
 		<ePixmap pixmap="MetropolisHD/window/back.png" position="center,33" size="1170,40" alphatest="off" zPosition="-9" transparent="0"/>
+		<eLabel name="Line" position="center,30" size="1178,1" zPosition="2" backgroundColor="un666666"/>
+		<eLabel name="Line" position="center,656" size="1178,1" zPosition="2" backgroundColor="un666666"/>
+		<eLabel name="Line" position="51,30" size="1,627" zPosition="2" backgroundColor="un666666"/>
+		<eLabel name="Line" position="1228,30" size="1,627" zPosition="2" backgroundColor="un666666"/>
 	</screen>
 
 	<screen name="MinimalScreen_RGS_Template">
