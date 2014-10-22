@@ -371,56 +371,55 @@
 	</screen>
 
 	<screen name="ChannelSelection" position="1,center" size="1280,720" title="Channel Selection" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
-		<widget source="Title" render="Label" position="67,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="background" transparent="1"/>
 		<panel name="Big2PanelsTemplate"/>
-		<widget source="global.CurrentTime" render="Label" position="953,599" size="139,39" zPosition="1" font="Replacement; 36" halign="center" backgroundColor="podloga" foregroundColor="un21e2e2e2" valign="center">
+		<widget source="Title" render="Label" position="67,72" size="735,34" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="background" transparent="1"/>
+		<widget source="global.CurrentTime" render="Label" position="953,599" size="139,39" font="Replacement; 36" halign="center" backgroundColor="podloga" foregroundColor="un21e2e2e2" valign="center">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
-		<widget name="list" position="69,112" size="730,500" scrollbarMode="showOnDemand" picServiceEventProgressbar="MetropolisHD/chnsel/pl.png" selectionPixmap="MetropolisHD/buttons/sel.png" sliderPixmap="MetropolisHD/window/slider_vert.png" foregroundColorServiceNotAvail="#444444" colorServiceDescriptionSelected="hellgreen" serviceItemHeight="31" serviceNumberFont="Regular;20" serviceNameFont="Regular;20" serviceInfoFont="Regular;20" colorEventProgressbarBorderSelected="#000000" zPosition="1"/>
-		<widget source="ServiceEvent" render="Label" position="890,70" size="310,35" font="Replacement;22" backgroundColor="podloga" halign="center" foregroundColor="yellow" zPosition="3" valign="center" transparent="1">
+		<widget name="list" position="69,112" size="730,500" scrollbarMode="showOnDemand" picServiceEventProgressbar="MetropolisHD/chnsel/pl.png" selectionPixmap="MetropolisHD/buttons/sel.png" sliderPixmap="MetropolisHD/window/slider_vert.png" foregroundColorServiceNotAvail="#444444" colorServiceDescriptionSelected="hellgreen" serviceItemHeight="31" serviceNumberFont="Regular;20" serviceNameFont="Regular;20" serviceInfoFont="Regular;20" colorEventProgressbarBorderSelected="#000000"/>
+		<widget source="ServiceEvent" render="Label" position="890,70" size="310,35" font="Replacement;22" backgroundColor="podloga" halign="center" foregroundColor="yellow" valign="center" transparent="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="883,546" size="312,26" font="Regular; 18" backgroundColor="podloga" halign="center" noWrap="1" valign="center" text="36.0E   DVB-S2  11234LC 27500 3/4 8PSK" zPosition="3" foregroundColor="un21e2e2e2">
+		<widget source="ServiceEvent" render="Label" position="883,546" size="312,26" font="Regular; 18" backgroundColor="podloga" halign="center" noWrap="1" valign="center" text="36.0E   DVB-S2  11234LC 27500 3/4 8PSK" foregroundColor="un21e2e2e2">
 			<convert type="ServiceName2">%O  %s  %F %p %Y %f %M %b</convert>
 		</widget>
-		<ePixmap pixmap="MetropolisHD/chnsel/clock.png" position="851,228" size="32,32" alphatest="on" zPosition="3" transparent="1"/>
-		<widget source="ServiceEvent" render="Label" position="875,230" size="72,28" zPosition="2" halign="right" font="OpenSans; 20" foregroundColor="hellgreen" backgroundColor="podloga" valign="center">
+		<ePixmap pixmap="MetropolisHD/chnsel/clock.png" position="851,228" size="32,32" alphatest="on" transparent="1"/>
+		<widget source="ServiceEvent" render="Label" position="875,230" size="72,28" halign="right" font="OpenSans; 20" foregroundColor="hellgreen" backgroundColor="podloga" valign="center">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText"></convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="854,110" size="340,45" halign="center" font="Regular; 20" foregroundColor="un21e2e2e2" backgroundColor="podloga" valign="center" text="95555+" zPosition="1">
+		<widget source="ServiceEvent" render="Label" position="854,110" size="340,45" halign="center" font="Regular; 20" foregroundColor="un21e2e2e2" backgroundColor="podloga" valign="center" text="95555+" >
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="1097,230" size="72,28" zPosition="2" halign="left" font="OpenSans; 20" foregroundColor="hellgreen" backgroundColor="podloga" valign="center">
+		<widget source="ServiceEvent" render="Label" position="1097,230" size="72,28" halign="left" font="OpenSans; 20" foregroundColor="hellgreen" backgroundColor="podloga" valign="center">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
-		<ePixmap pixmap="MetropolisHD/chnsel/info.png" position="851,544" size="32,32" alphatest="off" zPosition="3"/>
+		<ePixmap pixmap="MetropolisHD/chnsel/info.png" position="851,544" size="32,32" alphatest="on" zPosition="3"/>
 		<widget source="ServiceEvent" render="NextEpgInfo" position="887,266" size="309,50" font="Replacement; 22" halign="left" valign="center" foregroundColor="yellow" backgroundColor="podloga" transparent="1"/>
-		<widget source="ServiceEvent" render="Label" position="854,332" zPosition="3" size="340,200" font="Regular; 20" foregroundColor="un21e2e2e2" backgroundColor="podloga" valign="top">
+		<widget source="ServiceEvent" render="Label" position="854,332" size="340,200" font="Regular; 20" foregroundColor="un21e2e2e2" backgroundColor="podloga" valign="top">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
-		<ePixmap pixmap="MetropolisHD/chnsel/calendar.png" position="851,274" size="32,32" alphatest="off" zPosition="3" transparent="1"/>
+		<ePixmap pixmap="MetropolisHD/chnsel/calendar.png" position="851,274" size="32,32" alphatest="on" transparent="1"/>
 		<eLabel name="Line" position="872,225" size="300,1" backgroundColor="un666666"/>
+		<ePixmap pixmap="MetropolisHD/buttons/sel.png" position="864,600" size="83,33" alphatest="off" borderWidth="1" borderColor="un666666"/>
+		<ePixmap pixmap="MetropolisHD/buttons/sel.png" position="1099,600" size="83,33" alphatest="off" borderWidth="1" borderColor="un666666"/>
 		<eLabel name="EPG" position="869,605" size="75,22" text="EPG" font="Replacement; 20" halign="center" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
-		<ePixmap pixmap="MetropolisHD/buttons/sel.png" position="864,600" size="83,33" alphatest="off" zPosition="1" borderWidth="1" borderColor="un666666" transparent="1"/>
-		<eLabel name="MENU" position="1103,605" size="75,22" text="MENU" font="Replacement; 20" halign="center" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
-		<ePixmap pixmap="MetropolisHD/buttons/sel.png" position="1099,600" size="83,33" alphatest="off" zPosition="1" borderWidth="1" borderColor="un666666" transparent="1"/>
+		<eLabel name="Menu" position="1103,605" size="75,22" text="Menu" font="Replacement; 20" halign="center" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
 		<eLabel name="Line" position="872,582" size="300,1" backgroundColor="un666666"/>
 		<eLabel name="Line" position="872,261" size="300,1" backgroundColor="un666666"/>
 		<eLabel name="Line" position="872,538" size="300,1" backgroundColor="un666666"/>
-		<ePixmap pixmap="MetropolisHD/chnsel/tv.png" position="851,72" size="32,32" alphatest="off" zPosition="3"/>
-		<widget source="ServiceEvent" render="Picon" position="910,160" size="100,60" zPosition="10" transparent="1" alphatest="blend">
+		<ePixmap pixmap="MetropolisHD/chnsel/tv.png" position="851,72" size="32,32" alphatest="on"/>
+		<widget source="ServiceEvent" render="Picon" position="910,160" size="100,60" transparent="1" alphatest="blend">
 			<convert type="ServiceName2">Reference</convert>
 		</widget>
-		<widget source="ServiceEvent" render="PiconProv" position="1035,160" size="100,60" zPosition="10" transparent="1" alphatest="blend">
+		<widget source="ServiceEvent" render="PiconProv" position="1035,160" size="100,60" transparent="1" alphatest="blend">
 			<convert type="ServiceName2">Provider</convert>
 		</widget>
+		<eLabel name="Line" position="962,244" size="120,1" backgroundColor="un666666"/>
 		<widget source="ServiceEvent" render="Progress" position="962,243" size="120,4" zPosition="2" pixmap="MetropolisHD/window/slider.png" transparent="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<eLabel name="Line" position="962,244" size="120,1" zPosition="1" backgroundColor="un666666"/>
-		<!--ePixmap position="962,244" size="120,4" zPosition="1" pixmap="MetropolisHD/window/slider_back.png" alphatest="on" transparent="1"/-->
 		<eLabel name="Line" position="872,324" size="300,1" backgroundColor="un666666"/>
 	</screen>
 
