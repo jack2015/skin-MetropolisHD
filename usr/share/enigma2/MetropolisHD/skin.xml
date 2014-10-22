@@ -427,14 +427,14 @@
 		<widget name="UnhandledKeyPixmap" pixmap="MetropolisHD/icons/error.png" position="6,2" size="53,65" alphatest="on"/>
 	</screen>
 
-	<screen name="Volume" position="center,40" zPosition="1" size="349,41" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
-		<ePixmap pixmap="MetropolisHD/window/vol_back.png" position="1,0" size="346,39" alphatest="off" zPosition="1" transparent="0"/>
-		<widget name="Volume" pixmap="MetropolisHD/window/vol.png" position="1,0" zPosition="2" size="346,39" transparent="1"/>
-		<widget source="global.CurrentTime" render="MetVolume" zPosition="3" position="1,1" size="346,38" font="Replacement;28" valign="center" halign="center" foregroundColor="white" backgroundColor="podloga" transparent="1"/>
+	<screen name="Volume" position="center,40" zPosition="10" size="349,41" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
+		<ePixmap pixmap="MetropolisHD/window/vol_back.png" position="1,0" size="346,39" alphatest="off" transparent="0"/>
+		<widget name="Volume" pixmap="MetropolisHD/window/vol.png" position="1,0" zPosition="1" size="346,39" transparent="1"/>
+		<widget source="global.CurrentTime" render="MetVolume" zPosition="2" position="1,1" size="346,38" font="Replacement;28" valign="center" halign="center" foregroundColor="white" backgroundColor="podloga" transparent="1"/>
 	</screen>
 
 	<screen name="Mute" position="67,50" size="64,64" backgroundColor="transparent" zPosition="10" flags="wfNoBorder" transparent="0">
-		<ePixmap pixmap="MetropolisHD/window/mute.png" position="1,1" size="64,64" zPosition="-5" alphatest="on"/>
+		<ePixmap pixmap="MetropolisHD/window/mute.png" position="1,1" size="64,64" alphatest="on"/>
 	</screen>
 
 	<screen name="menu_mainmenu" position="center,center" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
