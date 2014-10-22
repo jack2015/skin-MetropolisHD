@@ -707,15 +707,14 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count> 7 and 2 or 3)))
 	</screen>
 
 	<screen name="EPGSelection" position="center,center" size="1279,720" flags="wfNoBorder" backgroundColor="transparent">
-		<eLabel text="EPG selection" position="68,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<panel name="Big2PanelsTemplate"/>
 		<panel name="Big2PanelsSecondPanelTemplate"/>
+		<eLabel text="EPG selection" position="68,72" size="735,34" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<eLabel name="EPG" position="867,565" size="75,22" text="EPG" font="Replacement; 20" halign="center" transparent="0" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
 		<widget name="list" position="75,115" size="722,490" zPosition="2" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="transpBlack" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
 		<widget source="Event" render="Label" position="849,133" size="348,348" font="Regular;20" backgroundColor="podloga" halign="center" valign="top" foregroundColor="un21e2e2e2">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
-		<ePixmap pixmap="MetropolisHD/buttons/sel.png" position="862,560" size="83,33" alphatest="off" zPosition="1" borderWidth="1" borderColor="un666666"/>
 		<eLabel name="OK" position="867,604" size="75,22" text="OK" font="Replacement; 20" halign="center" transparent="0" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
 		<widget source="session.CurrentService" render="Label" position="850,71" size="345,34" font="Replacement; 22" backgroundColor="podloga" halign="center" foregroundColor="yellow" zPosition="3" valign="center" transparent="1">
 			<convert type="ServiceName">Name</convert>
@@ -742,9 +741,9 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count> 7 and 2 or 3)))
 	</screen>
 
 	<screen name="EventView" position="center,-1" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<eLabel text="Event view" position="68,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<panel name="Big2PanelsTemplate"/>
 		<panel name="Big2PanelsSecondPanelTemplate"/>
+		<eLabel text="Event view" position="68,72" size="735,34" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<eLabel name="Exit" position="867,565" size="75,22" text="Exit" font="Replacement; 20" halign="center" transparent="0" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
 		<eLabel name="OK" position="867,604" size="75,22" text="OK" font="Replacement; 20" halign="center" transparent="0" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
 		<eLabel name="Line" position="871,511" size="300,1" backgroundColor="un666666"/>
