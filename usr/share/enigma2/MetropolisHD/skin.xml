@@ -424,7 +424,7 @@
 	</screen>
 
 	<screen name="UnhandledKey" position="center,200" size="64, 64" zPosition="100" flags="wfNoBorder" backgroundColor="transparent">
-		<widget alphatest="on" name="UnhandledKeyPixmap" pixmap="MetropolisHD/icons/error.png" position="6,2" size="53,65" transparent="0"/>
+		<widget name="UnhandledKeyPixmap" pixmap="MetropolisHD/icons/error.png" position="6,2" size="53,65" alphatest="on"/>
 	</screen>
 
 	<screen name="Volume" position="center,40" zPosition="1" size="349,41" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
