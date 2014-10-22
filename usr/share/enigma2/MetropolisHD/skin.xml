@@ -402,8 +402,8 @@
 		</widget>
 		<ePixmap pixmap="MetropolisHD/chnsel/calendar.png" position="851,274" size="32,32" alphatest="on" transparent="1"/>
 		<eLabel name="Line" position="872,225" size="300,1" backgroundColor="un666666"/>
-		<ePixmap pixmap="MetropolisHD/buttons/sel.png" position="864,600" size="83,33" alphatest="off" borderWidth="1" borderColor="un666666"/>
-		<ePixmap pixmap="MetropolisHD/buttons/sel.png" position="1099,600" size="83,33" alphatest="off" borderWidth="1" borderColor="un666666"/>
+		<eLabel name="Button" position="864,600" size="83,33" backgroundColor="transpGrey"/>
+		<eLabel name="Button" position="1099,600" size="83,33" backgroundColor="transpGrey"/>
 		<eLabel name="EPG" position="869,605" size="75,22" text="EPG" font="Replacement; 20" halign="center" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
 		<eLabel name="Menu" position="1103,605" size="75,22" text="Menu" font="Replacement; 20" halign="center" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
 		<eLabel name="Line" position="872,582" size="300,1" backgroundColor="un666666"/>
