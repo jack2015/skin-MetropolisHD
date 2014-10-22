@@ -515,7 +515,7 @@
 
 	<screen name="menu_system" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuTemplate"/>
-		<ePixmap position="128,132" size="128,128" zPosition="-1" pixmap="MetropolisHD/menu/setup.png" transparent="0" alphatest="on"/>
+		<ePixmap position="128,132" size="128,128" pixmap="MetropolisHD/menu/setup.png" transparent="0" alphatest="on"/>
 	</screen>
 
 	<screen name="menu_harddisk" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -572,32 +572,32 @@
 
 	<screen name="menu_scan" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuTemplate"/>
-		<ePixmap position="128,132" size="125,125" zPosition="-1" pixmap="MetropolisHD/menu/sat_search.png" transparent="0" alphatest="on"/>
+		<ePixmap position="128,132" size="125,125" pixmap="MetropolisHD/menu/sat_search.png" transparent="0" alphatest="on"/>
 	</screen>
 
 	<screen name="About" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RG_Template"/>
-		<eLabel text="About" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="About" position="center,72" size="735,34" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="AboutScrollLabel" position="center,130" size="705,410" halign="center" font="Regular;22" backgroundColor="podloga"/>
-		<ePixmap pixmap="MetropolisHD/window/metropolishd_logo.png" position="center,550" size="743,50" alphatest="off" zPosition="3" transparent="1"/>
+		<ePixmap pixmap="MetropolisHD/window/metropolishd_logo.png" position="center,550" size="743,50" alphatest="off" transparent="1"/>
 	</screen>
 
 	<screen name="CommitInfo" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreenTemplate"/>
-		<eLabel text="Latest Commits" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Latest Commits" position="center,72" size="735,34" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="AboutScrollLabel" position="center,130" size="705,499" halign="center" font="Regular;22" backgroundColor="podloga"/>
 	</screen>
 
 	<screen name="TranslationInfo" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MinimalScreenTemplate"/>
-		<eLabel text="Translation" position="center,158" size="600,34" zPosition="2" halign="center" font="Replacement; 24" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Translation" position="center,158" size="600,34" halign="center" font="Replacement; 24" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget source="TranslatorName" render="Label" position="center,200" size="580,40" font="Regular;26" foregroundColor="yellow" halign="center"/>
 		<widget source="TranslationInfo" render="Label" position="center,250" size="580,300" font="Regular;22" halign="center"/>
 	</screen>
 
 	<screen name="ServiceInfo" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGYB_Template"/>
-		<eLabel text="Service info" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Service info" position="center,72" size="735,34" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="infolist" position="center,115" size="680,491" selectionDisabled="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" transparent="1" itemHeight="31"/>
 	</screen>
 
