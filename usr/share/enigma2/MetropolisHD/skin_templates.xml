@@ -206,19 +206,19 @@
 	<screen name="MovieSelectionSmallpanelTemplate">
 		<panel name="ButtonTemplate_RGYB_BigLeft"/>
 		<panel name="Big2PanelsSecondPanelTemplate"/>
-		<widget name="list" position="76,119" size="713,450" zPosition="2"  enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
-		<eLabel name="Description" position="847,71" size="352,30" text="Description" font="Replacement; 22" foregroundColor="yellow" backgroundColor="podloga" halign="center"/>
-		<widget source="Service" render="Label" position="847,107" zPosition="1" size="352,28" font="Regular;24" halign="center" backgroundColor="podloga">
+		<widget name="list" position="76,119" size="713,450" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
+		<eLabel name="Description" position="847,71" size="352,30" text="Description" font="Replacement; 22" foregroundColor="yellow" backgroundColor="podloga" halign="center" transparent="1"/>
+		<widget source="Service" render="Label" position="847,107" size="352,28" font="Regular;24" halign="center" backgroundColor="podloga">
 			<convert type="ServiceTime">Duration</convert>
 			<convert type="ClockToText">AsLength</convert>
 		</widget>
-		<widget source="Service" render="Label" position="848,140" zPosition="2" size="349,360" font="Regular;20" backgroundColor="podloga" halign="center">
+		<widget source="Service" render="Label" position="848,140" size="349,360" font="Regular;20" backgroundColor="podloga" halign="center">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<eLabel name="Menu" position="867,565" size="75,22" text="Menu" font="Replacement; 20" halign="center" transparent="0" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
-		<ePixmap pixmap="MetropolisHD/buttons/sel.png" position="862,560" size="83,33" alphatest="off" zPosition="1" borderWidth="1" borderColor="un666666"/>
+		<ePixmap pixmap="MetropolisHD/buttons/sel.png" position="862,560" size="83,33" alphatest="off" borderWidth="1" borderColor="un666666"/>
 		<eLabel name="Exit" position="867,604" size="75,22" text="Exit" font="Replacement; 20" halign="center" transparent="0" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
-		<ePixmap pixmap="MetropolisHD/buttons/sel.png" position="862,599" size="83,33" alphatest="off" zPosition="1" borderWidth="1" borderColor="un666666"/>
+		<ePixmap pixmap="MetropolisHD/buttons/sel.png" position="862,599" size="83,33" alphatest="off" borderWidth="1" borderColor="un666666"/>
 	</screen>
 
 	<screen name="MenuTemplate">
