@@ -125,11 +125,12 @@
 	<include filename="skin_templates.xml"/>
 
 	<screen name="InfoBar" flags="wfNoBorder" position="center,center" size="1280,720" backgroundColor="transparent">
+		<ePixmap position="center,480" size="1273,250" pixmap="MetropolisHD/infobar/back.png" zPosition="-1" alphatest="off" transparent="0"/>
 		<eLabel text="AGC:" position="1037,641" size="50,22" font="Replacement; 17" backgroundColor="transpGrey" transparent="1" foregroundColor="yellow" halign="right"/>
 		<widget source="session.FrontendStatus" render="Label" position="1092,641" size="50,22" font="Replacement; 17" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="center,485" size="500,50" font="OpenSans; 30" backgroundColor="transpGrey" transparent="1" halign="center" foregroundColor="un21e2e2e2" zPosition="1">
+		<widget source="session.CurrentService" render="Label" position="center,485" size="500,50" font="OpenSans; 30" backgroundColor="transpGrey" transparent="1" halign="center" foregroundColor="un21e2e2e2">
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="1028,560" size="140,55" font="Regular; 45" valign="top" halign="right" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
@@ -138,7 +139,7 @@
 		<widget source="session.CurrentService" render="Label" position="70,645" size="300,37" font="Replacement; 20" backgroundColor="transpGrey" halign="left" transparent="1" valign="top" foregroundColor="un21e2e2e2">
 			<convert type="ServiceName">Provider</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Picon" position="70,572" size="100,60" zPosition="10" transparent="1" alphatest="blend">
+		<widget source="session.CurrentService" render="Picon" position="70,572" size="100,60" transparent="1" alphatest="blend">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<ePixmap pixmap="MetropolisHD/infobar/icons_off.png" position="630,644" size="397,41" zPosition="1" alphatest="on" transparent="1"/>
@@ -217,14 +218,13 @@
 		<widget source="global.CurrentTime" render="Label" position="1035,533" size="186,30" font="OpenSans; 20" valign="center" halign="center" backgroundColor="transpGrey" transparent="1" foregroundColor="hellgreen">
 			<convert type="ClockToText">Format:%e. %B</convert>
 		</widget>
-		<ePixmap position="center,480" size="1273,250" pixmap="MetropolisHD/infobar/back.png" zPosition="-1" alphatest="off" transparent="0"/>
-		<widget source="session.FrontendStatus" render="Progress" position="1140,623" zPosition="1" pixmap="MetropolisHD/window/snr.png" size="98,10" borderWidth="1" borderColor="darkgrey" transparent="0">
+		<widget source="session.FrontendStatus" render="Progress" position="1140,623" pixmap="MetropolisHD/window/snr.png" size="98,10" borderWidth="1" borderColor="darkgrey" transparent="0">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="1169,564" size="60,42" font="Regular; 25" valign="top" halign="left" backgroundColor="un333333" transparent="1" foregroundColor="un21e2e2e2">
 			<convert type="ClockToText">Format::%S</convert>
 		</widget>
-		<widget source="session.FrontendStatus" render="Progress" position="1140,646" zPosition="1" pixmap="MetropolisHD/window/snr.png" size="98,10" borderWidth="1" borderColor="darkgrey">
+		<widget source="session.FrontendStatus" render="Progress" position="1140,646" pixmap="MetropolisHD/window/snr.png" size="98,10" borderWidth="1" borderColor="darkgrey">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
 		<widget source="session.Event_Next" render="Label" position="906,600" size="120,25" halign="right" font="Regular; 20" foregroundColor="grey" backgroundColor="background" transparent="1">
@@ -718,7 +718,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count> 7 and 2 or 3)))
 		</widget>
 		<ePixmap pixmap="MetropolisHD/buttons/sel.png" position="862,560" size="83,33" alphatest="off" zPosition="1" borderWidth="1" borderColor="un666666"/>
 		<eLabel name="OK" position="867,604" size="75,22" text="OK" font="Replacement; 20" halign="center" transparent="0" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
-		<widget source="session.CurrentService" render="Label" position="850,71" size="345,34" font="Replacement; 22" backgroundColor="podloga" halign="center" foregroundColor="yellow" zPosition="3" valign="center">
+		<widget source="session.CurrentService" render="Label" position="850,71" size="345,34" font="Replacement; 22" backgroundColor="podloga" halign="center" foregroundColor="yellow" zPosition="3" valign="center" transparent="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<eLabel name="Line" position="871,511" size="300,1" backgroundColor="un666666"/>
@@ -750,7 +750,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count> 7 and 2 or 3)))
 		<eLabel name="OK" position="867,604" size="75,22" text="OK" font="Replacement; 20" halign="center" transparent="0" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
 		<eLabel name="Line" position="871,511" size="300,1" backgroundColor="un666666"/>
 		<widget name="epg_description" position="78,113" size="719,495" font="Regular;22" backgroundColor="podloga"/>
-		<widget name="channel" position="850,71" size="345,34" font="Replacement; 22" halign="center" backgroundColor="podloga" foregroundColor="yellow"/>
+		<widget name="channel" position="850,71" size="345,34" font="Replacement; 22" halign="center" backgroundColor="podloga" foregroundColor="yellow" transparent="1"/>
 		<widget name="datetime" position="862,115" size="174,25" font="Replacement; 22" halign="right" backgroundColor="podloga" foregroundColor="red"/>
 		<widget name="duration" position="1062,115" size="101,25" font="Replacement; 22" halign="left" backgroundColor="podloga" foregroundColor="red"/>
 	</screen>
