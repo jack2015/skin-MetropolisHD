@@ -730,12 +730,12 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count> 7 and 2 or 3)))
 		<panel name="BigScreen_RGYB_Template"/>
 		<eLabel text="Multi-EPG bouquet selection" position="center,37" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="list" position="60,145" size="768,450" zPosition="2" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="transpBlack" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
-		<widget name="now_button_sel" pixmap="MetropolisHD/window/epg_now.png" position="60,75" zPosition="3" size="1100,35" alphatest="off"/>
-		<widget name="next_button_sel" pixmap="MetropolisHD/window/epg_next.png" position="60,75" zPosition="3" size="1100,35" alphatest="off"/>
-		<widget name="more_button_sel" pixmap="MetropolisHD/window/epg_more.png" position="60,75" zPosition="3" size="1100,35" alphatest="off"/>
-		<widget name="now_text" position="52,82" zPosition="4" size="250,25" text="NOW" font="Regular;20" halign="center" backgroundColor="podloga"/>
-		<widget name="next_text" position="322,82" zPosition="4" size="250,25" text="NEXT" font="Regular;20" halign="center" backgroundColor="podloga"/>
-		<widget name="more_text" position="582,82" zPosition="4" size="250,25" text="MORE" font="Regular;20" halign="center" backgroundColor="podloga"/>
+		<widget name="now_button_sel" pixmap="MetropolisHD/window/epg_now.png" position="60,75" zPosition="3" size="1100,35" alphatest="on"/>
+		<widget name="next_button_sel" pixmap="MetropolisHD/window/epg_next.png" position="60,75" zPosition="3" size="1100,35" alphatest="on"/>
+		<widget name="more_button_sel" pixmap="MetropolisHD/window/epg_more.png" position="60,75" zPosition="3" size="1100,35" alphatest="on"/>
+		<widget name="now_text" position="52,82" zPosition="4" size="250,25" text="NOW" font="Regular;20" halign="center" backgroundColor="podloga" transparent="1"/>
+		<widget name="next_text" position="322,82" zPosition="4" size="250,25" text="NEXT" font="Regular;20" halign="center" backgroundColor="podloga" transparent="1"/>
+		<widget name="more_text" position="582,82" zPosition="4" size="250,25" text="MORE" font="Regular;20" halign="center" backgroundColor="podloga" transparent="1"/>
 		<widget name="date" position="873,78" size="328,28" font="Regular;24" valign="center" halign="center" backgroundColor="podloga"/>
 		<widget source="Event" render="Label" position="860,126" size="360,468" font="Regular;20" backgroundColor="podloga">
 			<convert type="EventName">ExtendedDescription</convert>
