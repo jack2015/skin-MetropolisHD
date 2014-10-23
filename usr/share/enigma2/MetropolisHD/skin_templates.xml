@@ -129,6 +129,12 @@
 		<eLabel name="Blue" position="685,648" size="180,1" zPosition="2" foregroundColor="blue" backgroundColor="blue"/>
 	</screen>
 
+	<screen name="ButtonTemplate_Midle_RY">
+		<eLabel name="Line" position="center,613" size="716,1" zPosition="2" backgroundColor="un666666"/>
+		<eLabel name="Red" position="415,648" size="180,1" zPosition="2" foregroundColor="red" backgroundColor="red"/>
+		<eLabel name="Yellow" position="685,648" size="180,1" zPosition="2" foregroundColor="yellow" backgroundColor="yellow"/>
+	</screen>
+
 	<screen name="ButtonTemplate_CancelOK_Midle">
 		<panel name="ButtonTemplate_Midle_RG"/>
 		<widget name="canceltext" position="380,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
@@ -157,6 +163,12 @@
 		<panel name="ButtonTemplate_Midle_RB"/>
 		<widget source="key_red" render="Label" position="380,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
 		<widget source="key_blue" render="Label" position="650,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+	</screen>
+
+	<screen name="ButtonTemplate_RYS_Midle">
+		<panel name="ButtonTemplate_Midle_RY"/>
+		<widget source="key_red" render="Label" position="380,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="key_yellow" render="Label" position="650,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
 	</screen>
 
 	<screen name="ButtonTemplate_Small_RG">
@@ -360,6 +372,11 @@
 	<screen name="MidleScreen_RBS_Template">
 		<panel name="MidleScreenTemplate"/>
 		<panel name="ButtonTemplate_RBS_Midle"/>
+	</screen>
+
+	<screen name="MidleScreen_RYS_Template">
+		<panel name="MidleScreenTemplate"/>
+		<panel name="ButtonTemplate_RYS_Midle"/>
 	</screen>
 
 	<screen name="BigScreen_RGYB_Template">
