@@ -1323,24 +1323,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<panel name="DefaultWizardTemplate"/>
 	</screen>
 
-	<screen name="SleepTimerEdit" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<eLabel text="Sleep Timer" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/window/podloga.png" transparent="0" borderWidth="1" borderColor="un666666"/>
-		<ePixmap pixmap="MetropolisHD/window/back.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0"/>
-		<widget name="current_status" position="center,185" size="400,30" font="Regular;22" transparent="1"/>
-		<widget name="red" pixmap="MetropolisHD/buttons/button_red.png" position="410,248" size="12,12" alphatest="on"/>
-		<widget name="green" pixmap="MetropolisHD/buttons/button_green.png" position="410,288" size="12,12" alphatest="on"/>
-		<widget name="yellow" pixmap="MetropolisHD/buttons/button_yellow.png" position="410,328" size="12,12" alphatest="on"/>
-		<widget name="blue" pixmap="MetropolisHD/buttons/button_blue.png" position="410,368" size="12,12" alphatest="on"/>
-		<widget name="red_text" position="center,240" size="400,30" font="Regular;22" transparent="1"/>
-		<widget name="green_text" position="center,280" size="400,30" font="Regular;22" transparent="1"/>
-		<widget name="yellow_text" position="center,320" size="400,30" font="Regular;22" transparent="1"/>
-		<widget name="blue_text" position="center,360" size="400,30" font="Regular;22" transparent="1"/>
-		<widget name="pretext" position="452,150" size="235,25" font="Regular;22" transparent="1"/>
-		<widget name="input" position="693,150" size="40,25" font="Regular;22" transparent="1"/>
-		<widget name="aftertext" position="740,150" size="100,25" font="Regular;22" transparent="1"/>
-		<ePixmap pixmap="MetropolisHD/window/sleeptimer.png" position="440,415" size="90,125" alphatest="on"/>
-	</screen>
 	<screen name="SubservicesQuickzap" position="380,600" size="560,100" backgroundColor="transparent" flags="wfNoBorder">
 		<eLabel text="Subservices" position="0,0" size="560,28" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack"/>
 		<widget source="session.RecordState" render="Pixmap" pixmap="MetropolisHD/icons/record.png" position="450,0" zPosition="2" size="14,14" alphatest="on">
