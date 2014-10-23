@@ -126,17 +126,17 @@
 
 	<screen name="InfoBar" flags="wfNoBorder" position="0,0" size="1280,720" backgroundColor="transparent">
 		<ePixmap position="center,480" size="1273,250" pixmap="MetropolisHD/infobar/back.png" zPosition="-1" alphatest="off" transparent="0"/>
-		<eLabel text="AGC:" position="1037,641" size="50,22" font="Replacement; 17" backgroundColor="transpGrey" transparent="1" foregroundColor="yellow" halign="right"/>
-		<widget source="session.FrontendStatus" render="Label" position="1092,641" size="50,22" font="Replacement; 17" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
+		<eLabel text="AGC:" position="1037,641" size="50,22" font="Replacement;17" backgroundColor="transpGrey" transparent="1" foregroundColor="yellow" halign="right"/>
+		<widget source="session.FrontendStatus" render="Label" position="1092,641" size="50,22" font="Replacement;17" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="center,485" size="500,50" font="OpenSans; 30" backgroundColor="transpGrey" transparent="1" halign="center" foregroundColor="un21e2e2e2">
+		<widget source="session.CurrentService" render="Label" position="center,485" size="500,50" font="OpenSans;30" backgroundColor="transpGrey" transparent="1" halign="center" foregroundColor="un21e2e2e2">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1028,560" size="140,55" font="Regular; 45" valign="top" halign="right" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
+		<widget source="global.CurrentTime" render="Label" position="1028,560" size="140,55" font="Regular;45" valign="top" halign="right" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="70,645" size="300,37" font="Replacement; 20" backgroundColor="transpGrey" halign="left" transparent="1" valign="top" foregroundColor="un21e2e2e2">
+		<widget source="session.CurrentService" render="Label" position="70,645" size="300,37" font="Replacement;20" backgroundColor="transpGrey" halign="left" transparent="1" valign="top" foregroundColor="un21e2e2e2">
 			<convert type="ServiceName">Provider</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Picon" position="70,572" size="100,60" transparent="1" alphatest="blend">
@@ -170,64 +170,64 @@
 		<widget source="session.RecordState" render="Pixmap" pixmap="MetropolisHD/infobar/ico_rec_on.png" position="586,645" size="38,38" zPosition="2" alphatest="on">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="185,550" size="70,30" halign="right" font="OpenSans; 20" foregroundColor="yellow" backgroundColor="transpGrey" transparent="1" valign="center">
+		<widget source="session.Event_Now" render="Label" position="185,550" size="70,30" halign="right" font="OpenSans;20" foregroundColor="yellow" backgroundColor="transpGrey" transparent="1" valign="center">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="925,550" size="100,30" halign="right" font="OpenSans; 20" foregroundColor="yellow" backgroundColor="transpGrey" transparent="1" valign="center">
+		<widget source="session.Event_Now" render="Label" position="925,550" size="100,30" halign="right" font="OpenSans;20" foregroundColor="yellow" backgroundColor="transpGrey" transparent="1" valign="center">
 			<convert type="EventTime">Remaining</convert>
 			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
 		<widget source="session.Event_Now" render="Progress" pixmap="MetropolisHD/window/slider.png" position="190,587" size="832,6" zPosition="1" transparent="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="185,600" size="70,30" halign="right" font="OpenSans; 20" foregroundColor="grey" backgroundColor="transpGrey" transparent="1">
+		<widget source="session.Event_Next" render="Label" position="185,600" size="70,30" halign="right" font="OpenSans;20" foregroundColor="grey" backgroundColor="transpGrey" transparent="1">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="343,600" size="597,40" halign="left" font="OpenSans; 25" foregroundColor="grey" backgroundColor="transpGrey" transparent="1" valign="top">
+		<widget source="session.Event_Next" render="Label" position="343,600" size="597,40" halign="left" font="OpenSans;25" foregroundColor="grey" backgroundColor="transpGrey" transparent="1" valign="top">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" font="Replacement; 17" position="60,545" size="54,22" halign="right" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1" text="1920">
+		<widget source="session.CurrentService" render="Label" font="Replacement;17" position="60,545" size="54,22" halign="right" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1" text="1920">
 			<convert type="ServiceInfo">VideoWidth</convert>
 		</widget>
-		<eLabel text="x" font="Replacement; 17" position="115,545" size="13,22" halign="center" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1"/>
-		<widget source="session.CurrentService" render="Label" font="Replacement; 17" position="130,545" size="54,22" halign="left" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1" text="1080">
+		<eLabel text="x" font="Replacement;17" position="115,545" size="13,22" halign="center" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1"/>
+		<widget source="session.CurrentService" render="Label" font="Replacement;17" position="130,545" size="54,22" halign="left" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1" text="1080">
 			<convert type="ServiceInfo">VideoHeight</convert>
 		</widget>
-		<eLabel text="BER:" position="1037,664" size="50,22" font="Replacement; 17" backgroundColor="transpGrey" transparent="1" foregroundColor="yellow" halign="right"/>
-		<widget source="session.FrontendStatus" render="Label" position="1092,664" size="75,22" font="Replacement; 17" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
+		<eLabel text="BER:" position="1037,664" size="50,22" font="Replacement;17" backgroundColor="transpGrey" transparent="1" foregroundColor="yellow" halign="right"/>
+		<widget source="session.FrontendStatus" render="Label" position="1092,664" size="75,22" font="Replacement;17" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
 			<convert type="FrontendInfo">BER</convert>
 		</widget>
-		<widget source="session.FrontendStatus" render="Label" position="1092,617" size="50,22" font="Replacement; 17" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
+		<widget source="session.FrontendStatus" render="Label" position="1092,617" size="50,22" font="Replacement;17" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
 			<convert type="FrontendInfo">SNRdB</convert>
 		</widget>
-		<eLabel text="SNR:" position="1037,617" size="50,22" font="Replacement; 17" backgroundColor="transpGrey" transparent="1" foregroundColor="yellow" halign="right"/>
-		<widget source="session.Event_Now" render="Label" position="343,530" size="597,50" halign="left" font="OpenSans; 30" foregroundColor="yellow" transparent="1" noWrap="1" backgroundColor="transpGrey" valign="bottom">
+		<eLabel text="SNR:" position="1037,617" size="50,22" font="Replacement;17" backgroundColor="transpGrey" transparent="1" foregroundColor="yellow" halign="right"/>
+		<widget source="session.Event_Now" render="Label" position="343,530" size="597,50" halign="left" font="OpenSans;30" foregroundColor="yellow" transparent="1" noWrap="1" backgroundColor="transpGrey" valign="bottom">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="255,550" size="85,30" halign="left" font="OpenSans; 20" foregroundColor="yellow" backgroundColor="transpGrey" transparent="1" valign="center">
+		<widget source="session.Event_Now" render="Label" position="255,550" size="85,30" halign="left" font="OpenSans;20" foregroundColor="yellow" backgroundColor="transpGrey" transparent="1" valign="center">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="255,600" size="85,30" halign="left" font="OpenSans; 20" foregroundColor="grey" backgroundColor="transpGrey" transparent="1">
+		<widget source="session.Event_Next" render="Label" position="255,600" size="85,30" halign="left" font="OpenSans;20" foregroundColor="grey" backgroundColor="transpGrey" transparent="1">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
 		<eLabel name="new eLabel" position="190,589" size="832,2" backgroundColor="un666666"/>
-		<widget source="global.CurrentTime" render="Label" position="1035,533" size="186,30" font="OpenSans; 20" valign="center" halign="center" backgroundColor="transpGrey" transparent="1" foregroundColor="hellgreen">
+		<widget source="global.CurrentTime" render="Label" position="1035,533" size="186,30" font="OpenSans;20" valign="center" halign="center" backgroundColor="transpGrey" transparent="1" foregroundColor="hellgreen">
 			<convert type="ClockToText">Format:%e. %B</convert>
 		</widget>
 		<widget source="session.FrontendStatus" render="Progress" position="1140,623" pixmap="MetropolisHD/window/snr.png" size="98,10" borderWidth="1" borderColor="darkgrey" transparent="0">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1169,564" size="60,42" font="Regular; 25" valign="top" halign="left" backgroundColor="un333333" transparent="1" foregroundColor="un21e2e2e2">
+		<widget source="global.CurrentTime" render="Label" position="1169,564" size="60,42" font="Regular;25" valign="top" halign="left" backgroundColor="un333333" transparent="1" foregroundColor="un21e2e2e2">
 			<convert type="ClockToText">Format::%S</convert>
 		</widget>
 		<widget source="session.FrontendStatus" render="Progress" position="1140,646" pixmap="MetropolisHD/window/snr.png" size="98,10" borderWidth="1" borderColor="darkgrey">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="906,600" size="120,25" halign="right" font="Regular; 20" foregroundColor="grey" backgroundColor="background" transparent="1">
+		<widget source="session.Event_Next" render="Label" position="906,600" size="120,25" halign="right" font="Regular;20" foregroundColor="grey" backgroundColor="background" transparent="1">
 			<convert type="EventTime">Duration</convert>
 			<convert type="ClockToText">InMinutes</convert>
 		</widget>
@@ -236,17 +236,17 @@
 	<screen name="SecondInfoBar" flags="wfNoBorder" position="0,0" size="1280,720" backgroundColor="transparent">
 		<ePixmap position="center,480" size="1273,250" pixmap="MetropolisHD/infobar/back.png" zPosition="-1" alphatest="off" transparent="0"/>
 		<eLabel position="0,0" size="1280,480" zPosition="-2" backgroundColor="transpGrey"/>
-		<eLabel text="AGC:" position="1037,641" size="50,22" font="Replacement; 17" backgroundColor="transpGrey" transparent="1" foregroundColor="yellow" halign="right"/>
-		<widget source="session.FrontendStatus" render="Label" position="1092,641" size="50,22" font="Replacement; 17" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
+		<eLabel text="AGC:" position="1037,641" size="50,22" font="Replacement;17" backgroundColor="transpGrey" transparent="1" foregroundColor="yellow" halign="right"/>
+		<widget source="session.FrontendStatus" render="Label" position="1092,641" size="50,22" font="Replacement;17" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="center,485" size="500,50" font="OpenSans; 30" backgroundColor="transpGrey" transparent="1" halign="center" foregroundColor="un21e2e2e2">
+		<widget source="session.CurrentService" render="Label" position="center,485" size="500,50" font="OpenSans;30" backgroundColor="transpGrey" transparent="1" halign="center" foregroundColor="un21e2e2e2">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1028,560" size="140,55" font="Regular; 45" valign="top" halign="right" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
+		<widget source="global.CurrentTime" render="Label" position="1028,560" size="140,55" font="Regular;45" valign="top" halign="right" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="70,645" size="300,37" font="Replacement; 20" backgroundColor="transpGrey" halign="left" transparent="1" valign="top" foregroundColor="un21e2e2e2">
+		<widget source="session.CurrentService" render="Label" position="70,645" size="300,37" font="Replacement;20" backgroundColor="transpGrey" halign="left" transparent="1" valign="top" foregroundColor="un21e2e2e2">
 			<convert type="ServiceName">Provider</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Picon" position="70,572" size="100,60" transparent="1" alphatest="blend">
@@ -280,64 +280,64 @@
 		<widget source="session.RecordState" render="Pixmap" pixmap="MetropolisHD/infobar/ico_rec_on.png" position="586,645" size="38,38" zPosition="2" alphatest="on">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="185,550" size="70,30" halign="right" font="OpenSans; 20" foregroundColor="yellow" backgroundColor="transpGrey" transparent="1" valign="center">
+		<widget source="session.Event_Now" render="Label" position="185,550" size="70,30" halign="right" font="OpenSans;20" foregroundColor="yellow" backgroundColor="transpGrey" transparent="1" valign="center">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="925,550" size="100,30" halign="right" font="OpenSans; 20" foregroundColor="yellow" backgroundColor="transpGrey" transparent="1" valign="center">
+		<widget source="session.Event_Now" render="Label" position="925,550" size="100,30" halign="right" font="OpenSans;20" foregroundColor="yellow" backgroundColor="transpGrey" transparent="1" valign="center">
 			<convert type="EventTime">Remaining</convert>
 			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
 		<widget source="session.Event_Now" render="Progress" pixmap="MetropolisHD/window/slider.png" position="190,587" size="832,6" zPosition="1" transparent="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="185,600" size="70,30" halign="right" font="OpenSans; 20" foregroundColor="grey" backgroundColor="transpGrey" transparent="1">
+		<widget source="session.Event_Next" render="Label" position="185,600" size="70,30" halign="right" font="OpenSans;20" foregroundColor="grey" backgroundColor="transpGrey" transparent="1">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="343,600" size="597,40" halign="left" font="OpenSans; 25" foregroundColor="grey" backgroundColor="transpGrey" transparent="1" valign="top">
+		<widget source="session.Event_Next" render="Label" position="343,600" size="597,40" halign="left" font="OpenSans;25" foregroundColor="grey" backgroundColor="transpGrey" transparent="1" valign="top">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" font="Replacement; 17" position="60,545" size="54,22" halign="right" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1" text="1920">
+		<widget source="session.CurrentService" render="Label" font="Replacement;17" position="60,545" size="54,22" halign="right" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1" text="1920">
 			<convert type="ServiceInfo">VideoWidth</convert>
 		</widget>
-		<eLabel text="x" font="Replacement; 17" position="115,545" size="13,22" halign="center" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1"/>
-		<widget source="session.CurrentService" render="Label" font="Replacement; 17" position="130,545" size="54,22" halign="left" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1" text="1080">
+		<eLabel text="x" font="Replacement;17" position="115,545" size="13,22" halign="center" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1"/>
+		<widget source="session.CurrentService" render="Label" font="Replacement;17" position="130,545" size="54,22" halign="left" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1" text="1080">
 			<convert type="ServiceInfo">VideoHeight</convert>
 		</widget>
-		<eLabel text="BER:" position="1037,664" size="50,22" font="Replacement; 17" backgroundColor="transpGrey" transparent="1" foregroundColor="yellow" halign="right"/>
-		<widget source="session.FrontendStatus" render="Label" position="1092,664" size="75,22" font="Replacement; 17" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
+		<eLabel text="BER:" position="1037,664" size="50,22" font="Replacement;17" backgroundColor="transpGrey" transparent="1" foregroundColor="yellow" halign="right"/>
+		<widget source="session.FrontendStatus" render="Label" position="1092,664" size="75,22" font="Replacement;17" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
 			<convert type="FrontendInfo">BER</convert>
 		</widget>
-		<widget source="session.FrontendStatus" render="Label" position="1092,617" size="50,22" font="Replacement; 17" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
+		<widget source="session.FrontendStatus" render="Label" position="1092,617" size="50,22" font="Replacement;17" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
 			<convert type="FrontendInfo">SNRdB</convert>
 		</widget>
-		<eLabel text="SNR:" position="1037,617" size="50,22" font="Replacement; 17" backgroundColor="transpGrey" transparent="1" foregroundColor="yellow" halign="right"/>
-		<widget source="session.Event_Now" render="Label" position="343,530" size="597,50" halign="left" font="OpenSans; 30" foregroundColor="yellow" transparent="1" noWrap="1" backgroundColor="transpGrey" valign="bottom">
+		<eLabel text="SNR:" position="1037,617" size="50,22" font="Replacement;17" backgroundColor="transpGrey" transparent="1" foregroundColor="yellow" halign="right"/>
+		<widget source="session.Event_Now" render="Label" position="343,530" size="597,50" halign="left" font="OpenSans;30" foregroundColor="yellow" transparent="1" noWrap="1" backgroundColor="transpGrey" valign="bottom">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="255,550" size="85,30" halign="left" font="OpenSans; 20" foregroundColor="yellow" backgroundColor="transpGrey" transparent="1" valign="center">
+		<widget source="session.Event_Now" render="Label" position="255,550" size="85,30" halign="left" font="OpenSans;20" foregroundColor="yellow" backgroundColor="transpGrey" transparent="1" valign="center">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="255,600" size="85,30" halign="left" font="OpenSans; 20" foregroundColor="grey" backgroundColor="transpGrey" transparent="1">
+		<widget source="session.Event_Next" render="Label" position="255,600" size="85,30" halign="left" font="OpenSans;20" foregroundColor="grey" backgroundColor="transpGrey" transparent="1">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
 		<eLabel name="new eLabel" position="190,589" size="832,2" backgroundColor="un666666"/>
-		<widget source="global.CurrentTime" render="Label" position="1035,533" size="186,30" font="OpenSans; 20" valign="center" halign="center" backgroundColor="transpGrey" transparent="1" foregroundColor="hellgreen">
+		<widget source="global.CurrentTime" render="Label" position="1035,533" size="186,30" font="OpenSans;20" valign="center" halign="center" backgroundColor="transpGrey" transparent="1" foregroundColor="hellgreen">
 			<convert type="ClockToText">Format:%e. %B</convert>
 		</widget>
 		<widget source="session.FrontendStatus" render="Progress" position="1140,623" pixmap="MetropolisHD/window/snr.png" size="98,10" borderWidth="1" borderColor="darkgrey" transparent="0">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1169,564" size="60,42" font="Regular; 25" valign="top" halign="left" backgroundColor="un333333" transparent="1" foregroundColor="un21e2e2e2">
+		<widget source="global.CurrentTime" render="Label" position="1169,564" size="60,42" font="Regular;25" valign="top" halign="left" backgroundColor="un333333" transparent="1" foregroundColor="un21e2e2e2">
 			<convert type="ClockToText">Format::%S</convert>
 		</widget>
 		<widget source="session.FrontendStatus" render="Progress" position="1140,646" pixmap="MetropolisHD/window/snr.png" size="98,10" borderWidth="1" borderColor="darkgrey">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="906,600" size="120,25" halign="right" font="Regular; 20" backgroundColor="transpGrey" foregroundColor="grey" transparent="1">
+		<widget source="session.Event_Next" render="Label" position="906,600" size="120,25" halign="right" font="Regular;20" backgroundColor="transpGrey" foregroundColor="grey" transparent="1">
 			<convert type="EventTime">Duration</convert>
 			<convert type="ClockToText">InMinutes</convert>
 		</widget>
@@ -353,7 +353,7 @@
 		<widget source="session.Event_Now" render="Label" position="410,170" size="200,22" font="Regular;20" halign="right" foregroundColor="hellgreen" backgroundColor="transpGrey">
 			<convert type="EventName">SmallRating</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="60,200" size="550,270" font="Regular; 20" halign="block" backgroundColor="transpGrey" foregroundColor="un21e2e2e2">
+		<widget source="session.Event_Now" render="Label" position="60,200" size="550,270" font="Regular;20" halign="block" backgroundColor="transpGrey" foregroundColor="un21e2e2e2">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<widget source="session.Event_Next" render="Label" position="670,140" size="550,26" backgroundColor="transpGrey" foregroundColor="yellow" noWrap="1" font="Regular;22" halign="left">
@@ -365,47 +365,47 @@
 		<widget source="session.Event_Next" render="Label" position="1020,170" size="200,22" font="Regular;20" halign="right" foregroundColor="hellgreen" backgroundColor="transpGrey">
 			<convert type="EventName">SmallRating</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="670,200" size="550,270" font="Regular; 20" halign="block" backgroundColor="transpGrey" foregroundColor="un21e2e2e2">
+		<widget source="session.Event_Next" render="Label" position="670,200" size="550,270" font="Regular;20" halign="block" backgroundColor="transpGrey" foregroundColor="un21e2e2e2">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 	</screen>
 
 	<screen name="ChannelSelection" position="0,0" size="1280,720" title="Channel Selection" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
 		<panel name="Big2PanelsTemplate"/>
-		<widget source="Title" render="Label" position="67,72" size="735,34" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="background" transparent="1"/>
-		<widget source="global.CurrentTime" render="Label" position="953,599" size="139,39" font="Replacement; 36" halign="center" backgroundColor="podloga" foregroundColor="un21e2e2e2" valign="center">
+		<widget source="Title" render="Label" position="67,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="background" transparent="1"/>
+		<widget source="global.CurrentTime" render="Label" position="953,599" size="139,39" font="Replacement;36" halign="center" backgroundColor="podloga" foregroundColor="un21e2e2e2" valign="center">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
 		<widget name="list" position="69,112" size="730,500" scrollbarMode="showOnDemand" picServiceEventProgressbar="MetropolisHD/chnsel/pl.png" selectionPixmap="MetropolisHD/buttons/sel.png" sliderPixmap="MetropolisHD/window/slider_vert.png" foregroundColorServiceNotAvail="#444444" colorServiceDescriptionSelected="hellgreen" serviceItemHeight="31" serviceNumberFont="Regular;20" serviceNameFont="Regular;20" serviceInfoFont="Regular;20" colorEventProgressbarBorderSelected="#000000"/>
 		<widget source="ServiceEvent" render="Label" position="890,70" size="310,35" font="Replacement;22" backgroundColor="podloga" halign="center" foregroundColor="yellow" valign="center" transparent="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="883,546" size="312,26" font="Regular; 18" backgroundColor="podloga" halign="center" noWrap="1" valign="center" text="36.0E   DVB-S2  11234LC 27500 3/4 8PSK" foregroundColor="un21e2e2e2">
+		<widget source="ServiceEvent" render="Label" position="883,546" size="312,26" font="Regular;18" backgroundColor="podloga" halign="center" noWrap="1" valign="center" text="36.0E   DVB-S2  11234LC 27500 3/4 8PSK" foregroundColor="un21e2e2e2">
 			<convert type="ServiceName2">%O  %s  %F %p %Y %f %M %b</convert>
 		</widget>
 		<ePixmap pixmap="MetropolisHD/chnsel/clock.png" position="851,228" size="32,32" alphatest="on" transparent="1"/>
-		<widget source="ServiceEvent" render="Label" position="875,230" size="72,28" halign="right" font="OpenSans; 20" foregroundColor="hellgreen" backgroundColor="podloga" valign="center">
+		<widget source="ServiceEvent" render="Label" position="875,230" size="72,28" halign="right" font="OpenSans;20" foregroundColor="hellgreen" backgroundColor="podloga" valign="center">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText"></convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="854,110" size="340,45" halign="center" font="Regular; 20" foregroundColor="un21e2e2e2" backgroundColor="podloga" valign="center" text="95555+" >
+		<widget source="ServiceEvent" render="Label" position="854,110" size="340,45" halign="center" font="Regular;20" foregroundColor="un21e2e2e2" backgroundColor="podloga" valign="center" text="95555+" >
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="1097,230" size="72,28" halign="left" font="OpenSans; 20" foregroundColor="hellgreen" backgroundColor="podloga" valign="center">
+		<widget source="ServiceEvent" render="Label" position="1097,230" size="72,28" halign="left" font="OpenSans;20" foregroundColor="hellgreen" backgroundColor="podloga" valign="center">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
 		<ePixmap pixmap="MetropolisHD/chnsel/info.png" position="851,544" size="32,32" alphatest="on" zPosition="3"/>
-		<widget source="ServiceEvent" render="NextEpgInfo" position="887,266" size="309,50" font="Replacement; 22" halign="left" valign="center" foregroundColor="yellow" backgroundColor="podloga" transparent="1"/>
-		<widget source="ServiceEvent" render="Label" position="854,332" size="340,200" font="Regular; 20" foregroundColor="un21e2e2e2" backgroundColor="podloga" valign="top">
+		<widget source="ServiceEvent" render="NextEpgInfo" position="887,266" size="309,50" font="Replacement;22" halign="left" valign="center" foregroundColor="yellow" backgroundColor="podloga" transparent="1"/>
+		<widget source="ServiceEvent" render="Label" position="854,332" size="340,200" font="Regular;20" foregroundColor="un21e2e2e2" backgroundColor="podloga" valign="top">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<ePixmap pixmap="MetropolisHD/chnsel/calendar.png" position="851,274" size="32,32" alphatest="on" transparent="1"/>
 		<eLabel name="Line" position="872,225" size="300,1" backgroundColor="un666666"/>
 		<eLabel name="Button" position="864,600" size="83,33" backgroundColor="darkgrey"/>
 		<eLabel name="Button" position="1099,600" size="83,33" backgroundColor="darkgrey"/>
-		<eLabel name="EPG" position="869,605" size="75,22" text="EPG" font="Replacement; 20" halign="center" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
-		<eLabel name="Menu" position="1103,605" size="75,22" text="Menu" font="Replacement; 20" halign="center" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
+		<eLabel name="EPG" position="869,605" size="75,22" text="EPG" font="Replacement;20" halign="center" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
+		<eLabel name="Menu" position="1103,605" size="75,22" text="Menu" font="Replacement;20" halign="center" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
 		<eLabel name="Line" position="872,582" size="300,1" backgroundColor="un666666"/>
 		<eLabel name="Line" position="872,261" size="300,1" backgroundColor="un666666"/>
 		<eLabel name="Line" position="872,538" size="300,1" backgroundColor="un666666"/>
@@ -577,27 +577,27 @@
 
 	<screen name="About" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RG_Template"/>
-		<eLabel text="About" position="center,72" size="735,34" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="About" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="AboutScrollLabel" position="center,130" size="705,410" halign="center" font="Regular;22" backgroundColor="podloga"/>
 		<ePixmap pixmap="MetropolisHD/window/metropolishd_logo.png" position="center,550" size="743,50" alphatest="off" transparent="1"/>
 	</screen>
 
 	<screen name="CommitInfo" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreenTemplate"/>
-		<eLabel text="Latest Commits" position="center,72" size="735,34" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Latest Commits" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="AboutScrollLabel" position="center,130" size="705,499" halign="center" font="Regular;22" backgroundColor="podloga"/>
 	</screen>
 
 	<screen name="TranslationInfo" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MinimalScreenTemplate"/>
-		<eLabel text="Translation" position="center,158" size="600,34" halign="center" font="Replacement; 24" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Translation" position="center,158" size="600,34" halign="center" font="Replacement;24" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget source="TranslatorName" render="Label" position="center,200" size="580,40" font="Regular;26" foregroundColor="yellow" halign="center"/>
 		<widget source="TranslationInfo" render="Label" position="center,250" size="580,300" font="Regular;22" halign="center"/>
 	</screen>
 
 	<screen name="ServiceInfo" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGYB_Template"/>
-		<eLabel text="Service info" position="center,72" size="735,34" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Service info" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="infolist" position="center,115" size="680,491" selectionDisabled="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" transparent="1" itemHeight="31"/>
 	</screen>
 
@@ -643,7 +643,7 @@ MultiContentEntryText(pos = (535, 0), size = (105, 25),  font = 1, flags = RT_HA
 
 	<screen name="BouquetSelector" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreenTemplate"/>
-		<eLabel text="Select a bouquet" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Select a bouquet" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="menu" position="center,114" size="700,526" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
 	</screen>
 
@@ -686,7 +686,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count> 7 and 2 or 3)))
 
 	<screen name="Console" position="0,0" size="1279,720" bflags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MinimalScreenTemplate"/>
-		<eLabel text="Command execution..." position="center,158" size="600,34" halign="center" font="Replacement; 24" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Command execution..." position="center,158" size="600,34" halign="center" font="Replacement;24" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="text" position="center,200" size="580,350" font="Console;21" backgroundColor="podloga"/>
 	</screen>
 
@@ -700,24 +700,24 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count> 7 and 2 or 3)))
 	<screen name="EPGSelection" position="center,center" size="1279,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="Big2PanelsTemplate"/>
 		<panel name="Big2PanelsSecondPanelTemplate"/>
-		<eLabel text="EPG selection" position="68,72" size="735,34" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<eLabel name="EPG" position="867,565" size="75,22" text="EPG" font="Replacement; 20" halign="center" transparent="0" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
+		<eLabel text="EPG selection" position="68,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel name="EPG" position="867,565" size="75,22" text="EPG" font="Replacement;20" halign="center" transparent="0" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
 		<widget name="list" position="75,115" size="722,490" zPosition="2" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="transpBlack" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
 		<widget source="Event" render="Label" position="849,133" size="348,348" font="Regular;20" backgroundColor="podloga" halign="center" valign="top" foregroundColor="un21e2e2e2">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
-		<eLabel name="OK" position="867,604" size="75,22" text="OK" font="Replacement; 20" halign="center" transparent="0" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
-		<widget source="session.CurrentService" render="Label" position="850,71" size="345,34" font="Replacement; 22" backgroundColor="podloga" halign="center" foregroundColor="yellow" zPosition="3" valign="center" transparent="1">
+		<eLabel name="OK" position="867,604" size="75,22" text="OK" font="Replacement;20" halign="center" transparent="0" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
+		<widget source="session.CurrentService" render="Label" position="850,71" size="345,34" font="Replacement;22" backgroundColor="podloga" halign="center" foregroundColor="yellow" zPosition="3" valign="center" transparent="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<eLabel name="Line" position="871,511" size="300,1" backgroundColor="un666666"/>
-		<eLabel name="..." position="991,478" size="75,22" text="..." font="Regular; 20" halign="center" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="podloga" valign="center"/>
-		<eLabel name="..." position="991,109" size="75,22" text="..." font="Regular; 20" halign="center" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="podloga" valign="center"/>
+		<eLabel name="..." position="991,478" size="75,22" text="..." font="Regular;20" halign="center" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="podloga" valign="center"/>
+		<eLabel name="..." position="991,109" size="75,22" text="..." font="Regular;20" halign="center" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="podloga" valign="center"/>
 	</screen>
 
 	<screen name="EPGSelectionMulti" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigScreen_RGYB_Template"/>
-		<eLabel text="Multi-EPG bouquet selection" position="center,37" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Multi-EPG bouquet selection" position="center,37" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="list" position="60,145" size="768,450" zPosition="2" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="transpBlack" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
 		<widget name="now_button_sel" pixmap="MetropolisHD/window/epg_now.png" position="60,75" zPosition="3" size="1100,35" alphatest="on"/>
 		<widget name="next_button_sel" pixmap="MetropolisHD/window/epg_next.png" position="60,75" zPosition="3" size="1100,35" alphatest="on"/>
@@ -734,19 +734,19 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count> 7 and 2 or 3)))
 	<screen name="EventView" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="Big2PanelsTemplate"/>
 		<panel name="Big2PanelsSecondPanelTemplate"/>
-		<eLabel text="Event view" position="68,72" size="735,34" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<eLabel name="Exit" position="867,565" size="75,22" text="Exit" font="Replacement; 20" halign="center" transparent="0" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
-		<eLabel name="OK" position="867,604" size="75,22" text="OK" font="Replacement; 20" halign="center" transparent="0" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
+		<eLabel text="Event view" position="68,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel name="Exit" position="867,565" size="75,22" text="Exit" font="Replacement;20" halign="center" transparent="0" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
+		<eLabel name="OK" position="867,604" size="75,22" text="OK" font="Replacement;20" halign="center" transparent="0" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
 		<eLabel name="Line" position="871,511" size="300,1" backgroundColor="un666666"/>
 		<widget name="epg_description" position="78,113" size="719,495" font="Regular;22" backgroundColor="podloga"/>
-		<widget name="channel" position="850,71" size="345,34" font="Replacement; 22" halign="center" backgroundColor="podloga" foregroundColor="yellow" transparent="1"/>
-		<widget name="datetime" position="862,115" size="174,25" font="Replacement; 22" halign="right" backgroundColor="podloga" foregroundColor="red"/>
-		<widget name="duration" position="1062,115" size="101,25" font="Replacement; 22" halign="left" backgroundColor="podloga" foregroundColor="red"/>
+		<widget name="channel" position="850,71" size="345,34" font="Replacement;22" halign="center" backgroundColor="podloga" foregroundColor="yellow" transparent="1"/>
+		<widget name="datetime" position="862,115" size="174,25" font="Replacement;22" halign="right" backgroundColor="podloga" foregroundColor="red"/>
+		<widget name="duration" position="1062,115" size="101,25" font="Replacement;22" halign="left" backgroundColor="podloga" foregroundColor="red"/>
 	</screen>
 
 	<screen name="GraphMultiEPG" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent"  title="Electronic Program Guide">
 		<panel name="BigScreen_RGYB_Template"/>
-		<widget source="Title" render="Label" position="center,36" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget source="Title" render="Label" position="center,36" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="timeline_text" position="center,85" size="1160,26"/>
 		<widget name="list" position="center,120" size="1160,300" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" transparent="1"/>
 		<eLabel position="60,120" size="1140,1" backgroundColor="darkgrey"/>
@@ -784,7 +784,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count> 7 and 2 or 3)))
 
 	<screen name="GraphMultiEPGList" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGYB_Template"/>
-		<widget source="Title" render="Label" position="center,72" size="740,50" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget source="Title" render="Label" position="center,72" size="740,50" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="timeline_text" position="center,120" size="700,26"/>
 		<widget name="list" position="center,155" size="700,420" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" transparent="1"/>
 		<eLabel position="center,155" size="700,1" backgroundColor="darkgrey"/>
@@ -802,13 +802,13 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count> 7 and 2 or 3)))
 
 	<screen name="GraphMultiEpgSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="Electronic Program Guide Setup">
 		<panel name="MidleScreen_CancelOK_Template"/>
-		<widget source="Title" render="Label" position="center,72" size="740,50" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget source="Title" render="Label" position="center,72" size="740,50" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="config" position="center,120" size="700,490" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
 	</screen>
 
 	<screen name="HarddiskSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MinimalScreenTemplate"/>
-		<eLabel text="Select HDD" position="center,158" size="600,34" zPosition="2" halign="center" font="Replacement; 24" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Select HDD" position="center,158" size="600,34" zPosition="2" halign="center" font="Replacement;24" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="hddlist" position="center,210" size="580,290" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1" itemHeight="29"/>
 	</screen>
 
@@ -818,7 +818,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count> 7 and 2 or 3)))
 
 	<screen name="HelpMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreenTemplate"/>
-		<eLabel text="help..." position="center,70" size="740,50" font="Replacement; 26" halign="center" backgroundColor="transpGrey" transparent="1" foregroundColor="hellgreen"/>
+		<eLabel text="help..." position="center,70" size="740,50" font="Replacement;26" halign="center" backgroundColor="transpGrey" transparent="1" foregroundColor="hellgreen"/>
 		<widget name="rc" position="300,120" size="154,500" pixmaps="skin_default/rc.png,skin_default/rcold.png" zPosition="10" alphatest="on" backgroundColor="podloga"/>
 		<widget name="long_key" position="210,615" size="300,30" font="Regular;24" halign="center" foregroundColor="yellow" backgroundColor="podloga"/>
 		<widget name="list" position="440,120" size="550,495" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
@@ -830,7 +830,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count> 7 and 2 or 3)))
 
 	<screen name="LanguageSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreenTemplate"/>
-		<eLabel text="Language selection" position="center,72" size="630,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Language selection" position="center,72" size="630,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget source="languages" render="Listbox" position="center,120" size="725,505" scrollbarMode="showNever" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
@@ -912,13 +912,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<eLabel name="Line" position="90,1" size="1,140" backgroundColor="un666666"/>
 		<eLabel name="Line" position="1190,1" size="1,140" backgroundColor="un666666"/>
 		<ePixmap position="1041,35" size="96,96" pixmap="MetropolisHD/icons/mplayer.png" alphatest="on"/>
-		<widget source="global.CurrentTime" render="Label" position="930,7" size="185,34" font="Replacement; 24" valign="top" halign="right" backgroundColor="podloga" transparent="1" foregroundColor="yellow">
+		<widget source="global.CurrentTime" render="Label" position="930,7" size="185,34" font="Replacement;24" valign="top" halign="right" backgroundColor="podloga" transparent="1" foregroundColor="yellow">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1120,9" size="75,27" font="Replacement; 18" valign="top" halign="left" backgroundColor="podloga" transparent="1" foregroundColor="unf23d21">
+		<widget source="global.CurrentTime" render="Label" position="1120,9" size="75,27" font="Replacement;18" valign="top" halign="left" backgroundColor="podloga" transparent="1" foregroundColor="unf23d21">
 			<convert type="ClockToText">Format::%S</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="center,12" size="668,24" font="Replacement; 22" backgroundColor="background" transparent="1" halign="center" foregroundColor="green">
+		<widget source="session.CurrentService" render="Label" position="center,12" size="668,24" font="Replacement;22" backgroundColor="background" transparent="1" halign="center" foregroundColor="green">
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<ePixmap pixmap="MetropolisHD/chnsel/ico_dolby_off.png" position="108,14" size="65,24" zPosition="1" alphatest="on"/>
@@ -934,11 +934,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget source="session.RecordState" render="Pixmap" pixmap="MetropolisHD/window/rec.png" position="242,16" size="12,12" zPosition="2" alphatest="on">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" font="Replacement; 15" position="120,115" size="54,20" halign="right" foregroundColor="un21e2e2e2" backgroundColor="podloga" text="1920">
+		<widget source="session.CurrentService" render="Label" font="Replacement;15" position="120,115" size="54,20" halign="right" foregroundColor="un21e2e2e2" backgroundColor="podloga" text="1920">
 			<convert type="ServiceInfo">VideoWidth</convert>
 		</widget>
-		<eLabel text="x" font="Replacement; 12" position="175,114" size="13,20" halign="center" foregroundColor="un21e2e2e2" backgroundColor="podloga"/>
-		<widget source="session.CurrentService" render="Label" font="Replacement; 15" position="188,115" size="54,20" halign="left" foregroundColor="un21e2e2e2" backgroundColor="podloga" text="1080">
+		<eLabel text="x" font="Replacement;12" position="175,114" size="13,20" halign="center" foregroundColor="un21e2e2e2" backgroundColor="podloga"/>
+		<widget source="session.CurrentService" render="Label" font="Replacement;15" position="188,115" size="54,20" halign="left" foregroundColor="un21e2e2e2" backgroundColor="podloga" text="1080">
 			<convert type="ServiceInfo">VideoHeight</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Progress" position="center,95" size="610,6" zPosition="1" pixmap="MetropolisHD/window/slider_player.png" transparent="1">
@@ -965,13 +965,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
 	<screen name="MovieContextMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MinimalScreen_YB_Template"/>
-		<eLabel text="Movielist menu" position="center,155" size="600,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Movielist menu" position="center,155" size="600,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="menu" position="center,210" size="580,300" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
 	</screen>
 
 	<screen name="MovieBrowserConfiguration" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RG_Template"/>
-		<eLabel text="Movie Browser Configuration" position="center,72" size="740,50" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Movie Browser Configuration" position="center,72" size="740,50" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="config" position="center,120" size="700,490" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
 	</screen>
 
@@ -998,7 +998,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	</screen>
 
 	<screen name="DVDMovieSelection" position="0,0" size="1278,720" flags="wfNoBorder" backgroundColor="transparent">
-		<eLabel text="Select a movie" position="68,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Select a movie" position="68,72" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<panel name="Big2PanelsTemplate"/>
 		<panel name="MovieSelectionSmallpanelTemplate"/>
 		<widget name="waitingtext" position="60,575" size="750,30" zPosition="2" halign="center" font="Regular;24" backgroundColor="podloga" shadowColor="black" shadowOffset="-3,-3"/>
@@ -1008,7 +1008,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	<screen name="MovieSelection" position="0,0" size="1278,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="Big2PanelsTemplate"/>
 		<panel name="MovieSelectionSmallpanelTemplate"/>
-		<eLabel text="Select a movie" position="68,72" size="735,34" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Select a movie" position="68,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="movie_sort" pixmaps="MetropolisHD/icons/az.png,MetropolisHD/icons/newtop.png,MetropolisHD/icons/shuffle.png,MetropolisHD/icons/za.png,MetropolisHD/icons/oldtop.png,MetropolisHD/icons/faz.png,MetropolisHD/icons/fza.png,MetropolisHD/icons/newtop.png" position="76,576" size="35,20" transparent="1" alphatest="off"/>
 		<widget name="movie_off" pixmaps="MetropolisHD/icons/ask.png,MetropolisHD/icons/movielist.png,MetropolisHD/icons/quit.png,MetropolisHD/icons/pause.png,MetropolisHD/icons/playlist.png,MetropolisHD/icons/playlistquit.png,MetropolisHD/icons/loop.png,MetropolisHD/icons/rep.png" position="125,576" size="35,20" transparent="1" alphatest="off"/>
 		<widget name="waitingtext" position="74,575" size="720,30" zPosition="3" halign="center" font="Regular;24" backgroundColor="transpBlack" shadowColor="black" shadowOffset="-3,-3"/>
@@ -1054,7 +1054,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
 	<screen name="NimSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MinimalScreenTemplate"/>
-		<eLabel text="Select a tuner" position="center,158" size="600,34" zPosition="2" halign="center" font="Replacement; 24" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Select a tuner" position="center,158" size="600,34" zPosition="2" halign="center" font="Replacement;24" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget source="nimlist" render="Listbox" position="center,210" size="580,300" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
@@ -1068,7 +1068,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
 	<screen name="NimSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGYB_Template"/>
-		<eLabel text="Reception settings" position="center,87" size="841,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Reception settings" position="center,87" size="841,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="config" position="center,114" size="720,490" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
 	</screen>
 
@@ -1080,31 +1080,31 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
 	<screen name="ParentalControlSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MinimalScreen_RGS_Template"/>
-		<eLabel text="Parental control setup" position="center,155" size="600,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Parental control setup" position="center,155" size="600,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="config" position="center,210" size="580,295" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" backgroundColor="transpBlack" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
 	</screen>
 
 	<screen name="ParentalControlEditor" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreenTemplate"/>
-		<eLabel text="Parental control services editor" position="271,68" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Parental control services editor" position="271,68" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="servicelist" position="center,130" size="580,485" scrollbarMode="showNever" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
 	</screen>
 
 	<screen name="ParentalControlChangePin" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MinimalScreen_RGS_Template"/>
-		<eLabel text="Change pin code" position="center,155" size="600,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Change pin code" position="center,155" size="600,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="config" position="center,210" size="580,295" scrollbarMode="showNever" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
 	</screen>
 
 	<screen name="PluginBrowser" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RG_Template"/>
-		<eLabel text="Plugin browser" position="271,68" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Plugin browser" position="271,68" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="list" position="302,106" size="670,504" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1" itemHeight="50"/>
 	</screen>
 
 	<screen name="PluginDownloadBrowser" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="Downloadable plugins">
 		<panel name="MinimalScreenTemplate"/>
-		<widget name="text" position="center,158" size="600,34" zPosition="2" halign="center" font="Replacement; 24" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget name="text" position="center,158" size="600,34" zPosition="2" halign="center" font="Replacement;24" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="list" position="center,200" size="580,350" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1" itemHeight="50"/>
 	</screen>
 
@@ -1199,7 +1199,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
 	<screen name="Satfinder" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_CancelScan_Template"/>
-		<eLabel text="Satfinder" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Satfinder" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget source="Frontend" render="Label" position="center,130" zPosition="2" size="280,20" font="Regular;19" halign="center" valign="center">
 			<convert type="FrontendInfo">SNRdB</convert>
 		</widget>
@@ -1273,10 +1273,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
 	<screen name="Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGS_Template"/>
-		<eLabel text="Setup" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Setup" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<eLabel name="Line" position="center,526" size="716,1" backgroundColor="un666666"/>
 		<widget name="config" position="center,115" size="722,400" zPosition="2" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" backgroundColor="transpBlack" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
-		<widget name="description" position="center,530" size="722,80" zPosition="2" font="Regular; 22" valign="top" backgroundColor="podloga"/>
+		<widget name="description" position="center,530" size="722,80" zPosition="2" font="Regular;22" valign="top" backgroundColor="podloga"/>
 	</screen>
 
 	<screen name="SimpleChannelSelection" position="90,100" size="1100,560" backgroundColor="podloga">
@@ -1286,7 +1286,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
 	<screen name="SkinSelector" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RS_Template"/>
-		<eLabel text="Select a skin" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Select a skin" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="SkinList" position="286,130" size="424,430" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" zPosition="2" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
 		<widget name="Preview" position="721,130" size="280,210" alphatest="off" backgroundColor="podloga"/>
 		<widget source="introduction" render="Label" position="center,570" size="680,25" zPosition="10" font="Regular;22" halign="center" backgroundColor="podloga"/>
@@ -1348,19 +1348,19 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
 	<screen name="TimerEditList" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGYB_Template"/>
-		<eLabel text="Timer editor" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Timer editor" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="timerlist" position="center,130" size="611,463" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
 	</screen>
 
 	<screen name="TimerEntry" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent"  title="Timer entry">
 		<panel name="MidleScreenTemplate"/>
 		<panel name="ButtonTemplate_Midle_RGYB"/>
-		<widget source="Title" render="Label" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<widget name="config" position="center,150" size="676,425" zPosition="2" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" backgroundColor="podloga" selectionPixmap="MetropolisHD/buttons/sel.png" font="Regular; 20" foregroundColor="un21e2e2e2"/>
-		<widget name="canceltext" position="280,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget name="oktext" position="460,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget name="key_yellow" position="640,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget name="key_blue" position="820,613" size="180,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="Title" render="Label" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget name="config" position="center,150" size="676,425" zPosition="2" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" backgroundColor="podloga" selectionPixmap="MetropolisHD/buttons/sel.png" font="Regular;20" foregroundColor="un21e2e2e2"/>
+		<widget name="canceltext" position="280,613" size="180,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="oktext" position="460,613" size="180,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_yellow" position="640,613" size="180,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_blue" position="820,613" size="180,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
 	</screen>
 
 	<screen name="TimerLog" position="90,100" size="1100,560" backgroundColor="podloga">
@@ -1401,7 +1401,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	</screen>
 
 	<screen name="CutListEditor" position="center,680" size="700,24" flags="wfNoBorder" backgroundColor="transparent">
-		<!--eLabel text="Cutlist editor..." position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<!--eLabel text="Cutlist editor..." position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<eLabel position="center,center" size="1229,592" zPosition="-3" backgroundColor="podloga"/>
 		<ePixmap pixmap="MetropolisHD/window/back.png" position="center,68" size="1220,40" alphatest="off" zPosition="-2" transparent="0"/>
 		<eLabel position="80,125" size="310,420" zPosition="1" backgroundColor="grey"/>
@@ -1431,7 +1431,7 @@ MultiContentEntryText(pos=(145,0), size=(145, 20), text = 2, flags = RT_HALIGN_R
 	</screen>
 
 	<screen name="MediaPlayer" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<eLabel text="Media player" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Media player" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<ePixmap position="center,center" size="1188,592" zPosition="-3" pixmap="MetropolisHD/window/podloga.png" transparent="0" borderWidth="1" borderColor="un666666"/>
 		<ePixmap pixmap="MetropolisHD/window/back.png" position="center,68" size="1180,40" alphatest="off" zPosition="-2" transparent="0"/>
 		<ePixmap pixmap="MetropolisHD/buttons/sel.png" position="1120,489" size="83,33" alphatest="off" zPosition="1" borderWidth="1" borderColor="un666666"/>
@@ -1468,7 +1468,7 @@ MultiContentEntryText(pos=(145,0), size=(145, 20), text = 2, flags = RT_HALIGN_R
 		<widget name="genre" position="0,0" size="0,0"/>
 		<widget name="currenttext" position="0,0" size="0,0"/>
 		<widget name="titletext" position="0,0" size="0,0"/>
-		<eLabel name="new eLabel" position="1124,495" size="75,22" text="Menu" font="Replacement; 20" halign="center" transparent="0" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
+		<eLabel name="new eLabel" position="1124,495" size="75,22" text="Menu" font="Replacement;20" halign="center" transparent="0" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
 	</screen>
 	<screen name="CDInfo" position="90,100" size="1100,560">
 		<widget source="info" render="Label" position="20,20" size="260,200" font="Regular;21"/>
@@ -1476,9 +1476,9 @@ MultiContentEntryText(pos=(145,0), size=(145, 20), text = 2, flags = RT_HALIGN_R
 		<eLabel position="300,0" size="2,518" backgroundColor="grey"/>
 		<widget name="config" position="320,20" size="760,475" zPosition="3" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png"/>
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey"/>
-		<widget name="key_red" position="179,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget name="key_green" position="357,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget name="key_blue" position="714,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_red" position="179,520" size="178,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_green" position="357,520" size="178,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_blue" position="714,520" size="178,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
 		<eLabel name="Red" position="179,555" size="178,1" foregroundColor="red" backgroundColor="red"/>
 		<eLabel name="Green" position="357,555" size="178,1" foregroundColor="green" backgroundColor="green"/>
 		<eLabel name="Blue" position="714,555" size="178,1" foregroundColor="blue" backgroundColor="blue"/>
@@ -1486,8 +1486,8 @@ MultiContentEntryText(pos=(145,0), size=(145, 20), text = 2, flags = RT_HALIGN_R
 	<screen name="WebIfConfigScreen" position="90,100" size="1100,560">
 		<widget name="config" position="10,20" size="1080,475" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey"/>
-		<widget name="key_red" position="379,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget name="key_green" position="557,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_red" position="379,520" size="178,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_green" position="557,520" size="178,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
 		<eLabel name="Red" position="379,555" size="178,1" foregroundColor="red" backgroundColor="red"/>
 		<eLabel name="Green" position="557,555" size="178,1" foregroundColor="green" backgroundColor="green"/>
 	</screen>
@@ -1504,15 +1504,15 @@ MultiContentEntryText(pos=(145,0), size=(145, 20), text = 2, flags = RT_HALIGN_R
 		<widget source="space_bar" render="Progress" position="10,480" size="1080,26" borderWidth="1" backgroundColor="grey"/>
 		<widget source="space_label" render="Label" position="20,484" size="1060,22" zPosition="2" font="Regular;18" halign="center" foregroundColor="black"/>
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey"/>
-		<widget name="key_red" position="179,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget name="key_green" position="357,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget name="key_yellow" position="536,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_red" position="179,520" size="178,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_green" position="357,520" size="178,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_yellow" position="536,520" size="178,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
 		<eLabel name="Red" position="179,555" size="178,1" foregroundColor="red" backgroundColor="red"/>
 		<eLabel name="Green" position="357,555" size="178,1" foregroundColor="green" backgroundColor="green"/>
 		<eLabel name="Yellow" position="535,555" size="178,1" foregroundColor="yellow" backgroundColor="yellow"/>
 	</screen>
 	<screen name="TitleCutter" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<eLabel text="Cutlist editor..." position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Cutlist editor..." position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<ePixmap position="center,center" size="1229,592" zPosition="-3" pixmap="MetropolisHD/window/podloga.png" transparent="0" borderWidth="1" borderColor="un666666"/>
 		<ePixmap pixmap="MetropolisHD/window/back.png" position="center,68" size="1220,40" alphatest="off" zPosition="-2" transparent="0"/>
 		<eLabel position="80,125" size="300,420" zPosition="1" backgroundColor="grey"/>
@@ -1546,9 +1546,9 @@ MultiContentEntryText(pos=(190,2), size=(80, 20), text = 2, flags = RT_HALIGN_CE
 		<eLabel position="0,200" size="1100,2" backgroundColor="grey"/>
 		<widget name="config" position="20,210" size="1060,300" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png"/>
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey"/>
-		<widget name="key_red" position="179,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget name="key_green" position="357,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget name="key_blue" position="714,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_red" position="179,520" size="178,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_green" position="357,520" size="178,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_blue" position="714,520" size="178,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
 		<eLabel name="Red" position="179,555" size="178,1" foregroundColor="red" backgroundColor="red"/>
 		<eLabel name="Green" position="357,555" size="178,1" foregroundColor="green" backgroundColor="green"/>
 		<eLabel name="Blue" position="714,555" size="178,1" foregroundColor="blue" backgroundColor="blue"/>
@@ -1556,7 +1556,7 @@ MultiContentEntryText(pos=(190,2), size=(80, 20), text = 2, flags = RT_HALIGN_CE
 
 	<screen name="FileBrowser" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RG_Template"/>
-		<eLabel text="File Browser" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="File Browser" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="filelist" position="center,150" size="700,433" zPosition="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" enableWrapAround="1" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
 	</screen>
 
@@ -1565,13 +1565,13 @@ MultiContentEntryText(pos=(190,2), size=(80, 20), text = 2, flags = RT_HALIGN_CE
 		<ePixmap pixmap="MetropolisHD/window/back.png" position="272,5" size="745,40" alphatest="off" zPosition="-2" transparent="0"/>
 		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666"/>
 		<ePixmap position="1041,35" zPosition="-1" size="96,96" pixmap="MetropolisHD/icons/mplayer.png" alphatest="on"/>
-		<widget source="global.CurrentTime" render="Label" position="930,7" size="185,34" font="Replacement; 24" valign="top" halign="right" backgroundColor="podloga" transparent="1" foregroundColor="yellow">
+		<widget source="global.CurrentTime" render="Label" position="930,7" size="185,34" font="Replacement;24" valign="top" halign="right" backgroundColor="podloga" transparent="1" foregroundColor="yellow">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1120,9" size="75,27" font="Replacement; 18" valign="top" halign="left" backgroundColor="podloga" transparent="1" foregroundColor="unf23d21">
+		<widget source="global.CurrentTime" render="Label" position="1120,9" size="75,27" font="Replacement;18" valign="top" halign="left" backgroundColor="podloga" transparent="1" foregroundColor="unf23d21">
 			<convert type="ClockToText">Format::%S</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="center,12" size="668,24" font="Replacement; 22" backgroundColor="background" transparent="1" halign="center" foregroundColor="green">
+		<widget source="session.CurrentService" render="Label" position="center,12" size="668,24" font="Replacement;22" backgroundColor="background" transparent="1" halign="center" foregroundColor="green">
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/chnsel/ico_dolby_on.png" position="108,14" size="65,24" zPosition="2" alphatest="on">
@@ -1583,11 +1583,11 @@ MultiContentEntryText(pos=(190,2), size=(80, 20), text = 2, flags = RT_HALIGN_CE
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="session.CurrentService" render="Label" font="Replacement; 15" position="120,115" size="54,20" halign="right" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1" text="1920">
+		<widget source="session.CurrentService" render="Label" font="Replacement;15" position="120,115" size="54,20" halign="right" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1" text="1920">
 			<convert type="ServiceInfo">VideoWidth</convert>
 		</widget>
-		<eLabel text="x" font="Replacement; 12" position="175,114" size="13,20" halign="center" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1"/>
-		<widget source="session.CurrentService" render="Label" font="Replacement; 15" position="188,115" size="54,20" halign="left" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1" text="1080">
+		<eLabel text="x" font="Replacement;12" position="175,114" size="13,20" halign="center" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1"/>
+		<widget source="session.CurrentService" render="Label" font="Replacement;15" position="188,115" size="54,20" halign="left" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1" text="1080">
 			<convert type="ServiceInfo">VideoHeight</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Progress" position="center,95" size="610,6" zPosition="1" pixmap="MetropolisHD/window/slider_player.png" transparent="1">
@@ -1619,11 +1619,11 @@ MultiContentEntryText(pos=(190,2), size=(80, 20), text = 2, flags = RT_HALIGN_CE
 		<widget name="number" position="145,15" size="80,25" halign="right" font="Regular;23"/>
 	</screen>
 	<screen name="TitleList" position="center,center" size="560,470">
-		<eLabel name="new eLabel" position="10,396" size="75,22" text="MENU" font="Replacement; 20" halign="center" transparent="0" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
-		<widget source="key_red" render="Label" position="0,1" size="150,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget source="key_green" render="Label" position="137,1" size="150,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget source="key_yellow" render="Label" position="273,1" size="150,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget source="key_blue" render="Label" position="408,1" size="150,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<eLabel name="new eLabel" position="10,396" size="75,22" text="MENU" font="Replacement;20" halign="center" transparent="0" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
+		<widget source="key_red" render="Label" position="0,1" size="150,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="key_green" render="Label" position="137,1" size="150,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="key_yellow" render="Label" position="273,1" size="150,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="key_blue" render="Label" position="408,1" size="150,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
 		<eLabel name="Red" position="10,36" size="120,1" foregroundColor="red" backgroundColor="red"/>
 		<eLabel name="Green" position="150,36" size="120,1" foregroundColor="green" backgroundColor="green"/>
 		<eLabel name="Yellow" position="290,36" size="120,1" foregroundColor="yellow" backgroundColor="yellow"/>
@@ -1654,14 +1654,14 @@ MultiContentEntryText(pos = (470, 20), size = (48, 20), font = 1, flags = RT_HAL
 
 	<screen name="picshow" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGYS_Template"/>
-		<eLabel text="Picture player" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Picture player" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="thn" position="290,100" size="260,300" alphatest="off"/>
 		<widget name="filelist" position="570,center" size="420,465" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" transparent="1" selectionPixmap="MetropolisHD/buttons/sel.png"/>
 	</screen>
 
 	<screen name="Pic_Exif" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="Info">
 		<panel name="MidleScreen_RS_Template"/>
-		<widget source="Title" render="Label" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget source="Title" render="Label" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget source="menu" render="Listbox" position="center,center" size="705,425" zPosition="3" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" transparent="1" selectionDisabled="1">
 			<convert type="TemplatedMultiContent">
 {"template": [  MultiContentEntryText(pos = (5, 7), size = (350, 30), flags = RT_HALIGN_LEFT, text = 0),
@@ -1715,7 +1715,7 @@ MultiContentEntryText(pos = (360, 7), size = (215, 30), flags = RT_HALIGN_LEFT, 
 
 	<screen name="UpdatePluginMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RS_Template"/>
-		<eLabel text="Software management" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Software management" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget source="menu" render="Listbox" position="center,114" size="631,325" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" backgroundPixmap="MetropolisHD/menu/bg40x40.png" transparent="1">
 			<convert type="TemplatedMultiContent">
 {"template": [
@@ -1765,11 +1765,11 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 58), size = (0, 0), png = 5), # index
 
 	<screen name="Ipkg" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="IpkgTemplate"/>
-		<eLabel text="Installing Software..." position="center,158" size="600,34" halign="center" font="Replacement; 24" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Installing Software..." position="center,158" size="600,34" halign="center" font="Replacement;24" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 	</screen>
 
 	<screen name="ImageWizard" position="0,0" size="1280,720" flags="wfNoBorder">
-		<eLabel text="Welcome..." position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Welcome..." position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="text" position="460,116" size="340,330" font="Regular;22"/>
 		<widget source="list" render="Listbox" position="312,437" size="490,180" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1">
 			<convert type="StringList"/>
@@ -1788,8 +1788,8 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 58), size = (0, 0), png = 5), # index
 	</screen>
 
 	<screen name="IPKGSource" position="60,125" size="1160,100">
-		<widget source="key_red" render="Label" position="388,54" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget source="key_green" render="Label" position="607,54" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="key_red" render="Label" position="388,54" size="178,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="key_green" render="Label" position="607,54" size="178,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
 		<eLabel name="Red" position="388,89" size="178,1" foregroundColor="red" backgroundColor="red"/>
 		<eLabel name="Green" position="607,89" size="178,1" foregroundColor="green" backgroundColor="green"/>
 		<widget name="text" position="5,10" size="1150,25" font="Regular;22" foregroundColor="white"/>
@@ -1797,19 +1797,19 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 58), size = (0, 0), png = 5), # index
 
 	<screen name="IPKGMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGS_Template"/>
-		<eLabel text="Select upgrade source to edit." position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Select upgrade source to edit." position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="filelist" position="center,150" size="629,400" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
 	</screen>
 
 	<screen name="RestoreMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGYS_Template"/>
-		<eLabel text="Restore backups" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Restore backups" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="filelist" position="center,150" size="640,400" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
 	</screen>
 
 	<screen name="BackupSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGYS_Template"/>
-		<eLabel text="Select files/folders to backup" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Select files/folders to backup" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="checkList" position="center,150" size="654,400" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
 	</screen>
 
@@ -1822,7 +1822,7 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 58), size = (0, 0), png = 5), # index
 
 	<screen name="PluginManager" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGYBS_Template"/>
-		<eLabel text="Extensions management" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Extensions management" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget source="list" render="Listbox" position="center,139" size="708,360" scrollbarMode="showOnDemand" transparent="1" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png">
 			<convert type="TemplatedMultiContent">
 {"templates":
@@ -1848,7 +1848,7 @@ MultiContentEntryPixmapAlphaTest(pos = (0, 38), size = (570, 2), png = 3), # ind
 
 	<screen name="PluginManagerInfo" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGS_Template"/>
-		<eLabel text="Plugin manager activity information" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Plugin manager activity information" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget source="list" render="Listbox" position="center,149" size="648,300" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionDisabled="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 {"template": [
@@ -1867,20 +1867,20 @@ MultiContentEntryPixmapAlphaTest(pos = (0, 48), size = (550, 2), png = 3), # ind
 
 	<screen name="UpdatePlugin" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="IpkgTemplate"/>
-		<eLabel text="Software update" position="center,157" size="600,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Software update" position="center,157" size="600,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 	</screen>
 
 	<screen name="VirtualKeyBoard" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" zPosition="99">
 		<panel name="MinimalScreenTemplate"/>
 		<panel name="ButtonTemplate_Minimal_RGY"/>
-		<eLabel text="Virtual keyboard" position="center,157" size="600,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Virtual keyboard" position="center,157" size="600,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="header" position="center,200" size="542,20" font="Regular;20" backgroundColor="podloga" noWrap="1"/>
 		<ePixmap pixmap="MetropolisHD/window/vkey_text.png" position="center,229" zPosition="-4" size="542,52" alphatest="on"/>		
 		<widget name="text" position="center,231" size="530,46" font="Regular;38" backgroundColor="podloga" noWrap="1" halign="right"/>		
 		<widget name="list" position="center,288" size="540,225" selectionDisabled="1" transparent="1"/>
-		<eLabel text="Delete" render="Label" position="360,523" size="180,35" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
-		<eLabel text="OK" render="Label" position="center,523" size="180,35" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget source="country" render="Label" position="740,523" size="180,35" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<eLabel text="Delete" render="Label" position="360,523" size="180,35" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<eLabel text="OK" render="Label" position="center,523" size="180,35" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="country" render="Label" position="740,523" size="180,35" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
 	</screen>
 
 	<screen name="MyTubePlayer" position="0,549" size="1280,155" backgroundColor="transparent2" flags="wfNoBorder">
@@ -1888,13 +1888,13 @@ MultiContentEntryPixmapAlphaTest(pos = (0, 48), size = (550, 2), png = 3), # ind
 		<ePixmap pixmap="MetropolisHD/window/back.png" position="272,5" size="745,40" alphatest="off" zPosition="-2" transparent="0"/>
 		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666"/>
 		<ePixmap position="1041,35" zPosition="-1" size="96,96" pixmap="MetropolisHD/icons/mplayer.png" alphatest="on"/>
-		<widget source="global.CurrentTime" render="Label" position="930,7" size="185,34" font="Replacement; 24" valign="top" halign="right" backgroundColor="podloga" foregroundColor="yellow">
+		<widget source="global.CurrentTime" render="Label" position="930,7" size="185,34" font="Replacement;24" valign="top" halign="right" backgroundColor="podloga" foregroundColor="yellow">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1120,9" size="75,27" font="Replacement; 18" valign="top" halign="left" backgroundColor="podloga" foregroundColor="unf23d21">
+		<widget source="global.CurrentTime" render="Label" position="1120,9" size="75,27" font="Replacement;18" valign="top" halign="left" backgroundColor="podloga" foregroundColor="unf23d21">
 			<convert type="ClockToText">Format::%S</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="center,12" size="668,24" font="Replacement; 22" backgroundColor="podloga" halign="center" foregroundColor="green">
+		<widget source="session.CurrentService" render="Label" position="center,12" size="668,24" font="Replacement;22" backgroundColor="podloga" halign="center" foregroundColor="green">
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/chnsel/ico_dolby_on.png" position="108,14" size="65,24" zPosition="2" alphatest="on">
@@ -1909,11 +1909,11 @@ MultiContentEntryPixmapAlphaTest(pos = (0, 48), size = (550, 2), png = 3), # ind
 		<widget source="session.RecordState" render="Pixmap" pixmap="MetropolisHD/window/rec.png" position="242,16" size="12,12" zPosition="2" alphatest="on">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" font="Replacement; 15" position="120,115" size="54,20" halign="right" foregroundColor="un21e2e2e2" backgroundColor="podloga" text="1920">
+		<widget source="session.CurrentService" render="Label" font="Replacement;15" position="120,115" size="54,20" halign="right" foregroundColor="un21e2e2e2" backgroundColor="podloga" text="1920">
 			<convert type="ServiceInfo">VideoWidth</convert>
 		</widget>
-		<eLabel text="x" font="Replacement; 12" position="175,114" size="13,20" halign="center" foregroundColor="un21e2e2e2" backgroundColor="podloga"/>
-		<widget source="session.CurrentService" render="Label" font="Replacement; 15" position="188,115" size="54,20" halign="left" foregroundColor="un21e2e2e2" backgroundColor="podloga" text="1080">
+		<eLabel text="x" font="Replacement;12" position="175,114" size="13,20" halign="center" foregroundColor="un21e2e2e2" backgroundColor="podloga"/>
+		<widget source="session.CurrentService" render="Label" font="Replacement;15" position="188,115" size="54,20" halign="left" foregroundColor="un21e2e2e2" backgroundColor="podloga" text="1080">
 			<convert type="ServiceInfo">VideoHeight</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Progress" position="center,95" size="610,6" zPosition="1" pixmap="MetropolisHD/window/slider_player.png" transparent="1">
@@ -1970,9 +1970,9 @@ MultiContentEntryText(pos = (10, 22), size = (560, 46), font=3, flags = RT_HALIG
 		<eLabel position="490,52" size="2,467" backgroundColor="grey" zPosition="10"/>
 		<eLabel position="2,519" size="1098,2" backgroundColor="grey" zPosition="10"/>
 		<ePixmap position="995,5" size="100,40" zPosition="4" pixmap="~/plugin.png" alphatest="off" transparent="1"/>
-		<widget name="key_red" position="179,525" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget name="key_green" position="357,525" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget name="key_yellow" position="536,525" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_red" position="179,525" size="178,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_green" position="357,525" size="178,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_yellow" position="536,525" size="178,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
 		<eLabel name="Red" position="179,560" size="178,1" foregroundColor="red" backgroundColor="red"/>
 		<eLabel name="Green" position="357,560" size="178,1" foregroundColor="green" backgroundColor="green"/>
 		<eLabel name="Yellow" position="535,560" size="178,1" foregroundColor="yellow" backgroundColor="yellow"/>
@@ -2085,7 +2085,7 @@ MultiContentEntryText(pos = (550, 3), size = (70, 24), font=1, flags = RT_HALIGN
 
 	<screen name="PositionerSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGYB_Template"/>
-		<eLabel text="Positioner setup" position="center,72" size="735,34" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Positioner setup" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="list" position="299,132" size="683,183" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
 		<widget name="snr_db" position="350,320" size="200,24" halign="center" valign="center" font="Regular;22" backgroundColor="podloga"/>
 		<eLabel text="SNR:" position="297,350" size="80,24" font="Regular;22" backgroundColor="podloga"/>
@@ -2106,7 +2106,7 @@ MultiContentEntryText(pos = (550, 3), size = (70, 24), font=1, flags = RT_HALIGN
 
 	<screen name="AdapterSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RBS_Template"/>
-		<eLabel text="Network setup" position="center,72" size="735,34" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Network setup" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget source="Adaptertext" render="Label" position="380,150" size="140,25" font="Regular;22" halign="left" backgroundColor="podloga"/>
 		<widget source="Adapter" render="Label" position="520,150" size="380,25" font="Regular;22" halign="right" backgroundColor="podloga"/>
 		<widget name="config" position="center,179" size="520,150" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
@@ -2130,7 +2130,7 @@ MultiContentEntryText(pos = (550, 3), size = (70, 24), font=1, flags = RT_HALIGN
 
 	<screen name="AdapterSetupConfiguration" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RS_Template"/>
-		<eLabel text="Network configuration..." position="center,72" size="735,34" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Network configuration..." position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget source="IFtext" render="Label" position="330,150" size="140,25" font="Regular;22" backgroundColor="podloga"/>
 		<widget source="IF" render="Label" position="470,150" size="473,25" font="Regular;22" backgroundColor="podloga"/>
 		<widget name="menulist" position="330,200" size="615,200" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
@@ -2141,14 +2141,14 @@ MultiContentEntryText(pos = (550, 3), size = (70, 24), font=1, flags = RT_HALIGN
 
 	<screen name="NameserverSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGYS_Template"/>
-		<eLabel text="Nameserver setup" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Nameserver setup" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="config" position="center,150" size="520,375" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
 		<widget source="introduction" render="Label" position="center,480" size="520,30" zPosition="1" font="Regular;24" halign="center" backgroundColor="podloga"/>
 	</screen>
 
 	<screen name="NetworkAdapterSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGYS_Template"/>
-		<eLabel text="Select a network adapter" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Select a network adapter" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget source="list" render="Listbox" position="center,150" size="631,280" zPosition="10" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1">
 			<convert type="TemplatedMultiContent"><!--  iface, name, description, interfacepng, defaultpng, activepng, divpng  -->
 {"template": [
@@ -2167,7 +2167,7 @@ MultiContentEntryPixmapAlphaTest(pos = (63, 46), size = (15, 16), png = 4), # in
 
 	<screen name="NetworkAdapterTest" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGYS_Template"/>
-		<eLabel text="Network test..." position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Network test..." position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="Adaptertext" position="395,130" size="310,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#1cff1c"/>
 		<widget name="Adapter" position="395,160" size="310,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#f23d21,#1cff1c" backgroundColor="podloga"/>
 		<widget name="AdapterInfo_OK" position="710,145" size="38,31" zPosition="2" pixmap="MetropolisHD/icons/lock_on.png" alphatest="on"/>
@@ -2206,7 +2206,7 @@ MultiContentEntryPixmapAlphaTest(pos = (63, 46), size = (15, 16), png = 4), # in
 
 	<screen name="NetworkBrowser" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGYBS_Template"/>
-		<eLabel text="Network Neighbourhood" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Network Neighbourhood" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget source="list" render="Listbox" position="center,150" size="631,300" zPosition="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1">
 			<convert type="TemplatedMultiContent">
 {"template": [
@@ -2227,9 +2227,9 @@ MultiContentEntryPixmapAlphaTest(pos = (110, 6), size = (48, 48), png = 6), # in
 
 	<screen name="ScanIP" position="90,100" size="1100,560">
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey"/>
-		<widget name="key_red" position="279,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget name="key_green" position="457,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget name="key_yellow" position="636,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_red" position="279,520" size="178,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_green" position="457,520" size="178,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_yellow" position="636,520" size="178,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
 		<eLabel name="Red" position="279,555" size="178,1" foregroundColor="red" backgroundColor="red"/>
 		<eLabel name="Green" position="457,555" size="178,1" foregroundColor="green" backgroundColor="green"/>
 		<eLabel name="Yellow" position="635,555" size="178,1" foregroundColor="yellow" backgroundColor="yellow"/>
@@ -2250,8 +2250,8 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		<eLabel position="780,0" size="2,518" backgroundColor="grey"/>
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey"/>
 		<widget source="introduction" render="Label" position="20,525" size="400,30" zPosition="10" font="Regular;24" halign="center"/>
-		<widget name="key_red" position="449,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget name="key_yellow" position="636,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_red" position="449,520" size="178,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_yellow" position="636,520" size="178,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
 		<eLabel name="Red" position="449,555" size="178,1" foregroundColor="red" backgroundColor="red"/>
 		<eLabel name="Yellow" position="635,555" size="178,1" foregroundColor="yellow" backgroundColor="yellow"/>
 	</screen>
@@ -2260,7 +2260,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		<eLabel position="780,0" size="2,518" backgroundColor="grey"/>
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey"/>
 		<widget source="introduction" render="Label" position="20,525" size="400,30" zPosition="10" font="Regular;24" halign="center"/>
-		<widget name="key_red" position="849,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_red" position="849,520" size="178,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
 		<eLabel name="Red" position="849,555" size="178,1" foregroundColor="red" backgroundColor="red"/>
 		<widget name="VKeyIcon" pixmap="MetropolisHD/icons/vkey_icon.png" position="1020,450" zPosition="10" size="60,48" transparent="1" alphatest="off"/>
 		<widget name="HelpWindow" position="180,450" zPosition="1" size="1,1" transparent="1" alphatest="off"/>
@@ -2269,7 +2269,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		<widget name="config" position="20,20" zPosition="1" size="740,300" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png"/>
 		<eLabel position="780,0" size="2,518" backgroundColor="grey"/>
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey"/>
-		<widget name="key_red" position="849,520" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_red" position="849,520" size="178,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
 		<eLabel name="Red" position="849,555" size="178,1" foregroundColor="red" backgroundColor="red"/>
 		<widget source="introduction" render="Label" position="20,525" size="400,30" zPosition="10" font="Regular;24" halign="center"/>
 		<widget name="VKeyIcon" pixmap="MetropolisHD/icons/vkey_icon.png" position="1020,450" zPosition="10" size="60,48" transparent="1" alphatest="off"/>
@@ -2278,7 +2278,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 
 	<screen name="AutoMountManager" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RS_Template"/>
-		<eLabel text="Auto Mount Manager" position="center,72" size="735,34" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Auto Mount Manager" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget source="config" render="Listbox" position="center,120" size="700,445" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" backgroundColor="background" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
@@ -2346,7 +2346,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 
 	<screen name="CrashlogAutoSubmitConfiguration" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RG_Template"/>
-		<eLabel text="CrashlogAutoSubmit settings..." position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="CrashlogAutoSubmit settings..." position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="config" position="329,135" size="631,300" zPosition="2" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" backgroundColor="transpBlack" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
 		<widget name="VKeyIcon" pixmap="MetropolisHD/buttons/key_text.png" position="288,556" zPosition="10" size="60,48" transparent="1" alphatest="on"/>
 		<widget name="HelpWindow" position="180,445" zPosition="1" size="1,1" transparent="1"/>
@@ -2355,28 +2355,28 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 
 	<screen name="CiSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreenTemplate"/>
-		<eLabel text="Common Interface" position="center,72" size="735,34" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Common Interface" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="text" position="center,150" size="631,30" font="Regular;24" halign="center" valign="center" backgroundColor="podloga"/>
 		<widget name="entries" position="center,200" size="631,300" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
 	</screen>
 
 	<screen name="CIselectMainMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RG_Template"/>
-		<eLabel text="CI assignment" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="CI assignment" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="CiList" position="center,150" size="631,300" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" zPosition="2" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
 	</screen>
 
 	<screen name="RecordPathsSettings" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGS_Template"/>
-		<eLabel text="Recording paths" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Recording paths" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="config" position="center,163" size="701,187" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" zPosition="2" transparent="1"/>
 	</screen>
 
 	<screen name="InputDeviceSetup" position="center,center" size="560,440">
-		<widget source="key_red" render="Label" position="0,1" size="150,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget source="key_green" render="Label" position="137,1" size="150,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget source="key_yellow" render="Label" position="273,1" size="150,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget source="key_blue" render="Label" position="408,1" size="150,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="key_red" render="Label" position="0,1" size="150,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="key_green" render="Label" position="137,1" size="150,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="key_yellow" render="Label" position="273,1" size="150,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="key_blue" render="Label" position="408,1" size="150,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
 		<eLabel name="Red" position="10,36" size="120,1" foregroundColor="red" backgroundColor="red"/>
 		<eLabel name="Green" position="150,36" size="120,1" foregroundColor="green" backgroundColor="green"/>
 		<eLabel name="Yellow" position="290,36" size="120,1" foregroundColor="yellow" backgroundColor="yellow"/>
@@ -2393,8 +2393,8 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 	</screen>
 
 	<screen name="VideoEnhancementPreview" position="360,140" size="560,170">
-		<widget name="key_red" position="124,126" size="160,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget name="key_green" position="286,126" size="160,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_red" position="124,126" size="160,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_green" position="286,126" size="160,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
 		<eLabel name="Red" position="124,160" size="160,1" foregroundColor="red" backgroundColor="red"/>
 		<eLabel name="Green" position="286,160" size="160,1" foregroundColor="green" backgroundColor="green"/>
 		<widget name="config" position="5,5" size="550,80" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png"/>
@@ -2402,8 +2402,8 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		<widget source="introduction" render="Label" position="5,90" size="550,30" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
 	</screen>
 	<screen name="FancontrolConfiguration" position="center,center" size="560,300">
-		<widget name="key_red" position="124,255" size="160,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget name="key_green" position="286,255" size="160,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_red" position="124,255" size="160,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_green" position="286,255" size="160,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
 		<eLabel name="Red" position="124,290" size="160,1" foregroundColor="red" backgroundColor="red"/>
 		<eLabel name="Green" position="286,290" size="160,1" foregroundColor="green" backgroundColor="green"/>
 		<widget name="config" zPosition="2" position="5,50" size="550,200" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" transparent="1" selectionPixmap="MetropolisHD/buttons/sel.png"/>
@@ -2417,23 +2417,23 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 
 	<screen name="HotkeySetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RG_Template"/>
-		<eLabel text="Hotkey" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Hotkey" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="list" position="290,center" size="330,475" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" transparent="1" selectionPixmap="MetropolisHD/buttons/sel.png"/>
 		<widget name="choosen" position="600,center" size="390,475" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" transparent="1" selectionPixmap="MetropolisHD/buttons/sel.png"/>
 	</screen>
 
 	<screen name="HdmiCECSetupScreen" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGYBS_Template"/>
-		<eLabel text="HDMI-CEC setup" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="HDMI-CEC setup" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="config" position="center,115" size="722,400" zPosition="2" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" transparent="1" selectionPixmap="MetropolisHD/buttons/sel.png"/>
 		<eLabel name="Line" position="center,526" size="716,1" backgroundColor="un666666"/>
-		<widget source="current_address" render="Label" position="center,530" size="550,40" zPosition="10" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget source="fixed_address" render="Label" position="center,570" size="550,40" zPosition="10" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="current_address" render="Label" position="center,530" size="550,40" zPosition="10" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="fixed_address" render="Label" position="center,570" size="550,40" zPosition="10" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
 	</screen>
 
 	<screen name="AltCamManager" position="0,0" size="1280,720" title="SoftCam manager" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGYBS_Template"/>
-		<widget source="Title" render="Label" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget source="Title" render="Label" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget source="list" render="Listbox" position="285,120" size="370,450" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" transparent="1" selectionPixmap="MetropolisHD/buttons/sel.png">
 			<convert type="TemplatedMultiContent">
 			{
@@ -2451,13 +2451,13 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 
 	<screen name="ConfigEdit" position="0,0" size="1280,720" title="SoftCam path configuration" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MinimalScreen_RGS_Template"/>
-		<widget source="Title" render="Label" position="center,155" size="600,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget source="Title" render="Label" position="center,155" size="600,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="config" position="center,210" size="580,200" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" backgroundColor="transpBlack" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
 	</screen>
 
 	<screen name="TV3PlayMenu" position="0,0" size="1280,720" title="TV3 Play" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGS_Template"/>
-		<widget source="Title" render="Label" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget source="Title" render="Label" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget source="list" render="Listbox" position="285,120" size="400,450" zPosition="10"  enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" transparent="1" selectionPixmap="MetropolisHD/buttons/sel.png">
 			<convert type="TemplatedMultiContent">
 			{
@@ -2473,10 +2473,10 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 
 	<screen name="EPGSearchSetup" position="0,0" size="1280,720" title="EPGSearch Setup" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MinimalScreen_RGS_Template"/>
-		<widget source="Title" render="Label" position="center,155" size="600,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget source="Title" render="Label" position="center,155" size="600,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="config" position="center,210" size="580,450" halign="left" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" backgroundColor="transpBlack" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
 		<eLabel name="Line" position="center,456" size="600,1" backgroundColor="un666666"/>
-		<widget source="help" render="Label" position="center,460" size="580,60" font="Regular; 22" valign="top" backgroundColor="podloga"/>
+		<widget source="help" render="Label" position="center,460" size="580,60" font="Regular;22" valign="top" backgroundColor="podloga"/>
 	</screen>
 </skin>
 
