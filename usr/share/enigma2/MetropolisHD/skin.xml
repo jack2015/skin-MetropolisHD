@@ -683,9 +683,13 @@ newwidth = wsize[0]
 self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count> 7 and 2 or 3)))
 		</applet>
 	</screen>
-	<screen name="Console" position="90,100" size="1100,560" backgroundColor="podloga">
-		<widget name="text" position="20,20" size="1060,520" font="Console;21" backgroundColor="podloga"/>
+
+	<screen name="Console" position="0,0" size="1279,720" bflags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MinimalScreenTemplate"/>
+		<eLabel text="Command execution..." position="center,158" size="600,34" halign="center" font="Replacement; 24" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget name="text" position="center,200" size="580,350" font="Console;21" backgroundColor="podloga"/>
 	</screen>
+
 	<screen name="clockDisplay" position="420,200" size="340,300" backgroundColor="podloga">
 		<eLabel position="0,0" size="340,2" backgroundColor="grey"/>
 		<widget name="okbutton" position="20,20" size="300,40" backgroundColor="podloga"/>
@@ -1422,6 +1426,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 			<convert type="StringList"/>
 		</widget>
 	</screen>
+
 	<screen name="CutListEditor" position="center,680" size="700,24" flags="wfNoBorder" backgroundColor="transparent">
 		<!--eLabel text="Cutlist editor..." position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<ePixmap position="center,center" size="1229,592" zPosition="-3" pixmap="MetropolisHD/window/podloga.png" transparent="0" borderWidth="1" borderColor="un666666"/>
@@ -1451,6 +1456,7 @@ MultiContentEntryText(pos=(145,0), size=(145, 20), text = 2, flags = RT_HALIGN_R
 		<widget name="Timeline" position="2,2" size="696,20" zPosition="3" backgroundColor="un808888" pointer="MetropolisHD/window/position_arrow.png:3,5" foregroundColor="black"/>
 		<!--eLabel text="OK = Menu" position="1059,615" size="140,22" zPosition="1" font="Regular;20" backgroundColor="podloga" /-->
 	</screen>
+
 	<screen name="MediaPlayer" position="center,center" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<eLabel text="Media player" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<ePixmap position="center,center" size="1188,592" zPosition="-3" pixmap="MetropolisHD/window/podloga.png" transparent="0" borderWidth="1" borderColor="un666666"/>
