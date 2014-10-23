@@ -192,8 +192,8 @@
 	</screen>
 
 	<screen name="Big2PanelsSecondPanelTemplate">
-		<eLabel name="Button" position="862,560" size="83,33" backgroundColor="transpGrey"/>
-		<eLabel name="Button" position="862,599" size="83,33" backgroundColor="transpGrey"/>
+		<eLabel name="Button" position="862,560" size="83,33" backgroundColor="darkgrey"/>
+		<eLabel name="Button" position="862,599" size="83,33" backgroundColor="darkgrey"/>
 		<widget source="global.CurrentTime" render="Label" position="861,525" size="321,29" font="Replacement; 22" halign="center" backgroundColor="podloga" foregroundColor="green">
 			<convert type="ClockToText">Format: %A - %d.%m.%Y</convert>
 		</widget>
