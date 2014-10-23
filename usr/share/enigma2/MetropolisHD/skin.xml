@@ -696,19 +696,6 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count> 7 and 2 or 3)))
 		<widget name="theClock" position="20,70" size="300,50" backgroundColor="podloga"/>
 		<widget name="title" position="20,130" size="300,50" backgroundColor="podloga"/>
 	</screen>
-	<screen name="DefaultSatLists" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<eLabel text="Default services lists" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<ePixmap pixmap="MetropolisHD/window/back.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0"/>
-		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/window/podloga.png" transparent="0" borderWidth="1" borderColor="un666666"/>
-		<widget name="wizard" pixmap="MetropolisHD/window/wizard.png" position="428,150" zPosition="10" size="110,174" transparent="1" alphatest="on"/>
-		<widget name="text" position="552,180" size="310,340" font="Regular;23" transparent="1"/>
-		<ePixmap pixmap="MetropolisHD/buttons/button_red.png" position="406,353" size="15,16" alphatest="on"/>
-		<widget name="languagetext" position="438,348" size="120,30" font="Regular;20" transparent="1"/>
-		<widget source="list" render="Listbox" position="90,430" size="520,200" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1">
-			<convert type="StringList"/>
-		</widget>
-		<widget name="config" zPosition="1" position="center,430" size="520,200" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
-	</screen>
 
 	<screen name="EPGSelection" position="center,center" size="1279,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="Big2PanelsTemplate"/>
