@@ -124,7 +124,7 @@
 
 	<include filename="skin_templates.xml"/>
 
-	<screen name="InfoBar" flags="wfNoBorder" position="center,center" size="1280,720" backgroundColor="transparent">
+	<screen name="InfoBar" flags="wfNoBorder" position="0,0" size="1280,720" backgroundColor="transparent">
 		<ePixmap position="center,480" size="1273,250" pixmap="MetropolisHD/infobar/back.png" zPosition="-1" alphatest="off" transparent="0"/>
 		<eLabel text="AGC:" position="1037,641" size="50,22" font="Replacement; 17" backgroundColor="transpGrey" transparent="1" foregroundColor="yellow" halign="right"/>
 		<widget source="session.FrontendStatus" render="Label" position="1092,641" size="50,22" font="Replacement; 17" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
@@ -233,7 +233,7 @@
 		</widget>
 	</screen>
 
-	<screen name="SecondInfoBar" flags="wfNoBorder" position="center,center" size="1280,720" backgroundColor="transparent">
+	<screen name="SecondInfoBar" flags="wfNoBorder" position="0,0" size="1280,720" backgroundColor="transparent">
 		<ePixmap position="center,480" size="1273,250" pixmap="MetropolisHD/infobar/back.png" zPosition="-1" alphatest="off" transparent="0"/>
 		<eLabel position="0,0" size="1280,480" zPosition="-2" backgroundColor="transpGrey"/>
 		<eLabel text="AGC:" position="1037,641" size="50,22" font="Replacement; 17" backgroundColor="transpGrey" transparent="1" foregroundColor="yellow" halign="right"/>
@@ -370,7 +370,7 @@
 		</widget>
 	</screen>
 
-	<screen name="ChannelSelection" position="1,center" size="1280,720" title="Channel Selection" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
+	<screen name="ChannelSelection" position="0,0" size="1280,720" title="Channel Selection" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
 		<panel name="Big2PanelsTemplate"/>
 		<widget source="Title" render="Label" position="67,72" size="735,34" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="background" transparent="1"/>
 		<widget source="global.CurrentTime" render="Label" position="953,599" size="139,39" font="Replacement; 36" halign="center" backgroundColor="podloga" foregroundColor="un21e2e2e2" valign="center">
@@ -437,7 +437,7 @@
 		<ePixmap pixmap="MetropolisHD/window/mute.png" position="1,1" size="64,64" alphatest="on"/>
 	</screen>
 
-	<screen name="menu_mainmenu" position="center,center" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="menu_mainmenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuTemplate"/>
 		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/shutdown.png" position="128,132" size="125,125" alphatest="on">
 			<convert type="MenuEntryCompare">standby_restart_list</convert>
@@ -731,7 +731,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count> 7 and 2 or 3)))
 		</widget>
 	</screen>
 
-	<screen name="EventView" position="center,-1" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="EventView" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="Big2PanelsTemplate"/>
 		<panel name="Big2PanelsSecondPanelTemplate"/>
 		<eLabel text="Event view" position="68,72" size="735,34" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
@@ -1430,7 +1430,7 @@ MultiContentEntryText(pos=(145,0), size=(145, 20), text = 2, flags = RT_HALIGN_R
 		<!--eLabel text="OK = Menu" position="1059,615" size="140,22" zPosition="1" font="Regular;20" backgroundColor="podloga" /-->
 	</screen>
 
-	<screen name="MediaPlayer" position="center,center" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="MediaPlayer" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<eLabel text="Media player" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<ePixmap position="center,center" size="1188,592" zPosition="-3" pixmap="MetropolisHD/window/podloga.png" transparent="0" borderWidth="1" borderColor="un666666"/>
 		<ePixmap pixmap="MetropolisHD/window/back.png" position="center,68" size="1180,40" alphatest="off" zPosition="-2" transparent="0"/>
@@ -2118,7 +2118,7 @@ MultiContentEntryText(pos = (550, 3), size = (70, 24), font=1, flags = RT_HALIGN
 		<widget name="title" position="0,0" size="0,0"/>
 	</screen>&gt;
 
-	<screen name="PositionerSetup" position="center,center" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="PositionerSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGYB_Template"/>
 		<eLabel text="Positioner setup" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/window/podloga.png" transparent="0" borderWidth="1" borderColor="un666666"/>
