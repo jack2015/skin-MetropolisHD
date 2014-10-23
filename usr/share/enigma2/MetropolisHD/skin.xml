@@ -1402,7 +1402,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
 	<screen name="CutListEditor" position="center,680" size="700,24" flags="wfNoBorder" backgroundColor="transparent">
 		<!--eLabel text="Cutlist editor..." position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<ePixmap position="center,center" size="1229,592" zPosition="-3" pixmap="MetropolisHD/window/podloga.png" transparent="0" borderWidth="1" borderColor="un666666"/>
+		<eLabel position="center,center" size="1229,592" zPosition="-3" backgroundColor="podloga"/>
 		<ePixmap pixmap="MetropolisHD/window/back.png" position="center,68" size="1220,40" alphatest="off" zPosition="-2" transparent="0"/>
 		<eLabel position="80,125" size="310,420" zPosition="1" backgroundColor="grey"/>
 		<eLabel position="81,126" size="308,418" zPosition="2" backgroundColor="black"/>
