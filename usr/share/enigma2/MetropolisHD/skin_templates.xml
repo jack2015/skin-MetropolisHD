@@ -123,6 +123,12 @@
 		<eLabel name="Green" position="685,648" size="180,1" zPosition="2" foregroundColor="green" backgroundColor="green"/>
 	</screen>
 
+	<screen name="ButtonTemplate_Midle_RB">
+		<eLabel name="Line" position="center,613" size="716,1" zPosition="2" backgroundColor="un666666"/>
+		<eLabel name="Red" position="415,648" size="180,1" zPosition="2" foregroundColor="red" backgroundColor="red"/>
+		<eLabel name="Blue" position="685,648" size="180,1" zPosition="2" foregroundColor="blue" backgroundColor="blue"/>
+	</screen>
+
 	<screen name="ButtonTemplate_CancelOK_Midle">
 		<panel name="ButtonTemplate_Midle_RG"/>
 		<widget name="canceltext" position="380,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
@@ -145,6 +151,12 @@
 		<panel name="ButtonTemplate_Midle_RG"/>
 		<widget source="key_red" render="Label" position="380,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
 		<widget source="key_green" render="Label" position="650,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+	</screen>
+
+	<screen name="ButtonTemplate_RBS_Midle">
+		<panel name="ButtonTemplate_Midle_RB"/>
+		<widget source="key_red" render="Label" position="380,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="key_blue" render="Label" position="650,613" size="250,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="podloga"/>
 	</screen>
 
 	<screen name="ButtonTemplate_Small_RG">
@@ -287,6 +299,7 @@
 		<eLabel name="Line" position="1228,30" size="1,627" zPosition="2" backgroundColor="un666666"/>
 	</screen>
 
+
 	<screen name="MinimalScreen_RGS_Template">
 		<panel name="MinimalScreenTemplate"/>
 		<panel name="ButtonTemplate_RGS_Minimal"/>
@@ -335,6 +348,11 @@
 	<screen name="MidleScreen_RGS_Template">
 		<panel name="MidleScreenTemplate"/>
 		<panel name="ButtonTemplate_RGS_Midle"/>
+	</screen>
+
+	<screen name="MidleScreen_RBS_Template">
+		<panel name="MidleScreenTemplate"/>
+		<panel name="ButtonTemplate_RBS_Midle"/>
 	</screen>
 
 	<screen name="BigScreen_RGYB_Template">

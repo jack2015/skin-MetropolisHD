@@ -2141,34 +2141,29 @@ MultiContentEntryText(pos = (550, 3), size = (70, 24), font=1, flags = RT_HALIGN
 	</screen>
 
 	<screen name="AdapterSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<eLabel text="Network setup" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/window/podloga.png" transparent="0" borderWidth="1" borderColor="un666666"/>
-		<ePixmap pixmap="MetropolisHD/window/back.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0"/>
-		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666"/>
-		<widget source="key_red" render="Label" position="283,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget source="key_blue" render="Label" position="460,613" size="178,35" zPosition="1" font="Regular; 22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<eLabel name="red" position="283,645" size="178,1" foregroundColor="red" backgroundColor="red"/>
-		<eLabel name="blue" position="460,645" size="178,1" foregroundColor="blue" backgroundColor="blue"/>
-		<widget source="Adaptertext" render="Label" position="380,150" size="140,25" zPosition="1" font="Regular;22" halign="left" backgroundColor="transpBlack" transparent="1"/>
-		<widget source="Adapter" render="Label" position="520,150" size="380,25" zPosition="1" font="Regular;22" halign="right" backgroundColor="transpBlack" transparent="1"/>
+		<panel name="MidleScreen_RBS_Template"/>
+		<eLabel text="Network setup" position="center,72" size="735,34" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget source="Adaptertext" render="Label" position="380,150" size="140,25" font="Regular;22" halign="left" backgroundColor="podloga"/>
+		<widget source="Adapter" render="Label" position="520,150" size="380,25" font="Regular;22" halign="right" backgroundColor="podloga"/>
 		<widget name="config" position="center,179" size="520,150" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
-		<widget source="introduction2" render="Label" position="center,540" size="520,30" zPosition="1" font="Regular;24" backgroundColor="transpBlack" halign="center" transparent="1"/>
-		<widget source="introduction" render="Label" position="380,360" size="300,25" font="Regular;22" backgroundColor="transpBlack" halign="left" transparent="1"/>
-		<widget source="IPtext" render="Label" position="380,390" size="140,22" zPosition="1" font="Regular;20" halign="left" backgroundColor="transpBlack" transparent="1"/>
-		<widget source="IP" render="Label" position="520,390" size="380,22" zPosition="1" font="Regular;20" backgroundColor="transpBlack" halign="right" transparent="1"/>
-		<widget source="Netmasktext" render="Label" position="380,420" size="140,22" zPosition="1" font="Regular;20" halign="left" backgroundColor="transpBlack" transparent="1"/>
-		<widget source="Mask" render="Label" position="520,420" size="380,22" zPosition="1" font="Regular;20" backgroundColor="transpBlack" halign="right" transparent="1"/>
-		<widget source="Gatewaytext" render="Label" position="380,450" size="140,22" zPosition="1" font="Regular;20" halign="left" backgroundColor="transpBlack" transparent="1"/>
-		<widget source="Gateway" render="Label" position="520,450" size="380,22" zPosition="1" font="Regular;20" backgroundColor="transpBlack" halign="right" transparent="1"/>
-		<widget source="DNS1text" render="Label" position="380,480" size="140,22" zPosition="1" font="Regular;20" halign="left" backgroundColor="transpBlack" transparent="1"/>
-		<widget source="DNS1" render="Label" position="520,480" size="380,22" zPosition="1" font="Regular;20" backgroundColor="transpBlack" halign="right" transparent="1"/>
-		<widget source="DNS2text" render="Label" position="380,510" size="140,22" zPosition="1" font="Regular;20" halign="left" backgroundColor="transpBlack" transparent="1"/>
-		<widget source="DNS2" render="Label" position="520,510" size="380,22" zPosition="1" font="Regular;20" backgroundColor="transpBlack" halign="right" transparent="1"/>
+		<widget source="introduction2" render="Label" position="center,540" size="520,30" font="Regular;24" backgroundColor="podloga" halign="center"/>
+		<widget source="introduction" render="Label" position="380,360" size="300,25" font="Regular;22" backgroundColor="podloga" halign="left"/>
+		<widget source="IPtext" render="Label" position="380,390" size="140,22" font="Regular;20" halign="left" backgroundColor="podloga"/>
+		<widget source="IP" render="Label" position="520,390" size="380,22" font="Regular;20" backgroundColor="podloga" halign="right"/>
+		<widget source="Netmasktext" render="Label" position="380,420" size="140,22" font="Regular;20" halign="left" backgroundColor="podloga"/>
+		<widget source="Mask" render="Label" position="520,420" size="380,22" font="Regular;20" backgroundColor="podloga" halign="right"/>
+		<widget source="Gatewaytext" render="Label" position="380,450" size="140,22" font="Regular;20" halign="left" backgroundColor="podloga"/>
+		<widget source="Gateway" render="Label" position="520,450" size="380,22" font="Regular;20" backgroundColor="podloga" halign="right"/>
+		<widget source="DNS1text" render="Label" position="380,480" size="140,22" font="Regular;20" halign="left" backgroundColor="podloga"/>
+		<widget source="DNS1" render="Label" position="520,480" size="380,22" font="Regular;20" backgroundColor="podloga" halign="right"/>
+		<widget source="DNS2text" render="Label" position="380,510" size="140,22" font="Regular;20" halign="left" backgroundColor="podloga"/>
+		<widget source="DNS2" render="Label" position="520,510" size="380,22" font="Regular;20" backgroundColor="podloga" halign="right"/>
 		<widget name="HelpWindow" position="680,465" zPosition="2" size="1,1" transparent="1" alphatest="off"/>
 		<widget source="VKeyIcon" render="Pixmap" pixmap="MetropolisHD/buttons/key_text.png" position="919,582" zPosition="1" size="35,25" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
 	</screen>
+
 	<screen name="AdapterSetupConfiguration" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<eLabel text="Network configuration..." position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/window/podloga.png" transparent="0" borderWidth="1" borderColor="un666666"/>
