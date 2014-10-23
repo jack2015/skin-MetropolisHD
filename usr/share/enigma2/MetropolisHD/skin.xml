@@ -903,10 +903,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	</screen>
 
 	<screen name="MoviePlayer" position="center,549" size="1280,155" backgroundColor="transparent" flags="wfNoBorder" transparent="0">
-		<ePixmap position="center,1" size="1100,140" zPosition="-3" pixmap="MetropolisHD/window/podloga.png" transparent="0" borderWidth="1" borderColor="un666666"/>
+		<eLabel position="center,1" size="1100,140" zPosition="-3" backgroundColor="podloga"/>
 		<ePixmap pixmap="MetropolisHD/window/back.png" position="272,5" size="745,40" alphatest="off" zPosition="-2" transparent="0"/>
-		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666"/>
-		<ePixmap position="1041,35" zPosition="-1" size="96,96" pixmap="MetropolisHD/icons/mplayer.png" alphatest="on"/>
+		<eLabel name="Line" position="center,613" size="716,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="center,97" size="610,2" backgroundColor="un666666"/>
+		<eLabel name="Line" position="center,1" size="1100,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="center,141" size="1100,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="90,1" size="1,140" backgroundColor="un666666"/>
+		<eLabel name="Line" position="1190,1" size="1,140" backgroundColor="un666666"/>
+		<ePixmap position="1041,35" size="96,96" pixmap="MetropolisHD/icons/mplayer.png" alphatest="on"/>
 		<widget source="global.CurrentTime" render="Label" position="930,7" size="185,34" font="Replacement; 24" valign="top" halign="right" backgroundColor="podloga" transparent="1" foregroundColor="yellow">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -916,6 +921,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget source="session.CurrentService" render="Label" position="center,12" size="668,24" font="Replacement; 22" backgroundColor="background" transparent="1" halign="center" foregroundColor="green">
 			<convert type="ServiceName">Name</convert>
 		</widget>
+		<ePixmap pixmap="MetropolisHD/chnsel/ico_dolby_off.png" position="108,14" size="65,24" zPosition="1" alphatest="on"/>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/chnsel/ico_dolby_on.png" position="108,14" size="65,24" zPosition="2" alphatest="on">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide"/>
@@ -928,11 +934,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget source="session.RecordState" render="Pixmap" pixmap="MetropolisHD/window/rec.png" position="242,16" size="12,12" zPosition="2" alphatest="on">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" font="Replacement; 15" position="120,115" size="54,20" halign="right" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1" text="1920">
+		<widget source="session.CurrentService" render="Label" font="Replacement; 15" position="120,115" size="54,20" halign="right" foregroundColor="un21e2e2e2" backgroundColor="podloga" text="1920">
 			<convert type="ServiceInfo">VideoWidth</convert>
 		</widget>
-		<eLabel text="x" font="Replacement; 12" position="175,114" size="13,20" halign="center" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1"/>
-		<widget source="session.CurrentService" render="Label" font="Replacement; 15" position="188,115" size="54,20" halign="left" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1" text="1080">
+		<eLabel text="x" font="Replacement; 12" position="175,114" size="13,20" halign="center" foregroundColor="un21e2e2e2" backgroundColor="podloga"/>
+		<widget source="session.CurrentService" render="Label" font="Replacement; 15" position="188,115" size="54,20" halign="left" foregroundColor="un21e2e2e2" backgroundColor="podloga" text="1080">
 			<convert type="ServiceInfo">VideoHeight</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Progress" position="center,95" size="610,6" zPosition="1" pixmap="MetropolisHD/window/slider_player.png" transparent="1">
@@ -941,13 +947,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget source="session.CurrentService" render="PositionGauge" position="center,93" size="610,10" zPosition="2" transparent="1">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="336,56" size="120,30" font="Regular;26" halign="left" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="336,56" size="120,30" font="Regular;26" halign="left" foregroundColor="un21e2e2e2" backgroundColor="podloga">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="center,56" size="190,30" font="Regular;26" halign="center" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="center,56" size="190,30" font="Regular;26" halign="center" foregroundColor="un21e2e2e2" backgroundColor="podloga">
 			<convert type="ServicePosition">Length</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="825,56" size="120,30" font="Regular;26" halign="right" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="825,56" size="120,30" font="Regular;26" halign="right" foregroundColor="un21e2e2e2" backgroundColor="podloga">
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
 		<ePixmap position="center,110" zPosition="1" size="200,25" pixmap="MetropolisHD/window/mp_buttons.png" alphatest="on"/>
@@ -955,8 +961,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget source="session.RecordState" render="Pixmap" pixmap="MetropolisHD/icons/icon_rec_light.png" position="267,113" zPosition="3" size="19,19" alphatest="on">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<eLabel name="new eLabel" position="center,97" size="610,2" backgroundColor="un666666"/>
-		<ePixmap pixmap="MetropolisHD/chnsel/ico_dolby_off.png" position="108,14" size="65,24" zPosition="1" alphatest="on"/>
 	</screen>
 
 	<screen name="MovieContextMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
