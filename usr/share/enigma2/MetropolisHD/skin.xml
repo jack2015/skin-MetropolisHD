@@ -1789,13 +1789,8 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 58), size = (0, 0), png = 5), # index
 	</screen>
 
 	<screen name="Ipkg" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<eLabel text="Installing Software..." position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/window/podloga.png" transparent="0" borderWidth="1" borderColor="un666666"/>
-		<ePixmap pixmap="MetropolisHD/window/back.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0"/>
-		<widget name="activityslider" position="center,150" size="550,5"/>
-		<widget name="slider" position="center,300" size="550,30"/>
-		<widget name="package" position="center,180" size="540,20" font="Regular;18" halign="center" valign="center" backgroundColor="un25062748" transparent="1"/>
-		<widget name="status" position="center,210" size="540,45" font="Regular;20" halign="center" valign="center" backgroundColor="un25062748" transparent="1"/>
+		<panel name="IpkgTemplate"/>
+		<eLabel text="Installing Software..." position="center,158" size="600,34" halign="center" font="Replacement; 24" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 	</screen>
 
 	<screen name="ImageWizard" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1896,13 +1891,8 @@ MultiContentEntryPixmapAlphaTest(pos = (0, 48), size = (550, 2), png = 3), # ind
 	</screen>
 
 	<screen name="UpdatePlugin" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<eLabel text="Software update" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<ePixmap position="center,center" size="745,592" zPosition="-3" pixmap="MetropolisHD/window/podloga.png" transparent="0" borderWidth="1" borderColor="un666666"/>
-		<ePixmap pixmap="MetropolisHD/window/back.png" position="center,68" size="737,40" alphatest="off" zPosition="-2" transparent="0"/>
-		<widget name="activityslider" position="center,150" size="550,5"/>
-		<widget name="slider" position="center,300" size="550,30"/>
-		<widget source="package" render="Label" position="center,180" size="540,20" font="Regular;18" halign="center" valign="center" backgroundColor="un25062748" transparent="1"/>
-		<widget source="status" render="Label" position="center,210" size="540,45" font="Regular;20" halign="center" valign="center" backgroundColor="un25062748" transparent="1"/>
+		<panel name="IpkgTemplate"/>
+		<eLabel text="Software update" position="center,157" size="600,34" zPosition="2" halign="center" font="Replacement; 26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 	</screen>
 
 	<screen name="VirtualKeyBoard" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" zPosition="99">

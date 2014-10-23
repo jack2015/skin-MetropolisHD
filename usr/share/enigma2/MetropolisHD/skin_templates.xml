@@ -299,6 +299,13 @@
 		<eLabel name="Line" position="1228,30" size="1,627" zPosition="2" backgroundColor="un666666"/>
 	</screen>
 
+	<screen name="IpkgTemplate">
+		<panel name="MinimalScreenTemplate"/>
+		<widget name="activityslider" position="center,210" size="550,5"/>
+		<widget source="package" render="Label" position="center,240" size="540,20" font="Regular;18" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="status" render="Label" position="center,270" size="540,45" font="Regular;20" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="slider" position="center,350" size="560,30"/>
+	</screen>
 
 	<screen name="MinimalScreen_RGS_Template">
 		<panel name="MinimalScreenTemplate"/>
