@@ -1880,9 +1880,9 @@ MultiContentEntryPixmapAlphaTest(pos = (0, 48), size = (550, 2), png = 3), # ind
 		<ePixmap pixmap="MetropolisHD/window/vkey_text.png" position="center,229" zPosition="-4" size="542,52" alphatest="on"/>		
 		<widget name="text" position="center,231" size="530,46" font="Regular;38" backgroundColor="podloga" noWrap="1" halign="right"/>		
 		<widget name="list" position="center,288" size="540,225" selectionDisabled="1" transparent="1"/>
-		<eLabel text="Delete" render="Label" position="360,523" size="180,35" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<eLabel text="OK" render="Label" position="center,523" size="180,35" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget source="country" render="Label" position="740,523" size="180,35" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<eLabel text="Exit" render="Label" position="360,524" size="180,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<eLabel text="OK" render="Label" position="center,524" size="180,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="country" render="Label" position="740,524" size="180,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
 	</screen>
 
 	<screen name="MyTubePlayer" position="0,549" size="1280,155" backgroundColor="transparent2" flags="wfNoBorder">
