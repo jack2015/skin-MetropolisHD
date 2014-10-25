@@ -2434,9 +2434,9 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 	</screen>
 
 	<screen name="AltCamManager" position="0,0" size="1280,720" title="SoftCam manager" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="MidleScreen_RGYBS_Template"/>
-		<widget source="Title" render="Label" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<widget source="list" render="Listbox" position="285,120" size="370,450" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" transparent="1" selectionPixmap="MetropolisHD/buttons/sel.png">
+		<panel name="MinimalScreen_RGYBS_Template"/>
+		<widget source="Title" render="Label" position="center,160" size="600,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget source="list" render="Listbox" position="340,210" size="320,300" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" transparent="1" selectionPixmap="MetropolisHD/buttons/sel.png">
 			<convert type="TemplatedMultiContent">
 			{
 				"template": [MultiContentEntryText(pos=(65, 10), size=(275, 40), font=0, flags=RT_HALIGN_LEFT, text=0),
@@ -2447,8 +2447,8 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 			}
 			</convert>
 		</widget>
-		<eLabel text="Ecm info" halign="center" position="735,120" size="210,35" font="Regular;26" foregroundColor="yellow" backgroundColor="podloga"/>
-		<widget name="status" position="675,160" size="320,440" font="Regular;20" halign="left" backgroundColor="podloga"/>
+		<eLabel text="Ecm info" halign="center" position="670,200" size="270,35" font="Regular;26" foregroundColor="yellow" backgroundColor="podloga"/>
+		<widget name="status" position="670,240" size="270,280" font="Regular;18" halign="left" backgroundColor="podloga"/>
 	</screen>
 
 	<screen name="ConfigEdit" position="0,0" size="1280,720" title="SoftCam path configuration" flags="wfNoBorder" backgroundColor="transparent">
