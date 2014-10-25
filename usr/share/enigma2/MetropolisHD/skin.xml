@@ -1247,28 +1247,30 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget name="footer" position="center,570" size="700,25" font="Regular;22" halign="center" backgroundColor="podloga"/>
 	</screen>
 
-	<screen name="ServiceScan" position="340,134" size="600,502" backgroundColor="podloga">
-		<widget source="FrontendInfo" render="Pixmap" pixmap="MetropolisHD/icons/scan-s.png" position="15,15" size="64,64" transparent="1" alphatest="on">
+	<screen name="ServiceScan" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MidleScreen_RG_Template"/>
+		<eLabel text="Service scan" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget source="FrontendInfo" render="Pixmap" pixmap="MetropolisHD/icons/scan-s.png" position="330,120" size="64,64" zPosition="2" transparent="1" alphatest="on">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">0,0</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="FrontendInfo" render="Pixmap" pixmap="MetropolisHD/icons/scan-c.png" position="15,15" size="64,64" transparent="1" alphatest="on">
+		<widget source="FrontendInfo" render="Pixmap" pixmap="MetropolisHD/icons/scan-c.png" position="330,120" size="64,64" zPosition="2" transparent="1" alphatest="on">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">1,1</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="FrontendInfo" render="Pixmap" pixmap="MetropolisHD/icons/scan-t.png" position="15,15" size="64,64" transparent="1" alphatest="on">
+		<widget source="FrontendInfo" render="Pixmap" pixmap="MetropolisHD/icons/scan-t.png" position="330,120" size="64,64" zPosition="2" transparent="1" alphatest="on">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">2,2</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget name="network" position="100,25" size="430,25" font="Regular;22" backgroundColor="podloga"/>
-		<widget name="transponder" position="100,55" size="430,25" font="Regular;22" backgroundColor="podloga"/>
-		<widget name="scan_state" position="20,105" size="560,25" zPosition="2" font="Regular;22" backgroundColor="podloga"/>
-		<widget name="pass" position="20,105" size="560,25" font="Regular;22" backgroundColor="podloga"/>
-		<widget name="scan_progress" position="20,140" size="560,20" pixmap="MetropolisHD/window/progress_big.png" borderWidth="1" borderColor="uncccccc"/>
-		<widget name="servicelist" position="20,175" size="560,300" selectionDisabled="1" transparent="1"/>
+		<widget name="network" position="400,130" size="300,25" font="Regular;22" backgroundColor="podloga"/>
+		<widget name="transponder" position="400,160" size="300,25" font="Regular;22" backgroundColor="podloga"/>
+		<widget name="scan_state" position="center,210" size="560,25" zPosition="2" font="Regular;22" backgroundColor="podloga"/>
+		<widget name="pass" position="center,210" size="560,25" font="Regular;22" backgroundColor="podloga"/>
+		<widget name="scan_progress" position="center,245" size="560,20" pixmap="MetropolisHD/window/progress_big.png" borderWidth="1" borderColor="uncccccc"/>
+		<widget name="servicelist" position="center,280" size="560,328" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" backgroundColor="transpBlack" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
 	</screen>
 
 	<screen name="Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
