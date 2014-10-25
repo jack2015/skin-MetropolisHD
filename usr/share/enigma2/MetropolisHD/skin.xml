@@ -1275,10 +1275,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
 	<screen name="Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGS_Template"/>
-		<eLabel text="Setup" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Setup" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<eLabel name="Line" position="center,526" size="716,1" backgroundColor="un666666"/>
-		<widget name="config" position="center,115" size="722,400" zPosition="2" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" backgroundColor="transpBlack" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
-		<widget name="description" position="center,530" size="722,80" zPosition="2" font="Regular;22" valign="top" backgroundColor="podloga"/>
+		<widget name="config" position="center,115" size="722,400" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" backgroundColor="transpBlack" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
+		<widget name="description" position="center,530" size="722,80" font="Regular;22" valign="top" backgroundColor="podloga"/>
 	</screen>
 
 	<screen name="SimpleChannelSelection" position="90,100" size="1100,560" backgroundColor="podloga">
