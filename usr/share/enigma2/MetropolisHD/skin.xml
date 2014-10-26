@@ -702,7 +702,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count> 7 and 2 or 3)))
 		<panel name="Big2PanelsSecondPanelTemplate"/>
 		<eLabel text="EPG selection" position="68,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<eLabel name="EPG" position="867,565" size="75,22" text="EPG" font="Replacement;20" halign="center" transparent="0" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
-		<widget name="list" position="75,115" size="722,490" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="transpBlack" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
+		<widget name="list" position="75,115" size="722,476" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="transpBlack" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
 		<widget source="Event" render="Label" position="849,133" size="348,348" font="Regular;20" backgroundColor="podloga" halign="center" valign="top" foregroundColor="un21e2e2e2">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
