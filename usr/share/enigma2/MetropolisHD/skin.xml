@@ -2136,9 +2136,9 @@ MultiContentEntryText(pos = (550, 3), size = (70, 24), font=1, flags = RT_HALIGN
 		<widget source="IFtext" render="Label" position="330,150" size="140,25" font="Regular;22" backgroundColor="podloga"/>
 		<widget source="IF" render="Label" position="470,150" size="473,25" font="Regular;22" backgroundColor="podloga"/>
 		<widget name="menulist" position="330,200" size="615,200" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>
-		<widget source="description" render="Label" position="330,410" size="615,150" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget source="Statustext" render="Label" position="329,570" size="200,30" font="Regular;24" backgroundColor="podloga"/>
-		<widget name="statuspic" position="512,575" size="15,16" pixmaps="MetropolisHD/buttons/button_green.png,MetropolisHD/buttons/button_green_off.png" transparent="1" alphatest="on"/>
+		<widget source="description" render="Label" position="center,460" size="725,100" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="Statustext" render="Label" position="329,570" size="100,30" font="Regular;24" halign="right" backgroundColor="podloga"/>
+		<widget name="statuspic" position="440,575" size="15,16" pixmaps="MetropolisHD/buttons/button_green.png,MetropolisHD/buttons/button_green_off.png" transparent="1" alphatest="on"/>
 	</screen>
 
 	<screen name="NameserverSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
