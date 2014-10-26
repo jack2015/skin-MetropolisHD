@@ -2208,8 +2208,8 @@ MultiContentEntryPixmapAlphaTest(pos = (63, 46), size = (15, 16), png = 4), # in
 
 	<screen name="NetworkBrowser" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGYBS_Template"/>
-		<eLabel text="Network Neighbourhood" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<widget source="list" render="Listbox" position="center,150" size="631,300" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1">
+		<widget source="Title" render="Label" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget source="list" render="Listbox" position="center,150" size="631,400" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1">
 			<convert type="TemplatedMultiContent">
 {"template": [
 MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 1), # index 1 is the expandable/expanded/verticalline icon
@@ -2224,21 +2224,19 @@ MultiContentEntryPixmapAlphaTest(pos = (110, 6), size = (48, 48), png = 6), # in
 }
 			</convert>
 		</widget>
-		<widget source="infotext" render="Label" position="center,480" size="631,30" font="Regular;21" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="infotext" render="Label" position="center,570" size="680,40" font="Regular;22" halign="center" backgroundColor="podloga"/>
 	</screen>
 
-	<screen name="ScanIP" position="90,100" size="1100,560">
-		<eLabel position="0,518" size="1100,2" backgroundColor="grey"/>
-		<widget name="key_red" position="279,520" size="178,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget name="key_green" position="457,520" size="178,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget name="key_yellow" position="636,520" size="178,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<eLabel name="Red" position="279,555" size="178,1" foregroundColor="red" backgroundColor="red"/>
-		<eLabel name="Green" position="457,555" size="178,1" foregroundColor="green" backgroundColor="green"/>
-		<eLabel name="Yellow" position="635,555" size="178,1" foregroundColor="yellow" backgroundColor="yellow"/>
-		<widget name="config" position="20,50" size="1060,25" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png"/>
+	<screen name="ScanIP" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MidleScreen_RGYS_Template"/>
+		<widget source="Title" render="Label" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget name="config" position="center,120" size="700,400" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png"/>
 	</screen>
-	<screen name="UserManager" position="90,100" size="1100,560">
-		<widget source="config" render="Listbox" position="10,20" size="750,420" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png">
+
+	<screen name="UserManager" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MidleScreen_RYS_Template"/>
+		<panel name="AutoMountTemplate"/>
+		<widget source="config" render="Listbox" position="center,120" size="700,400" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png">
 			<convert type="TemplatedMultiContent">
 {"template": [
 MultiContentEntryText(pos = (80, 7), size = (650, 50), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
@@ -2249,39 +2247,20 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 }
 			</convert>
 		</widget>
-		<eLabel position="780,0" size="2,518" backgroundColor="grey"/>
-		<eLabel position="0,518" size="1100,2" backgroundColor="grey"/>
-		<widget source="introduction" render="Label" position="20,525" size="400,30" zPosition="10" font="Regular;24" halign="center"/>
-		<widget name="key_red" position="449,520" size="178,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget name="key_yellow" position="636,520" size="178,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<eLabel name="Red" position="449,555" size="178,1" foregroundColor="red" backgroundColor="red"/>
-		<eLabel name="Yellow" position="635,555" size="178,1" foregroundColor="yellow" backgroundColor="yellow"/>
 	</screen>
+
 	<screen name="UserDialog" position="90,100" size="1100,560">
-		<widget name="config" position="20,20" zPosition="1" size="740,300" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png"/>
-		<eLabel position="780,0" size="2,518" backgroundColor="grey"/>
-		<eLabel position="0,518" size="1100,2" backgroundColor="grey"/>
-		<widget source="introduction" render="Label" position="20,525" size="400,30" zPosition="10" font="Regular;24" halign="center"/>
-		<widget name="key_red" position="849,520" size="178,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<eLabel name="Red" position="849,555" size="178,1" foregroundColor="red" backgroundColor="red"/>
-		<widget name="VKeyIcon" pixmap="MetropolisHD/icons/vkey_icon.png" position="1020,450" zPosition="10" size="60,48" transparent="1" alphatest="off"/>
-		<widget name="HelpWindow" position="180,450" zPosition="1" size="1,1" transparent="1" alphatest="off"/>
+		<panel name="AutoMountConfigTemplate"/>
 	</screen>
-	<screen name="AutoMountEdit" position="90,100" size="1100,560">
-		<widget name="config" position="20,20" zPosition="1" size="740,300" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png"/>
-		<eLabel position="780,0" size="2,518" backgroundColor="grey"/>
-		<eLabel position="0,518" size="1100,2" backgroundColor="grey"/>
-		<widget name="key_red" position="849,520" size="178,35" zPosition="1" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<eLabel name="Red" position="849,555" size="178,1" foregroundColor="red" backgroundColor="red"/>
-		<widget source="introduction" render="Label" position="20,525" size="400,30" zPosition="10" font="Regular;24" halign="center"/>
-		<widget name="VKeyIcon" pixmap="MetropolisHD/icons/vkey_icon.png" position="1020,450" zPosition="10" size="60,48" transparent="1" alphatest="off"/>
-		<widget name="HelpWindow" position="180,450" zPosition="1" size="1,1" transparent="1" alphatest="off"/>
+
+	<screen name="AutoMountEdit" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="AutoMountConfigTemplate"/>
 	</screen>
 
 	<screen name="AutoMountManager" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RS_Template"/>
-		<eLabel text="Auto Mount Manager" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<widget source="config" render="Listbox" position="center,120" size="700,445" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" backgroundColor="background" transparent="1">
+		<panel name="AutoMountTemplate"/>
+		<widget source="config" render="Listbox" position="center,120" size="700,445" selectionPixmap="MetropolisHD/buttons/sel.png" backgroundColor="background" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (60, 5), size = (620, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
@@ -2293,16 +2272,15 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 				}
 			</convert>
 		</widget>
-		<widget source="introduction" render="Label" position="center,568" size="700,30" font="Regular;22" halign="center" backgroundColor="podloga"/>
 	</screen>
 
 	<screen name="AutoMountView" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RYS_Template"/>
-		<eLabel text="Mount View" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<widget source="legend1" render="Label" position="288,118" size="130,60" font="Regular;18" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget source="legend2" render="Label" position="center,118" size="400,60" font="Regular;20" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget source="legend3" render="Label" position="868,118" size="120,60" font="Regular;20" halign="center" valign="center" backgroundColor="podloga"/>
-		<eLabel position="center,195" size="700,2" backgroundColor="grey"/>
+		<eLabel text="Mounts management" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget source="legend1" render="Label" position="288,118" size="130,60" font="Regular;18" halign="center" valign="center" foregroundColor="yellow" backgroundColor="podloga"/>
+		<widget source="legend2" render="Label" position="center,118" size="400,60" font="Regular;20" halign="center" valign="center" foregroundColor="yellow" backgroundColor="podloga"/>
+		<widget source="legend3" render="Label" position="868,118" size="120,60" font="Regular;20" halign="center" valign="center" foregroundColor="yellow" backgroundColor="podloga"/>
+		<eLabel position="center,195" size="700,1" backgroundColor="un666666"/>
 		<widget source="config" render="Listbox" position="center,210" size="700,360" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
@@ -2318,7 +2296,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 				}
 			</convert>
 		</widget>
-		<widget source="introduction" render="Label" position="center,578" size="700,30" font="Regular;22" halign="center" backgroundColor="podloga"/>
+		<widget source="introduction" render="Label" position="center,570" size="680,40" font="Regular;22" halign="center" backgroundColor="podloga"/>
 	</screen>
 
 	<screen name="HarddiskSetup" position="340,134" size="600,502">

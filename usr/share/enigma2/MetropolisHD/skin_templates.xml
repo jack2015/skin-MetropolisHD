@@ -335,6 +335,19 @@
 		<widget name="slider" position="center,350" size="560,30"/>
 	</screen>
 
+	<screen name="AutoMountTemplate">
+		<widget source="Title" render="Label" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget source="introduction" render="Label" position="center,570" size="680,40" font="Regular;22" halign="center" backgroundColor="podloga"/>
+	</screen>
+
+	<screen name="AutoMountConfigTemplate">
+		<panel name="MidleScreen_RS_Template"/>
+		<panel name="AutoMountTemplate"/>
+		<widget name="config" position="center,120" size="700,400" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" backgroundColor="transpBlack" selectionPixmap="MetropolisHD/buttons/sel.png" transparent="1"/>		
+		<widget name="VKeyIcon" pixmap="MetropolisHD/buttons/key_text.png" position="310,570" zPosition="10" size="60,48" transparent="1" alphatest="on"/>
+		<widget name="HelpWindow" position="400,420" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
+	</screen>
+
 	<screen name="MinimalScreen_RGS_Template">
 		<panel name="MinimalScreenTemplate"/>
 		<panel name="ButtonTemplate_RGS_Minimal"/>
