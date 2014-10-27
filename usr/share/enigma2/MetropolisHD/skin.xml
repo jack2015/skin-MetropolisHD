@@ -378,7 +378,7 @@
 	<screen name="Volume" position="center,40" zPosition="10" size="349,41" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
 		<ePixmap pixmap="MetropolisHD/window/vol_back.png" position="1,0" size="346,39" alphatest="off" transparent="0"/>
 		<widget name="Volume" pixmap="MetropolisHD/window/vol.png" position="1,0" zPosition="1" size="346,39" transparent="1"/>
-		<widget source="global.CurrentTime" render="MetVolume" zPosition="2" position="1,1" size="346,38" font="Replacement;28" valign="center" halign="center" foregroundColor="white" backgroundColor="podloga" transparent="1"/>
+		<widget source="global.CurrentTime" render="MetVolume" zPosition="2" position="1,1" size="346,38" font="Replacement;28" valign="center" halign="center" backgroundColor="podloga" transparent="1"/>
 	</screen>
 
 	<screen name="Mute" position="67,50" size="64,64" backgroundColor="transparent" zPosition="10" flags="wfNoBorder" transparent="0">
@@ -975,7 +975,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<eLabel position="780,0" size="2,518" backgroundColor="grey"/>
 		<widget name="list" position="10,20" size="760,460" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" transparent="1"/>
 		<widget name="DescriptionBorder" position="0,0" size="0,0"/>
-		<widget source="Service" render="Label" position="790,30" size="300,50" font="Regular;24" halign="center" foregroundColor="white" backgroundColor="podloga">
+		<widget source="Service" render="Label" position="790,30" size="300,50" font="Regular;24" halign="center" backgroundColor="podloga">
 			<convert type="MovieInfo">RecordServiceName</convert>
 		</widget>
 		<widget source="Service" render="Label" position="790,90" size="300,48" font="Regular;22" halign="center" foregroundColor="uncccccc" backgroundColor="podloga">
@@ -1406,7 +1406,7 @@ MultiContentEntryText(pos=(145,0), size=(145, 20), text = 2, flags = RT_HALIGN_R
 		<widget source="session.CurrentService" render="Label" position="215,621" size="110,28" font="Regular;24" halign="right" valign="center" backgroundColor="transpBlack" transparent="1">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="620,595" size="200,30" font="Regular;24" zPosition="3" foregroundColor="white" backgroundColor="transpBlack" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="620,595" size="200,30" font="Regular;24" zPosition="3" backgroundColor="transpBlack" transparent="1">
 			<convert type="ServicePosition">Length</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="955,621" size="110,28" font="Regular;24" halign="left" valign="center" backgroundColor="transpBlack" transparent="1">
@@ -1742,7 +1742,7 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 58), size = (0, 0), png = 5), # index
 		<widget source="key_green" render="Label" position="607,54" size="178,35" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
 		<eLabel name="Red" position="388,89" size="178,1" foregroundColor="red" backgroundColor="red"/>
 		<eLabel name="Green" position="607,89" size="178,1" foregroundColor="green" backgroundColor="green"/>
-		<widget name="text" position="5,10" size="1150,25" font="Regular;22" foregroundColor="white"/>
+		<widget name="text" position="5,10" size="1150,25" font="Regular;22"/>
 	</screen>
 
 	<screen name="IPKGMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -1984,7 +1984,7 @@ MultiContentEntryText(pos = (0, 35), size = (740, 65), font=2, flags = RT_HALIGN
 }
 			</convert>
 		</widget>
-		<widget name="detailtext" position="350,225" size="730,280" zPosition="10" font="Regular;22" foregroundColor="white" backgroundColor="podloga"/>
+		<widget name="detailtext" position="350,225" size="730,280" zPosition="10" font="Regular;22" backgroundColor="podloga"/>
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey"/>
 		<widget name="key_red" position="455,526" size="178,35" font="Regular;24" halign="center" valign="center" backgroundColor="podloga"/>
 		<eLabel name="Red" position="455,560" size="178,1" foregroundColor="red" backgroundColor="red"/>
