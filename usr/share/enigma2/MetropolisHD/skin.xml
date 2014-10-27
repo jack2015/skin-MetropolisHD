@@ -14,49 +14,24 @@
 
 	<colors>
 		<color name="background" value="#25040f28"/>
-		<color name="background2" value="#00333333"/>
-		<color name="bgblue" value="#25003266"/>
 		<color name="black" value="#00000000"/>
 		<color name="blue" value="#000070eb"/>
-		<color name="dark" value="#15102748"/>
 		<color name="darkgrey" value="#00888888"/>
-		<color name="foreground" value="#00dddddd"/>
 		<color name="green" value="#00389416"/>
 		<color name="grey" value="#008f8f8f"/>
 		<color name="hellgreen" value="#2256c856"/>
-		<color name="metropolisTT" value="#ccffffff"/>
-		<color name="metropolisTTA" value="#dfffffff"/>
-		<color name="orange" value="#00ff6600"/>
 		<color name="podloga" value="#1b1b1b1b"/>
 		<color name="red" value="#00ff2525"/>
+		<color name="selection" value="#00494949"/>
 		<color name="transparent" value="#ffffffff"/>
-		<color name="transparent2" value="#ff000000"/>
 		<color name="transpBlack" value="#41000000"/>
 		<color name="transpGrey" value="#41444444"/>
-		<color name="transpWhite" value="#67ffffff"/>
-		<color name="transpyellow" value="#33bab329"/>
-		<color name="un11b7b7b7" value="#11b7b7b7"/>
-		<color name="un19000000" value="#19000000"/>
-		<color name="un1f671f" value="#001f671f"/>
-		<color name="un203658a4" value="#203658a4"/>
-		<color name="un2144557e" value="#2144557e"/>
 		<color name="un21e2e2e2" value="#21e2e2e2"/>
-		<color name="un25062748" value="#25062748"/>
-		<color name="un252b4247" value="#252b4247"/>
 		<color name="un254f7497" value="#254f7497"/>
 		<color name="un333333" value="#00333333"/>
-		<color name="un40f" value="#0000040f"/>
-		<color name="un4d5375" value="#004d5375"/>
 		<color name="un666666" value="#00666666"/>
-		<color name="un800000" value="#00800000"/>
-		<color name="un808888" value="#00808888"/>
-		<color name="un9f1313" value="#009f1313"/>
-		<color name="unaaaaaa" value="#00aaaaaa"/>
-		<color name="unb67a2" value="#000b67a2"/>
 		<color name="uncccccc" value="#00cccccc"/>
-		<color name="undedede" value="#00dedede"/>
 		<color name="unf23d21" value="#00f23d21"/>
-		<color name="unff0000" value="#00ff0000"/>
 		<color name="white" value="#00ffffff"/>
 		<color name="yellow" value="#00bab329"/>
 	</colors>
@@ -83,13 +58,13 @@
 		<color name="LabelForeground" color="white"/>
 		<color name="ListboxBackground" color="podloga"/>
 		<color name="ListboxForeground" color="white"/>
-		<color name="ListboxSelectedBackground" color="un333333"/>
+		<color name="ListboxSelectedBackground" color="selection"/>
 		<color name="ListboxSelectedForeground" color="white"/>
-		<color name="ListboxMarkedBackground" color="un203658a4"/>
-		<color name="ListboxMarkedForeground" color="unff0000"/>
-		<color name="ListboxMarkedAndSelectedBackground" color="black"/>
-		<color name="ListboxMarkedAndSelectedForeground" color="un800000"/>
-		<color name="WindowTitleForeground" color="white"/>
+		<color name="ListboxMarkedBackground" color="black"/>
+		<color name="ListboxMarkedForeground" color="red"/>
+		<color name="ListboxMarkedAndSelectedBackground" color="selection"/>
+		<color name="ListboxMarkedAndSelectedForeground" color="red"/>
+		<color name="WindowTitleForeground" color="hellgreen"/>
 		<color name="WindowTitleBackground" color="transpGrey"/>
 		<borderset name="bsWindow">
 			<pixmap pos="bpTopLeft" filename="MetropolisHD/window/bs_tl.png"/>
@@ -773,7 +748,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count> 7 and 2 or 3)))
 		<widget source="Event" render="Progress" position="106,573" zPosition="1" pixmap="MetropolisHD/window/progress.png" size="300,15" borderWidth="1" borderColor="uncccccc">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<widget source="Event" render="Label" position="473,440" size="750,160" font="Regular;18" foregroundColor="foreground" backgroundColor="podloga">
+		<widget source="Event" render="Label" position="473,440" size="750,160" font="Regular;18" backgroundColor="podloga">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<widget source="Event" render="Label" position="60,510" size="400,25" font="Regular;22" halign="center" backgroundColor="podloga">
@@ -1419,7 +1394,7 @@ MultiContentEntryText(pos=(145,0), size=(145, 20), text = 2, flags = RT_HALIGN_R
 }
 			</convert>
 		</widget>
-		<eLabel position="479,124" zPosition="3" size="696,367" backgroundColor="transparent2"/>
+		<eLabel position="479,124" zPosition="3" size="696,367" backgroundColor="transparent"/>
 		<widget name="Video" position="479,124" zPosition="-10" size="696,367"/>
 		<widget source="session.CurrentService" render="Label" position="450,510" size="790,30" zPosition="3" font="Regular;24" halign="center" valign="center" backgroundColor="podloga">
 			<convert type="ServiceName">Name</convert>
@@ -1428,7 +1403,7 @@ MultiContentEntryText(pos=(145,0), size=(145, 20), text = 2, flags = RT_HALIGN_R
 			<convert type="ServicePosition">Position,Detailed</convert>
 		</widget>
 		<ePixmap pixmap="MetropolisHD/window/mp_buttons.png" position="100,582" size="260,32" zPosition="1" alphatest="on" /-->
-		<widget name="Timeline" position="2,2" size="696,20" zPosition="3" backgroundColor="un808888" pointer="MetropolisHD/window/position_arrow.png:3,5" foregroundColor="black"/>
+		<widget name="Timeline" position="2,2" size="696,20" zPosition="3" backgroundColor="darkgrey" pointer="MetropolisHD/window/position_arrow.png:3,5" foregroundColor="black"/>
 		<!--eLabel text="OK = Menu" position="1059,615" size="140,22" zPosition="1" font="Regular;20" backgroundColor="podloga" /-->
 	</screen>
 
@@ -1530,7 +1505,7 @@ MultiContentEntryText(pos=(190,2), size=(80, 20), text = 2, flags = RT_HALIGN_CE
 }
 			</convert>
 		</widget>
-		<eLabel position="479,124" zPosition="3" size="696,367" backgroundColor="transparent2"/>
+		<eLabel position="479,124" zPosition="3" size="696,367" backgroundColor="transparent"/>
 		<widget name="Video" position="479,124" zPosition="-10" size="696,367"/>
 		<widget source="session.CurrentService" render="Label" position="450,510" size="790,30" font="Regular;24" halign="center" valign="center" backgroundColor="black" transparent="1">
 			<convert type="ServiceName">Name</convert>
@@ -1539,7 +1514,7 @@ MultiContentEntryText(pos=(190,2), size=(80, 20), text = 2, flags = RT_HALIGN_CE
 			<convert type="ServicePosition">Position,Detailed</convert>
 		</widget>
 		<ePixmap pixmap="MetropolisHD/window/mp_buttons.png" position="100,582" size="260,32" alphatest="on"/>
-		<widget name="Timeline" position="479,587" size="696,20" zPosition="3" backgroundColor="un808888" pointer="MetropolisHD/window/position_arrow.png:3,5" foregroundColor="black"/>
+		<widget name="Timeline" position="479,587" size="696,20" zPosition="3" backgroundColor="darkgrey" pointer="MetropolisHD/window/position_arrow.png:3,5" foregroundColor="black"/>
 		<eLabel text="OK = Menu" position="1060,630" size="140,22" font="Regular;20" backgroundColor="black" transparent="1"/>
 	</screen>
 	<screen name="TitleProperties" position="90,100" size="1100,560">
@@ -1885,7 +1860,7 @@ MultiContentEntryPixmapAlphaTest(pos = (0, 48), size = (550, 2), png = 3), # ind
 		<widget source="country" render="Label" position="740,524" size="180,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
 	</screen>
 
-	<screen name="MyTubePlayer" position="0,549" size="1280,155" backgroundColor="transparent2" flags="wfNoBorder">
+	<screen name="MyTubePlayer" position="0,549" size="1280,155" backgroundColor="transparent" flags="wfNoBorder">
 		<eLabel position="center,1" size="1100,140" zPosition="-3" borderWidth="1" borderColor="un666666" backgroundColor="podloga"/>
 		<ePixmap pixmap="MetropolisHD/window/back.png" position="272,5" size="745,40" alphatest="off" zPosition="-2" transparent="0"/>
 		<eLabel name="new eLabel" position="center,613" size="716,1" backgroundColor="un666666"/>
@@ -2202,7 +2177,7 @@ MultiContentEntryPixmapAlphaTest(pos = (63, 46), size = (15, 16), png = 4), # in
 		<eLabel position="395,520" size="520,1" backgroundColor="darkgrey"/>
 		<widget name="EditSettingsButton" position="760,527" size="160,40" zPosition="1" pixmaps="MetropolisHD/menu/select300_45black.png,MetropolisHD/buttons/sel.png" backgroundColor="transpGrey"/>
 		<widget name="EditSettings_Text" position="760,527" size="160,40" zPosition="2" font="Regular;22" halign="center" valign="center" foregroundColors="#ffffff,#ffffff,#ffffff" backgroundColor="podloga" transparent="1"/>
-		<widget name="InfoText" position="376,129" size="550,430" zPosition="3" font="Regular;22" halign="center" valign="center" backgroundColor="background2"/>
+		<widget name="InfoText" position="376,129" size="550,430" zPosition="3" font="Regular;22" halign="center" valign="center" backgroundColor="black"/>
 		<widget name="InfoTextBorder" position="366,119" size="570,450"/>
 	</screen>
 
