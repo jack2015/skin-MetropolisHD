@@ -38,7 +38,6 @@
 
 	<fonts>
 		<font filename="lcd.ttf" name="LCD" scale="100"/>
-		<font filename="Army_Regular_L.ttf" name="Army" scale="100"/>
 		<font filename="md_khmurabi_10.ttf" name="Replacement" scale="100" replacement="1"/>
 		<font filename="tuxtxt.ttf" name="Console" scale="100"/>
 		<font filename="DroidSans.ttf" name="Regular" scale="100"/>
