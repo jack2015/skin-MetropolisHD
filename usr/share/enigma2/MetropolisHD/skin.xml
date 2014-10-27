@@ -44,13 +44,6 @@
 		<font filename="OpenSans-Regular.ttf" name="OpenSans" scale="100"/>
 	</fonts>
 
-	<subtitles>
-		<sub name="Subtitle_TTX" font="Regular;38" foregroundColor="white" shadowColor="#40101010" shadowOffset="-3,-3"/>
-		<sub name="Subtitle_Regular" font="Regular;38" foregroundColor="white" shadowColor="#40101010" shadowOffset="-3,-3"/>
-		<sub name="Subtitle_Bold" font="Replacement;40" foregroundColor="white" shadowColor="#40101010" shadowOffset="-3,-3"/>
-		<sub name="Subtitle_Italic" font="Regular;38" foregroundColor="white" shadowColor="#40101010" shadowOffset="-3,-3"/>
-	</subtitles>
-
 	<windowstyle type="skinned" id="0">
 		<title offset="40,14" font="Replacement;26"/>
 		<color name="Background" color="podloga"/>
