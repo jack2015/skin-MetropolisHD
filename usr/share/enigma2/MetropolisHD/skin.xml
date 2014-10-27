@@ -68,10 +68,6 @@
 			<pixmap pos="bpBottom" filename="MetropolisHD/window/bs_b.png"/>
 			<pixmap pos="bpBottomRight" filename="MetropolisHD/window/bs_br.png"/>
 		</borderset>
-		<borderset name="bsListboxEntry">
-			<pixmap pos="bpTop" filename="MetropolisHD/window/h-white.png"/>
-			<pixmap pos="bpBottom" filename="MetropolisHD/window/h-white.png"/>
-		</borderset>
 	</windowstyle>
 
 	<windowstyle type="skinned" id="1">
