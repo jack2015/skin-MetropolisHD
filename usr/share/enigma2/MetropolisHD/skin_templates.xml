@@ -3,6 +3,115 @@
 
 	<!-- Templates -->
 
+	<screen name="InfoBarTemplate">
+		<ePixmap position="center,480" size="1273,250" pixmap="MetropolisHD/infobar/back.png" zPosition="-1" alphatest="off" transparent="0"/>
+		<eLabel text="AGC:" position="1037,641" size="50,22" font="Replacement;17" backgroundColor="transpGrey" transparent="1" foregroundColor="yellow" halign="right"/>
+		<widget source="session.FrontendStatus" render="Label" position="1092,641" size="50,22" font="Replacement;17" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
+			<convert type="FrontendInfo">AGC</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="center,485" size="500,50" font="OpenSans;30" backgroundColor="transpGrey" transparent="1" halign="center" foregroundColor="un21e2e2e2">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1028,560" size="140,55" font="Regular;45" valign="top" halign="right" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="70,645" size="300,37" font="Replacement;20" backgroundColor="transpGrey" halign="left" transparent="1" valign="top" foregroundColor="un21e2e2e2">
+			<convert type="ServiceName">Provider</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Picon" position="70,572" size="100,60" transparent="1" alphatest="blend">
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+		<ePixmap pixmap="MetropolisHD/infobar/icons_off.png" position="630,644" size="397,41" zPosition="1" alphatest="on" transparent="1"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/infobar/ico_sub_on.png" position="632,645" size="31,40" zPosition="2" alphatest="off">
+			<convert type="ServiceInfo">SubservicesAvailable</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" position="670,645" size="73,40" zPosition="2" pixmap="MetropolisHD/infobar/ico_hd_on.png" alphatest="off">
+			<convert type="ServiceInfo">IsHD</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/infobar/ico_dolby_on.png" position="751,645" size="73,40" zPosition="2" alphatest="off">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/infobar/ico_format_on.png" position="832,645" size="73,40" zPosition="2" alphatest="off">
+			<convert type="ServiceInfo">IsWidescreen</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/infobar/ico_txt_on.png" position="913,645" size="73,40" zPosition="2" alphatest="off">
+			<convert type="ServiceInfo">HasTelext</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/infobar/ico_crypt_on.png" position="994,645" size="31,40" zPosition="2" alphatest="off">
+			<convert type="ServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="session.RecordState" render="Pixmap" pixmap="MetropolisHD/infobar/ico_rec_on.png" position="586,645" size="38,38" zPosition="2" alphatest="on">
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Label" position="185,550" size="70,30" halign="right" font="OpenSans;20" foregroundColor="yellow" backgroundColor="transpGrey" transparent="1" valign="center">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Label" position="925,550" size="100,30" halign="right" font="OpenSans;20" foregroundColor="yellow" backgroundColor="transpGrey" transparent="1" valign="center">
+			<convert type="EventTime">Remaining</convert>
+			<convert type="RemainingToText">InMinutes</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Progress" pixmap="MetropolisHD/window/slider.png" position="190,587" size="832,6" zPosition="1" transparent="1">
+			<convert type="EventTime">Progress</convert>
+		</widget>
+		<widget source="session.Event_Next" render="Label" position="185,600" size="70,30" halign="right" font="OpenSans;20" foregroundColor="grey" backgroundColor="transpGrey" transparent="1">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="session.Event_Next" render="Label" position="343,600" size="597,40" halign="left" font="OpenSans;25" foregroundColor="grey" backgroundColor="transpGrey" transparent="1" valign="top">
+			<convert type="EventName">Name</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" font="Replacement;17" position="60,545" size="54,22" halign="right" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1" text="1920">
+			<convert type="ServiceInfo">VideoWidth</convert>
+		</widget>
+		<eLabel text="x" font="Replacement;17" position="115,545" size="13,22" halign="center" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1"/>
+		<widget source="session.CurrentService" render="Label" font="Replacement;17" position="130,545" size="54,22" halign="left" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1" text="1080">
+			<convert type="ServiceInfo">VideoHeight</convert>
+		</widget>
+		<eLabel text="BER:" position="1037,664" size="50,22" font="Replacement;17" backgroundColor="transpGrey" transparent="1" foregroundColor="yellow" halign="right"/>
+		<widget source="session.FrontendStatus" render="Label" position="1092,664" size="75,22" font="Replacement;17" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
+			<convert type="FrontendInfo">BER</convert>
+		</widget>
+		<widget source="session.FrontendStatus" render="Label" position="1092,617" size="50,22" font="Replacement;17" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
+			<convert type="FrontendInfo">SNRdB</convert>
+		</widget>
+		<eLabel text="SNR:" position="1037,617" size="50,22" font="Replacement;17" backgroundColor="transpGrey" transparent="1" foregroundColor="yellow" halign="right"/>
+		<widget source="session.Event_Now" render="Label" position="343,530" size="597,50" halign="left" font="OpenSans;30" foregroundColor="yellow" transparent="1" noWrap="1" backgroundColor="transpGrey" valign="bottom">
+			<convert type="EventName">Name</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Label" position="255,550" size="85,30" halign="left" font="OpenSans;20" foregroundColor="yellow" backgroundColor="transpGrey" transparent="1" valign="center">
+			<convert type="EventTime">EndTime</convert>
+			<convert type="ClockToText">Format:- %H:%M</convert>
+		</widget>
+		<widget source="session.Event_Next" render="Label" position="255,600" size="85,30" halign="left" font="OpenSans;20" foregroundColor="grey" backgroundColor="transpGrey" transparent="1">
+			<convert type="EventTime">EndTime</convert>
+			<convert type="ClockToText">Format:- %H:%M</convert>
+		</widget>
+		<eLabel name="new eLabel" position="190,589" size="832,2" backgroundColor="un666666"/>
+		<widget source="global.CurrentTime" render="Label" position="1035,533" size="186,30" font="OpenSans;20" valign="center" halign="center" backgroundColor="transpGrey" transparent="1" foregroundColor="hellgreen">
+			<convert type="ClockToText">Format:%e. %B</convert>
+		</widget>
+		<widget source="session.FrontendStatus" render="Progress" position="1140,623" pixmap="MetropolisHD/window/snr.png" size="98,10" borderWidth="1" borderColor="darkgrey" transparent="0">
+			<convert type="FrontendInfo">SNR</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1169,564" size="60,42" font="Regular;25" valign="top" halign="left" backgroundColor="un333333" transparent="1" foregroundColor="un21e2e2e2">
+			<convert type="ClockToText">Format::%S</convert>
+		</widget>
+		<widget source="session.FrontendStatus" render="Progress" position="1140,646" pixmap="MetropolisHD/window/snr.png" size="98,10" borderWidth="1" borderColor="darkgrey">
+			<convert type="FrontendInfo">AGC</convert>
+		</widget>
+		<widget source="session.Event_Next" render="Label" position="906,600" size="120,25" halign="right" font="Regular;20" foregroundColor="grey" backgroundColor="background" transparent="1">
+			<convert type="EventTime">Duration</convert>
+			<convert type="ClockToText">InMinutes</convert>
+		</widget>
+	</screen>
+
 	<screen name="ButtonTemplate_RGYB_BigLeft">
 		<eLabel name="Line" position="69,613" size="732,1" backgroundColor="un666666"/>
 		<widget name="key_red" position="69,614" size="180,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
