@@ -4,7 +4,7 @@
 	<!-- Templates -->
 
 	<screen name="InfoBarTemplate">
-		<ePixmap position="center,480" size="1273,250" pixmap="MetropolisHD/infobar/back.png" zPosition="-1" alphatest="off" transparent="0"/>
+		<ePixmap position="center,480" size="1273,250" pixmap="MetropolisHD/infobar/back.png" zPosition="-1" alphatest="off"/>
 		<eLabel text="AGC:" position="1037,641" size="50,22" font="Replacement;17" backgroundColor="transpGrey" transparent="1" foregroundColor="yellow" halign="right"/>
 		<widget source="session.FrontendStatus" render="Label" position="1092,641" size="50,22" font="Replacement;17" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
 			<convert type="FrontendInfo">AGC</convert>
@@ -97,7 +97,7 @@
 		<widget source="global.CurrentTime" render="Label" position="1035,533" size="186,30" font="OpenSans;20" valign="center" halign="center" backgroundColor="transpGrey" transparent="1" foregroundColor="hellgreen">
 			<convert type="ClockToText">Format:%e. %B</convert>
 		</widget>
-		<widget source="session.FrontendStatus" render="Progress" position="1140,623" pixmap="MetropolisHD/window/snr.png" size="98,10" borderWidth="1" borderColor="darkgrey" transparent="0">
+		<widget source="session.FrontendStatus" render="Progress" position="1140,623" pixmap="MetropolisHD/window/snr.png" size="98,10" borderWidth="1" borderColor="darkgrey">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="1169,564" size="60,42" font="Regular;25" valign="top" halign="left" backgroundColor="un333333" transparent="1" foregroundColor="un21e2e2e2">
@@ -327,13 +327,13 @@
 	<screen name="Big2PanelsTemplate">
 		<panel name="ButtonTemplate_RGYB_BigLeft"/>
 		<eLabel position="62,center" size="745,592" zPosition="-10" backgroundColor="podloga"/>
-		<ePixmap pixmap="MetropolisHD/window/back.png" position="68,68" size="737,40" alphatest="off" zPosition="-9" transparent="0"/>
+		<ePixmap pixmap="MetropolisHD/window/back.png" position="68,68" size="737,40" alphatest="off" zPosition="-9"/>
 		<eLabel name="Line" position="62,63" size="745,1" backgroundColor="un666666"/>
 		<eLabel name="Line" position="62,656" size="745,1" backgroundColor="un666666"/>
 		<eLabel name="Line" position="62,63" size="1,592" backgroundColor="un666666"/>
 		<eLabel name="Line" position="807,63" size="1,592" backgroundColor="un666666"/>
 		<eLabel position="842,center" size="362,592" zPosition="-10" backgroundColor="podloga"/>
-		<ePixmap pixmap="MetropolisHD/window/back.png" position="848,68" size="345,40" alphatest="off" zPosition="-9" transparent="0"/>
+		<ePixmap pixmap="MetropolisHD/window/back.png" position="848,68" size="345,40" alphatest="off" zPosition="-9"/>
 		<eLabel name="Line" position="842,63" size="362,1" backgroundColor="un666666"/>
 		<eLabel name="Line" position="842,656" size="362,1" backgroundColor="un666666"/>
 		<eLabel name="Line" position="842,63" size="1,592" backgroundColor="un666666"/>
@@ -366,13 +366,13 @@
 		<widget source="Service" render="Label" position="848,140" size="349,360" font="Regular;20" backgroundColor="podloga" halign="center">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
-		<eLabel name="Menu" position="867,565" size="75,22" text="Menu" font="Replacement;20" halign="center" transparent="0" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
-		<eLabel name="Exit" position="867,604" size="75,22" text="Exit" font="Replacement;20" halign="center" transparent="0" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
+		<eLabel name="Menu" position="867,565" size="75,22" text="Menu" font="Replacement;20" halign="center" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
+		<eLabel name="Exit" position="867,604" size="75,22" text="Exit" font="Replacement;20" halign="center" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
 	</screen>
 
 	<screen name="MenuTemplate">
 		<eLabel position="center,center" size="544,592" zPosition="-2" backgroundColor="podloga"/>
-		<ePixmap pixmap="MetropolisHD/window/back.png" position="380,71" size="526,42" alphatest="off" zPosition="-1" transparent="0"/>
+		<ePixmap pixmap="MetropolisHD/window/back.png" position="380,71" size="526,42" alphatest="off" zPosition="-1"/>
 		<eLabel name="Line" position="center,63" size="544,1" backgroundColor="un666666"/>
 		<eLabel name="Line" position="center,656" size="544,1" backgroundColor="un666666"/>
 		<eLabel name="Line" position="368,center" size="1,592" backgroundColor="un666666"/>
@@ -411,7 +411,7 @@
 
 	<screen name="MinimalScreenTemplate">
 		<eLabel position="center,center" size="620,420" zPosition="-10" backgroundColor="podloga"/>
-		<ePixmap pixmap="MetropolisHD/window/back.png" position="center,155" size="612,40" alphatest="off" zPosition="-9" transparent="0"/>
+		<ePixmap pixmap="MetropolisHD/window/back.png" position="center,155" size="612,40" alphatest="off" zPosition="-9"/>
 		<eLabel name="Line" position="center,150" size="620,1" backgroundColor="un666666"/>
 		<eLabel name="Line" position="center,570" size="620,1" backgroundColor="un666666"/>
 		<eLabel name="Line" position="330,center" size="1,420" backgroundColor="un666666"/>
@@ -420,7 +420,7 @@
 
 	<screen name="MidleScreenTemplate">
 		<eLabel position="center,center" size="745,592" zPosition="-10" backgroundColor="podloga"/>
-		<ePixmap pixmap="MetropolisHD/window/back.png" position="center,68" size="737,40" alphatest="off" zPosition="-9" transparent="0"/>
+		<ePixmap pixmap="MetropolisHD/window/back.png" position="center,68" size="737,40" alphatest="off" zPosition="-9"/>
 		<eLabel name="Line" position="center,63" size="745,1" backgroundColor="un666666"/>
 		<eLabel name="Line" position="center,656" size="745,1" backgroundColor="un666666"/>
 		<eLabel name="Line" position="267,center" size="1,592" backgroundColor="un666666"/>
@@ -429,7 +429,7 @@
 
 	<screen name="BigScreenTemplate">
 		<eLabel position="center,30" size="1178,627" zPosition="-10" backgroundColor="podloga"/>
-		<ePixmap pixmap="MetropolisHD/window/back.png" position="center,33" size="1170,40" alphatest="off" zPosition="-9" transparent="0"/>
+		<ePixmap pixmap="MetropolisHD/window/back.png" position="center,33" size="1170,40" alphatest="off" zPosition="-9"/>
 		<eLabel name="Line" position="center,30" size="1178,1" backgroundColor="un666666"/>
 		<eLabel name="Line" position="center,656" size="1178,1" backgroundColor="un666666"/>
 		<eLabel name="Line" position="51,30" size="1,627" backgroundColor="un666666"/>
