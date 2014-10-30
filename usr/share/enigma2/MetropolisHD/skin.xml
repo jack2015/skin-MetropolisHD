@@ -842,10 +842,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget name="list" position="302,106" size="670,504" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" transparent="1" itemHeight="50"/>
 	</screen>
 
-	<screen name="PluginDownloadBrowser" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="Downloadable plugins">
+	<screen name="PluginDownloadBrowser" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MinimalScreenTemplate"/>
-		<widget name="text" position="center,158" size="600,34" halign="center" font="Replacement;24" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<widget name="list" position="center,200" size="580,350" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" transparent="1" itemHeight="50"/>
+		<widget source="Title" render="Label" position="center,158" size="600,34" halign="center" font="Replacement;24" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget name="text" position="center,200" size="580,50" zPosition="2" font="Regular;24" backgroundColor="podloga"/>
+		<widget name="list" position="center,200" size="580,350" zPosition="3" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" itemHeight="50"/>
 	</screen>
 
 	<screen name="RadioInfoBar" position="82,480" size="1116,192" backgroundColor="podloga">
