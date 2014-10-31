@@ -540,7 +540,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count> 7 and 2 or 3)))
 		<widget name="timeline_now" position="60,145" zPosition="2" size="15,446" pixmap="MetropolisHD/window/timeline-now.png" alphatest="on"/>
 	</screen>
 
-	<screen name="GraphMultiEpgSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="Electronic Program Guide Setup">
+	<screen name="GraphMultiEpgSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_CancelOK_Template"/>
 		<widget source="Title" render="Label" position="center,72" size="740,50" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="config" position="center,120" size="700,490" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
@@ -1095,7 +1095,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget name="timerlist" position="center,130" size="611,463" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
 	</screen>
 
-	<screen name="TimerEntry" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent"  title="Timer entry">
+	<screen name="TimerEntry" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreenTemplate"/>
 		<panel name="ButtonTemplate_Midle_RGYB"/>
 		<widget source="Title" render="Label" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
@@ -1409,7 +1409,7 @@ MultiContentEntryText(pos = (470, 20), size = (48, 20), font = 1, flags = RT_HAL
 		<widget name="filelist" position="570,center" size="420,465" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
 	</screen>
 
-	<screen name="Pic_Exif" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" title="Info">
+	<screen name="Pic_Exif" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RS_Template"/>
 		<widget source="Title" render="Label" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget source="menu" render="Listbox" position="center,center" size="705,425" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionDisabled="1">
@@ -2177,7 +2177,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		<widget name="status" position="670,240" size="270,280" font="Regular;18" halign="left" backgroundColor="podloga"/>
 	</screen>
 
-	<screen name="ConfigEdit" position="0,0" size="1280,720" title="SoftCam path configuration" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="ConfigEdit" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MinimalScreen_RGS_Template"/>
 		<widget source="Title" render="Label" position="center,155" size="600,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="config" position="center,210" size="580,200" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
