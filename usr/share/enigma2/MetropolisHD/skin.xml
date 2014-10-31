@@ -13,7 +13,6 @@
 	</output>
 
 	<colors>
-		<color name="background" value="#25040f28"/>
 		<color name="black" value="#00000000"/>
 		<color name="blue" value="#000070eb"/>
 		<color name="darkgrey" value="#00888888"/>
@@ -658,7 +657,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget source="global.CurrentTime" render="Label" position="1120,9" size="75,27" font="Replacement;18" backgroundColor="podloga" transparent="1" foregroundColor="unf23d21">
 			<convert type="ClockToText">Format::%S</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="center,12" size="668,24" font="Replacement;22" backgroundColor="background" transparent="1" halign="center" foregroundColor="green">
+		<widget source="session.CurrentService" render="Label" position="center,12" size="668,24" font="Replacement;22" backgroundColor="podloga" transparent="1" halign="center" foregroundColor="green">
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<ePixmap pixmap="MetropolisHD/chnsel/ico_dolby_off.png" position="108,14" size="65,24" zPosition="1" alphatest="on"/>
@@ -1326,7 +1325,7 @@ MultiContentEntryText(pos=(190,2), size=(80, 20), text = 2, flags = RT_HALIGN_CE
 		<widget source="global.CurrentTime" render="Label" position="1120,9" size="75,27" font="Replacement;18" backgroundColor="podloga" transparent="1" foregroundColor="unf23d21">
 			<convert type="ClockToText">Format::%S</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="center,12" size="668,24" font="Replacement;22" backgroundColor="background" transparent="1" halign="center" foregroundColor="green">
+		<widget source="session.CurrentService" render="Label" position="center,12" size="668,24" font="Replacement;22" backgroundColor="podloga" transparent="1" halign="center" foregroundColor="green">
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/chnsel/ico_dolby_on.png" position="108,14" size="65,24" zPosition="2" alphatest="on">

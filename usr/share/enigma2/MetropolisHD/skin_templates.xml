@@ -106,7 +106,7 @@
 		<widget source="session.FrontendStatus" render="Progress" position="1140,646" pixmap="MetropolisHD/window/snr.png" size="98,10" borderWidth="1" borderColor="darkgrey">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="906,600" size="120,25" halign="right" font="Regular;20" foregroundColor="grey" backgroundColor="background" transparent="1">
+		<widget source="session.Event_Next" render="Label" position="906,600" size="120,25" halign="right" font="Regular;20" foregroundColor="grey" backgroundColor="transpGrey" transparent="1">
 			<convert type="EventTime">Duration</convert>
 			<convert type="ClockToText">InMinutes</convert>
 		</widget>
