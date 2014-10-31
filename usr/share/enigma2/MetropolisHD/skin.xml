@@ -78,34 +78,34 @@
 
 	<screen name="SecondInfoBar" flags="wfNoBorder" position="0,0" size="1280,720" backgroundColor="transparent">
 		<panel name="InfoBarTemplate"/>
-		<eLabel position="50,35" size="1180,90" zPosition="-1" backgroundColor="transpGrey"/>
-		<widget source="session.CurrentService" render="Label" position="65,45" size="1100,70" backgroundColor="transpGrey" foregroundColor="un21e2e2e2" font="Regular;20">
+		<eLabel position="50,35" size="1180,90" zPosition="-1" backgroundColor="podloga"/>
+		<widget source="session.CurrentService" render="Label" position="65,45" size="1100,70" foregroundColor="un21e2e2e2" font="Regular;20">
 			<convert type="PliExtraInfo">All</convert>
 		</widget>
-		<eLabel position="50,135" size="585,300" zPosition="-1" backgroundColor="transpGrey"/>
-		<widget source="session.Event_Now" render="Label" position="65,140" size="560,24" backgroundColor="transpGrey" foregroundColor="yellow" noWrap="1" font="Regular;22">
+		<eLabel position="50,135" size="585,300" zPosition="-1" backgroundColor="podloga"/>
+		<widget source="session.Event_Now" render="Label" position="65,140" size="560,24" foregroundColor="yellow" noWrap="1" font="Regular;22">
 			<convert type="EventName">NameNow</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="65,170" size="450,22" font="Regular;20" foregroundColor="hellgreen" backgroundColor="transpGrey">
+		<widget source="session.Event_Now" render="Label" position="65,170" size="450,22" font="Regular;20" foregroundColor="hellgreen">
 			<convert type="EventName">Genre</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="420,170" size="200,22" font="Regular;20" halign="right" foregroundColor="hellgreen" backgroundColor="transpGrey">
+		<widget source="session.Event_Now" render="Label" position="420,170" size="200,22" font="Regular;20" halign="right" foregroundColor="hellgreen">
 			<convert type="EventName">SmallRating</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="65,200" size="560,225" font="Regular;20" halign="block" backgroundColor="transpGrey" foregroundColor="un21e2e2e2">
+		<widget source="session.Event_Now" render="Label" position="65,200" size="560,225" font="Regular;20" halign="block" foregroundColor="un21e2e2e2">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
-		<eLabel position="645,135" size="585,300" zPosition="-1" backgroundColor="transpGrey"/>
-		<widget source="session.Event_Next" render="Label" position="660,140" size="560,26" backgroundColor="transpGrey" foregroundColor="yellow" noWrap="1" font="Regular;22">
+		<eLabel position="645,135" size="585,300" zPosition="-1" backgroundColor="podloga"/>
+		<widget source="session.Event_Next" render="Label" position="660,140" size="560,26" foregroundColor="yellow" noWrap="1" font="Regular;22">
 			<convert type="EventName">NameNext</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="660,170" size="450,22" font="Regular;20" foregroundColor="hellgreen" backgroundColor="transpGrey">
+		<widget source="session.Event_Next" render="Label" position="660,170" size="450,22" font="Regular;20" foregroundColor="hellgreen">
 			<convert type="EventName">Genre</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="1015,170" size="200,22" font="Regular;20" halign="right" foregroundColor="hellgreen" backgroundColor="transpGrey">
+		<widget source="session.Event_Next" render="Label" position="1015,170" size="200,22" font="Regular;20" halign="right" foregroundColor="hellgreen">
 			<convert type="EventName">SmallRating</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="660,200" size="560,225" font="Regular;20" halign="block" backgroundColor="transpGrey" foregroundColor="un21e2e2e2">
+		<widget source="session.Event_Next" render="Label" position="660,200" size="560,225" font="Regular;20" halign="block" foregroundColor="un21e2e2e2">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 	</screen>
