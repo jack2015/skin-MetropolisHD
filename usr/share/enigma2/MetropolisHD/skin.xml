@@ -1146,10 +1146,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<ePixmap pixmap="skin_default/overscan.png" position="0,0" size="1280,720" zPosition="1" alphatest="off"/>
 	</screen>
 
-	<screen name="Menu" position="340,134" size="600,502">
-		<eLabel text="Main menu" position="10,10" size="580,35" font="Regular;27" halign="center"/>
-		<eLabel position="10,50" size="580,2" backgroundColor="grey"/>
-		<widget source="menu" render="Listbox" position="10,55" size="580,450" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png">
+	<screen name="Menu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MinimalScreenTemplate"/>
+		<eLabel text="Menu" position="center,157" size="600,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget source="menu" render="Listbox" position="center,210" size="580,350" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png">
 			<convert type="StringList"/>
 		</widget>
 	</screen>
