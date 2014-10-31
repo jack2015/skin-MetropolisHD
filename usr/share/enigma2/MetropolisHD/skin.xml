@@ -635,11 +635,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	</screen>
 
 	<screen name="MessageBox" position="center,center" size="800,10" title="Message">
-		<panel name= "MessageBoxTemplate"/>
+		<panel name="MessageBoxTemplate"/>
 	</screen>
 
 	<screen name="MessageBoxSimple" position="center,center" size="800,10" title="Message">
-		<panel name= "MessageBoxTemplate"/>
+		<panel name="MessageBoxTemplate"/>
 	</screen>
 
 	<screen name="MoviePlayer" position="center,549" size="1280,155" backgroundColor="transparent" flags="wfNoBorder">
