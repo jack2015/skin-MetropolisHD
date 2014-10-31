@@ -12,10 +12,10 @@
 		<widget source="session.CurrentService" render="Label" position="center,485" size="500,50" font="OpenSans;30" backgroundColor="transpGrey" transparent="1" halign="center" foregroundColor="un21e2e2e2">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1028,560" size="140,55" font="Regular;45" valign="top" halign="right" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
+		<widget source="global.CurrentTime" render="Label" position="1028,560" size="140,55" font="Regular;45" halign="right" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="70,645" size="300,37" font="Replacement;20" backgroundColor="transpGrey" halign="left" transparent="1" valign="top" foregroundColor="un21e2e2e2">
+		<widget source="session.CurrentService" render="Label" position="70,645" size="300,37" font="Replacement;20" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
 			<convert type="ServiceName">Provider</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Picon" position="70,572" size="100,60" transparent="1" alphatest="blend">
@@ -64,14 +64,14 @@
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="343,600" size="597,40" halign="left" font="OpenSans;25" foregroundColor="grey" backgroundColor="transpGrey" transparent="1" valign="top">
+		<widget source="session.Event_Next" render="Label" position="343,600" size="597,40" font="OpenSans;25" foregroundColor="grey" backgroundColor="transpGrey" transparent="1">
 			<convert type="EventName">Name</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" font="Replacement;17" position="60,545" size="54,22" halign="right" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1" text="1920">
 			<convert type="ServiceInfo">VideoWidth</convert>
 		</widget>
 		<eLabel text="x" font="Replacement;17" position="115,545" size="13,22" halign="center" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1"/>
-		<widget source="session.CurrentService" render="Label" font="Replacement;17" position="130,545" size="54,22" halign="left" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1" text="1080">
+		<widget source="session.CurrentService" render="Label" font="Replacement;17" position="130,545" size="54,22" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1" text="1080">
 			<convert type="ServiceInfo">VideoHeight</convert>
 		</widget>
 		<eLabel text="BER:" position="1037,664" size="50,22" font="Replacement;17" backgroundColor="transpGrey" transparent="1" foregroundColor="yellow" halign="right"/>
@@ -82,14 +82,14 @@
 			<convert type="FrontendInfo">SNRdB</convert>
 		</widget>
 		<eLabel text="SNR:" position="1037,617" size="50,22" font="Replacement;17" backgroundColor="transpGrey" transparent="1" foregroundColor="yellow" halign="right"/>
-		<widget source="session.Event_Now" render="Label" position="343,530" size="597,50" halign="left" font="OpenSans;30" foregroundColor="yellow" transparent="1" noWrap="1" backgroundColor="transpGrey" valign="bottom">
+		<widget source="session.Event_Now" render="Label" position="343,530" size="597,50" font="OpenSans;30" foregroundColor="yellow" transparent="1" noWrap="1" backgroundColor="transpGrey" valign="bottom">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="255,550" size="85,30" halign="left" font="OpenSans;20" foregroundColor="yellow" backgroundColor="transpGrey" transparent="1" valign="center">
+		<widget source="session.Event_Now" render="Label" position="255,550" size="85,30" font="OpenSans;20" foregroundColor="yellow" backgroundColor="transpGrey" transparent="1" valign="center">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="255,600" size="85,30" halign="left" font="OpenSans;20" foregroundColor="grey" backgroundColor="transpGrey" transparent="1">
+		<widget source="session.Event_Next" render="Label" position="255,600" size="85,30" font="OpenSans;20" foregroundColor="grey" backgroundColor="transpGrey" transparent="1">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
@@ -100,7 +100,7 @@
 		<widget source="session.FrontendStatus" render="Progress" position="1140,623" pixmap="MetropolisHD/window/snr.png" size="98,10" borderWidth="1" borderColor="darkgrey">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1169,564" size="60,42" font="Regular;25" valign="top" halign="left" backgroundColor="un333333" transparent="1" foregroundColor="un21e2e2e2">
+		<widget source="global.CurrentTime" render="Label" position="1169,564" size="60,42" font="Regular;25" backgroundColor="un333333" transparent="1" foregroundColor="un21e2e2e2">
 			<convert type="ClockToText">Format::%S</convert>
 		</widget>
 		<widget source="session.FrontendStatus" render="Progress" position="1140,646" pixmap="MetropolisHD/window/snr.png" size="98,10" borderWidth="1" borderColor="darkgrey">
@@ -349,7 +349,7 @@
 		<widget source="global.CurrentTime" render="Label" position="972,550" size="139,83" font="Regular;80" valign="center" halign="right" backgroundColor="podloga" text="22" foregroundColor="un21e2e2e2">
 			<convert type="ClockToText">Format:%H</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1109,559" size="90,46" font="Regular;45" valign="center" halign="left" backgroundColor="podloga" foregroundColor="un21e2e2e2">
+		<widget source="global.CurrentTime" render="Label" position="1109,559" size="90,46" font="Regular;45" valign="center" backgroundColor="podloga" foregroundColor="un21e2e2e2">
 			<convert type="ClockToText">Format::%M</convert>
 		</widget>
 	</screen>
@@ -395,7 +395,7 @@
 		<widget source="global.CurrentTime" render="Label" position="958,140" size="139,83" font="Regular;80" valign="center" halign="right" backgroundColor="podloga" text="22" foregroundColor="un21e2e2e2">
 			<convert type="ClockToText">Format:%H</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1096,150" size="141,46" font="Regular;45" valign="center" halign="left" backgroundColor="podloga" foregroundColor="un21e2e2e2">
+		<widget source="global.CurrentTime" render="Label" position="1096,150" size="141,46" font="Regular;45" valign="center" backgroundColor="podloga" foregroundColor="un21e2e2e2">
 			<convert type="ClockToText">Format::%M</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="920,218" size="321,29" font="Replacement;22" halign="center" backgroundColor="podloga" foregroundColor="green">
