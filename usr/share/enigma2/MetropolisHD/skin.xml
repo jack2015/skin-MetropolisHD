@@ -1174,35 +1174,39 @@ MultiContentEntryText(pos=(145,0), size=(145, 20), text = 2, flags = RT_HALIGN_R
 	</screen>
 
 	<screen name="MediaPlayer" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<eLabel text="Media player" position="center,72" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<ePixmap position="center,center" size="1188,592" zPosition="-3" pixmap="MetropolisHD/window/podloga.png" borderWidth="1" borderColor="un666666"/>
-		<ePixmap pixmap="MetropolisHD/window/back.png" position="center,68" size="1180,40" alphatest="off" zPosition="-2"/>
-		<ePixmap pixmap="MetropolisHD/buttons/sel.png" position="1120,489" size="83,33" alphatest="off" zPosition="1" borderWidth="1" borderColor="un666666"/>
-		<ePixmap position="70,120" size="560,360" pixmap="MetropolisHD/window/mp.png" zPosition="-1" alphatest="on"/>
-		<eLabel text="Filelist" position="75,129" size="500,32" zPosition="5" font="Regular;28" halign="center" foregroundColor="blue" backgroundColor="black" transparent="1"/>
-		<widget name="filelist" position="80,170" size="540,285" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" zPosition="2"/>
-		<ePixmap position="650,120" size="560,360" pixmap="MetropolisHD/window/mp.png" zPosition="-1" alphatest="on"/>
-		<eLabel text="Playlist" position="655,129" size="500,32" zPosition="5" font="Regular;28" halign="center" foregroundColor="blue" backgroundColor="black" transparent="1"/>
-		<widget name="playlist" position="660,170" size="540,285" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionDisabled="1" zPosition="2"/>
-		<widget name="title" position="300,475" size="680,30" font="Regular;26" valign="top" transparent="1" backgroundColor="transpBlack"/>
-		<eLabel position="290,515" size="700,2" backgroundColor="white"/>
-		<widget name="artisttext" position="300,525" size="100,25" font="Regular;20" valign="top" backgroundColor="transpBlack" transparent="1"/>
-		<widget name="artist" position="410,525" size="580,25" font="Regular;22" valign="top" backgroundColor="transpBlack" transparent="1"/>
-		<widget name="albumtext" position="300,555" size="100,25" font="Regular;22" valign="top" backgroundColor="transpBlack" transparent="1"/>
-		<widget name="album" position="410,555" size="580,25" font="Regular;22" valign="top" backgroundColor="transpBlack" transparent="1"/>
-		<widget name="yeartext" position="300,585" size="100,25" font="Regular;22" valign="top" backgroundColor="transpBlack" transparent="1"/>
-		<widget name="year" position="410,585" size="580,25" font="Regular;22" valign="top" backgroundColor="transpBlack" transparent="1"/>
+		<panel name="BigScreenTemplate"/>
+		<eLabel text="Media player" position="center,37" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel name="Line" position="70,82" size="560,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="70,470" size="560,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="70,82" size="1,388" backgroundColor="un666666"/>
+		<eLabel name="Line" position="630,82" size="1,388" backgroundColor="un666666"/>
+		<eLabel text="Filelist" position="75,85" size="550,32" zPosition="5" font="Regular;28" halign="center" foregroundColor="blue"/>
+		<widget name="filelist" position="80,120" size="540,345" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
+		<eLabel name="Line" position="650,82" size="560,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="650,470" size="560,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="650,82" size="1,388" backgroundColor="un666666"/>
+		<eLabel name="Line" position="1210,82" size="1,388" backgroundColor="un666666"/>
+		<eLabel text="Playlist" position="655,85" size="550,32" zPosition="5" font="Regular;28" halign="center" foregroundColor="blue"/>
+		<widget name="playlist" position="660,120" size="540,345" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionDisabled="1"/>
+		<widget name="title" position="300,480" size="680,30" font="Regular;26" foregroundColor="yellow" halign="center"/>
+		<eLabel name="Line" position="290,515" size="700,1" backgroundColor="un666666"/>
+		<widget name="artisttext" position="300,525" size="100,25" font="Regular;20" halign="right"/>
+		<widget name="artist" position="410,525" size="580,25" font="Regular;22" foregroundColor="yellow"/>
+		<widget name="albumtext" position="300,555" size="100,25" font="Regular;22" halign="right"/>
+		<widget name="album" position="410,555" size="580,25" font="Regular;22" foregroundColor="yellow"/>
+		<widget name="yeartext" position="300,585" size="100,25" font="Regular;22" halign="right"/>
+		<widget name="year" position="410,585" size="200,25" font="Regular;22" foregroundColor="yellow"/>
 		<widget name="coverArt" pixmap="MetropolisHD/icons/multimedia.png" position="130,490" size="128,128" transparent="1" alphatest="on"/>
 		<widget name="repeat" position="1140,580" size="50,30" pixmaps="MetropolisHD/icons/repeat_off.png,MetropolisHD/icons/repeat_on.png" transparent="1" alphatest="on"/>
 		<ePixmap position="center,621" size="600,22" pixmap="MetropolisHD/window/mpslider.png" zPosition="3" alphatest="off"/>
-		<widget name="PositionGauge" position="365,625" size="552,14" zPosition="4" pointer="MetropolisHD/window/pointer.png:13,3" backgroundColor="transpBlack"/>
-		<widget source="session.CurrentService" render="Label" position="215,621" size="110,28" font="Regular;24" halign="right" valign="center" backgroundColor="transpBlack" transparent="1">
+		<widget name="PositionGauge" position="365,625" size="552,14" zPosition="4" pointer="MetropolisHD/window/pointer.png:13,3" backgroundColor="podloga"/>
+		<widget source="session.CurrentService" render="Label" position="215,621" size="110,28" font="Regular;24" halign="right" valign="center">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="620,595" size="200,30" font="Regular;24" zPosition="3" backgroundColor="transpBlack" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="620,595" size="200,30" font="Regular;24" zPosition="3">
 			<convert type="ServicePosition">Length</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="955,621" size="110,28" font="Regular;24" halign="left" valign="center" backgroundColor="transpBlack" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="955,621" size="110,28" font="Regular;24" halign="left" valign="center">
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
 		<ePixmap position="1040,618" zPosition="1" size="260,32" pixmap="MetropolisHD/window/mp_buttons.png" alphatest="on"/>
@@ -1211,7 +1215,8 @@ MultiContentEntryText(pos=(145,0), size=(145, 20), text = 2, flags = RT_HALIGN_R
 		<widget name="genre" position="0,0" size="0,0"/>
 		<widget name="currenttext" position="0,0" size="0,0"/>
 		<widget name="titletext" position="0,0" size="0,0"/>
-		<eLabel name="new eLabel" position="1124,495" size="75,22" text="Menu" font="Replacement;20" halign="center" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
+		<eLabel name="Button" position="1120,489" size="83,33" zPosition="1" backgroundColor="selection" />
+		<eLabel name="Menu" position="1124,495" size="75,22" text="Menu" font="Replacement;20" halign="center" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
 	</screen>
 
 	<screen name="MediaPlayerSettings" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
