@@ -2207,7 +2207,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 	<screen name="EPGSearchSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MinimalScreen_RGS_Template"/>
 		<widget source="Title" render="Label" position="center,155" size="600,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<widget name="config" position="center,210" size="580,450" halign="left" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
+		<widget name="config" position="center,210" size="580,240" halign="left" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
 		<eLabel name="Line" position="center,456" size="600,1" backgroundColor="un666666"/>
 		<widget source="help" render="Label" position="center,460" size="580,60" font="Regular;22" valign="top" backgroundColor="podloga"/>
 	</screen>
