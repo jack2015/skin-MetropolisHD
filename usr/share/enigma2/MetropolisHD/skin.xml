@@ -1213,6 +1213,13 @@ MultiContentEntryText(pos=(145,0), size=(145, 20), text = 2, flags = RT_HALIGN_R
 		<widget name="titletext" position="0,0" size="0,0"/>
 		<eLabel name="new eLabel" position="1124,495" size="75,22" text="Menu" font="Replacement;20" halign="center" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
 	</screen>
+
+	<screen name="MediaPlayerSettings" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MidleScreen_RGS_Template"/>
+		<widget source="Title" render="Label" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget name="config" position="center,115" size="722,480" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
+	</screen>
+
 	<screen name="CDInfo" position="90,100" size="1100,560">
 		<widget source="info" render="Label" position="20,20" size="260,200" font="Regular;21"/>
 		<widget source="info2" render="Label" position="20,240" size="260,260" font="Regular;21"/>
