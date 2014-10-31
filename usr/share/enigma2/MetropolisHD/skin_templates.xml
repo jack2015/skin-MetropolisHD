@@ -93,7 +93,7 @@
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
-		<eLabel name="new eLabel" position="190,589" size="832,2" backgroundColor="un666666"/>
+		<eLabel name="Line" position="190,589" size="832,2" backgroundColor="un666666"/>
 		<widget source="global.CurrentTime" render="Label" position="1035,533" size="186,30" font="OpenSans;20" valign="center" halign="center" backgroundColor="transpGrey" transparent="1" foregroundColor="hellgreen">
 			<convert type="ClockToText">Format:%e. %B</convert>
 		</widget>
@@ -114,10 +114,10 @@
 
 	<screen name="ButtonTemplate_RGYB_BigLeft">
 		<eLabel name="Line" position="69,613" size="732,1" backgroundColor="un666666"/>
-		<widget name="key_red" position="69,614" size="180,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget name="key_green" position="253,614" size="180,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget name="key_yellow" position="437,614" size="180,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget name="key_blue" position="621,614" size="180,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_red" position="69,614" size="180,33" font="Regular;22" halign="center" valign="center"/>
+		<widget name="key_green" position="253,614" size="180,33" font="Regular;22" halign="center" valign="center"/>
+		<widget name="key_yellow" position="437,614" size="180,33" font="Regular;22" halign="center" valign="center"/>
+		<widget name="key_blue" position="621,614" size="180,33" font="Regular;22" halign="center" valign="center"/>
 		<eLabel name="Red" position="69,648" size="180,1" foregroundColor="red" backgroundColor="red"/>
 		<eLabel name="Green" position="253,648" size="180,1" foregroundColor="green" backgroundColor="green"/>
 		<eLabel name="Yellow" position="437,648" size="180,1" foregroundColor="yellow" backgroundColor="yellow"/>
@@ -134,18 +134,18 @@
 
 	<screen name="ButtonTemplate_RGYB">
 		<panel name="ButtonTemplate_Midle_RGYB"/>
-		<widget name="key_red" position="280,614" size="180,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget name="key_green" position="460,614" size="180,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget name="key_yellow" position="640,614" size="180,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget name="key_blue" position="820,614" size="180,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_red" position="280,614" size="180,33" font="Regular;22" halign="center" valign="center"/>
+		<widget name="key_green" position="460,614" size="180,33" font="Regular;22" halign="center" valign="center"/>
+		<widget name="key_yellow" position="640,614" size="180,33" font="Regular;22" halign="center" valign="center"/>
+		<widget name="key_blue" position="820,614" size="180,33" font="Regular;22" halign="center" valign="center"/>
 	</screen>
 
 	<screen name="ButtonTemplate_RGYBS">
 		<panel name="ButtonTemplate_Midle_RGYB"/>
-		<widget source="key_red" render="Label" position="280,614" size="180,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget source="key_green" render="Label" position="460,614" size="180,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget source="key_yellow" render="Label" position="640,614" size="180,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget source="key_blue" render="Label" position="820,614" size="180,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="key_red" render="Label" position="280,614" size="180,33" font="Regular;22" halign="center" valign="center"/>
+		<widget source="key_green" render="Label" position="460,614" size="180,33" font="Regular;22" halign="center" valign="center"/>
+		<widget source="key_yellow" render="Label" position="640,614" size="180,33" font="Regular;22" halign="center" valign="center"/>
+		<widget source="key_blue" render="Label" position="820,614" size="180,33" font="Regular;22" halign="center" valign="center"/>
 	</screen>
 
 	<screen name="ButtonTemplate_Small_RGYB">
@@ -158,18 +158,18 @@
 
 	<screen name="ButtonTemplate_RGYB_Small">
 		<panel name="ButtonTemplate_Small_RGYB"/>
-		<widget name="key_red" position="10,398" size="160,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget name="key_green" position="170,398" size="160,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget name="key_yellow" position="330,398" size="160,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget name="key_blue" position="490,398" size="160,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_red" position="10,398" size="160,33" font="Regular;22" halign="center" valign="center"/>
+		<widget name="key_green" position="170,398" size="160,33" font="Regular;22" halign="center" valign="center"/>
+		<widget name="key_yellow" position="330,398" size="160,33" font="Regular;22" halign="center" valign="center"/>
+		<widget name="key_blue" position="490,398" size="160,33" font="Regular;22" halign="center" valign="center"/>
 	</screen>
 
 	<screen name="ButtonTemplate_RGYB_Big">
 		<eLabel name="Line" position="190,513" size="720,1" backgroundColor="un666666"/>
-		<widget name="key_red" position="190,514" size="180,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget name="key_green" position="370,514" size="180,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget name="key_yellow" position="center,514" size="180,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget name="key_blue" position="730,514" size="180,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_red" position="190,514" size="180,33" font="Regular;22" halign="center" valign="center"/>
+		<widget name="key_green" position="370,514" size="180,33" font="Regular;22" halign="center" valign="center"/>
+		<widget name="key_yellow" position="center,514" size="180,33" font="Regular;22" halign="center" valign="center"/>
+		<widget name="key_blue" position="730,514" size="180,33" font="Regular;22" halign="center" valign="center"/>
 		<eLabel name="Red" position="195,548" size="170,1" foregroundColor="red" backgroundColor="red"/>
 		<eLabel name="Green" position="375,548" size="170,1" foregroundColor="green" backgroundColor="green"/>
 		<eLabel name="Yellow" position="center,548" size="170,1" foregroundColor="yellow" backgroundColor="yellow"/>
@@ -177,9 +177,9 @@
 	</screen>
 
 	<screen name="ButtonTemplate_RGYS">
-		<widget source="key_red" render="Label" position="380,614" size="180,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget source="key_green" render="Label" position="center,614" size="180,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget source="key_yellow" render="Label" position="730,614" size="180,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="key_red" render="Label" position="380,614" size="180,33" font="Regular;22" halign="center" valign="center"/>
+		<widget source="key_green" render="Label" position="center,614" size="180,33" font="Regular;22" halign="center" valign="center"/>
+		<widget source="key_yellow" render="Label" position="730,614" size="180,33" font="Regular;22" halign="center" valign="center"/>
 		<eLabel name="Red" position="390,648" size="160,1" foregroundColor="red" backgroundColor="red"/>
 		<eLabel name="Green" position="center,648" size="160,1" foregroundColor="green" backgroundColor="green"/>
 		<eLabel name="Yellow" position="740,648" size="160,1" foregroundColor="yellow" backgroundColor="yellow"/>
@@ -192,7 +192,7 @@
 
 	<screen name="ButtonTemplate_RS_Midle">
 		<panel name="ButtonTemplate_Midle_R"/>
-		<widget source="key_red" render="Label" position="center,614" size="250,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="key_red" render="Label" position="center,614" size="250,33" font="Regular;22" halign="center" valign="center"/>
 	</screen>
 
 	<screen name="ButtonTemplate_Minimal_RG">
@@ -224,22 +224,22 @@
 
 	<screen name="ButtonTemplate_RGS_Minimal">
 		<panel name="ButtonTemplate_Minimal_RG"/>
-		<widget source="key_red" render="Label" position="380,524" size="250,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget source="key_green" render="Label" position="650,524" size="250,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="key_red" render="Label" position="380,524" size="250,33" font="Regular;22" halign="center" valign="center"/>
+		<widget source="key_green" render="Label" position="650,524" size="250,33" font="Regular;22" halign="center" valign="center"/>
 	</screen>
 
 	<screen name="ButtonTemplate_RGYBS_Minimal">
 		<panel name="ButtonTemplate_Minimal_RGYB"/>
-		<widget source="key_red" render="Label" position="331,524" size="152,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget source="key_green" render="Label" position="486,524" size="153,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget source="key_yellow" render="Label" position="641,524" size="153,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget source="key_blue" render="Label" position="796,524" size="153,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="key_red" render="Label" position="331,524" size="152,33" font="Regular;22" halign="center" valign="center"/>
+		<widget source="key_green" render="Label" position="486,524" size="153,33" font="Regular;22" halign="center" valign="center"/>
+		<widget source="key_yellow" render="Label" position="641,524" size="153,33" font="Regular;22" halign="center" valign="center"/>
+		<widget source="key_blue" render="Label" position="796,524" size="153,33" font="Regular;22" halign="center" valign="center"/>
 	</screen>
 
 	<screen name="ButtonTemplate_YB_Minimal">
 		<panel name="ButtonTemplate_Minimal_YB"/>
-		<widget name="key_yellow" position="380,524" size="250,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget name="key_blue" position="650,524" size="250,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_yellow" position="380,524" size="250,33" font="Regular;22" halign="center" valign="center"/>
+		<widget name="key_blue" position="650,524" size="250,33" font="Regular;22" halign="center" valign="center"/>
 	</screen>
 
 	<screen name="ButtonTemplate_Midle_RG">
@@ -262,38 +262,38 @@
 
 	<screen name="ButtonTemplate_CancelOK_Midle">
 		<panel name="ButtonTemplate_Midle_RG"/>
-		<widget name="canceltext" position="380,614" size="250,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget name="oktext" position="650,614" size="250,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="canceltext" position="380,614" size="250,33" font="Regular;22" halign="center" valign="center"/>
+		<widget name="oktext" position="650,614" size="250,33" font="Regular;22" halign="center" valign="center"/>
 	</screen>
 
 	<screen name="ButtonTemplate_CancelScan_Midle">
 		<panel name="ButtonTemplate_Midle_RG"/>
-		<eLabel text="Cancel" position="380,614" size="250,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<eLabel text="Scan" position="650,614" size="250,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<eLabel text="Cancel" position="380,614" size="250,33" font="Regular;22" halign="center" valign="center"/>
+		<eLabel text="Scan" position="650,614" size="250,33" font="Regular;22" halign="center" valign="center"/>
 	</screen>
 
 	<screen name="ButtonTemplate_RG_Midle">
 		<panel name="ButtonTemplate_Midle_RG"/>
-		<widget name="key_red" position="380,614" size="250,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget name="key_green" position="650,614" size="250,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_red" position="380,614" size="250,33" font="Regular;22" halign="center" valign="center"/>
+		<widget name="key_green" position="650,614" size="250,33" font="Regular;22" halign="center" valign="center"/>
 	</screen>
 
 	<screen name="ButtonTemplate_RGS_Midle">
 		<panel name="ButtonTemplate_Midle_RG"/>
-		<widget source="key_red" render="Label" position="380,614" size="250,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget source="key_green" render="Label" position="650,614" size="250,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="key_red" render="Label" position="380,614" size="250,33" font="Regular;22" halign="center" valign="center"/>
+		<widget source="key_green" render="Label" position="650,614" size="250,33" font="Regular;22" halign="center" valign="center"/>
 	</screen>
 
 	<screen name="ButtonTemplate_RBS_Midle">
 		<panel name="ButtonTemplate_Midle_RB"/>
-		<widget source="key_red" render="Label" position="380,614" size="250,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget source="key_blue" render="Label" position="650,614" size="250,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="key_red" render="Label" position="380,614" size="250,33" font="Regular;22" halign="center" valign="center"/>
+		<widget source="key_blue" render="Label" position="650,614" size="250,33" font="Regular;22" halign="center" valign="center"/>
 	</screen>
 
 	<screen name="ButtonTemplate_RYS_Midle">
 		<panel name="ButtonTemplate_Midle_RY"/>
-		<widget source="key_red" render="Label" position="380,614" size="250,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget source="key_yellow" render="Label" position="650,614" size="250,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="key_red" render="Label" position="380,614" size="250,33" font="Regular;22" halign="center" valign="center"/>
+		<widget source="key_yellow" render="Label" position="650,614" size="250,33" font="Regular;22" halign="center" valign="center"/>
 	</screen>
 
 	<screen name="ButtonTemplate_Small_RG">
@@ -304,21 +304,21 @@
 
 	<screen name="ButtonTemplate_RG_Small">
 		<panel name="ButtonTemplate_Small_RG"/>
-		<widget name="key_red" position="40,461" size="250,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget name="key_green" position="310,461" size="250,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget name="key_red" position="40,461" size="250,33" font="Regular;22" halign="center" valign="center"/>
+		<widget name="key_green" position="310,461" size="250,33" font="Regular;22" halign="center" valign="center"/>
 	</screen>
 
 	<screen name="ButtonTemplate_RGS_Small">
 		<panel name="ButtonTemplate_Small_RG"/>
-		<widget source="key_red" render="Label" position="40,461" size="250,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget source="key_green" render="Label" position="310,461" size="250,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="key_red" render="Label" position="40,461" size="250,33" font="Regular;22" halign="center" valign="center"/>
+		<widget source="key_green" render="Label" position="310,461" size="250,33" font="Regular;22" halign="center" valign="center"/>
 	</screen>
 
 	<screen name="ButtonTemplate_RGBS_Small">
 		<eLabel name="Line" position="20,460" size="560,1" backgroundColor="un666666"/>
-		<widget source="key_red" render="Label" position="35,461" size="170,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget source="key_green" render="Label" position="center,461" size="170,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget source="key_blue" render="Label" position="395,461" size="170,33" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="key_red" render="Label" position="35,461" size="170,33" font="Regular;22" halign="center" valign="center"/>
+		<widget source="key_green" render="Label" position="center,461" size="170,33" font="Regular;22" halign="center" valign="center"/>
+		<widget source="key_blue" render="Label" position="395,461" size="170,33" font="Regular;22" halign="center" valign="center"/>
 		<eLabel name="Red" position="30,495" size="180,1" foregroundColor="red" backgroundColor="red"/>
 		<eLabel name="Green" position="center,495" size="180,1" foregroundColor="green" backgroundColor="green"/>
 		<eLabel name="Blue" position="390,495" size="180,1" foregroundColor="green" backgroundColor="green"/>
@@ -343,13 +343,13 @@
 	<screen name="Big2PanelsSecondPanelTemplate">
 		<eLabel name="Button" position="862,560" size="83,33" backgroundColor="selection"/>
 		<eLabel name="Button" position="862,599" size="83,33" backgroundColor="selection"/>
-		<widget source="global.CurrentTime" render="Label" position="861,525" size="321,29" font="Replacement;22" halign="center" backgroundColor="podloga" foregroundColor="green">
+		<widget source="global.CurrentTime" render="Label" position="861,525" size="321,29" font="Replacement;22" halign="center" foregroundColor="green">
 			<convert type="ClockToText">Format: %A - %d.%m.%Y</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="972,550" size="139,83" font="Regular;80" valign="center" halign="right" backgroundColor="podloga" text="22" foregroundColor="un21e2e2e2">
+		<widget source="global.CurrentTime" render="Label" position="972,550" size="139,83" font="Regular;80" valign="center" halign="right" text="22" foregroundColor="un21e2e2e2">
 			<convert type="ClockToText">Format:%H</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1109,559" size="90,46" font="Regular;45" valign="center" backgroundColor="podloga" foregroundColor="un21e2e2e2">
+		<widget source="global.CurrentTime" render="Label" position="1109,559" size="90,46" font="Regular;45" valign="center" foregroundColor="un21e2e2e2">
 			<convert type="ClockToText">Format::%M</convert>
 		</widget>
 	</screen>
@@ -359,11 +359,11 @@
 		<panel name="Big2PanelsSecondPanelTemplate"/>
 		<widget name="list" position="76,119" size="713,450" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
 		<eLabel name="Description" position="847,71" size="352,30" text="Description" font="Replacement;22" foregroundColor="yellow" backgroundColor="podloga" halign="center" transparent="1"/>
-		<widget source="Service" render="Label" position="847,107" size="352,28" font="Regular;24" halign="center" backgroundColor="podloga">
+		<widget source="Service" render="Label" position="847,107" size="352,28" font="Regular;24" halign="center">
 			<convert type="ServiceTime">Duration</convert>
 			<convert type="ClockToText">AsLength</convert>
 		</widget>
-		<widget source="Service" render="Label" position="848,140" size="349,360" font="Regular;20" backgroundColor="podloga" halign="center">
+		<widget source="Service" render="Label" position="848,140" size="349,360" font="Regular;20" halign="center">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<eLabel name="Menu" position="867,565" size="75,22" text="Menu" font="Replacement;20" halign="center" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
@@ -389,16 +389,16 @@
 				"itemHeight":55 }
 			</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="380,611" size="522,34" font="Replacement;22" backgroundColor="podloga" halign="center" foregroundColor="yellow" valign="center">
+		<widget source="session.CurrentService" render="Label" position="380,611" size="522,34" font="Replacement;22" halign="center" foregroundColor="yellow" valign="center">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="958,140" size="139,83" font="Regular;80" valign="center" halign="right" backgroundColor="podloga" text="22" foregroundColor="un21e2e2e2">
+		<widget source="global.CurrentTime" render="Label" position="958,140" size="139,83" font="Regular;80" valign="center" halign="right" text="22" foregroundColor="un21e2e2e2">
 			<convert type="ClockToText">Format:%H</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1096,150" size="141,46" font="Regular;45" valign="center" backgroundColor="podloga" foregroundColor="un21e2e2e2">
+		<widget source="global.CurrentTime" render="Label" position="1096,150" size="141,46" font="Regular;45" valign="center" foregroundColor="un21e2e2e2">
 			<convert type="ClockToText">Format::%M</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="920,218" size="321,29" font="Replacement;22" halign="center" backgroundColor="podloga" foregroundColor="green">
+		<widget source="global.CurrentTime" render="Label" position="920,218" size="321,29" font="Replacement;22" halign="center" foregroundColor="green">
 			<convert type="ClockToText">Format: %A - %d.%m.%Y</convert>
 		</widget>
 	</screen>
@@ -439,14 +439,14 @@
 	<screen name="IpkgTemplate">
 		<panel name="MinimalScreenTemplate"/>
 		<widget name="activityslider" position="center,210" size="550,5"/>
-		<widget source="package" render="Label" position="center,240" size="540,20" font="Regular;18" halign="center" valign="center" backgroundColor="podloga"/>
-		<widget source="status" render="Label" position="center,270" size="540,45" font="Regular;20" halign="center" valign="center" backgroundColor="podloga"/>
+		<widget source="package" render="Label" position="center,240" size="540,20" font="Regular;18" halign="center" valign="center"/>
+		<widget source="status" render="Label" position="center,270" size="540,45" font="Regular;20" halign="center" valign="center"/>
 		<widget name="slider" position="center,350" size="560,30"/>
 	</screen>
 
 	<screen name="AutoMountTemplate">
 		<widget source="Title" render="Label" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<widget source="introduction" render="Label" position="center,570" size="680,40" font="Regular;22" halign="center" backgroundColor="podloga"/>
+		<widget source="introduction" render="Label" position="center,570" size="680,40" font="Regular;22" halign="center"/>
 	</screen>
 
 	<screen name="AutoMountConfigTemplate">
