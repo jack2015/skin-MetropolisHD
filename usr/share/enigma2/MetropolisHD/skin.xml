@@ -78,10 +78,18 @@
 	<screen name="SecondInfoBar" flags="wfNoBorder" position="0,0" size="1280,720" backgroundColor="transparent">
 		<panel name="InfoBarTemplate"/>
 		<eLabel position="50,35" size="1180,90" zPosition="-1" backgroundColor="podloga"/>
+		<eLabel name="Line" position="50,35" size="1180,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="50,125" size="1180,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="50,35" size="1,90" backgroundColor="un666666"/>
+		<eLabel name="Line" position="1230,35" size="1,90" backgroundColor="un666666"/>
 		<widget source="session.CurrentService" render="Label" position="65,45" size="1100,70" foregroundColor="un21e2e2e2" font="Regular;20">
 			<convert type="PliExtraInfo">All</convert>
 		</widget>
 		<eLabel position="50,135" size="585,300" zPosition="-1" backgroundColor="podloga"/>
+		<eLabel name="Line" position="50,135" size="585,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="50,435" size="585,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="50,135" size="1,300" backgroundColor="un666666"/>
+		<eLabel name="Line" position="635,135" size="1,300" backgroundColor="un666666"/>
 		<widget source="session.Event_Now" render="Label" position="65,140" size="560,24" foregroundColor="yellow" noWrap="1" font="Regular;22">
 			<convert type="EventName">NameNow</convert>
 		</widget>
@@ -95,6 +103,10 @@
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<eLabel position="645,135" size="585,300" zPosition="-1" backgroundColor="podloga"/>
+		<eLabel name="Line" position="645,135" size="585,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="645,435" size="585,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="645,135" size="1,300" backgroundColor="un666666"/>
+		<eLabel name="Line" position="1230,135" size="1,300" backgroundColor="un666666"/>
 		<widget source="session.Event_Next" render="Label" position="660,140" size="560,26" foregroundColor="yellow" noWrap="1" font="Regular;22">
 			<convert type="EventName">NameNext</convert>
 		</widget>
