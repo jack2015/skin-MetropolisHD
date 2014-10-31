@@ -110,7 +110,7 @@
 		</widget>
 	</screen>
 
-	<screen name="ChannelSelection" position="0,0" size="1280,720" title="Channel Selection" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="ChannelSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="Big2PanelsTemplate"/>
 		<widget source="Title" render="Label" position="67,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="background" transparent="1"/>
 		<widget source="global.CurrentTime" render="Label" position="953,599" size="139,39" font="Replacement;36" halign="center" backgroundColor="podloga" foregroundColor="un21e2e2e2" valign="center">
@@ -484,7 +484,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count> 7 and 2 or 3)))
 		<widget name="duration" position="1062,115" size="101,25" font="Replacement;22" halign="left" backgroundColor="podloga" foregroundColor="red"/>
 	</screen>
 
-	<screen name="GraphMultiEPG" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent"  title="Electronic Program Guide">
+	<screen name="GraphMultiEPG" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigScreen_RGYB_Template"/>
 		<widget source="Title" render="Label" position="center,36" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="timeline_text" position="center,85" size="1160,26"/>
@@ -2164,7 +2164,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		<widget source="fixed_address" render="Label" position="center,570" size="550,40" font="Regular;22" halign="center" valign="center" backgroundColor="podloga"/>
 	</screen>
 
-	<screen name="AltCamManager" position="0,0" size="1280,720" title="SoftCam manager" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="AltCamManager" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MinimalScreen_RGYBS_Template"/>
 		<widget source="Title" render="Label" position="center,160" size="600,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget source="list" render="Listbox" position="340,210" size="320,300" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png">
@@ -2188,7 +2188,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		<widget name="config" position="center,210" size="580,200" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
 	</screen>
 
-	<screen name="TV3PlayMenu" position="0,0" size="1280,720" title="TV3 Play" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="TV3PlayMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGS_Template"/>
 		<widget source="Title" render="Label" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget source="list" render="Listbox" position="285,120" size="400,450" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png">
@@ -2204,7 +2204,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		<widget name="cur" position="700,270" size="295,330" halign="center" font="Regular;26" foregroundColor="yellow" backgroundColor="podloga"/>
 	</screen>
 
-	<screen name="EPGSearchSetup" position="0,0" size="1280,720" title="EPGSearch Setup" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="EPGSearchSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MinimalScreen_RGS_Template"/>
 		<widget source="Title" render="Label" position="center,155" size="600,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="config" position="center,210" size="580,450" halign="left" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
