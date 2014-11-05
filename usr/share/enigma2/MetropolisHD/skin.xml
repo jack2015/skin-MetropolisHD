@@ -347,10 +347,13 @@
 		<widget source="TranslationInfo" render="Label" position="center,250" size="580,300" font="Regular;22" halign="center"/>
 	</screen>
 
+	<screen name="ServiceInfoSimple" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="ServiceInfoTemplate"/>
+	</screen>
+
 	<screen name="ServiceInfo" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="MidleScreen_RGYB_Template"/>
-		<eLabel text="Service info" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<widget name="infolist" position="center,115" size="680,491" selectionDisabled="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" itemHeight="31"/>
+		<panel name="ServiceInfoTemplate"/>
+		<panel name="ButtonTemplate_RGYB"/>
 	</screen>
 
 	<screen name="AudioSelection" position="center,center" size="680,330" backgroundColor="back"  title="Audio">

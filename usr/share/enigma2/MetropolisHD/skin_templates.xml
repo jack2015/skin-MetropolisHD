@@ -112,6 +112,12 @@
 		</widget>
 	</screen>
 
+	<screen name="ServiceInfoTemplate">
+		<panel name="MidleScreenTemplate"/>
+		<eLabel text="Service info" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget name="infolist" position="center,115" size="680,491" selectionDisabled="1" itemHeight="31"/>
+	</screen>
+
 	<screen name="ButtonTemplate_RGYB_BigLeft">
 		<eLabel name="Line" position="69,613" size="732,1" backgroundColor="un666666"/>
 		<widget name="key_red" position="69,614" size="180,33" font="Regular;22" halign="center" valign="center"/>
