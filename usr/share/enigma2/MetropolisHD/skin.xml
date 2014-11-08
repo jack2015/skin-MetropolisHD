@@ -1508,23 +1508,23 @@ MultiContentEntryText(pos = (360, 7), size = (215, 30), flags = RT_HALIGN_LEFT, 
 	<screen name="UpdatePluginMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RS_Template"/>
 		<eLabel text="Software management" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<widget source="menu" render="Listbox" position="center,114" size="631,325" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" backgroundPixmap="MetropolisHD/menu/bg40x40.png">
+		<widget source="menu" render="Listbox" position="center,114" size="631,325" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png">
 			<convert type="TemplatedMultiContent">
 {"template": [
-MultiContentEntryText(pos = (70, 9), size = (425, 30), flags = RT_HALIGN_LEFT, text = 1), # index 0 is the MenuText,
+MultiContentEntryText(pos = (70, 9), size = (631, 30), flags = RT_HALIGN_LEFT, text = 1), # index 0 is the MenuText,
 ],
 "fonts": [gFont("Regular", 22)],
 "itemHeight": 45
 }
 			</convert>
 		</widget>
-		<widget source="menu" render="Listbox" position="321,424" size="631,159" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionDisabled="1">
+		<widget source="menu" render="Listbox" position="center,450" size="650,160" scrollbarMode="showNever" selectionDisabled="1">
 			<convert type="TemplatedMultiContent">
 {"template": [
-MultiContentEntryText(pos = (0, 0), size = (480, 200), flags = RT_HALIGN_CENTER|RT_WRAP, text = 2), # index 0 is the MenuText,
+MultiContentEntryText(pos = (0, 0), size = (650, 160), flags = RT_HALIGN_CENTER|RT_WRAP, text = 2), # index 2 is the Description,
 ],
 "fonts": [gFont("Regular", 22)],
-"itemHeight": 200
+"itemHeight": 160
 }
 			</convert>
 		</widget>
