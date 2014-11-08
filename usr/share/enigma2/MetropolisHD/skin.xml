@@ -1085,7 +1085,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget source="list" render="Listbox" position="380,320" size="550,250" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png">
 			<convert type="StringList"/>
 		</widget>
-		<widget name="config" position="380,320" size="550,250" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
+		<widget name="config" position="380,320" size="550,250" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" transparent="1"/>
 	</screen>
 
 	<screen name="NetworkWizard" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="back">
@@ -1105,6 +1105,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 				"itemHeight": 50 }
 			</convert>
 		</widget>
+	</screen>
+
+	<screen name="ImageWizard" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="DefaultWizardTemplate"/>
 	</screen>
 
 	<screen name="DreamPackageWizard" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="back">
@@ -1558,19 +1562,6 @@ MultiContentEntryPixmapAlphaTest(pos = (5, 58), size = (0, 0), png = 5), # index
 	<screen name="Ipkg" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="IpkgTemplate"/>
 		<eLabel text="Installing Software..." position="center,158" size="600,34" halign="center" font="Replacement;24" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-	</screen>
-
-	<screen name="ImageWizard" position="0,0" size="1280,720" flags="wfNoBorder">
-		<eLabel text="Welcome..." position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<widget name="text" position="460,116" size="340,330" font="Regular;22"/>
-		<widget source="list" render="Listbox" position="312,437" size="490,180" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png">
-			<convert type="StringList"/>
-		</widget>
-		<widget name="config" position="323,438" size="440,180" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
-		<widget name="wizard" pixmap="MetropolisHD/window/wizard.png" position="304,161" size="110,174" alphatest="on"/>
-		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="846,117" size="154,500" alphatest="on"/>
-		<eLabel name="Red" position="565,648" size="178,1" foregroundColor="red" backgroundColor="red"/>
-		<widget name="languagetext" position="545,613" size="220,35" font="Regular;22" valign="center"/>
 	</screen>
 
 	<screen name="IpkgInstaller" position="340,125" size="600,502">
