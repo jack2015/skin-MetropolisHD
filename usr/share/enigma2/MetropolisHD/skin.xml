@@ -1624,20 +1624,20 @@ MultiContentEntryText(pos = (0, 0), size = (650, 160), flags = RT_HALIGN_CENTER|
 	<screen name="PluginManagerInfo" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGS_Template"/>
 		<eLabel text="Plugin manager activity information" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<widget source="list" render="Listbox" position="center,149" size="648,300" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionDisabled="1">
+		<widget source="list" render="Listbox" position="center,149" size="648,350" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionDisabled="1">
 			<convert type="TemplatedMultiContent">
-{"template": [
-MultiContentEntryText(pos = (50, 0), size = (150, 26), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-MultiContentEntryText(pos = (50, 27), size = (540, 23), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the state
-MultiContentEntryPixmapAlphaTest(pos = (0, 1), size = (48, 48), png = 2), # index 2 is the status pixmap
-MultiContentEntryPixmapAlphaTest(pos = (0, 48), size = (550, 2), png = 3), # index 3 is the div pixmap
-],
-"fonts": [gFont("Regular", 22),gFont("Regular", 20)],
-"itemHeight": 50
-}
+				{"templates": [
+				MultiContentEntryText(pos = (5,1), size = (610,24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+				MultiContentEntryText(pos = (5,26), size = (610,24), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the state
+				MultiContentEntryPixmapAlphaTest(pos = (620,0), size = (48,48), png = 2), # index 2 is the status pixmap
+				MultiContentEntryPixmapAlphaTest(pos = (0,48), size = (700,2), png = 3), # index 3 is the div pixmap
+				],
+				"fonts": [gFont("Regular",22),gFont("Regular",16)],
+				"itemHeight": 50
+				}
 			</convert>
 		</widget>
-		<widget source="status" render="Label" position="center,468" size="550,30" halign="center" valign="center" font="Regular;22" shadowColor="black" shadowOffset="-1,-1"/>
+		<widget source="status" render="Label" position="center,520" size="700,30" halign="center" valign="center" font="Regular;22"/>
 	</screen>
 
 	<screen name="UpdatePlugin" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
