@@ -406,9 +406,17 @@ MultiContentEntryText(pos = (535, 0), size = (105, 25),  font = 1, flags = RT_HA
 		<widget name="menu" position="20,20" size="560,250" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
 	</screen>
 
-	<screen name="ChannelSelectionRadio" position="90,100" size="1100,560" backgroundColor="back">
-		<panel name="ButtonTemplate_RGYB_Big"/>
-		<widget name="list" position="20,10" size="1060,500" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" foregroundColorServiceNotAvail="#000000" colorServiceDescriptionSelected="#223974" serviceNumberFont="Regular;22" serviceNameFont="Regular;22" serviceInfoFont="Regular;22" colorEventProgressbarBorderSelected="#000000" picServiceEventProgressbar="MetropolisHD/chnsel/pl.png"/>
+	<screen name="ChannelSelectionRadio" position="82,100" size="1116,370">
+		<widget name="list" position="center,0" size="1070,310" scrollbarMode="showOnDemand" picServiceEventProgressbar="MetropolisHD/chnsel/pl.png" sliderPixmap="MetropolisHD/window/slider_vert.png" foregroundColorServiceNotAvail="#444444" colorServiceDescriptionSelected="hellgreen" serviceItemHeight="31" serviceNumberFont="Regular;20" serviceNameFont="Regular;20" serviceInfoFont="Regular;20" colorEventProgressbarBorderSelected="#000000"/>
+		<eLabel name="Line" position="center,328" size="1100,1" backgroundColor="un666666"/>
+		<widget name="key_red" position="188,330" size="180,33" font="Regular;22" halign="center" valign="center"/>
+		<widget name="key_green" position="370,330" size="180,33" font="Regular;22" halign="center" valign="center"/>
+		<widget name="key_yellow" position="552,330" size="180,33" font="Regular;22" halign="center" valign="center"/>
+		<widget name="key_blue" position="730,330" size="180,33" font="Regular;22" halign="center" valign="center"/>
+		<eLabel name="Red" position="195,364" size="170,1" foregroundColor="red" backgroundColor="red"/>
+		<eLabel name="Green" position="375,364" size="170,1" foregroundColor="green" backgroundColor="green"/>
+		<eLabel name="Yellow" position="555,364" size="170,1" foregroundColor="yellow" backgroundColor="yellow"/>
+		<eLabel name="Blue" position="735,364" size="170,1" foregroundColor="blue" backgroundColor="blue"/>
 	</screen>
 
 	<screen name="ChoiceBox" position="center,100" size="550,400" backgroundColor="back">
