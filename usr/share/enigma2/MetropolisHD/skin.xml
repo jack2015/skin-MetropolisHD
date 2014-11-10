@@ -864,78 +864,80 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget name="list" position="center,200" size="580,350" zPosition="3" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" itemHeight="50"/>
 	</screen>
 
-	<screen name="RadioInfoBar" position="82,480" size="1116,192" backgroundColor="back">
-		<eLabel position="1,1" size="1114,2" backgroundColor="grey"/>
-		<eLabel position="1,189" size="1114,2" backgroundColor="grey"/>
-		<eLabel position="1,3" size="2,186" backgroundColor="grey"/>
-		<eLabel position="1113,3" size="2,186" backgroundColor="grey"/>
-		<widget source="session.CurrentService" render="Label" position="72,6" size="138,28" font="Regular;24" halign="center">
+	<screen name="RadioInfoBar" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent"  zPosition="-15">
+		<eLabel position="82,480" size="1116,192" backgroundColor="back" zPosition="-10"/>
+		<eLabel name="Line" position="82,480" size="1116,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="82,672" size="1116,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="82,480" size="1,192" backgroundColor="un666666"/>
+		<eLabel name="Line" position="1198,480" size="1,192" backgroundColor="un666666"/>
+		<widget source="session.CurrentService" render="Label" position="154,486" size="138,28" font="Regular;24" halign="right" foregroundColor="yellow">
 			<convert type="ServiceName">Number</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="220,6" size="550,26" font="Regular;24">
+		<widget source="session.CurrentService" render="Label" position="300,486" size="550,26" font="Regular;24" foregroundColor="yellow">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="200,34" size="400,22" font="Regular;18" foregroundColor="grey">
+		<widget source="session.CurrentService" render="Label" position="300,514" size="400,22" font="Regular;18" foregroundColor="grey">
 			<convert type="ServiceName">Provider</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="880,7" size="80,25" font="Regular;24" halign="right">
+		<widget source="global.CurrentTime" render="Label" position="962,487" size="80,25" font="Regular;24" halign="right" foregroundColor="hellgreen">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="962,9" size="30,30" font="Regular;18">
+		<widget source="global.CurrentTime" render="Label" position="1042,487" size="60,25" font="Regular;18" foregroundColor="hellgreen">
 			<convert type="ClockToText">Format::%S</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="880,35" size="110,20" font="Regular;18" halign="right" foregroundColor="grey">
-			<convert type="ClockToText">Format:%d.%m.%Y</convert>
-		</widget>
-		<widget source="session.RecordState" render="Pixmap" pixmap="MetropolisHD/window/rec.png" position="1020,38" size="12,13" zPosition="2" alphatest="on">
+		<widget source="session.RecordState" render="Pixmap" pixmap="MetropolisHD/infobar/ico_rec_on.png" position="1102,490" size="38,38" zPosition="2" alphatest="on">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<eLabel position="10,60" size="1096,2" backgroundColor="white"/>
-		<widget source="session.Event_Now" render="Label" position="140,67" size="65,25" halign="right" font="Regular;22">
+		<eLabel name="Line" position="center,540" size="1096,1" backgroundColor="un666666"/>
+		<widget source="session.Event_Now" render="Label" position="222,547" size="65,25" halign="right" font="Regular;22">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<eLabel text="-" position="205,67" size="20,25" halign="center" font="Regular;22"/>
-		<widget source="session.Event_Now" render="Label" position="225,67" size="65,25" font="Regular;22">
+		<eLabel text="-" position="287,547" size="20,25" halign="center" font="Regular;22"/>
+		<widget source="session.Event_Now" render="Label" position="307,547" size="65,25" font="Regular;22">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="300,67" size="570,25" font="Regular;22" noWrap="1">
+		<widget source="session.Event_Now" render="Label" position="382,547" size="560,25" font="Regular;22" noWrap="1">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="870,67" size="120,25" halign="right" font="Regular;22">
+		<widget source="session.Event_Now" render="Label" position="942,547" size="120,25" halign="right" font="Regular;22">
 			<convert type="EventTime">Remaining</convert>
 			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
-		<ePixmap position="200,97" size="840,12" zPosition="2" pixmap="MetropolisHD/window/slider_back.png" alphatest="off"/>
-		<widget source="session.Event_Now" render="Progress" pixmap="MetropolisHD/window/slider.png" position="200,97" size="840,12" zPosition="1" transparent="2">
+		<eLabel name="Line" position="222,582" size="840,1" backgroundColor="un666666"/>
+		<widget source="session.Event_Now" render="Progress" pixmap="MetropolisHD/window/slider.png" position="222,580" size="840,6" zPosition="1" transparent="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="140,114" size="65,25" halign="right" font="Regular;22" foregroundColor="grey">
+		<widget source="session.Event_Next" render="Label" position="222,594" size="65,25" halign="right" font="Regular;22" foregroundColor="grey">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<eLabel text="-" position="205,114" size="20,25" halign="center" font="Regular;22" foregroundColor="grey"/>
-		<widget source="session.Event_Next" render="Label" position="225,114" size="65,25" font="Regular;22" foregroundColor="grey">
+		<eLabel text="-" position="287,594" size="20,25" halign="center" font="Regular;22" foregroundColor="grey"/>
+		<widget source="session.Event_Next" render="Label" position="307,594" size="65,25" font="Regular;22" foregroundColor="grey">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="300,114" size="570,25" font="Regular;22" foregroundColor="grey" noWrap="1">
+		<widget source="session.Event_Next" render="Label" position="382,594" size="560,25" font="Regular;22" foregroundColor="grey" noWrap="1">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="870,114" size="120,25" halign="right" font="Regular;22" foregroundColor="grey">
+		<widget source="session.Event_Next" render="Label" position="942,594" size="120,25" halign="right" font="Regular;22" foregroundColor="grey">
 			<convert type="EventTime">Duration</convert>
 			<convert type="ClockToText">InMinutes</convert>
 		</widget>
-		<widget source="RdsDecoder" render="Pixmap" pixmap="MetropolisHD/icons/rass_logo.png" position="1010,73" size="100,60" alphatest="on">
+		<widget source="RdsDecoder" render="Pixmap" pixmap="MetropolisHD/icons/rass_logo.png" position="1082,553" size="100,60" alphatest="on">
 			<convert type="RdsInfo">RasInteractiveAvailable</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<eLabel position="1,145" size="1120,1" backgroundColor="white"/>
-		<widget source="RdsDecoder" render="Label" position="11,153" size="1100,30" font="LCD;30" halign="center" foregroundColor="yellow">
-			<convert type="RdsInfo">RadioText</convert>
+		<eLabel name="Line" position="center,625" size="1096,1" backgroundColor="un666666"/>
+		<widget source="RdsDecoder" render="Label" position="center,633" size="1100,30" font="LCD;30" halign="center" foregroundColor="yellow">
+    <convert type="RdsInfo">RadioText</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="976,515" size="110,20" font="Regular;18" halign="right" foregroundColor="grey">
+			<convert type="ClockToText">Format:%d.%m.%Y</convert>
 		</widget>
 	</screen>
+
 	<screen name="RdsInfoDisplay" position="0,0" size="1280,720" zPosition="-2" backgroundColor="transparent" flags="wfNoBorder">
 		<widget name="RassLogo" pixmap="MetropolisHD/icons/rass_logo.png" position="100,585" size="50,21"/>
 		<widget name="RadioText" position="100,620" size="1080,30" font="Regular;24" noWrap="1" backgroundColor="transpBlack"/>
@@ -1264,7 +1266,7 @@ MultiContentEntryText(pos=(145,0), size=(145, 20), text = 2, flags = RT_HALIGN_R
 		<widget name="genre" position="0,0" size="0,0"/>
 		<widget name="currenttext" position="0,0" size="0,0"/>
 		<widget name="titletext" position="0,0" size="0,0"/>
-		<eLabel name="Button" position="1120,489" size="83,33" zPosition="1" backgroundColor="selection" />
+		<eLabel name="Button" position="1120,489" size="83,33" zPosition="1" backgroundColor="selection"/>
 		<eLabel name="Menu" position="1124,495" size="75,22" text="Menu" font="Replacement;20" halign="center" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
 	</screen>
 
