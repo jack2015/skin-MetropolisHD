@@ -678,7 +678,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget source="global.CurrentTime" render="Label" position="930,7" size="185,34" font="Replacement;24" halign="right" backgroundColor="back" transparent="1" foregroundColor="yellow">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1120,9" size="75,27" font="Replacement;18" foregroundColor="unf23d21">
+		<widget source="global.CurrentTime" render="Label" position="1120,9" size="50,27" font="Replacement;18" foregroundColor="unf23d21">
 			<convert type="ClockToText">Format::%S</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="center,12" size="668,24" font="Replacement;22" backgroundColor="back" transparent="1" halign="center" foregroundColor="green">
