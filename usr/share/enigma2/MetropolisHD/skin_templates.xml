@@ -112,6 +112,70 @@
 		</widget>
 	</screen>
 
+	<screen name="PlayerTemplate">
+		<eLabel position="center,1" size="1100,140" zPosition="-3"/>
+		<ePixmap pixmap="MetropolisHD/window/back.png" position="272,5" size="745,40" alphatest="off" zPosition="-2"/>
+		<eLabel name="Line" position="center,613" size="716,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="center,97" size="610,2" backgroundColor="un666666"/>
+		<eLabel name="Line" position="center,1" size="1100,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="center,141" size="1100,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="90,1" size="1,140" backgroundColor="un666666"/>
+		<eLabel name="Line" position="1190,1" size="1,140" backgroundColor="un666666"/>
+		<ePixmap position="1041,35" size="96,96" pixmap="MetropolisHD/icons/mplayer.png" alphatest="on"/>
+		<widget source="global.CurrentTime" render="Label" position="930,7" size="185,34" font="Replacement;24" halign="right" backgroundColor="back" transparent="1" foregroundColor="yellow">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1120,9" size="50,27" font="Replacement;18" foregroundColor="unf23d21">
+			<convert type="ClockToText">Format::%S</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="center,12" size="668,24" font="Replacement;22" backgroundColor="back" transparent="1" halign="center" foregroundColor="green">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<ePixmap pixmap="MetropolisHD/chnsel/ico_dolby_off.png" position="108,14" size="65,24" zPosition="1" alphatest="on"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/chnsel/ico_dolby_on.png" position="108,14" size="65,24" zPosition="2" alphatest="on">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<ePixmap pixmap="MetropolisHD/chnsel/ico_format_off.png" position="183,13" size="42,27" zPosition="1" alphatest="on"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/chnsel/ico_format_on.png" position="183,13" size="42,27" zPosition="2" alphatest="on">
+			<convert type="ServiceInfo">IsWidescreen</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="session.CurrentService" render="Label" font="Replacement;15" position="120,115" size="54,20" halign="right" foregroundColor="un21e2e2e2" text="1920">
+			<convert type="ServiceInfo">VideoWidth</convert>
+		</widget>
+		<eLabel text="x" font="Replacement;12" position="175,114" size="13,20" halign="center" foregroundColor="un21e2e2e2"/>
+		<widget source="session.CurrentService" render="Label" font="Replacement;15" position="188,115" size="54,20" foregroundColor="un21e2e2e2" text="1080">
+			<convert type="ServiceInfo">VideoHeight</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Progress" position="center,95" size="610,6" zPosition="1" pixmap="MetropolisHD/window/slider_player.png" transparent="1">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<widget source="session.CurrentService" render="PositionGauge" position="center,93" size="610,10" zPosition="2" transparent="1">
+			<convert type="ServicePosition">Gauge</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="336,56" size="120,30" font="Regular;26" foregroundColor="un21e2e2e2">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="center,56" size="190,30" font="Regular;26" halign="center" foregroundColor="un21e2e2e2">
+			<convert type="ServicePosition">Length</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="825,56" size="120,30" font="Regular;26" halign="right" foregroundColor="un21e2e2e2">
+			<convert type="ServicePosition">Remaining</convert>
+		</widget>
+		<ePixmap position="center,110" zPosition="1" size="200,25" pixmap="MetropolisHD/window/mp_buttons.png" alphatest="on"/>
+		<ePixmap position="267,113" zPosition="2" size="27,27" pixmap="MetropolisHD/icons/icon_norec_light.png" alphatest="on"/>
+		<widget source="session.RecordState" render="Pixmap" pixmap="MetropolisHD/icons/icon_rec_light.png" position="267,113" zPosition="3" size="19,19" alphatest="on">
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+	</screen>
+
+	<screen name="MovieContextMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MinimalScreen_YB_Template"/>
+		<eLabel text="Movielist menu" position="center,155" size="600,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget name="menu" position="center,210" size="580,300" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
+	</screen>
+
 	<screen name="ServiceInfoTemplate">
 		<panel name="MidleScreenTemplate"/>
 		<eLabel text="Service info" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
