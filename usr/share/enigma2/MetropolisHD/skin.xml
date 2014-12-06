@@ -1506,8 +1506,12 @@ MultiContentEntryText(pos = (0, 0), size = (650, 160), flags = RT_HALIGN_CENTER|
 	</screen>
 
 	<screen name="Ipkg" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="IpkgTemplate"/>
+		<panel name="MinimalScreenTemplate"/>
 		<eLabel text="Installing Software..." position="center,158" size="600,34" halign="center" font="Replacement;24" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget name="activityslider" position="center,210" size="560,10" foregroundColor="grey" borderWidth="1"/>
+		<widget name="package" position="center,240" size="540,20" font="Regular;18" halign="center" valign="center"/>
+		<widget name="status" position="center,270" size="540,45" font="Regular;20" halign="center" valign="center"/>
+		<widget name="slider" position="center,350" size="560,20" foregroundColor="grey" borderWidth="1"/>
 	</screen>
 
 	<screen name="IpkgInstaller" position="340,125" size="600,502">
@@ -1595,8 +1599,12 @@ MultiContentEntryText(pos = (0, 0), size = (650, 160), flags = RT_HALIGN_CENTER|
 	</screen>
 
 	<screen name="UpdatePlugin" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="IpkgTemplate"/>
+		<panel name="MinimalScreenTemplate"/>
 		<eLabel text="Software update" position="center,157" size="600,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget name="activityslider" position="center,210" size="550,10" foregroundColor="grey" borderWidth="1"/>
+		<widget source="package" render="Label" position="center,240" size="540,20" font="Regular;18" halign="center" valign="center"/>
+		<widget source="status" render="Label" position="center,270" size="540,45" font="Regular;20" halign="center" valign="center"/>
+		<widget name="slider" position="center,350" size="560,30" foregroundColor="grey" borderWidth="1"/>
 	</screen>
 
 	<screen name="VirtualKeyBoard" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" zPosition="99">
