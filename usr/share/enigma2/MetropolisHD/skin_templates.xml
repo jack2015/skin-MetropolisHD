@@ -318,6 +318,13 @@
 		<eLabel name="Green" position="685,648" size="180,1" foregroundColor="green" backgroundColor="green"/>
 	</screen>
 
+	<screen name="ButtonTemplate_Midle_RGB">
+		<eLabel name="Line" position="center,613" size="716,1" backgroundColor="un666666"/>
+		<eLabel name="Red" position="390,648" size="160,1" foregroundColor="red" backgroundColor="red"/>
+		<eLabel name="Green" position="center,648" size="160,1" foregroundColor="green" backgroundColor="green"/>
+		<eLabel name="Blue" position="740,648" size="160,1" foregroundColor="blue" backgroundColor="blue"/>
+	</screen>
+
 	<screen name="ButtonTemplate_Midle_RB">
 		<eLabel name="Line" position="center,613" size="716,1" backgroundColor="un666666"/>
 		<eLabel name="Red" position="415,648" size="180,1" foregroundColor="red" backgroundColor="red"/>
@@ -346,6 +353,13 @@
 		<panel name="ButtonTemplate_Midle_RG"/>
 		<widget name="key_red" position="380,614" size="250,33" font="Regular;22" halign="center" valign="center"/>
 		<widget name="key_green" position="650,614" size="250,33" font="Regular;22" halign="center" valign="center"/>
+	</screen>
+
+	<screen name="ButtonTemplate_RGB">
+		<panel name="ButtonTemplate_Midle_RGB"/>
+		<widget name="key_red" position="380,614" size="180,33" font="Regular;22" halign="center" valign="center"/>
+		<widget name="key_green" position="center,614" size="180,33" font="Regular;22" halign="center" valign="center"/>
+		<widget name="key_blue" position="730,614" size="180,33" font="Regular;22" halign="center" valign="center"/>
 	</screen>
 
 	<screen name="ButtonTemplate_RGS_Midle">
@@ -562,6 +576,11 @@
 	<screen name="MidleScreen_RG_Template">
 		<panel name="MidleScreenTemplate"/>
 		<panel name="ButtonTemplate_RG_Midle"/>
+	</screen>
+
+	<screen name="MidleScreen_RGB_Template">
+		<panel name="MidleScreenTemplate"/>
+		<panel name="ButtonTemplate_RGB"/>
 	</screen>
 
 	<screen name="MidleScreen_RS_Template">

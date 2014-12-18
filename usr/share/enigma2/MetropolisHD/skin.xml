@@ -328,10 +328,23 @@
 	</screen>
 
 	<screen name="About" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="MidleScreen_RG_Template"/>
+		<panel name="MidleScreen_RGB_Template"/>
 		<eLabel text="About" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="AboutScrollLabel" position="center,130" size="705,410" halign="center" font="Regular;22"/>
 		<ePixmap pixmap="MetropolisHD/window/metropolishd_logo.png" position="center,550" size="743,50" alphatest="off" transparent="1"/>
+	</screen>
+
+	<screen name="MemoryInfo" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MidleScreen_RGB_Template"/>
+		<widget source="Title" render="Label" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget name="pused" position="350,120" size="150,25" font="Regular;20" halign="right"/>
+		<widget name="slide" position="center,122" size="250,20" foregroundColor="grey" borderWidth="1"/>
+		<widget name="pfree" position="780,120" size="150,25" font="Regular;20"/>
+		<widget name="lmemtext" position="350,150" size="150,450" font="Regular;16"/>
+		<widget name="lmemvalue" position="500,150" size="100,450" font="Regular;16" halign="right"/>
+		<widget name="rmemtext" position="690,150" size="150,370" font="Regular;16"/>
+		<widget name="rmemvalue" position="840,150" size="100,370" font="Regular;16" halign="right"/>
+		<widget name="info" position="620,530" size="390,80" font="Regular;16"/>
 	</screen>
 
 	<screen name="CommitInfo" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
