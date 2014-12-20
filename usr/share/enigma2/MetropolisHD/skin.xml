@@ -345,6 +345,7 @@
 		<widget name="rmemtext" position="690,150" size="150,360" font="Regular;16"/>
 		<widget name="rmemvalue" position="840,150" size="100,360" font="Regular;16" halign="right"/>
 		<widget name="info" position="630,515" size="380,80" font="Regular;16" foregroundColor="grey"/>
+		<widget name="params" rowsincolumn="23"/>
 	</screen>
 
 	<screen name="CommitInfo" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
