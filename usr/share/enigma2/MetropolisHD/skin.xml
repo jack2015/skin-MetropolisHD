@@ -349,16 +349,16 @@
 	</screen>
 
 	<screen name="CommitInfo" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="MidleScreenTemplate"/>
+		<panel name="MidleScreen_R_Template"/>
 		<eLabel text="Latest Commits" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<widget name="AboutScrollLabel" position="center,130" size="705,499" halign="center" font="Regular;22"/>
+		<widget name="AboutScrollLabel" position="center,130" size="705,470" halign="center" font="Regular;22"/>
 	</screen>
 
 	<screen name="TranslationInfo" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="MinimalScreenTemplate"/>
+		<panel name="MinimalScreen_R_Template"/>
 		<eLabel text="Translation" position="center,158" size="600,34" halign="center" font="Replacement;24" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget source="TranslatorName" render="Label" position="center,200" size="580,40" font="Regular;26" foregroundColor="yellow" halign="center"/>
-		<widget source="TranslationInfo" render="Label" position="center,250" size="580,300" font="Regular;22" halign="center"/>
+		<widget source="TranslationInfo" render="Label" position="center,250" size="580,270" font="Regular;22" halign="center"/>
 	</screen>
 
 	<screen name="ServiceInfoSimple" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">

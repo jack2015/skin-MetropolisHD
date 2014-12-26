@@ -260,9 +260,19 @@
 		<eLabel name="Red" position="center,648" size="180,1" foregroundColor="red" backgroundColor="red"/>
 	</screen>
 
+	<screen name="ButtonTemplate_R_Midle">
+		<panel name="ButtonTemplate_Midle_R"/>
+		<widget name="key_red" position="center,614" size="250,33" font="Regular;22" halign="center" valign="center"/>
+	</screen>
+
 	<screen name="ButtonTemplate_RS_Midle">
 		<panel name="ButtonTemplate_Midle_R"/>
 		<widget source="key_red" render="Label" position="center,614" size="250,33" font="Regular;22" halign="center" valign="center"/>
+	</screen>
+
+	<screen name="ButtonTemplate_Minimal_R">
+		<eLabel name="Line" position="center,523" size="600,1" backgroundColor="un666666"/>
+		<eLabel name="Red" position="center,558" size="180,1" foregroundColor="red" backgroundColor="red"/>
 	</screen>
 
 	<screen name="ButtonTemplate_Minimal_RG">
@@ -290,6 +300,11 @@
 		<eLabel name="Line" position="center,523" size="600,1" backgroundColor="un666666"/>
 		<eLabel name="Yellow" position="415,558" size="180,1" foregroundColor="yellow" backgroundColor="yellow"/>
 		<eLabel name="Blue" position="685,558" size="180,1" foregroundColor="blue" backgroundColor="blue"/>
+	</screen>
+
+	<screen name="ButtonTemplate_R_Minimal">
+		<panel name="ButtonTemplate_Minimal_R"/>
+		<widget name="key_red" position="center,524" size="250,33" font="Regular;22" halign="center" valign="center"/>
 	</screen>
 
 	<screen name="ButtonTemplate_RGS_Minimal">
@@ -533,6 +548,11 @@
 		<widget name="HelpWindow" position="400,420" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
 	</screen>
 
+	<screen name="MinimalScreen_R_Template">
+		<panel name="MinimalScreenTemplate"/>
+		<panel name="ButtonTemplate_R_Minimal"/>
+	</screen>
+
 	<screen name="MinimalScreen_RGS_Template">
 		<panel name="MinimalScreenTemplate"/>
 		<panel name="ButtonTemplate_RGS_Minimal"/>
@@ -571,6 +591,11 @@
 	<screen name="MidleScreen_CancelScan_Template">
 		<panel name="MidleScreenTemplate"/>
 		<panel name="ButtonTemplate_CancelScan_Midle"/>
+	</screen>
+
+	<screen name="MidleScreen_R_Template">
+		<panel name="MidleScreenTemplate"/>
+		<panel name="ButtonTemplate_R_Midle"/>
 	</screen>
 
 	<screen name="MidleScreen_RG_Template">
