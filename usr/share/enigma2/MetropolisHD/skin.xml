@@ -1349,7 +1349,7 @@ MultiContentEntryText(pos=(190,2), size=(80, 20), text = 2, flags = RT_HALIGN_CE
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap pixmap="MetropolisHD/chnsel/ico_txt_off.png" position="183,13" size="42,27" zPosition="1" alphatest="off"/>
+		<ePixmap pixmap="MetropolisHD/chnsel/ico_txt_off.png" position="183,13" size="42,27" zPosition="1" alphatest="on"/>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="MetropolisHD/chnsel/ico_txt_on.png" position="183,13" size="42,27" zPosition="2" alphatest="on">
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide"/>
@@ -1378,7 +1378,7 @@ MultiContentEntryText(pos=(190,2), size=(80, 20), text = 2, flags = RT_HALIGN_CE
 		</widget>
 		<ePixmap position="center,110" size="200,25" pixmap="MetropolisHD/window/mp_buttons.png" alphatest="on"/>
 		<eLabel name="new eLabel" position="center,97" size="610,2" backgroundColor="un666666"/>
-		<ePixmap pixmap="MetropolisHD/chnsel/ico_dolby_off.png" position="108,14" size="65,24" zPosition="1" alphatest="off"/>
+		<ePixmap pixmap="MetropolisHD/chnsel/ico_dolby_off.png" position="108,14" size="65,24" zPosition="1" alphatest="on"/>
 		<ePixmap position="146,58" size="70,35" zPosition="10" pixmap="MetropolisHD/icons/dvd.png" alphatest="on"/>
 		<ePixmap pixmap="MetropolisHD/chnsel/ico_dolby_on.png" position="24,6" size="57,20" zPosition="2" alphatest="on"/>
 		<widget name="chapterLabel" position="797,107" size="60,24" font="Regular;20" backgroundColor="transpBlack" transparent="1"/>
