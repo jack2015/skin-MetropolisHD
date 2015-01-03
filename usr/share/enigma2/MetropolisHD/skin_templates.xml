@@ -164,8 +164,7 @@
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
 		<ePixmap position="center,110" zPosition="1" size="200,25" pixmap="MetropolisHD/window/mp_buttons.png" alphatest="on"/>
-		<ePixmap position="267,113" zPosition="2" size="27,27" pixmap="MetropolisHD/icons/icon_norec_light.png" alphatest="on"/>
-		<widget source="session.RecordState" render="Pixmap" pixmap="MetropolisHD/icons/icon_rec_light.png" position="267,113" zPosition="3" size="19,19" alphatest="on">
+		<widget source="session.RecordState" render="Pixmap" pixmap="MetropolisHD/infobar/ico_rec_on.png" position="257,113" zPosition="3" size="38,38" alphatest="on">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 	</screen>
