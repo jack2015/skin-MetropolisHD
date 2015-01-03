@@ -169,12 +169,6 @@
 		</widget>
 	</screen>
 
-	<screen name="MovieContextMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="MinimalScreen_YB_Template"/>
-		<eLabel text="Movielist menu" position="center,155" size="600,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<widget name="menu" position="center,210" size="580,300" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
-	</screen>
-
 	<screen name="ServiceInfoTemplate">
 		<panel name="MidleScreenTemplate"/>
 		<eLabel text="Service info" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
