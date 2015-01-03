@@ -1282,10 +1282,10 @@ MultiContentEntryText(pos=(145,0), size=(145, 20), text = 2, flags = RT_HALIGN_R
 		<eLabel name="Green" position="357,555" size="178,1" foregroundColor="green" backgroundColor="green"/>
 		<eLabel name="Yellow" position="535,555" size="178,1" foregroundColor="yellow" backgroundColor="yellow"/>
 	</screen>
+
 	<screen name="TitleCutter" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<eLabel text="Cutlist editor..." position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<ePixmap position="center,center" size="1229,592" zPosition="-3" pixmap="MetropolisHD/window/podloga.png" borderWidth="1" borderColor="un666666"/>
-		<ePixmap pixmap="MetropolisHD/window/back.png" position="center,68" size="1220,40" alphatest="off" zPosition="-2"/>
+		<panel name="BigScreenTemplate"/>
+		<eLabel text="Cutlist editor..." position="center,37" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<eLabel position="80,125" size="300,420" zPosition="1" backgroundColor="grey"/>
 		<eLabel position="81,126" size="298,418" zPosition="2" backgroundColor="black"/>
 		<widget source="cutlist" position="90,135" zPosition="3" size="280,400" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" render="Listbox">
@@ -1311,6 +1311,7 @@ MultiContentEntryText(pos=(190,2), size=(80, 20), text = 2, flags = RT_HALIGN_CE
 		<widget name="Timeline" position="479,587" size="696,20" zPosition="3" backgroundColor="darkgrey" pointer="MetropolisHD/window/position_arrow.png:3,5" foregroundColor="black"/>
 		<eLabel text="OK = Menu" position="1060,630" size="140,22" font="Regular;20" backgroundColor="black" transparent="1"/>
 	</screen>
+
 	<screen name="TitleProperties" position="90,100" size="1100,560">
 		<widget name="thumbnail" position="20,20" size="260,160" alphatest="off"/>
 		<widget source="serviceinfo" render="Label" position="320,20" size="740,160" font="Regular;21"/>
