@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-	<!--  DONT REMOVE THIS DISCLAIMER -->
+	<!-- DONT REMOVE THIS DISCLAIMER -->
 	<!-- MetropolisHD Skin for Enigma2 - By Franc -->
 	<!-- Version 1.0.1 -->
 	<!-- This skin and all it's graphics are free, do whatever you want with this skin but only for personal use, and don't tell it's yours, or your idea! -->
 	<!-- You can modify and redistribute it as long as you keep this License for the skin and all of your modifications. -->
-	<!-- If you want to contact me i usually hang on www.satforum.me or on e-mail sateliteacc([at])gmail.com  -->
-	<!-- Modified by pybear38 on 2014.09 http://www.patyanradio.com/img/  -->
-	<!-- Modified by Taapat https://github.com/Taapat/skin-MetropolisHD/commits/master  -->
+	<!-- If you want to contact me i usually hang on www.satforum.me or on e-mail sateliteacc([at])gmail.com -->
+	<!-- Modified by pybear38 on 2014.09 http://www.patyanradio.com/img/ -->
+	<!-- Modified by Taapat https://github.com/Taapat/skin-MetropolisHD/commits/master -->
 
 	<output id="0">
 		<resolution xres="1280" yres="720" bpp="32"/>
@@ -160,7 +160,7 @@
 		<eLabel name="Line" position="872,485" size="300,1" backgroundColor="un666666"/>
 		<ePixmap pixmap="MetropolisHD/chnsel/info.png" position="851,488" size="32,32" alphatest="on"/>
 		<widget source="ServiceEvent" render="Label" position="887,493" size="309,26" font="Regular;18" noWrap="1" foregroundColor="un21e2e2e2">
-			<convert type="ServiceName2">%O  %s  %F %p %Y %f %M %b</convert>
+			<convert type="ServiceName2">%O %s %F %p %Y %f %M %b</convert>
 		</widget>
 		<eLabel name="Line" position="872,521" size="300,1" backgroundColor="un666666"/>
 		<ePixmap pixmap="MetropolisHD/chnsel/calendar.png" position="851,524" size="32,32" alphatest="on" transparent="1"/>
@@ -175,7 +175,7 @@
 		<eLabel name="Menu" position="1103,605" size="75,22" text="Menu" font="Replacement;20" halign="center" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
 	</screen>
 
-	<screen name="UnhandledKey" position="center,200" size="64, 64" zPosition="100" flags="wfNoBorder" backgroundColor="back">
+	<screen name="UnhandledKey" position="center,200" size="64,64" zPosition="100" flags="wfNoBorder" backgroundColor="back">
 		<widget name="UnhandledKeyPixmap" pixmap="MetropolisHD/icons/error.png" position="6,2" size="53,65" alphatest="on"/>
 	</screen>
 
@@ -370,7 +370,7 @@
 		<panel name="ButtonTemplate_RGYB"/>
 	</screen>
 
-	<screen name="AudioSelection" position="center,center" size="680,330" backgroundColor="back"  title="Audio">
+	<screen name="AudioSelection" position="center,center" size="680,330" backgroundColor="back" title="Audio">
 		<widget name="config" position="70,10" size="590,110" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
 		<widget source="key_red" render="Pixmap" pixmap="MetropolisHD/buttons/key_red.png" position="20,10" size="35,25" alphatest="on">
 			<convert type="ConditionalShowHide"/>
@@ -389,21 +389,21 @@
 			<convert type="TemplatedMultiContent">
 {"templates":
 {"default": (25, [
-MultiContentEntryText(pos = (0, 0),   size = (35, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # key,
-MultiContentEntryText(pos = (50, 0),  size = (55, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # number,
-MultiContentEntryText(pos = (115, 0), size = (200, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
-MultiContentEntryText(pos = (325, 0), size = (200, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
-MultiContentEntryText(pos = (535, 0), size = (105, 25),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
+MultiContentEntryText(pos = (0,0), size = (35,25), font = 0, flags = RT_HALIGN_LEFT, text = 1), # key,
+MultiContentEntryText(pos = (50,0), size = (55,25), font = 0, flags = RT_HALIGN_LEFT, text = 2), # number,
+MultiContentEntryText(pos = (115,0), size = (200,25), font = 0, flags = RT_HALIGN_LEFT, text = 3), # description,
+MultiContentEntryText(pos = (325,0), size = (200,25), font = 0, flags = RT_HALIGN_LEFT, text = 4), # language,
+MultiContentEntryText(pos = (535,0), size = (105,25), font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
 ], True, "showNever"),
 "notselected": (25, [
-MultiContentEntryText(pos = (0, 0),   size = (35, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # key,
-MultiContentEntryText(pos = (50, 0),  size = (55, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # number,
-MultiContentEntryText(pos = (115, 0), size = (200, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
-MultiContentEntryText(pos = (325, 0), size = (200, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
-MultiContentEntryText(pos = (535, 0), size = (105, 25),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
+MultiContentEntryText(pos = (0,0), size = (35,25), font = 0, flags = RT_HALIGN_LEFT, text = 1), # key,
+MultiContentEntryText(pos = (50,0), size = (55,25), font = 0, flags = RT_HALIGN_LEFT, text = 2), # number,
+MultiContentEntryText(pos = (115,0), size = (200,25), font = 0, flags = RT_HALIGN_LEFT, text = 3), # description,
+MultiContentEntryText(pos = (325,0), size = (200,25), font = 0, flags = RT_HALIGN_LEFT, text = 4), # language,
+MultiContentEntryText(pos = (535,0), size = (105,25), font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
 ], False, "showNever")
 },
-"fonts": [gFont("Regular", 20), gFont("Regular", 20)],
+"fonts": [gFont("Regular",20), gFont("Regular",20)],
 "itemHeight": 25
 }
 			</convert>
@@ -453,7 +453,7 @@ if (640> wsizex):
 wsize = (wsizex, wsizey)
 self.instance.resize(eSize(*wsize))
 self["text"].instance.resize(eSize(*textsize))
-listsize = (wsizex - 20, 25 * count)
+listsize = (wsizex - 20,25 * count)
 self["list"].instance.move(ePoint(10, textsize[1]))
 self["list"].instance.resize(eSize(*listsize))
 newwidth = wsize[0]
@@ -611,9 +611,9 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count> 7 and 2 or 3)))
 		<widget source="languages" render="Listbox" position="center,120" size="725,505" scrollbarMode="showNever">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (300, 10), size = (420, 30), flags = RT_HALIGN_LEFT, text = 1),
-					MultiContentEntryPixmap(pos = (200, 5), size = (60, 40), png = 2),],
-				"fonts": [gFont("Regular", 25)],
+					MultiContentEntryText(pos = (300,10), size = (420,30), flags = RT_HALIGN_LEFT, text = 1),
+					MultiContentEntryPixmap(pos = (200,5), size = (60,40), png = 2),],
+				"fonts": [gFont("Regular",25)],
 				"itemHeight": 50 }
 			</convert>
 		</widget>
@@ -654,13 +654,13 @@ if (280> wsizex):
 	wsizex = 280
 wsize = (wsizex, wsizey + titleheight)
 self.instance.resize(eSize(*wsize))
-self[&quot;text&quot;].instance.move(ePoint(65, 8 + titleheight))
+self[&quot;text&quot;].instance.move(ePoint(65,8 + titleheight))
 self[&quot;text&quot;].instance.resize(eSize(*textsize))
-self[&quot;ErrorPixmap&quot;].instance.move(ePoint(5, 5 + titleheight))
+self[&quot;ErrorPixmap&quot;].instance.move(ePoint(5,5 + titleheight))
 self[&quot;ErrorPixmap&quot;].instance.resize(eSize(53,53))
-self[&quot;QuestionPixmap&quot;].instance.move(ePoint(5, 5 + titleheight))
+self[&quot;QuestionPixmap&quot;].instance.move(ePoint(5,5 + titleheight))
 self[&quot;QuestionPixmap&quot;].instance.resize(eSize(53,53))
-self[&quot;InfoPixmap&quot;].instance.move(ePoint(5, 5 + titleheight))
+self[&quot;InfoPixmap&quot;].instance.move(ePoint(5,5 + titleheight))
 self[&quot;InfoPixmap&quot;].instance.resize(eSize(53,53))
 if self.type == self.TYPE_YESNO:
 	listsize = (wsizex - 20, lenlist)
@@ -774,13 +774,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
 	<screen name="NimSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MinimalScreenTemplate"/>
-		<eLabel text="Select a tuner" position="center,158" size="600,34"  halign="center" font="Replacement;24" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Select a tuner" position="center,158" size="600,34" halign="center" font="Replacement;24" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget source="nimlist" render="Listbox" position="center,210" size="580,300" sliderPixmap="MetropolisHD/window/slider_vert.png" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (10, 8), size = (560, 22), flags = RT_HALIGN_LEFT, text = 1),
-					MultiContentEntryText(pos = (50, 32), size = (520, 20), font = 1, flags = RT_HALIGN_LEFT, text = 2),],
-				"fonts": [gFont("Regular", 20), gFont("Regular", 17)],
+					MultiContentEntryText(pos = (10,8), size = (560,22), flags = RT_HALIGN_LEFT, text = 1),
+					MultiContentEntryText(pos = (50,32), size = (520,20), font = 1, flags = RT_HALIGN_LEFT, text = 2),],
+				"fonts": [gFont("Regular",20), gFont("Regular",17)],
 				"itemHeight": 60}
 			</convert>
 		</widget>
@@ -829,7 +829,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget name="list" position="center,200" size="580,350" zPosition="3" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" itemHeight="50"/>
 	</screen>
 
-	<screen name="RadioInfoBar" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent"  zPosition="-15">
+	<screen name="RadioInfoBar" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" zPosition="-15">
 		<eLabel position="82,480" size="1116,192" backgroundColor="back" zPosition="-10"/>
 		<eLabel name="Line" position="82,480" size="1116,1" backgroundColor="un666666"/>
 		<eLabel name="Line" position="82,672" size="1116,1" backgroundColor="un666666"/>
@@ -896,7 +896,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		</widget>
 		<eLabel name="Line" position="center,625" size="1096,1" backgroundColor="un666666"/>
 		<widget source="RdsDecoder" render="Label" position="center,633" size="1100,30" font="LCD;30" halign="center" foregroundColor="yellow">
-    <convert type="RdsInfo">RadioText</convert>
+			<convert type="RdsInfo">RadioText</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="976,515" size="110,20" font="Regular;18" halign="right" foregroundColor="grey">
 			<convert type="ClockToText">Format:%d.%m.%Y</convert>
@@ -1066,9 +1066,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget source="languages" render="Listbox" position="380,220" size="550,400" scrollbarMode="showNever">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (250, 10), size = (420, 30), flags = RT_HALIGN_LEFT, text = 1),
-					MultiContentEntryPixmap(pos = (150, 5), size = (60, 40), png = 2),],
-				"fonts": [gFont("Regular", 25)],
+					MultiContentEntryText(pos = (250,10), size = (420,30), flags = RT_HALIGN_LEFT, text = 1),
+					MultiContentEntryPixmap(pos = (150,5), size = (60,40), png = 2),],
+				"fonts": [gFont("Regular",25)],
 				"itemHeight": 50 }
 			</convert>
 		</widget>
@@ -1168,10 +1168,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget source="cutlist" render="Listbox" position="90,135" size="290,400" zPosition="3" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" enableWrapAround="1">
 			<convert type="TemplatedMultiContent">
 {"template": [
-MultiContentEntryText(size=(145, 20), text = 1, backcolor = MultiContentTemplateColor(3)),
-MultiContentEntryText(pos=(145,0), size=(145, 20), text = 2, flags = RT_HALIGN_RIGHT, backcolor = MultiContentTemplateColor(3))
+MultiContentEntryText(size=(145,20), text = 1, backcolor = MultiContentTemplateColor(3)),
+MultiContentEntryText(pos=(145,0), size=(145,20), text = 2, flags = RT_HALIGN_RIGHT, backcolor = MultiContentTemplateColor(3))
 ],
-"fonts": [gFont("Regular", 18)],
+"fonts": [gFont("Regular",18)],
 "itemHeight": 20
 }
 			</convert>
@@ -1273,7 +1273,7 @@ MultiContentEntryText(pos=(145,0), size=(145, 20), text = 2, flags = RT_HALIGN_R
 		<widget source="info" render="Label" position="20,60" size="1060,100" font="Regular;22"/>
 		<widget name="details" position="20,200" size="1060,200" font="Regular;20"/>
 		<widget source="space_bar" render="Progress" position="10,480" size="1080,26" borderWidth="1" backgroundColor="grey"/>
-		<widget source="space_label" render="Label" position="20,484" size="1060,22"  font="Regular;18" halign="center" foregroundColor="black"/>
+		<widget source="space_label" render="Label" position="20,484" size="1060,22" font="Regular;18" halign="center" foregroundColor="black"/>
 		<eLabel position="0,518" size="1100,2" backgroundColor="grey"/>
 		<widget name="key_red" position="179,520" size="178,35" font="Regular;22" halign="center" valign="center"/>
 		<widget name="key_green" position="357,520" size="178,35" font="Regular;22" halign="center" valign="center"/>
@@ -1291,10 +1291,10 @@ MultiContentEntryText(pos=(145,0), size=(145, 20), text = 2, flags = RT_HALIGN_R
 		<widget source="cutlist" position="90,135" zPosition="3" size="280,400" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" render="Listbox">
 			<convert type="TemplatedMultiContent">
 {"template": [
-MultiContentEntryText(pos=(10,2), size=(170, 20), text = 1, backcolor = MultiContentTemplateColor(3)),
-MultiContentEntryText(pos=(190,2), size=(80, 20), text = 2, flags = RT_HALIGN_CENTER, backcolor = MultiContentTemplateColor(3))
+MultiContentEntryText(pos=(10,2), size=(170,20), text = 1, backcolor = MultiContentTemplateColor(3)),
+MultiContentEntryText(pos=(190,2), size=(80,20), text = 2, flags = RT_HALIGN_CENTER, backcolor = MultiContentTemplateColor(3))
 ],
-"fonts": [gFont("Regular", 20)],
+"fonts": [gFont("Regular",20)],
 "itemHeight": 25
 }
 			</convert>
@@ -1339,7 +1339,7 @@ MultiContentEntryText(pos=(190,2), size=(80, 20), text = 2, flags = RT_HALIGN_CE
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap position="148,59" size="70,35" pixmap="MetropolisHD/icons/dvd.png" transparent="1"  alphatest="blend"/>
+		<ePixmap position="148,59" size="70,35" pixmap="MetropolisHD/icons/dvd.png" transparent="1" alphatest="blend"/>
 	</screen>
 
 	<screen name="ChapterZap" position="500,600" size="280,60">
@@ -1361,13 +1361,13 @@ MultiContentEntryText(pos=(190,2), size=(80, 20), text = 2, flags = RT_HALIGN_CE
 		<widget source="titles" render="Listbox" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" position="10,86" size="546,296">
 			<convert type="TemplatedMultiContent">
 {"template": [
-MultiContentEntryText(pos = (0, 0), size = (360, 20), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 Title,
-MultiContentEntryText(pos = (0, 20), size = (360, 17), font = 1, flags = RT_HALIGN_LEFT, text = 2), # index 2 description,
-MultiContentEntryText(pos = (366, 6), size = (152, 20), font = 1, flags = RT_HALIGN_RIGHT, text = 3), # index 3 channel,
-MultiContentEntryText(pos = (366, 20), size = (102, 17), font = 1, flags = RT_HALIGN_RIGHT, text = 4), # index 4 begin time,
-MultiContentEntryText(pos = (470, 20), size = (48, 20), font = 1, flags = RT_HALIGN_RIGHT, text = 5), # index 5 duration,
+MultiContentEntryText(pos = (0,0), size = (360,20), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 Title,
+MultiContentEntryText(pos = (0,20), size = (360,17), font = 1, flags = RT_HALIGN_LEFT, text = 2), # index 2 description,
+MultiContentEntryText(pos = (366,6), size = (152,20), font = 1, flags = RT_HALIGN_RIGHT, text = 3), # index 3 channel,
+MultiContentEntryText(pos = (366,20), size = (102,17), font = 1, flags = RT_HALIGN_RIGHT, text = 4), # index 4 begin time,
+MultiContentEntryText(pos = (470,20), size = (48,20), font = 1, flags = RT_HALIGN_RIGHT, text = 5), # index 5 duration,
 ],
-"fonts": [gFont("Regular", 20), gFont("Regular", 14)],
+"fonts": [gFont("Regular",20), gFont("Regular",14)],
 "itemHeight": 37
 }
 			</convert>
@@ -1392,9 +1392,9 @@ MultiContentEntryText(pos = (470, 20), size = (48, 20), font = 1, flags = RT_HAL
 		<widget source="Title" render="Label" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget source="menu" render="Listbox" position="center,center" size="705,425" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionDisabled="1">
 			<convert type="TemplatedMultiContent">
-{"template": [  MultiContentEntryText(pos = (5, 7), size = (350, 30), flags = RT_HALIGN_LEFT, text = 0),
-MultiContentEntryText(pos = (360, 7), size = (215, 30), flags = RT_HALIGN_LEFT, text = 1)],
-"fonts": [gFont("Regular", 20)],
+{"template": [ MultiContentEntryText(pos = (5,7), size = (350,30), flags = RT_HALIGN_LEFT, text = 0),
+MultiContentEntryText(pos = (360,7), size = (215,30), flags = RT_HALIGN_LEFT, text = 1)],
+"fonts": [gFont("Regular",20)],
 "itemHeight": 35 }
 			</convert>
 		</widget>
@@ -1439,9 +1439,9 @@ MultiContentEntryText(pos = (360, 7), size = (215, 30), flags = RT_HALIGN_LEFT, 
 		<widget source="menu" render="Listbox" position="center,114" size="631,325" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png">
 			<convert type="TemplatedMultiContent">
 {"template": [
-MultiContentEntryText(pos = (70, 9), size = (631, 30), flags = RT_HALIGN_LEFT, text = 1), # index 0 is the MenuText,
+MultiContentEntryText(pos = (70,9), size = (631,30), flags = RT_HALIGN_LEFT, text = 1), # index 0 is the MenuText,
 ],
-"fonts": [gFont("Regular", 22)],
+"fonts": [gFont("Regular",22)],
 "itemHeight": 45
 }
 			</convert>
@@ -1449,9 +1449,9 @@ MultiContentEntryText(pos = (70, 9), size = (631, 30), flags = RT_HALIGN_LEFT, t
 		<widget source="menu" render="Listbox" position="center,450" size="650,160" scrollbarMode="showNever" selectionDisabled="1">
 			<convert type="TemplatedMultiContent">
 {"template": [
-MultiContentEntryText(pos = (0, 0), size = (650, 160), flags = RT_HALIGN_CENTER|RT_WRAP, text = 2), # index 2 is the Description,
+MultiContentEntryText(pos = (0,0), size = (650,160), flags = RT_HALIGN_CENTER|RT_WRAP, text = 2), # index 2 is the Description,
 ],
-"fonts": [gFont("Regular", 22)],
+"fonts": [gFont("Regular",22)],
 "itemHeight": 160
 }
 			</convert>
@@ -1469,7 +1469,7 @@ MultiContentEntryText(pos = (0, 0), size = (650, 160), flags = RT_HALIGN_CENTER|
 				MultiContentEntryPixmapAlphaTest(pos = (620,0), size = (48,48), png = 4), # index 4 is the status pixmap
 				MultiContentEntryPixmapAlphaTest(pos = (0,48), size = (700,2), png = 5), # index 4 is the div pixmap
 				],
-				"fonts": [gFont("Regular", 22),gFont("Regular", 16)],
+				"fonts": [gFont("Regular",22),gFont("Regular",16)],
 				"itemHeight": 50
 				}
 			</convert>
@@ -1597,7 +1597,7 @@ MultiContentEntryText(pos = (0, 0), size = (650, 160), flags = RT_HALIGN_CENTER|
 	</screen>
 
 	<screen name="MyTubePlayerMainScreen" position="90,90" size="1100,570">
-		<widget name="config" position="7, 17" size="470,50" scrollbarMode="showNever"/>
+		<widget name="config" position="7,17" size="470,50" scrollbarMode="showNever"/>
 		<widget source="global.CurrentTime" render="Label" position="870,10" size="120,30" font="Regular;26" halign="center">
 			<convert type="ClockToText"></convert>
 		</widget>
@@ -1605,19 +1605,19 @@ MultiContentEntryText(pos = (0, 0), size = (650, 160), flags = RT_HALIGN_CENTER|
 			<convert type="TemplatedMultiContent">
 {"templates":
 {"default": (67,[
-MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (100, 75), png = 4), # index 4 is the thumbnail
-MultiContentEntryText(pos = (100, 1), size = (500, 22), font=0, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 1), # index 1 is the Title
-MultiContentEntryText(pos = (100, 24), size = (300, 18), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 5), # index 5 is the Published Date
-MultiContentEntryText(pos = (100, 43), size = (300, 18), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 6), # index 6 is the Views Count
-MultiContentEntryText(pos = (400, 24), size = (200, 18), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 7), # index 7 is the duration
-MultiContentEntryText(pos = (400, 43), size = (200, 18), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 8), # index 8 is the ratingcount
+MultiContentEntryPixmapAlphaTest(pos = (0,0), size = (100,75), png = 4), # index 4 is the thumbnail
+MultiContentEntryText(pos = (100,1), size = (500,22), font=0, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 1), # index 1 is the Title
+MultiContentEntryText(pos = (100,24), size = (300,18), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 5), # index 5 is the Published Date
+MultiContentEntryText(pos = (100,43), size = (300,18), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 6), # index 6 is the Views Count
+MultiContentEntryText(pos = (400,24), size = (200,18), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 7), # index 7 is the duration
+MultiContentEntryText(pos = (400,43), size = (200,18), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 8), # index 8 is the ratingcount
 ]),
 "state": (67,[
-MultiContentEntryText(pos = (10, 1), size = (560, 28), font=2, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 0), # index 0 is the name
-MultiContentEntryText(pos = (10, 22), size = (560, 46), font=3, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 1), # index 2 is the description
+MultiContentEntryText(pos = (10,1), size = (560,28), font=2, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 0), # index 0 is the name
+MultiContentEntryText(pos = (10,22), size = (560,46), font=3, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 1), # index 2 is the description
 ])
 },
-"fonts": [gFont("Regular", 22),gFont("Regular", 18),gFont("Regular", 22),gFont("Regular", 20)],
+"fonts": [gFont("Regular",22),gFont("Regular",18),gFont("Regular",22),gFont("Regular",20)],
 "itemHeight": 67
 }
 			</convert>
@@ -1638,7 +1638,7 @@ MultiContentEntryText(pos = (10, 22), size = (560, 46), font=3, flags = RT_HALIG
 		<eLabel text="MENU" position="720,10" size="90,30" font="Regular;24"/>
 		<widget name="thumbnail" position="0,0" size="100,75" alphatest="off"/># fake entry for dynamic thumbnail resizing, currently there is no other way doing this.
 		<widget name="HelpWindow" position="90,410" size="1,1" transparent="1" alphatest="off"/>
-		<eLabel name="new eLabel" position="0, 0" size="10, 10"/>
+		<eLabel name="new eLabel" position="0,0" size="10,10"/>
 		<widget name="VKeyIcon" position="0,0" size="0,0"/>
 	</screen>
 	<screen name="MyTubeSuggestionsListScreen" position="90,150" zPosition="6" size="480,260" flags="wfNoBorder">
@@ -1646,10 +1646,10 @@ MultiContentEntryText(pos = (10, 22), size = (560, 46), font=3, flags = RT_HALIG
 		<widget source="suggestionslist" render="Listbox" position="10,5" size="480,250" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png">
 			<convert type="TemplatedMultiContent">
 {"template": [
-MultiContentEntryText(pos = (0, 1), size = (300, 24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-MultiContentEntryText(pos = (310, 1), size = (160, 24), font=1, flags = RT_HALIGN_RIGHT, text = 1), # index 1 are the rtesults
+MultiContentEntryText(pos = (0,1), size = (300,24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+MultiContentEntryText(pos = (310,1), size = (160,24), font=1, flags = RT_HALIGN_RIGHT, text = 1), # index 1 are the rtesults
 ],
-"fonts": [gFont("Regular", 22),gFont("Regular", 18)],
+"fonts": [gFont("Regular",22),gFont("Regular",18)],
 "itemHeight": 25
 }
 			</convert>
@@ -1676,16 +1676,16 @@ MultiContentEntryText(pos = (310, 1), size = (160, 24), font=1, flags = RT_HALIG
 			<convert type="TemplatedMultiContent">
 {"templates":
 {"default": (135,[
-MultiContentEntryPixmapAlphaTest(pos = (10, 0), size = (180, 135), png = 0), # index 0 is the thumbnail
-MultiContentEntryPixmapAlphaTest(pos = (190, 0), size = (180, 135), png = 1), # index 0 is the thumbnail
-MultiContentEntryPixmapAlphaTest(pos = (370, 0), size = (180, 135), png = 2), # index 0 is the thumbnail
-MultiContentEntryPixmapAlphaTest(pos = (550, 0), size = (180, 135), png = 3), # index 0 is the thumbnail
+MultiContentEntryPixmapAlphaTest(pos = (10,0), size = (180,135), png = 0), # index 0 is the thumbnail
+MultiContentEntryPixmapAlphaTest(pos = (190,0), size = (180,135), png = 1), # index 0 is the thumbnail
+MultiContentEntryPixmapAlphaTest(pos = (370,0), size = (180,135), png = 2), # index 0 is the thumbnail
+MultiContentEntryPixmapAlphaTest(pos = (550,0), size = (180,135), png = 3), # index 0 is the thumbnail
 ]),
 "state": (135,[
-MultiContentEntryText(pos = (0, 35), size = (740, 65), font=2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER| RT_WRAP, text = 0), # index 0 is the name
+MultiContentEntryText(pos = (0,35), size = (740,65), font=2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER| RT_WRAP, text = 0), # index 0 is the name
 ])
 },
-"fonts": [gFont("Regular", 20),gFont("Regular", 14),gFont("Regular", 28)],
+"fonts": [gFont("Regular",20),gFont("Regular",14),gFont("Regular",28)],
 "itemHeight": 135
 }
 			</convert>
@@ -1701,9 +1701,9 @@ MultiContentEntryText(pos = (0, 35), size = (740, 65), font=2, flags = RT_HALIGN
 		<widget source="historylist" render="Listbox" position="10,5" size="460,355" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png">
 			<convert type="TemplatedMultiContent">
 {"template": [
-MultiContentEntryText(pos = (0, 1), size = (340, 24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+MultiContentEntryText(pos = (0,1), size = (340,24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
 ],
-"fonts": [gFont("Regular", 22),gFont("Regular", 18)],
+"fonts": [gFont("Regular",22),gFont("Regular",18)],
 "itemHeight": 25
 }
 			</convert>
@@ -1712,7 +1712,7 @@ MultiContentEntryText(pos = (0, 1), size = (340, 24), font=0, flags = RT_HALIGN_
 
 	<screen name="MyTubeSettingsScreen" position="340,104" size="600,532" title="MyTubeSettingsScreen">
 		<panel name="ButtonTemplate_RG_Small"/>
-		<widget name="config" position="20,10" size="560,450"  scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
+		<widget name="config" position="20,10" size="560,450" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
 		<ePixmap position="20,410" size="100,40" pixmap="~/plugin.png" alphatest="off" transparent="1"/>
 		<widget name="title" position="0,0" size="0,0"/>
 	</screen>
@@ -1722,12 +1722,12 @@ MultiContentEntryText(pos = (0, 1), size = (340, 24), font=0, flags = RT_HALIGN_
 		<widget source="tasklist" render="Listbox" position="10,10" size="660,410" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png">
 			<convert type="TemplatedMultiContent">
 {"template": [
-MultiContentEntryText(pos = (10, 3), size = (200, 24), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the name
-MultiContentEntryText(pos = (250, 3), size = (180, 24), font=1, flags = RT_HALIGN_RIGHT, text = 2), # index 2 is the state
-MultiContentEntryProgress(pos = (440, 3), size = (100, 24), percent = -3), # index 3 should be progress
-MultiContentEntryText(pos = (550, 3), size = (70, 24), font=1, flags = RT_HALIGN_RIGHT, text = 4), # index 4 is the percentage
+MultiContentEntryText(pos = (10,3), size = (200,24), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the name
+MultiContentEntryText(pos = (250,3), size = (180,24), font=1, flags = RT_HALIGN_RIGHT, text = 2), # index 2 is the state
+MultiContentEntryProgress(pos = (440,3), size = (100,24), percent = -3), # index 3 should be progress
+MultiContentEntryText(pos = (550,3), size = (70,24), font=1, flags = RT_HALIGN_RIGHT, text = 4), # index 4 is the percentage
 ],
-"fonts": [gFont("Regular", 22),gFont("Regular", 18)],
+"fonts": [gFont("Regular",22),gFont("Regular",18)],
 "itemHeight": 30
 }
 			</convert>
@@ -1797,7 +1797,7 @@ MultiContentEntryText(pos = (550, 3), size = (70, 24), font=1, flags = RT_HALIGN
 
 	<screen name="NameserverSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGYS_Template"/>
-		<eLabel text="Nameserver setup" position="center,72" size="735,34"  halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<eLabel text="Nameserver setup" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="config" position="center,150" size="520,375" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
 		<widget source="introduction" render="Label" position="center,480" size="520,30" font="Regular;24" halign="center"/>
 	</screen>
@@ -1806,14 +1806,14 @@ MultiContentEntryText(pos = (550, 3), size = (70, 24), font=1, flags = RT_HALIGN
 		<panel name="MidleScreen_RGYS_Template"/>
 		<eLabel text="Select a network adapter" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget source="list" render="Listbox" position="center,150" size="631,280" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png">
-			<convert type="TemplatedMultiContent"><!--  iface, name, description, interfacepng, defaultpng, activepng, divpng  -->
+			<convert type="TemplatedMultiContent"><!-- iface, name, description, interfacepng, defaultpng, activepng, divpng -->
 {"template": [
-MultiContentEntryText(pos = (85, 6), size = (410, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1), # index 1 is the interfacename
-MultiContentEntryText(pos = (85, 43), size = (410, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_BOTTOM, text = 2), # index 2 is the description
-MultiContentEntryPixmapAlphaTest(pos = (2, 8), size = (54, 54), png = 3), # index 3 is the interface pixmap
-MultiContentEntryPixmapAlphaTest(pos = (63, 46), size = (15, 16), png = 4), # index 4 is the default pixmap
+MultiContentEntryText(pos = (85,6), size = (410,28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1), # index 1 is the interfacename
+MultiContentEntryText(pos = (85,43), size = (410,20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_BOTTOM, text = 2), # index 2 is the description
+MultiContentEntryPixmapAlphaTest(pos = (2,8), size = (54,54), png = 3), # index 3 is the interface pixmap
+MultiContentEntryPixmapAlphaTest(pos = (63,46), size = (15,16), png = 4), # index 4 is the default pixmap
 ],
-"fonts": [gFont("Regular", 26),gFont("Regular", 20)],
+"fonts": [gFont("Regular",26),gFont("Regular",20)],
 "itemHeight": 70
 }
 			</convert>
@@ -1866,14 +1866,14 @@ MultiContentEntryPixmapAlphaTest(pos = (63, 46), size = (15, 16), png = 4), # in
 		<widget source="list" render="Listbox" position="center,150" size="631,400" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png">
 			<convert type="TemplatedMultiContent">
 {"template": [
-MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 1), # index 1 is the expandable/expanded/verticalline icon
-MultiContentEntryText(pos = (70, 4), size = (400, 26), font=2, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the Hostname
-MultiContentEntryText(pos = (160, 5), size = (300, 25), font=0, flags = RT_HALIGN_LEFT, text = 3), # index 3 is the sharename
-MultiContentEntryText(pos = (160, 26), size = (300, 17), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is the sharedescription
-MultiContentEntryPixmapAlphaTest(pos = (65, 6), size = (48, 48), png = 5), # index 5 is the nfs/cifs icon
-MultiContentEntryPixmapAlphaTest(pos = (110, 6), size = (48, 48), png = 6), # index 6 is the isMounted icon
+MultiContentEntryPixmapAlphaTest(pos = (10,6), size = (48,48), png = 1), # index 1 is the expandable/expanded/verticalline icon
+MultiContentEntryText(pos = (70,4), size = (400,26), font=2, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the Hostname
+MultiContentEntryText(pos = (160,5), size = (300,25), font=0, flags = RT_HALIGN_LEFT, text = 3), # index 3 is the sharename
+MultiContentEntryText(pos = (160,26), size = (300,17), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is the sharedescription
+MultiContentEntryPixmapAlphaTest(pos = (65,6), size = (48,48), png = 5), # index 5 is the nfs/cifs icon
+MultiContentEntryPixmapAlphaTest(pos = (110,6), size = (48,48), png = 6), # index 6 is the isMounted icon
 ],
-"fonts": [gFont("Regular", 20),gFont("Regular", 15),gFont("Regular", 22)],
+"fonts": [gFont("Regular",20),gFont("Regular",15),gFont("Regular",22)],
 "itemHeight": 60
 }
 			</convert>
@@ -1893,10 +1893,10 @@ MultiContentEntryPixmapAlphaTest(pos = (110, 6), size = (48, 48), png = 6), # in
 		<widget source="config" render="Listbox" position="center,120" size="700,400" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png">
 			<convert type="TemplatedMultiContent">
 {"template": [
-MultiContentEntryText(pos = (80, 7), size = (650, 50), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # index 4 is the status pixmap
+MultiContentEntryText(pos = (80,7), size = (650,50), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+MultiContentEntryPixmapAlphaTest(pos = (10,6), size = (48,48), png = 3), # index 4 is the status pixmap
 ],
-"fonts": [gFont("Regular", 40)],
+"fonts": [gFont("Regular",40)],
 "itemHeight": 60
 }
 			</convert>
@@ -1917,11 +1917,11 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		<widget source="config" render="Listbox" position="center,120" size="700,445">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryText(pos = (60, 5), size = (620, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
-						MultiContentEntryText(pos = (70, 35), size = (610, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 3 is the Description
-						MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # index 4 is the pixmap
+						MultiContentEntryText(pos = (60,5), size = (620,28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
+						MultiContentEntryText(pos = (70,35), size = (610,20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 3 is the Description
+						MultiContentEntryPixmapAlphaTest(pos = (10,6), size = (48,48), png = 3), # index 4 is the pixmap
 					],
-				"fonts": [gFont("Regular", 22),gFont("Regular", 17)],
+				"fonts": [gFont("Regular",22),gFont("Regular",17)],
 				"itemHeight": 60
 				}
 			</convert>
@@ -1938,14 +1938,14 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		<widget source="config" render="Listbox" position="center,210" size="700,360" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryPixmapAlphaTest(pos = (40, 6), size = (48, 48), png = 0), # index 0 is the isMounted pixmap
-						MultiContentEntryText(pos = (210, 5), size = (200, 28), font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the sharename
-						MultiContentEntryText(pos = (390, 8), size = (250, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the IPdescription
-						MultiContentEntryText(pos = (210, 35), size = (350, 20), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is the DIRdescription
-						MultiContentEntryPixmapAlphaTest(pos = (600, 15), size = (48, 48), png = 4), # index 4 is the activepng pixmap
-						MultiContentEntryPixmapAlphaTest(pos = (630, 6), size = (48, 48), png = 5), # index 4 is the mounttype pixmap
+						MultiContentEntryPixmapAlphaTest(pos = (40,6), size = (48,48), png = 0), # index 0 is the isMounted pixmap
+						MultiContentEntryText(pos = (210,5), size = (200,28), font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the sharename
+						MultiContentEntryText(pos = (390,8), size = (250,20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the IPdescription
+						MultiContentEntryText(pos = (210,35), size = (350,20), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is the DIRdescription
+						MultiContentEntryPixmapAlphaTest(pos = (600,15), size = (48,48), png = 4), # index 4 is the activepng pixmap
+						MultiContentEntryPixmapAlphaTest(pos = (630,6), size = (48,48), png = 5), # index 4 is the mounttype pixmap
 					],
-				"fonts": [gFont("Regular", 22),gFont("Regular", 17)],
+				"fonts": [gFont("Regular",22),gFont("Regular",17)],
 				"itemHeight": 60
 				}
 			</convert>
@@ -2071,10 +2071,10 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		<widget source="list" render="Listbox" position="340,210" size="320,300" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png">
 			<convert type="TemplatedMultiContent">
 			{
-				"template": [MultiContentEntryText(pos=(65, 10), size=(275, 40), font=0, flags=RT_HALIGN_LEFT, text=0),
-					MultiContentEntryPixmapAlphaTest(pos=(5, 5), size=(51, 40), png=1),
-					MultiContentEntryText(pos=(5, 25), size=(51, 16), font=1, flags=RT_HALIGN_CENTER, text=2),],
-				"fonts": [gFont("Regular", 26), gFont("Regular", 12)],
+				"template": [MultiContentEntryText(pos=(65,10), size=(275,40), font=0, flags=RT_HALIGN_LEFT, text=0),
+					MultiContentEntryPixmapAlphaTest(pos=(5,5), size=(51,40), png=1),
+					MultiContentEntryText(pos=(5,25), size=(51,16), font=1, flags=RT_HALIGN_CENTER, text=2),],
+				"fonts": [gFont("Regular",26), gFont("Regular",12)],
 				"itemHeight": 50
 			}
 			</convert>
@@ -2095,8 +2095,8 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # ind
 		<widget source="list" render="Listbox" position="285,120" size="400,450" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png">
 			<convert type="TemplatedMultiContent">
 			{
-				"template": [MultiContentEntryText(pos=(10, 1), size=(340, 30), font=0, flags=RT_HALIGN_LEFT, text=0)],
-				"fonts": [gFont("Regular", 20)],
+				"template": [MultiContentEntryText(pos=(10,1), size=(340,30), font=0, flags=RT_HALIGN_LEFT, text=0)],
+				"fonts": [gFont("Regular",20)],
 				"itemHeight": 30
 			}
 			</convert>
