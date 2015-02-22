@@ -161,7 +161,7 @@
 		</widget>
 		<eLabel name="Line" position="872,485" size="300,1" backgroundColor="un666666"/>
 		<widget source="ServiceEvent" render="Label" position="854,493" size="340,26" halign="center" font="Regular;18" noWrap="1" foregroundColor="un21e2e2e2">
-			<convert type="ServiceName2">%O %s %F %p %Y %f %M %b</convert>
+			<convert type="ServiceName">TransponderInfo</convert>
 		</widget>
 		<eLabel name="Line" position="872,521" size="300,1" backgroundColor="un666666"/>
 		<widget source="ServiceEvent" render="NextEpgInfo" position="854,526" size="340,50" halign="center" font="Replacement;22" foregroundColor="yellow"/>
