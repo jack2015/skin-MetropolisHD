@@ -139,7 +139,7 @@
 		<widget source="ServiceEvent" render="Picon" position="910,160" size="100,60" transparent="1" alphatest="blend">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		<widget source="ServiceEvent" render="PiconProv" position="1035,160" size="100,60" transparent="1" alphatest="blend">
+		<widget source="ServiceEvent" render="MetPiconProv" position="1035,160" size="100,60" transparent="1" alphatest="blend">
 			<convert type="MetProvider"/>
 		</widget>
 		<eLabel name="Line" position="872,225" size="300,1" backgroundColor="un666666"/>
