@@ -37,7 +37,7 @@ class MetProvider(Converter, object):
 					if not provider.valid(): break
 					if provider.flags & eServiceReference.isDirectory:
 						servicelist = serviceHandler.list(provider)
-						if not servicelist is None:
+						if servicelist is not None:
 							while True:
 								service = servicelist.getNext()
 								if not service.valid(): break
