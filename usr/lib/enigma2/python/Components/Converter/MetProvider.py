@@ -4,8 +4,8 @@
 # By Taapat (c) 2015
 #
 
-from Components.Converter.Converter import Converter
 from enigma import eServiceReference, eServiceCenter
+from Components.Converter.Converter import Converter
 from Components.Element import cached
 from Screens.ChannelSelection import service_types_radio, service_types_tv
 
@@ -24,7 +24,13 @@ class MetProvider(Converter, object):
 				typestr = service_types_tv
 			pos = typestr.rfind(':')
 			serviceHandler = eServiceCenter.getInstance()
-			providerlist = serviceHandler.list(eServiceReference('%s (channelID == %08x%04x%04x) && %s FROM PROVIDERS ORDER BY name' %(typestr[:pos+1],ref.getUnsignedData(4),ref.getUnsignedData(2),ref.getUnsignedData(3),typestr[pos+1:])))
+			providerlist = serviceHandler.list(eServiceReference(
+				'%s (channelID == %08x%04x%04x) && %s FROM PROVIDERS ORDER BY name' %
+					(typestr[:pos+1],
+					ref.getUnsignedData(4), # NAMESPACE
+					ref.getUnsignedData(2), # TSID
+					ref.getUnsignedData(3), # ONID
+					typestr[pos+1:])))
 			if not providerlist is None:
 				while True:
 					provider = providerlist.getNext()
