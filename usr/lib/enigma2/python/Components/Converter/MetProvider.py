@@ -22,15 +22,14 @@ class MetProvider(Converter, object):
 				typestr = service_types_radio
 			else:
 				typestr = service_types_tv
-			pos = typestr.rfind(':') + 1
 			serviceHandler = eServiceCenter.getInstance()
 			providerlist = serviceHandler.list(eServiceReference(
 				'%s (channelID == %08x%04x%04x) && %s FROM PROVIDERS ORDER BY name' %
-					(typestr[:pos],
+					(typestr[:20],
 					ref.getUnsignedData(4), # NAMESPACE
 					ref.getUnsignedData(2), # TSID
 					ref.getUnsignedData(3), # ONID
-					typestr[pos:])))
+					typestr[20:])))
 			if providerlist is not None:
 				while True:
 					provider = providerlist.getNext()
