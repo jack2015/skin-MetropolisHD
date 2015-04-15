@@ -631,11 +631,6 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count> 7 and 2 or 3)))
 		<widget name="list" position="57,56" size="760,375"/>
 		<applet type="onLayoutFinish">
 from enigma import eSize, ePoint
-if self.timerRunning:
-	titleheight = 30
-else:
-	titleheight = 0
-	self.setTitle("")
 orgwidth = self.instance.size().width()
 orgheight = self.instance.size().height()
 orgpos = self.instance.position()
@@ -652,30 +647,30 @@ if self.type == self.TYPE_YESNO:
 	wsizey += lenlist + 10
 if (280> wsizex):
 	wsizex = 280
-wsize = (wsizex, wsizey + titleheight)
+wsize = (wsizex, wsizey)
 self.instance.resize(eSize(*wsize))
-self[&quot;text&quot;].instance.move(ePoint(65,8 + titleheight))
+self[&quot;text&quot;].instance.move(ePoint(65,8))
 self[&quot;text&quot;].instance.resize(eSize(*textsize))
-self[&quot;ErrorPixmap&quot;].instance.move(ePoint(5,5 + titleheight))
+self[&quot;ErrorPixmap&quot;].instance.move(ePoint(5,5))
 self[&quot;ErrorPixmap&quot;].instance.resize(eSize(53,53))
-self[&quot;QuestionPixmap&quot;].instance.move(ePoint(5,5 + titleheight))
+self[&quot;QuestionPixmap&quot;].instance.move(ePoint(5,5))
 self[&quot;QuestionPixmap&quot;].instance.resize(eSize(53,53))
-self[&quot;InfoPixmap&quot;].instance.move(ePoint(5,5 + titleheight))
+self[&quot;InfoPixmap&quot;].instance.move(ePoint(5,5))
 self[&quot;InfoPixmap&quot;].instance.resize(eSize(53,53))
 if self.type == self.TYPE_YESNO:
 	listsize = (wsizex - 20, lenlist)
-	self[&quot;list&quot;].instance.move(ePoint(10, wsizey - lenlist + titleheight - 5))
+	self[&quot;list&quot;].instance.move(ePoint(10, wsizey - lenlist - 5))
 	self[&quot;list&quot;].instance.resize(eSize(*listsize))
 newwidth = wsize[0]
 self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (orgheight - wsizey)/2))
 		</applet>
 	</screen>
 
-	<screen name="MessageBox" position="center,center" size="800,10" title="Message">
+	<screen name="MessageBox" position="center,center" size="800,10">
 		<panel name="MessageBoxTemplate"/>
 	</screen>
 
-	<screen name="MessageBoxSimple" position="center,center" size="800,10" title="Message">
+	<screen name="MessageBoxSimple" position="center,center" size="800,10">
 		<panel name="MessageBoxTemplate"/>
 	</screen>
 
