@@ -145,7 +145,7 @@
 		<eLabel name="Line" position="872,225" size="300,1" backgroundColor="un666666"/>
 		<widget source="ServiceEvent" render="Label" position="875,230" size="72,28" halign="right" font="OpenSans;20" foregroundColor="hellgreen">
 			<convert type="EventTime">StartTime</convert>
-			<convert type="ClockToText"></convert>
+			<convert type="ClockToText"/>
 		</widget>
 		<eLabel name="Line" position="962,244" size="120,1" backgroundColor="un666666"/>
 		<widget source="ServiceEvent" render="Progress" position="962,243" size="120,4" zPosition="2" pixmap="MetropolisHD/window/slider.png" transparent="1">
@@ -443,21 +443,21 @@ orgpos = self.instance.position()
 textsize = self["text"].getSize()
 textsize = (textsize[0] + 80, textsize[1] + 40)
 count = len(self.list)
-if count> 10:
+if count > 10:
 	count = 10
 offset = 25 * count
 wsizex = textsize[0] + 80
 wsizey = textsize[1] + offset +10
-if (640> wsizex):
+if (640 > wsizex):
 	wsizex = 640
 wsize = (wsizex, wsizey)
 self.instance.resize(eSize(*wsize))
 self["text"].instance.resize(eSize(*textsize))
-listsize = (wsizex - 20,25 * count)
+listsize = (wsizex - 20, 25 * count)
 self["list"].instance.move(ePoint(10, textsize[1]))
 self["list"].instance.resize(eSize(*listsize))
 newwidth = wsize[0]
-self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count> 7 and 2 or 3)))
+self.instance.move(ePoint((1280-wsizex) / 2, (720 - wsizey) / (count > 7 and 2 or 3)))
 		</applet>
 	</screen>
 
@@ -634,35 +634,35 @@ from enigma import eSize, ePoint
 orgwidth = self.instance.size().width()
 orgheight = self.instance.size().height()
 orgpos = self.instance.position()
-textsize = self[&quot;text&quot;].getSize()
+textsize = self["text"].getSize()
 textsize = (textsize[0] + 50, textsize[1] + 20)
 wsizex = textsize[0] + 60
 wsizey = textsize[1]
-lenlist = len(self.list)*25
-if (lenlist> 125):
+lenlist = len(self.list) * 25
+if (lenlist > 125):
 	lenlist = 125
-if (64> wsizey):
+if (64 > wsizey):
 	wsizey = 64
 if self.type == self.TYPE_YESNO:
 	wsizey += lenlist + 10
-if (280> wsizex):
+if (280 > wsizex):
 	wsizex = 280
 wsize = (wsizex, wsizey)
 self.instance.resize(eSize(*wsize))
-self[&quot;text&quot;].instance.move(ePoint(65,8))
-self[&quot;text&quot;].instance.resize(eSize(*textsize))
-self[&quot;ErrorPixmap&quot;].instance.move(ePoint(5,5))
-self[&quot;ErrorPixmap&quot;].instance.resize(eSize(53,53))
-self[&quot;QuestionPixmap&quot;].instance.move(ePoint(5,5))
-self[&quot;QuestionPixmap&quot;].instance.resize(eSize(53,53))
-self[&quot;InfoPixmap&quot;].instance.move(ePoint(5,5))
-self[&quot;InfoPixmap&quot;].instance.resize(eSize(53,53))
+self["text"].instance.move(ePoint(65, 8))
+self["text"].instance.resize(eSize(*textsize))
+self["ErrorPixmap"].instance.move(ePoint(5, 5))
+self["ErrorPixmap"].instance.resize(eSize(53, 53))
+self["QuestionPixmap"].instance.move(ePoint(5, 5))
+self["QuestionPixmap"].instance.resize(eSize(53, 53))
+self["InfoPixmap"].instance.move(ePoint(5, 5))
+self["InfoPixmap"].instance.resize(eSize(53, 53))
 if self.type == self.TYPE_YESNO:
 	listsize = (wsizex - 20, lenlist)
-	self[&quot;list&quot;].instance.move(ePoint(10, wsizey - lenlist - 5))
-	self[&quot;list&quot;].instance.resize(eSize(*listsize))
+	self["list"].instance.move(ePoint(10, wsizey - lenlist - 5))
+	self["list"].instance.resize(eSize(*listsize))
 newwidth = wsize[0]
-self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (orgheight - wsizey)/2))
+self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, orgpos.y() + (orgheight - wsizey) / 2))
 		</applet>
 	</screen>
 
@@ -1594,7 +1594,7 @@ MultiContentEntryText(pos = (0,0), size = (650,160), flags = RT_HALIGN_CENTER|RT
 	<screen name="MyTubePlayerMainScreen" position="90,90" size="1100,570">
 		<widget name="config" position="7,17" size="470,50" scrollbarMode="showNever"/>
 		<widget source="global.CurrentTime" render="Label" position="870,10" size="120,30" font="Regular;26" halign="center">
-			<convert type="ClockToText"></convert>
+			<convert type="ClockToText"/>
 		</widget>
 		<widget source="feedlist" render="Listbox" position="500,55" size="600,462" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png">
 			<convert type="TemplatedMultiContent">
@@ -1732,7 +1732,7 @@ MultiContentEntryText(pos = (550,3), size = (70,24), font=1, flags = RT_HALIGN_R
 		<eLabel name="Red" position="246,560" size="178,1" foregroundColor="red" backgroundColor="red"/>
 		<ePixmap position="570,525" size="100,40" pixmap="~/plugin.png" alphatest="off" transparent="1"/>
 		<widget name="title" position="0,0" size="0,0"/>
-	</screen>&gt;
+	</screen>
 
 	<screen name="PositionerSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGYB_Template"/>
