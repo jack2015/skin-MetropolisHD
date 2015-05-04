@@ -6,16 +6,16 @@
 	<screen name="InfoBarTemplate">
 		<ePixmap position="center,480" size="1273,250" pixmap="MetropolisHD/infobar/back.png" zPosition="-1" alphatest="off"/>
 		<eLabel text="AGC:" position="1037,641" size="50,22" font="Replacement;17" backgroundColor="transpGrey" transparent="1" foregroundColor="yellow" halign="right"/>
-		<widget source="session.FrontendStatus" render="Label" position="1092,641" size="50,22" font="Replacement;17" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
+		<widget source="session.FrontendStatus" render="Label" position="1092,641" size="50,22" font="Replacement;17" backgroundColor="transpGrey" transparent="1" foregroundColor="foreground">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="center,485" size="500,50" font="OpenSans;30" backgroundColor="transpGrey" transparent="1" halign="center" foregroundColor="un21e2e2e2">
+		<widget source="session.CurrentService" render="Label" position="center,485" size="500,50" font="OpenSans;30" backgroundColor="transpGrey" transparent="1" halign="center" foregroundColor="foreground">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1028,560" size="140,55" font="Regular;45" halign="right" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
+		<widget source="global.CurrentTime" render="Label" position="1028,560" size="140,55" font="Regular;45" halign="right" backgroundColor="transpGrey" transparent="1" foregroundColor="foreground">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="70,645" size="300,37" font="Replacement;20" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
+		<widget source="session.CurrentService" render="Label" position="70,645" size="300,37" font="Replacement;20" backgroundColor="transpGrey" transparent="1" foregroundColor="foreground">
 			<convert type="ServiceName">Provider</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Picon" position="70,572" size="100,60" transparent="1" alphatest="blend">
@@ -67,18 +67,18 @@
 		<widget source="session.Event_Next" render="Label" position="343,600" size="597,40" font="OpenSans;25" foregroundColor="grey" backgroundColor="transpGrey" transparent="1">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" font="Replacement;17" position="60,545" size="54,22" halign="right" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1" text="1920">
+		<widget source="session.CurrentService" render="Label" font="Replacement;17" position="60,545" size="54,22" halign="right" foregroundColor="foreground" backgroundColor="transpGrey" transparent="1" text="1920">
 			<convert type="ServiceInfo">VideoWidth</convert>
 		</widget>
-		<eLabel text="x" font="Replacement;17" position="115,545" size="13,22" halign="center" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1"/>
-		<widget source="session.CurrentService" render="Label" font="Replacement;17" position="130,545" size="54,22" foregroundColor="un21e2e2e2" backgroundColor="transpGrey" transparent="1" text="1080">
+		<eLabel text="x" font="Replacement;17" position="115,545" size="13,22" halign="center" foregroundColor="foreground" backgroundColor="transpGrey" transparent="1"/>
+		<widget source="session.CurrentService" render="Label" font="Replacement;17" position="130,545" size="54,22" foregroundColor="foreground" backgroundColor="transpGrey" transparent="1" text="1080">
 			<convert type="ServiceInfo">VideoHeight</convert>
 		</widget>
 		<eLabel text="BER:" position="1037,664" size="50,22" font="Replacement;17" backgroundColor="transpGrey" transparent="1" foregroundColor="yellow" halign="right"/>
-		<widget source="session.FrontendStatus" render="Label" position="1092,664" size="75,22" font="Replacement;17" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
+		<widget source="session.FrontendStatus" render="Label" position="1092,664" size="75,22" font="Replacement;17" backgroundColor="transpGrey" transparent="1" foregroundColor="foreground">
 			<convert type="FrontendInfo">BER</convert>
 		</widget>
-		<widget source="session.FrontendStatus" render="Label" position="1092,617" size="50,22" font="Replacement;17" backgroundColor="transpGrey" transparent="1" foregroundColor="un21e2e2e2">
+		<widget source="session.FrontendStatus" render="Label" position="1092,617" size="50,22" font="Replacement;17" backgroundColor="transpGrey" transparent="1" foregroundColor="foreground">
 			<convert type="FrontendInfo">SNRdB</convert>
 		</widget>
 		<eLabel text="SNR:" position="1037,617" size="50,22" font="Replacement;17" backgroundColor="transpGrey" transparent="1" foregroundColor="yellow" halign="right"/>
@@ -93,14 +93,14 @@
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
-		<eLabel name="Line" position="190,589" size="832,2" backgroundColor="un666666"/>
+		<eLabel name="Line" position="190,589" size="832,2" backgroundColor="lineback"/>
 		<widget source="global.CurrentTime" render="Label" position="1035,533" size="186,30" font="OpenSans;20" valign="center" halign="center" backgroundColor="transpGrey" transparent="1" foregroundColor="hellgreen">
 			<convert type="ClockToText">Format:%e. %B</convert>
 		</widget>
 		<widget source="session.FrontendStatus" render="Progress" position="1140,623" pixmap="MetropolisHD/window/snr.png" size="98,10" borderWidth="1" borderColor="darkgrey">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1169,564" size="60,42" font="Regular;25" backgroundColor="un333333" transparent="1" foregroundColor="un21e2e2e2">
+		<widget source="global.CurrentTime" render="Label" position="1169,564" size="60,42" font="Regular;25" backgroundColor="textback" transparent="1" foregroundColor="foreground">
 			<convert type="ClockToText">Format::%S</convert>
 		</widget>
 		<widget source="session.FrontendStatus" render="Progress" position="1140,646" pixmap="MetropolisHD/window/snr.png" size="98,10" borderWidth="1" borderColor="darkgrey">
@@ -115,17 +115,17 @@
 	<screen name="PlayerTemplate">
 		<eLabel position="center,1" size="1100,140" zPosition="-3"/>
 		<ePixmap pixmap="MetropolisHD/window/back.png" position="272,5" size="745,40" alphatest="off" zPosition="-2"/>
-		<eLabel name="Line" position="center,613" size="716,1" backgroundColor="un666666"/>
-		<eLabel name="Line" position="center,97" size="610,2" backgroundColor="un666666"/>
-		<eLabel name="Line" position="center,1" size="1100,1" backgroundColor="un666666"/>
-		<eLabel name="Line" position="center,141" size="1100,1" backgroundColor="un666666"/>
-		<eLabel name="Line" position="90,1" size="1,140" backgroundColor="un666666"/>
-		<eLabel name="Line" position="1190,1" size="1,140" backgroundColor="un666666"/>
+		<eLabel name="Line" position="center,613" size="716,1" backgroundColor="lineback"/>
+		<eLabel name="Line" position="center,97" size="610,2" backgroundColor="lineback"/>
+		<eLabel name="Line" position="center,1" size="1100,1" backgroundColor="lineback"/>
+		<eLabel name="Line" position="center,141" size="1100,1" backgroundColor="lineback"/>
+		<eLabel name="Line" position="90,1" size="1,140" backgroundColor="lineback"/>
+		<eLabel name="Line" position="1190,1" size="1,140" backgroundColor="lineback"/>
 		<ePixmap position="1041,35" size="96,96" pixmap="MetropolisHD/icons/mplayer.png" alphatest="on"/>
 		<widget source="global.CurrentTime" render="Label" position="930,7" size="185,34" font="Replacement;24" halign="right" backgroundColor="back" transparent="1" foregroundColor="yellow">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1120,9" size="50,27" font="Replacement;18" foregroundColor="unf23d21">
+		<widget source="global.CurrentTime" render="Label" position="1116,9" size="50,27" font="Replacement;18" foregroundColor="red">
 			<convert type="ClockToText">Format::%S</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="center,12" size="668,24" font="Replacement;22" backgroundColor="back" transparent="1" halign="center" foregroundColor="green">
@@ -141,11 +141,11 @@
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="session.CurrentService" render="Label" font="Replacement;15" position="120,115" size="54,20" halign="right" foregroundColor="un21e2e2e2" text="1920">
+		<widget source="session.CurrentService" render="Label" font="Replacement;15" position="120,115" size="54,20" halign="right" foregroundColor="foreground" text="1920">
 			<convert type="ServiceInfo">VideoWidth</convert>
 		</widget>
-		<eLabel text="x" font="Replacement;12" position="175,114" size="13,20" halign="center" foregroundColor="un21e2e2e2"/>
-		<widget source="session.CurrentService" render="Label" font="Replacement;15" position="188,115" size="54,20" foregroundColor="un21e2e2e2" text="1080">
+		<eLabel text="x" font="Replacement;12" position="175,114" size="13,20" halign="center" foregroundColor="foreground"/>
+		<widget source="session.CurrentService" render="Label" font="Replacement;15" position="188,115" size="54,20" foregroundColor="foreground" text="1080">
 			<convert type="ServiceInfo">VideoHeight</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Progress" position="center,95" size="610,6" zPosition="1" pixmap="MetropolisHD/window/slider_player.png" transparent="1">
@@ -154,13 +154,13 @@
 		<widget source="session.CurrentService" render="PositionGauge" position="center,93" size="610,10" zPosition="2" transparent="1">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="336,56" size="120,30" font="Regular;26" foregroundColor="un21e2e2e2">
+		<widget source="session.CurrentService" render="Label" position="336,56" size="120,30" font="Regular;26" foregroundColor="foreground">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="center,56" size="190,30" font="Regular;26" halign="center" foregroundColor="un21e2e2e2">
+		<widget source="session.CurrentService" render="Label" position="center,56" size="190,30" font="Regular;26" halign="center" foregroundColor="foreground">
 			<convert type="ServicePosition">Length</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="825,56" size="120,30" font="Regular;26" halign="right" foregroundColor="un21e2e2e2">
+		<widget source="session.CurrentService" render="Label" position="825,56" size="120,30" font="Regular;26" halign="right" foregroundColor="foreground">
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
 		<ePixmap position="center,110" zPosition="1" size="200,25" pixmap="MetropolisHD/window/mp_buttons.png" alphatest="on"/>
@@ -176,7 +176,7 @@
 	</screen>
 
 	<screen name="ButtonTemplate_RGYB_BigLeft">
-		<eLabel name="Line" position="69,613" size="732,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="69,613" size="732,1" backgroundColor="lineback"/>
 		<widget name="key_red" position="69,614" size="180,33" font="Regular;22" halign="center" valign="center"/>
 		<widget name="key_green" position="253,614" size="180,33" font="Regular;22" halign="center" valign="center"/>
 		<widget name="key_yellow" position="437,614" size="180,33" font="Regular;22" halign="center" valign="center"/>
@@ -188,7 +188,7 @@
 	</screen>
 
 	<screen name="ButtonTemplate_Midle_RGYB">
-		<eLabel name="Line" position="center,613" size="720,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="center,613" size="720,1" backgroundColor="lineback"/>
 		<eLabel name="Red" position="285,648" size="170,1" foregroundColor="red" backgroundColor="red"/>
 		<eLabel name="Green" position="465,648" size="170,1" foregroundColor="green" backgroundColor="green"/>
 		<eLabel name="Yellow" position="645,648" size="170,1" foregroundColor="yellow" backgroundColor="yellow"/>
@@ -212,7 +212,7 @@
 	</screen>
 
 	<screen name="ButtonTemplate_Small_RGYB">
-		<eLabel name="Line" position="10,397" size="640,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="10,397" size="640,1" backgroundColor="lineback"/>
 		<eLabel name="Red" position="30,432" size="120,1" foregroundColor="red" backgroundColor="red"/>
 		<eLabel name="Green" position="190,432" size="120,1" foregroundColor="green" backgroundColor="green"/>
 		<eLabel name="Yellow" position="350,432" size="120,1" foregroundColor="yellow" backgroundColor="yellow"/>
@@ -228,7 +228,7 @@
 	</screen>
 
 	<screen name="ButtonTemplate_RGYB_Big">
-		<eLabel name="Line" position="190,513" size="720,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="190,513" size="720,1" backgroundColor="lineback"/>
 		<widget name="key_red" position="190,514" size="180,33" font="Regular;22" halign="center" valign="center"/>
 		<widget name="key_green" position="370,514" size="180,33" font="Regular;22" halign="center" valign="center"/>
 		<widget name="key_yellow" position="center,514" size="180,33" font="Regular;22" halign="center" valign="center"/>
@@ -249,7 +249,7 @@
 	</screen>
 
 	<screen name="ButtonTemplate_Midle_R">
-		<eLabel name="Line" position="center,613" size="716,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="center,613" size="716,1" backgroundColor="lineback"/>
 		<eLabel name="Red" position="center,648" size="180,1" foregroundColor="red" backgroundColor="red"/>
 	</screen>
 
@@ -264,18 +264,18 @@
 	</screen>
 
 	<screen name="ButtonTemplate_Minimal_R">
-		<eLabel name="Line" position="center,523" size="600,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="center,523" size="600,1" backgroundColor="lineback"/>
 		<eLabel name="Red" position="center,558" size="180,1" foregroundColor="red" backgroundColor="red"/>
 	</screen>
 
 	<screen name="ButtonTemplate_Minimal_RG">
-		<eLabel name="Line" position="center,523" size="600,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="center,523" size="600,1" backgroundColor="lineback"/>
 		<eLabel name="Red" position="415,558" size="180,1" foregroundColor="red" backgroundColor="red"/>
 		<eLabel name="Green" position="685,558" size="180,1" foregroundColor="green" backgroundColor="green"/>
 	</screen>
 
 	<screen name="ButtonTemplate_Minimal_RGYB">
-		<eLabel name="Line" position="center,523" size="617,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="center,523" size="617,1" backgroundColor="lineback"/>
 		<eLabel name="Red" position="333,558" size="150,1" foregroundColor="red" backgroundColor="red"/>
 		<eLabel name="Green" position="488,558" size="150,1" foregroundColor="green" backgroundColor="green"/>
 		<eLabel name="Yellow" position="643,558" size="150,1" foregroundColor="yellow" backgroundColor="yellow"/>
@@ -283,14 +283,14 @@
 	</screen>
 
 	<screen name="ButtonTemplate_Minimal_RGY">
-		<eLabel name="Line" position="center,523" size="600,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="center,523" size="600,1" backgroundColor="lineback"/>
 		<eLabel name="Red" position="360,558" size="180,1" foregroundColor="red" backgroundColor="red"/>
 		<eLabel name="Green" position="center,558" size="180,1" foregroundColor="green" backgroundColor="green"/>
 		<eLabel name="Yellow" position="740,558" size="180,1" foregroundColor="yellow" backgroundColor="yellow"/>
 	</screen>
 
 	<screen name="ButtonTemplate_Minimal_YB">
-		<eLabel name="Line" position="center,523" size="600,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="center,523" size="600,1" backgroundColor="lineback"/>
 		<eLabel name="Yellow" position="415,558" size="180,1" foregroundColor="yellow" backgroundColor="yellow"/>
 		<eLabel name="Blue" position="685,558" size="180,1" foregroundColor="blue" backgroundColor="blue"/>
 	</screen>
@@ -321,26 +321,26 @@
 	</screen>
 
 	<screen name="ButtonTemplate_Midle_RG">
-		<eLabel name="Line" position="center,613" size="716,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="center,613" size="716,1" backgroundColor="lineback"/>
 		<eLabel name="Red" position="415,648" size="180,1" foregroundColor="red" backgroundColor="red"/>
 		<eLabel name="Green" position="685,648" size="180,1" foregroundColor="green" backgroundColor="green"/>
 	</screen>
 
 	<screen name="ButtonTemplate_Midle_RGB">
-		<eLabel name="Line" position="center,613" size="716,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="center,613" size="716,1" backgroundColor="lineback"/>
 		<eLabel name="Red" position="390,648" size="160,1" foregroundColor="red" backgroundColor="red"/>
 		<eLabel name="Green" position="center,648" size="160,1" foregroundColor="green" backgroundColor="green"/>
 		<eLabel name="Blue" position="740,648" size="160,1" foregroundColor="blue" backgroundColor="blue"/>
 	</screen>
 
 	<screen name="ButtonTemplate_Midle_RB">
-		<eLabel name="Line" position="center,613" size="716,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="center,613" size="716,1" backgroundColor="lineback"/>
 		<eLabel name="Red" position="415,648" size="180,1" foregroundColor="red" backgroundColor="red"/>
 		<eLabel name="Blue" position="685,648" size="180,1" foregroundColor="blue" backgroundColor="blue"/>
 	</screen>
 
 	<screen name="ButtonTemplate_Midle_RY">
-		<eLabel name="Line" position="center,613" size="716,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="center,613" size="716,1" backgroundColor="lineback"/>
 		<eLabel name="Red" position="415,648" size="180,1" foregroundColor="red" backgroundColor="red"/>
 		<eLabel name="Yellow" position="685,648" size="180,1" foregroundColor="yellow" backgroundColor="yellow"/>
 	</screen>
@@ -389,7 +389,7 @@
 	</screen>
 
 	<screen name="ButtonTemplate_Small_RG">
-		<eLabel name="Line" position="20,460" size="560,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="20,460" size="560,1" backgroundColor="lineback"/>
 		<eLabel name="Red" position="75,495" size="180,1" foregroundColor="red" backgroundColor="red"/>
 		<eLabel name="Green" position="345,495" size="180,1" foregroundColor="green" backgroundColor="green"/>
 	</screen>
@@ -407,7 +407,7 @@
 	</screen>
 
 	<screen name="ButtonTemplate_RGBS_Small">
-		<eLabel name="Line" position="20,460" size="560,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="20,460" size="560,1" backgroundColor="lineback"/>
 		<widget source="key_red" render="Label" position="35,461" size="170,33" font="Regular;22" halign="center" valign="center"/>
 		<widget source="key_green" render="Label" position="center,461" size="170,33" font="Regular;22" halign="center" valign="center"/>
 		<widget source="key_blue" render="Label" position="395,461" size="170,33" font="Regular;22" halign="center" valign="center"/>
@@ -420,16 +420,16 @@
 		<panel name="ButtonTemplate_RGYB_BigLeft"/>
 		<eLabel position="62,center" size="745,592" zPosition="-10" backgroundColor="back"/>
 		<ePixmap pixmap="MetropolisHD/window/back.png" position="68,68" size="737,40" alphatest="off" zPosition="-9"/>
-		<eLabel name="Line" position="62,63" size="745,1" backgroundColor="un666666"/>
-		<eLabel name="Line" position="62,656" size="745,1" backgroundColor="un666666"/>
-		<eLabel name="Line" position="62,63" size="1,592" backgroundColor="un666666"/>
-		<eLabel name="Line" position="807,63" size="1,592" backgroundColor="un666666"/>
+		<eLabel name="Line" position="62,63" size="745,1" backgroundColor="lineback"/>
+		<eLabel name="Line" position="62,656" size="745,1" backgroundColor="lineback"/>
+		<eLabel name="Line" position="62,63" size="1,592" backgroundColor="lineback"/>
+		<eLabel name="Line" position="807,63" size="1,592" backgroundColor="lineback"/>
 		<eLabel position="842,center" size="362,592" zPosition="-10" backgroundColor="back"/>
 		<ePixmap pixmap="MetropolisHD/window/back.png" position="848,68" size="345,40" alphatest="off" zPosition="-9"/>
-		<eLabel name="Line" position="842,63" size="362,1" backgroundColor="un666666"/>
-		<eLabel name="Line" position="842,656" size="362,1" backgroundColor="un666666"/>
-		<eLabel name="Line" position="842,63" size="1,592" backgroundColor="un666666"/>
-		<eLabel name="Line" position="1204,63" size="1,592" backgroundColor="un666666"/>
+		<eLabel name="Line" position="842,63" size="362,1" backgroundColor="lineback"/>
+		<eLabel name="Line" position="842,656" size="362,1" backgroundColor="lineback"/>
+		<eLabel name="Line" position="842,63" size="1,592" backgroundColor="lineback"/>
+		<eLabel name="Line" position="1204,63" size="1,592" backgroundColor="lineback"/>
 	</screen>
 
 	<screen name="Big2PanelsSecondPanelTemplate">
@@ -438,10 +438,10 @@
 		<widget source="global.CurrentTime" render="Label" position="861,525" size="321,29" font="Replacement;22" halign="center" foregroundColor="green">
 			<convert type="ClockToText">Format: %A - %d.%m.%Y</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="972,550" size="139,83" font="Regular;80" valign="center" halign="right" text="22" foregroundColor="un21e2e2e2">
+		<widget source="global.CurrentTime" render="Label" position="972,550" size="139,83" font="Regular;80" valign="center" halign="right" text="22" foregroundColor="foreground">
 			<convert type="ClockToText">Format:%H</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1109,559" size="90,46" font="Regular;45" valign="center" foregroundColor="un21e2e2e2">
+		<widget source="global.CurrentTime" render="Label" position="1109,559" size="90,46" font="Regular;45" valign="center" foregroundColor="foreground">
 			<convert type="ClockToText">Format::%M</convert>
 		</widget>
 	</screen>
@@ -458,21 +458,21 @@
 		<widget source="Service" render="Label" position="848,140" size="349,360" font="Regular;20" halign="center">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
-		<eLabel name="Menu" position="867,565" size="75,22" text="Menu" font="Replacement;20" halign="center" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
-		<eLabel name="Exit" position="867,604" size="75,22" text="Exit" font="Replacement;20" halign="center" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
+		<eLabel name="Menu" position="867,565" size="75,22" text="Menu" font="Replacement;20" halign="center" zPosition="2" foregroundColor="foreground" backgroundColor="textback" valign="center"/>
+		<eLabel name="Exit" position="867,604" size="75,22" text="Exit" font="Replacement;20" halign="center" zPosition="2" foregroundColor="foreground" backgroundColor="textback" valign="center"/>
 	</screen>
 
 	<screen name="MenuTemplate">
 		<eLabel position="center,center" size="544,592" zPosition="-2" backgroundColor="back"/>
 		<ePixmap pixmap="MetropolisHD/window/back.png" position="380,71" size="526,42" alphatest="off" zPosition="-1"/>
-		<eLabel name="Line" position="center,63" size="544,1" backgroundColor="un666666"/>
-		<eLabel name="Line" position="center,656" size="544,1" backgroundColor="un666666"/>
-		<eLabel name="Line" position="368,center" size="1,592" backgroundColor="un666666"/>
-		<eLabel name="Line" position="911,center" size="1,592" backgroundColor="un666666"/>
-		<eLabel name="Line" position="center,605" size="522,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="center,63" size="544,1" backgroundColor="lineback"/>
+		<eLabel name="Line" position="center,656" size="544,1" backgroundColor="lineback"/>
+		<eLabel name="Line" position="368,center" size="1,592" backgroundColor="lineback"/>
+		<eLabel name="Line" position="911,center" size="1,592" backgroundColor="lineback"/>
+		<eLabel name="Line" position="center,605" size="522,1" backgroundColor="lineback"/>
 		<eLabel position="0,113" size="1280,162" zPosition="-5" backgroundColor="back"/>
-		<eLabel name="Line" position="center,113" size="1280,1" zPosition="-4" backgroundColor="un666666"/>
-		<eLabel name="Line" position="center,274" size="1280,1" zPosition="-4" backgroundColor="un666666"/>
+		<eLabel name="Line" position="center,113" size="1280,1" zPosition="-4" backgroundColor="lineback"/>
+		<eLabel name="Line" position="center,274" size="1280,1" zPosition="-4" backgroundColor="lineback"/>
 		<widget source="title" render="Label" position="380,74" size="522,41" halign="center" font="Replacement;26" foregroundColor="red" backgroundColor="back" transparent="1"/>
 		<widget source="menu" render="Listbox" enableWrapAround="1" position="380,117" size="522,500" scrollbarMode="showNever" selectionPixmap="MetropolisHD/menu/sel_menu.png" backgroundPixmap="MetropolisHD/menu/bg40x40.png" transparent="1">
 			<convert type="TemplatedMultiContent">
@@ -484,10 +484,10 @@
 		<widget source="session.CurrentService" render="Label" position="380,611" size="522,34" font="Replacement;22" halign="center" foregroundColor="yellow" valign="center">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="958,140" size="139,83" font="Regular;80" valign="center" halign="right" text="22" foregroundColor="un21e2e2e2">
+		<widget source="global.CurrentTime" render="Label" position="958,140" size="139,83" font="Regular;80" valign="center" halign="right" text="22" foregroundColor="foreground">
 			<convert type="ClockToText">Format:%H</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1096,150" size="141,46" font="Regular;45" valign="center" foregroundColor="un21e2e2e2">
+		<widget source="global.CurrentTime" render="Label" position="1096,150" size="141,46" font="Regular;45" valign="center" foregroundColor="foreground">
 			<convert type="ClockToText">Format::%M</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="920,218" size="321,29" font="Replacement;22" halign="center" foregroundColor="green">
@@ -504,28 +504,28 @@
 	<screen name="MinimalScreenTemplate">
 		<eLabel position="center,center" size="620,420" zPosition="-10" backgroundColor="back"/>
 		<ePixmap pixmap="MetropolisHD/window/back.png" position="center,155" size="612,40" alphatest="off" zPosition="-9"/>
-		<eLabel name="Line" position="center,150" size="620,1" backgroundColor="un666666"/>
-		<eLabel name="Line" position="center,570" size="620,1" backgroundColor="un666666"/>
-		<eLabel name="Line" position="330,center" size="1,420" backgroundColor="un666666"/>
-		<eLabel name="Line" position="949,center" size="1,420" backgroundColor="un666666"/>
+		<eLabel name="Line" position="center,150" size="620,1" backgroundColor="lineback"/>
+		<eLabel name="Line" position="center,570" size="620,1" backgroundColor="lineback"/>
+		<eLabel name="Line" position="330,center" size="1,420" backgroundColor="lineback"/>
+		<eLabel name="Line" position="949,center" size="1,420" backgroundColor="lineback"/>
 	</screen>
 
 	<screen name="MidleScreenTemplate">
 		<eLabel position="center,center" size="745,592" zPosition="-10" backgroundColor="back"/>
 		<ePixmap pixmap="MetropolisHD/window/back.png" position="center,68" size="737,40" alphatest="off" zPosition="-9"/>
-		<eLabel name="Line" position="center,63" size="745,1" backgroundColor="un666666"/>
-		<eLabel name="Line" position="center,656" size="745,1" backgroundColor="un666666"/>
-		<eLabel name="Line" position="267,center" size="1,592" backgroundColor="un666666"/>
-		<eLabel name="Line" position="1011,center" size="1,592" backgroundColor="un666666"/>
+		<eLabel name="Line" position="center,63" size="745,1" backgroundColor="lineback"/>
+		<eLabel name="Line" position="center,656" size="745,1" backgroundColor="lineback"/>
+		<eLabel name="Line" position="267,center" size="1,592" backgroundColor="lineback"/>
+		<eLabel name="Line" position="1011,center" size="1,592" backgroundColor="lineback"/>
 	</screen>
 
 	<screen name="BigScreenTemplate">
 		<eLabel position="center,30" size="1178,627" zPosition="-10" backgroundColor="back"/>
 		<ePixmap pixmap="MetropolisHD/window/back.png" position="center,33" size="1170,40" alphatest="off" zPosition="-9"/>
-		<eLabel name="Line" position="center,30" size="1178,1" backgroundColor="un666666"/>
-		<eLabel name="Line" position="center,656" size="1178,1" backgroundColor="un666666"/>
-		<eLabel name="Line" position="51,30" size="1,627" backgroundColor="un666666"/>
-		<eLabel name="Line" position="1228,30" size="1,627" backgroundColor="un666666"/>
+		<eLabel name="Line" position="center,30" size="1178,1" backgroundColor="lineback"/>
+		<eLabel name="Line" position="center,656" size="1178,1" backgroundColor="lineback"/>
+		<eLabel name="Line" position="51,30" size="1,627" backgroundColor="lineback"/>
+		<eLabel name="Line" position="1228,30" size="1,627" backgroundColor="lineback"/>
 	</screen>
 
 	<screen name="AutoMountTemplate">

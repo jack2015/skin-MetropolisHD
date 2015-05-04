@@ -26,12 +26,11 @@
 		<color name="transparent" value="#ffffffff"/>
 		<color name="transpBlack" value="#41000000"/>
 		<color name="transpGrey" value="#41444444"/>
-		<color name="un21e2e2e2" value="#21e2e2e2"/>
-		<color name="un254f7497" value="#254f7497"/>
-		<color name="un333333" value="#00333333"/>
-		<color name="un666666" value="#00666666"/>
-		<color name="uncccccc" value="#00cccccc"/>
-		<color name="unf23d21" value="#00f23d21"/>
+		<color name="foreground" value="#21e2e2e2"/>
+		<color name="progressback" value="#254f7497"/>
+		<color name="textback" value="#00333333"/>
+		<color name="lineback" value="#00666666"/>
+		<color name="border" value="#00cccccc"/>
 		<color name="white" value="#00ffffff"/>
 		<color name="yellow" value="#00bab329"/>
 	</colors>
@@ -83,18 +82,18 @@
 	<screen name="SecondInfoBar" flags="wfNoBorder" position="0,0" size="1280,720" backgroundColor="transparent">
 		<panel name="InfoBarTemplate"/>
 		<eLabel position="50,35" size="1180,90" zPosition="-1" backgroundColor="back"/>
-		<eLabel name="Line" position="50,35" size="1180,1" backgroundColor="un666666"/>
-		<eLabel name="Line" position="50,125" size="1180,1" backgroundColor="un666666"/>
-		<eLabel name="Line" position="50,35" size="1,90" backgroundColor="un666666"/>
-		<eLabel name="Line" position="1230,35" size="1,90" backgroundColor="un666666"/>
-		<widget source="session.CurrentService" render="Label" position="65,45" size="1100,70" foregroundColor="un21e2e2e2" font="Regular;20">
+		<eLabel name="Line" position="50,35" size="1180,1" backgroundColor="lineback"/>
+		<eLabel name="Line" position="50,125" size="1180,1" backgroundColor="lineback"/>
+		<eLabel name="Line" position="50,35" size="1,90" backgroundColor="lineback"/>
+		<eLabel name="Line" position="1230,35" size="1,90" backgroundColor="lineback"/>
+		<widget source="session.CurrentService" render="Label" position="65,45" size="1100,70" foregroundColor="foreground" font="Regular;20">
 			<convert type="PliExtraInfo">All</convert>
 		</widget>
 		<eLabel position="50,135" size="585,300" zPosition="-1" backgroundColor="back"/>
-		<eLabel name="Line" position="50,135" size="585,1" backgroundColor="un666666"/>
-		<eLabel name="Line" position="50,435" size="585,1" backgroundColor="un666666"/>
-		<eLabel name="Line" position="50,135" size="1,300" backgroundColor="un666666"/>
-		<eLabel name="Line" position="635,135" size="1,300" backgroundColor="un666666"/>
+		<eLabel name="Line" position="50,135" size="585,1" backgroundColor="lineback"/>
+		<eLabel name="Line" position="50,435" size="585,1" backgroundColor="lineback"/>
+		<eLabel name="Line" position="50,135" size="1,300" backgroundColor="lineback"/>
+		<eLabel name="Line" position="635,135" size="1,300" backgroundColor="lineback"/>
 		<widget source="session.Event_Now" render="Label" position="65,140" size="560,24" foregroundColor="yellow" noWrap="1" font="Regular;22">
 			<convert type="EventName">NameNow</convert>
 		</widget>
@@ -104,14 +103,14 @@
 		<widget source="session.Event_Now" render="Label" position="420,170" size="200,22" font="Regular;20" halign="right" foregroundColor="hellgreen">
 			<convert type="EventName">SmallRating</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="65,200" size="560,225" font="Regular;20" halign="block" foregroundColor="un21e2e2e2">
+		<widget source="session.Event_Now" render="Label" position="65,200" size="560,225" font="Regular;20" halign="block" foregroundColor="foreground">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<eLabel position="645,135" size="585,300" zPosition="-1" backgroundColor="back"/>
-		<eLabel name="Line" position="645,135" size="585,1" backgroundColor="un666666"/>
-		<eLabel name="Line" position="645,435" size="585,1" backgroundColor="un666666"/>
-		<eLabel name="Line" position="645,135" size="1,300" backgroundColor="un666666"/>
-		<eLabel name="Line" position="1230,135" size="1,300" backgroundColor="un666666"/>
+		<eLabel name="Line" position="645,135" size="585,1" backgroundColor="lineback"/>
+		<eLabel name="Line" position="645,435" size="585,1" backgroundColor="lineback"/>
+		<eLabel name="Line" position="645,135" size="1,300" backgroundColor="lineback"/>
+		<eLabel name="Line" position="1230,135" size="1,300" backgroundColor="lineback"/>
 		<widget source="session.Event_Next" render="Label" position="660,140" size="560,26" foregroundColor="yellow" noWrap="1" font="Regular;22">
 			<convert type="EventName">NameNext</convert>
 		</widget>
@@ -121,7 +120,7 @@
 		<widget source="session.Event_Next" render="Label" position="1015,170" size="200,22" font="Regular;20" halign="right" foregroundColor="hellgreen">
 			<convert type="EventName">SmallRating</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="660,200" size="560,225" font="Regular;20" halign="block" foregroundColor="un21e2e2e2">
+		<widget source="session.Event_Next" render="Label" position="660,200" size="560,225" font="Regular;20" halign="block" foregroundColor="foreground">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 	</screen>
@@ -133,7 +132,7 @@
 		<widget source="ServiceEvent" render="Label" position="854,72" size="340,34" halign="center" font="Replacement;26" foregroundColor="yellow" backgroundColor="transpGrey" transparent="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="854,110" size="340,45" halign="center" font="Regular;20" foregroundColor="un21e2e2e2" valign="center">
+		<widget source="ServiceEvent" render="Label" position="854,110" size="340,45" halign="center" font="Regular;20" foregroundColor="foreground" valign="center">
 			<convert type="EventName">Name</convert>
 		</widget>
 		<widget source="ServiceEvent" render="Picon" position="910,160" size="100,60" transparent="1" alphatest="blend">
@@ -142,12 +141,12 @@
 		<widget source="ServiceEvent" render="MetPiconProv" position="1035,160" size="100,60" transparent="1" alphatest="blend">
 			<convert type="MetProvider"/>
 		</widget>
-		<eLabel name="Line" position="872,225" size="300,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="872,225" size="300,1" backgroundColor="lineback"/>
 		<widget source="ServiceEvent" render="Label" position="875,230" size="72,28" halign="right" font="OpenSans;20" foregroundColor="hellgreen">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText"/>
 		</widget>
-		<eLabel name="Line" position="962,244" size="120,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="962,244" size="120,1" backgroundColor="lineback"/>
 		<widget source="ServiceEvent" render="Progress" position="962,243" size="120,4" zPosition="2" pixmap="MetropolisHD/window/slider.png" transparent="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
@@ -155,24 +154,24 @@
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
-		<eLabel name="Line" position="872,261" size="300,1" backgroundColor="un666666"/>
-		<widget source="ServiceEvent" render="Label" position="854,266" size="340,211" font="Regular;20" foregroundColor="un21e2e2e2">
+		<eLabel name="Line" position="872,261" size="300,1" backgroundColor="lineback"/>
+		<widget source="ServiceEvent" render="Label" position="854,266" size="340,211" font="Regular;20" foregroundColor="foreground">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
-		<eLabel name="Line" position="872,485" size="300,1" backgroundColor="un666666"/>
-		<widget source="ServiceEvent" render="Label" position="854,493" size="340,26" halign="center" font="Regular;18" noWrap="1" foregroundColor="un21e2e2e2">
+		<eLabel name="Line" position="872,485" size="300,1" backgroundColor="lineback"/>
+		<widget source="ServiceEvent" render="Label" position="854,493" size="340,26" halign="center" font="Regular;18" noWrap="1" foregroundColor="foreground">
 			<convert type="TransponderInfo"/>
 		</widget>
-		<eLabel name="Line" position="872,521" size="300,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="872,521" size="300,1" backgroundColor="lineback"/>
 		<widget source="ServiceEvent" render="NextEpgInfo" position="854,526" size="340,50" halign="center" font="Replacement;22" foregroundColor="yellow"/>
-		<eLabel name="Line" position="872,583" size="300,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="872,583" size="300,1" backgroundColor="lineback"/>
 		<eLabel name="Button" position="864,600" size="83,33" backgroundColor="selection"/>
-		<eLabel name="EPG" position="869,605" size="75,22" text="EPG" font="Replacement;20" halign="center" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
-		<widget source="global.CurrentTime" render="Label" position="953,599" size="139,39" font="Replacement;36" halign="center" foregroundColor="un21e2e2e2">
+		<eLabel name="EPG" position="869,605" size="75,22" text="EPG" font="Replacement;20" halign="center" zPosition="2" foregroundColor="foreground" backgroundColor="textback" valign="center"/>
+		<widget source="global.CurrentTime" render="Label" position="953,599" size="139,39" font="Replacement;36" halign="center" foregroundColor="foreground">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
 		<eLabel name="Button" position="1099,600" size="83,33" backgroundColor="selection"/>
-		<eLabel name="Menu" position="1103,605" size="75,22" text="Menu" font="Replacement;20" halign="center" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
+		<eLabel name="Menu" position="1103,605" size="75,22" text="Menu" font="Replacement;20" halign="center" zPosition="2" foregroundColor="foreground" backgroundColor="textback" valign="center"/>
 	</screen>
 
 	<screen name="UnhandledKey" position="center,200" size="64,64" zPosition="100" flags="wfNoBorder" backgroundColor="back">
@@ -422,7 +421,7 @@ MultiContentEntryText(pos = (535,0), size = (105,25), font = 1, flags = RT_HALIG
 
 	<screen name="ChannelSelectionRadio" position="82,100" size="1116,370">
 		<widget name="list" position="center,0" size="1070,310" scrollbarMode="showOnDemand" picServiceEventProgressbar="MetropolisHD/chnsel/pl.png" sliderPixmap="MetropolisHD/window/slider_vert.png" foregroundColorServiceNotAvail="#444444" colorServiceDescriptionSelected="hellgreen" serviceItemHeight="31" serviceNumberFont="Regular;20" serviceNameFont="Regular;20" serviceInfoFont="Regular;20" colorEventProgressbarBorderSelected="#000000"/>
-		<eLabel name="Line" position="center,328" size="1100,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="center,328" size="1100,1" backgroundColor="lineback"/>
 		<widget name="key_red" position="188,330" size="180,33" font="Regular;22" halign="center" valign="center"/>
 		<widget name="key_green" position="370,330" size="180,33" font="Regular;22" halign="center" valign="center"/>
 		<widget name="key_yellow" position="552,330" size="180,33" font="Regular;22" halign="center" valign="center"/>
@@ -478,18 +477,18 @@ self.instance.move(ePoint((1280-wsizex) / 2, (720 - wsizey) / (count > 7 and 2 o
 		<panel name="Big2PanelsTemplate"/>
 		<panel name="Big2PanelsSecondPanelTemplate"/>
 		<eLabel text="EPG selection" position="68,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<eLabel name="EPG" position="867,565" size="75,22" text="EPG" font="Replacement;20" halign="center" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
+		<eLabel name="EPG" position="867,565" size="75,22" text="EPG" font="Replacement;20" halign="center" zPosition="2" foregroundColor="foreground" backgroundColor="textback" valign="center"/>
 		<widget name="list" position="75,115" size="722,476" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
-		<widget source="Event" render="Label" position="849,133" size="348,348" font="Regular;20" halign="center" foregroundColor="un21e2e2e2">
+		<widget source="Event" render="Label" position="849,133" size="348,348" font="Regular;20" halign="center" foregroundColor="foreground">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
-		<eLabel name="OK" position="867,604" size="75,22" text="OK" font="Replacement;20" halign="center" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
+		<eLabel name="OK" position="867,604" size="75,22" text="OK" font="Replacement;20" halign="center" zPosition="2" foregroundColor="foreground" backgroundColor="textback" valign="center"/>
 		<widget source="session.CurrentService" render="Label" position="850,71" size="345,34" font="Replacement;22" halign="center" foregroundColor="yellow" valign="center" transparent="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<eLabel name="Line" position="871,511" size="300,1" backgroundColor="un666666"/>
-		<eLabel name="..." position="991,478" size="75,22" text="..." font="Regular;20" halign="center" foregroundColor="un21e2e2e2" valign="center"/>
-		<eLabel name="..." position="991,109" size="75,22" text="..." font="Regular;20" halign="center" foregroundColor="un21e2e2e2" valign="center"/>
+		<eLabel name="Line" position="871,511" size="300,1" backgroundColor="lineback"/>
+		<eLabel name="..." position="991,478" size="75,22" text="..." font="Regular;20" halign="center" foregroundColor="foreground" valign="center"/>
+		<eLabel name="..." position="991,109" size="75,22" text="..." font="Regular;20" halign="center" foregroundColor="foreground" valign="center"/>
 	</screen>
 
 	<screen name="EPGSelectionMulti" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -512,9 +511,9 @@ self.instance.move(ePoint((1280-wsizex) / 2, (720 - wsizey) / (count > 7 and 2 o
 		<panel name="Big2PanelsTemplate"/>
 		<panel name="Big2PanelsSecondPanelTemplate"/>
 		<eLabel text="Event view" position="68,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<eLabel name="Exit" position="867,565" size="75,22" text="Exit" font="Replacement;20" halign="center" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
-		<eLabel name="OK" position="867,604" size="75,22" text="OK" font="Replacement;20" halign="center" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
-		<eLabel name="Line" position="871,511" size="300,1" backgroundColor="un666666"/>
+		<eLabel name="Exit" position="867,565" size="75,22" text="Exit" font="Replacement;20" halign="center" zPosition="2" foregroundColor="foreground" backgroundColor="textback" valign="center"/>
+		<eLabel name="OK" position="867,604" size="75,22" text="OK" font="Replacement;20" halign="center" zPosition="2" foregroundColor="foreground" backgroundColor="textback" valign="center"/>
+		<eLabel name="Line" position="871,511" size="300,1" backgroundColor="lineback"/>
 		<widget name="epg_description" position="78,113" size="719,495" font="Regular;22"/>
 		<widget name="channel" position="850,71" size="345,34" font="Replacement;22" halign="center" backgroundColor="back" foregroundColor="yellow" transparent="1"/>
 		<widget name="datetime" position="862,115" size="174,25" font="Replacement;22" halign="right" foregroundColor="red"/>
@@ -547,7 +546,7 @@ self.instance.move(ePoint((1280-wsizex) / 2, (720 - wsizey) / (count > 7 and 2 o
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
-		<widget source="Event" render="Progress" position="106,573" zPosition="1" pixmap="MetropolisHD/window/progress.png" size="300,15" borderWidth="1" borderColor="uncccccc">
+		<widget source="Event" render="Progress" position="106,573" zPosition="1" pixmap="MetropolisHD/window/progress.png" size="300,15" borderWidth="1" borderColor="border">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget source="Event" render="Label" position="473,440" size="750,160" font="Regular;18">
@@ -745,7 +744,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, orgpos.y() + (
 		<widget source="Service" render="Label" position="790,30" size="300,50" font="Regular;24" halign="center">
 			<convert type="MovieInfo">RecordServiceName</convert>
 		</widget>
-		<widget source="Service" render="Label" position="790,90" size="300,48" font="Regular;22" halign="center" foregroundColor="uncccccc">
+		<widget source="Service" render="Label" position="790,90" size="300,48" font="Regular;22" halign="center" foregroundColor="border">
 			<convert type="MovieInfo">ShortDescription</convert>
 		</widget>
 		<widget source="Service" render="Label" position="790,150" size="300,22" font="Regular;22" halign="center">
@@ -826,10 +825,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, orgpos.y() + (
 
 	<screen name="RadioInfoBar" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" zPosition="-15">
 		<eLabel position="82,480" size="1116,192" backgroundColor="back" zPosition="-10"/>
-		<eLabel name="Line" position="82,480" size="1116,1" backgroundColor="un666666"/>
-		<eLabel name="Line" position="82,672" size="1116,1" backgroundColor="un666666"/>
-		<eLabel name="Line" position="82,480" size="1,192" backgroundColor="un666666"/>
-		<eLabel name="Line" position="1198,480" size="1,192" backgroundColor="un666666"/>
+		<eLabel name="Line" position="82,480" size="1116,1" backgroundColor="lineback"/>
+		<eLabel name="Line" position="82,672" size="1116,1" backgroundColor="lineback"/>
+		<eLabel name="Line" position="82,480" size="1,192" backgroundColor="lineback"/>
+		<eLabel name="Line" position="1198,480" size="1,192" backgroundColor="lineback"/>
 		<widget source="session.CurrentService" render="Label" position="154,486" size="138,28" font="Regular;24" halign="right" foregroundColor="yellow">
 			<convert type="ServiceName">Number</convert>
 		</widget>
@@ -848,7 +847,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, orgpos.y() + (
 		<widget source="session.RecordState" render="Pixmap" pixmap="MetropolisHD/infobar/ico_rec_on.png" position="1102,490" size="38,38" zPosition="2" alphatest="on">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<eLabel name="Line" position="center,540" size="1096,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="center,540" size="1096,1" backgroundColor="lineback"/>
 		<widget source="session.Event_Now" render="Label" position="222,547" size="65,25" halign="right" font="Regular;22">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
@@ -865,7 +864,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, orgpos.y() + (
 			<convert type="EventTime">Remaining</convert>
 			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
-		<eLabel name="Line" position="222,582" size="840,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="222,582" size="840,1" backgroundColor="lineback"/>
 		<widget source="session.Event_Now" render="Progress" pixmap="MetropolisHD/window/slider.png" position="222,580" size="840,6" zPosition="1" transparent="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
@@ -889,7 +888,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, orgpos.y() + (
 			<convert type="RdsInfo">RasInteractiveAvailable</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<eLabel name="Line" position="center,625" size="1096,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="center,625" size="1096,1" backgroundColor="lineback"/>
 		<widget source="RdsDecoder" render="Label" position="center,633" size="1100,30" font="LCD;30" halign="center" foregroundColor="yellow">
 			<convert type="RdsInfo">RadioText</convert>
 		</widget>
@@ -922,21 +921,21 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, orgpos.y() + (
 			<convert type="FrontendInfo">SNRdB</convert>
 		</widget>
 		<eLabel name="snr" text="SNR:" position="424,155" size="60,22" font="Regular;21" halign="right"/>
-		<widget source="Frontend" render="Progress" position="center,155" size="280,20" pixmap="MetropolisHD/window/bar_snr.png" borderWidth="2" borderColor="uncccccc">
+		<widget source="Frontend" render="Progress" position="center,155" size="280,20" pixmap="MetropolisHD/window/bar_snr.png" borderWidth="2" borderColor="border">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
 		<widget source="Frontend" render="Label" position="799,155" size="60,22" font="Regular;21">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
 		<eLabel name="agc" text="AGC:" position="424,180" size="60,22" font="Regular;21" halign="right"/>
-		<widget source="Frontend" render="Progress" position="center,180" size="280,20" pixmap="MetropolisHD/window/bar_snr.png" borderWidth="2" borderColor="uncccccc">
+		<widget source="Frontend" render="Progress" position="center,180" size="280,20" pixmap="MetropolisHD/window/bar_snr.png" borderWidth="2" borderColor="border">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
 		<widget source="Frontend" render="Label" position="799,180" size="60,22" font="Regular;21">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
 		<eLabel name="ber" text="BER:" position="424,205" size="60,22" font="Regular;21" halign="right"/>
-		<widget source="Frontend" render="Progress" position="center,205" size="280,20" pixmap="MetropolisHD/window/bar_ber.png" borderWidth="2" borderColor="uncccccc">
+		<widget source="Frontend" render="Progress" position="center,205" size="280,20" pixmap="MetropolisHD/window/bar_ber.png" borderWidth="2" borderColor="border">
 			<convert type="FrontendInfo">BER</convert>
 		</widget>
 		<widget source="Frontend" render="Label" position="799,205" size="60,22" font="Regular;21">
@@ -987,14 +986,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, orgpos.y() + (
 		<widget name="transponder" position="400,160" size="300,25" font="Regular;22"/>
 		<widget name="scan_state" position="center,210" size="560,25" zPosition="2" font="Regular;22"/>
 		<widget name="pass" position="center,210" size="560,25" font="Regular;22"/>
-		<widget name="scan_progress" position="center,245" size="560,20" pixmap="MetropolisHD/window/progress_big.png" borderWidth="1" borderColor="uncccccc"/>
+		<widget name="scan_progress" position="center,245" size="560,20" pixmap="MetropolisHD/window/progress_big.png" borderWidth="1" borderColor="border"/>
 		<widget name="servicelist" position="center,280" size="560,328" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
 	</screen>
 
 	<screen name="Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGS_Template"/>
 		<eLabel text="Setup" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<eLabel name="Line" position="center,526" size="716,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="center,526" size="716,1" backgroundColor="lineback"/>
 		<widget name="config" position="center,115" size="722,400" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
 		<widget name="description" position="center,530" size="722,80" font="Regular;22"/>
 	</screen>
@@ -1110,7 +1109,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, orgpos.y() + (
 		<panel name="MidleScreenTemplate"/>
 		<panel name="ButtonTemplate_Midle_RGYB"/>
 		<widget source="Title" render="Label" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<widget name="config" position="center,150" size="676,425" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" font="Regular;20" foregroundColor="un21e2e2e2"/>
+		<widget name="config" position="center,150" size="676,425" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" font="Regular;20" foregroundColor="foreground"/>
 		<widget name="canceltext" position="280,614" size="180,33" font="Regular;22" halign="center" valign="center"/>
 		<widget name="oktext" position="460,614" size="180,33" font="Regular;22" halign="center" valign="center"/>
 		<widget name="key_yellow" position="640,614" size="180,33" font="Regular;22" halign="center" valign="center"/>
@@ -1187,20 +1186,20 @@ MultiContentEntryText(pos=(145,0), size=(145,20), text = 2, flags = RT_HALIGN_RI
 	<screen name="MediaPlayer" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigScreenTemplate"/>
 		<eLabel text="Media player" position="center,37" size="735,34" zPosition="2" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<eLabel name="Line" position="70,82" size="560,1" backgroundColor="un666666"/>
-		<eLabel name="Line" position="70,470" size="560,1" backgroundColor="un666666"/>
-		<eLabel name="Line" position="70,82" size="1,388" backgroundColor="un666666"/>
-		<eLabel name="Line" position="630,82" size="1,388" backgroundColor="un666666"/>
+		<eLabel name="Line" position="70,82" size="560,1" backgroundColor="lineback"/>
+		<eLabel name="Line" position="70,470" size="560,1" backgroundColor="lineback"/>
+		<eLabel name="Line" position="70,82" size="1,388" backgroundColor="lineback"/>
+		<eLabel name="Line" position="630,82" size="1,388" backgroundColor="lineback"/>
 		<eLabel text="Filelist" position="75,85" size="550,32" zPosition="5" font="Regular;28" halign="center" foregroundColor="blue"/>
 		<widget name="filelist" position="80,120" size="540,345" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
-		<eLabel name="Line" position="650,82" size="560,1" backgroundColor="un666666"/>
-		<eLabel name="Line" position="650,470" size="560,1" backgroundColor="un666666"/>
-		<eLabel name="Line" position="650,82" size="1,388" backgroundColor="un666666"/>
-		<eLabel name="Line" position="1210,82" size="1,388" backgroundColor="un666666"/>
+		<eLabel name="Line" position="650,82" size="560,1" backgroundColor="lineback"/>
+		<eLabel name="Line" position="650,470" size="560,1" backgroundColor="lineback"/>
+		<eLabel name="Line" position="650,82" size="1,388" backgroundColor="lineback"/>
+		<eLabel name="Line" position="1210,82" size="1,388" backgroundColor="lineback"/>
 		<eLabel text="Playlist" position="655,85" size="550,32" zPosition="5" font="Regular;28" halign="center" foregroundColor="blue"/>
 		<widget name="playlist" position="660,120" size="540,345" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" selectionDisabled="1"/>
 		<widget name="title" position="300,480" size="680,30" font="Regular;26" foregroundColor="yellow" halign="center"/>
-		<eLabel name="Line" position="290,515" size="700,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="290,515" size="700,1" backgroundColor="lineback"/>
 		<widget name="artisttext" position="300,525" size="100,25" font="Regular;20" halign="right"/>
 		<widget name="artist" position="410,525" size="580,25" font="Regular;22" foregroundColor="yellow"/>
 		<widget name="albumtext" position="300,555" size="100,25" font="Regular;22" halign="right"/>
@@ -1227,7 +1226,7 @@ MultiContentEntryText(pos=(145,0), size=(145,20), text = 2, flags = RT_HALIGN_RI
 		<widget name="currenttext" position="0,0" size="0,0"/>
 		<widget name="titletext" position="0,0" size="0,0"/>
 		<eLabel name="Button" position="1120,489" size="83,33" zPosition="1" backgroundColor="selection"/>
-		<eLabel name="Menu" position="1124,495" size="75,22" text="Menu" font="Replacement;20" halign="center" zPosition="2" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
+		<eLabel name="Menu" position="1124,495" size="75,22" text="Menu" font="Replacement;20" halign="center" zPosition="2" foregroundColor="foreground" backgroundColor="textback" valign="center"/>
 	</screen>
 
 	<screen name="MediaPlayerSettings" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
@@ -1342,7 +1341,7 @@ MultiContentEntryText(pos=(190,2), size=(80,20), text = 2, flags = RT_HALIGN_CEN
 		<widget name="number" position="145,15" size="80,25" halign="right" font="Regular;23"/>
 	</screen>
 	<screen name="TitleList" position="center,center" size="560,470">
-		<eLabel name="new eLabel" position="10,396" size="75,22" text="MENU" font="Replacement;20" halign="center" foregroundColor="un21e2e2e2" backgroundColor="un333333" valign="center"/>
+		<eLabel name="new eLabel" position="10,396" size="75,22" text="MENU" font="Replacement;20" halign="center" foregroundColor="foreground" backgroundColor="textback" valign="center"/>
 		<widget source="key_red" render="Label" position="0,1" size="150,35" font="Regular;22" halign="center" valign="center"/>
 		<widget source="key_green" render="Label" position="137,1" size="150,35" font="Regular;22" halign="center" valign="center"/>
 		<widget source="key_yellow" render="Label" position="273,1" size="150,35" font="Regular;22" halign="center" valign="center"/>
@@ -1369,9 +1368,9 @@ MultiContentEntryText(pos = (470,20), size = (48,20), font = 1, flags = RT_HALIG
 		</widget>
 		<widget source="hint" render="Label" position="85,396" size="505,22" font="Regular;18"/>
 		<widget name="medium_label" position="10,420" size="540,22" font="Regular;18" foregroundColors="#FFFFFF,#FFFF00,#FF0000"/>
-		<widget source="space_bar_single" render="Progress" position="10,446" size="270,24" borderWidth="1" zPosition="2" backgroundColor="un254f7497"/>
+		<widget source="space_bar_single" render="Progress" position="10,446" size="270,24" borderWidth="1" zPosition="2" backgroundColor="progressback"/>
 		<widget source="space_label_single" render="Label" position="10,449" size="270,22" zPosition="3" font="Regular;18" halign="center" foregroundColor="black"/>
-		<widget source="space_bar_dual" render="Progress" position="10,446" size="540,24" borderWidth="1" backgroundColor="un254f7497"/>
+		<widget source="space_bar_dual" render="Progress" position="10,446" size="540,24" borderWidth="1" backgroundColor="progressback"/>
 		<widget source="space_label_dual" render="Label" position="10,449" size="540,22" zPosition="2" font="Regular;18" halign="center" foregroundColor="black"/>
 	</screen>
 
@@ -1929,7 +1928,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10,6), size = (48,48), png = 3), # index
 		<widget source="legend1" render="Label" position="288,118" size="130,60" font="Regular;18" halign="center" valign="center" foregroundColor="yellow"/>
 		<widget source="legend2" render="Label" position="center,118" size="400,60" font="Regular;20" halign="center" valign="center" foregroundColor="yellow"/>
 		<widget source="legend3" render="Label" position="868,118" size="120,60" font="Regular;20" halign="center" valign="center" foregroundColor="yellow"/>
-		<eLabel position="center,195" size="700,1" backgroundColor="un666666"/>
+		<eLabel position="center,195" size="700,1" backgroundColor="lineback"/>
 		<widget source="config" render="Listbox" position="center,210" size="700,360" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png">
 			<convert type="TemplatedMultiContent">
 				{"template": [
@@ -2055,7 +2054,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10,6), size = (48,48), png = 3), # index
 		<panel name="MidleScreen_RGYBS_Template"/>
 		<eLabel text="HDMI-CEC setup" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="config" position="center,115" size="722,400" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
-		<eLabel name="Line" position="center,526" size="716,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="center,526" size="716,1" backgroundColor="lineback"/>
 		<widget source="current_address" render="Label" position="center,530" size="550,40" font="Regular;22" halign="center" valign="center"/>
 		<widget source="fixed_address" render="Label" position="center,570" size="550,40" font="Regular;22" halign="center" valign="center"/>
 	</screen>
@@ -2104,7 +2103,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10,6), size = (48,48), png = 3), # index
 		<panel name="MinimalScreen_RGS_Template"/>
 		<widget source="Title" render="Label" position="center,155" size="600,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="config" position="center,210" size="580,240" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
-		<eLabel name="Line" position="center,456" size="600,1" backgroundColor="un666666"/>
+		<eLabel name="Line" position="center,456" size="600,1" backgroundColor="lineback"/>
 		<widget source="help" render="Label" position="center,460" size="580,60" font="Regular;22"/>
 	</screen>
 </skin>
