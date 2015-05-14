@@ -1627,7 +1627,7 @@ MultiContentEntryText(pos = (10,22), size = (560,46), font=3, flags = RT_HALIGN_
 		<eLabel name="Green" position="357,560" size="178,1" foregroundColor="green" backgroundColor="green"/>
 		<eLabel name="Yellow" position="535,560" size="178,1" foregroundColor="yellow" backgroundColor="yellow"/>
 		<eLabel name="Blue" position="714,560" size="178,1" foregroundColor="blue" backgroundColor="blue"/>
-		<eLabel text="Virtual Keyboard" position="715,525" size="220,35" font="Regular;24" valign="center"/>
+		<eLabel text="Virtual keyboard" position="715,525" size="220,35" font="Regular;24" valign="center"/>
 		<eLabel text="INFO" position="620,10" size="70,30" font="Regular;24"/>
 		<eLabel text="MENU" position="720,10" size="90,30" font="Regular;24"/>
 		<widget name="thumbnail" position="0,0" size="100,75" alphatest="off"/># fake entry for dynamic thumbnail resizing, currently there is no other way doing this.
