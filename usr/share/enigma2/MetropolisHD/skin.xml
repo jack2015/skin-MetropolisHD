@@ -1321,9 +1321,9 @@ MultiContentEntryText(pos=(190,2), size=(80,20), text = 2, flags = RT_HALIGN_CEN
 	</screen>
 
 	<screen name="FileBrowser" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="MidleScreen_RG_Template"/>
-		<eLabel text="File Browser" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<widget name="filelist" position="center,150" size="700,433" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" enableWrapAround="1"/>
+		<panel name="MinimalScreen_RGS_Template"/>
+		<widget source="Title" render="Label" position="center,155" size="600,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget name="filelist" position="center,210" size="580,295" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
 	</screen>
 
 	<screen name="DVDPlayer" position="0,549" size="1280,155" backgroundColor="transparent" flags="wfNoBorder">
