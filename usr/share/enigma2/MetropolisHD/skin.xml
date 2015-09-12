@@ -1377,7 +1377,7 @@ MultiContentEntryText(pos = (470,20), size = (48,20), font = 1, flags = RT_HALIG
 	<screen name="picshow" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGYS_Template"/>
 		<eLabel text="Picture player" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<widget name="thn" position="290,100" size="260,300" alphatest="off"/>
+		<widget name="thn" position="290,150" size="260,300" alphatest="on"/>
 		<widget name="filelist" position="570,center" size="420,465" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
 	</screen>
 
