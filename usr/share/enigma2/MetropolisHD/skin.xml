@@ -2080,7 +2080,8 @@ MultiContentEntryPixmapAlphaTest(pos = (10,6), size = (48,48), png = 3), # index
 	<screen name="ConfigEdit" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MinimalScreen_RGS_Template"/>
 		<widget source="Title" render="Label" position="center,155" size="600,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<widget name="config" position="center,210" size="580,200" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
+		<widget name="config" position="center,210" size="580,150" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
+		<widget name="HelpWindow" position="400,370" size="1,1" zPosition="5" pixmap="skin_default/vkey_icon.png" transparent="1" alphatest="on" />
 	</screen>
 
 	<screen name="TV3PlayMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
