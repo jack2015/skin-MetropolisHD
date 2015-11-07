@@ -2096,7 +2096,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10,6), size = (48,48), png = 3), # index
 			}
 			</convert>
 		</widget>
-		<widget name="pic" position="720,120" size="250,141" alphatest="off"/>
+		<widget name="pic" position="720,120" size="250,141" alphatest="on"/>
 		<widget name="cur" position="700,270" size="295,330" halign="center" font="Regular;26" foregroundColor="yellow"/>
 	</screen>
 
