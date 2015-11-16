@@ -329,7 +329,7 @@
 	<screen name="About" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MidleScreen_RGB_Template"/>
 		<eLabel text="About" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<widget name="AboutScrollLabel" position="310,130" size="695,410" font="Regular;22" split="1" dividechar=":" colposition="280"/>
+		<widget name="AboutScrollLabel" position="310,130" size="695,410" font="Regular;22" split="1" dividechar=":" colposition="240"/>
 		<ePixmap pixmap="MetropolisHD/window/metropolishd_logo.png" position="center,550" size="743,50" alphatest="off" transparent="1"/>
 	</screen>
 
