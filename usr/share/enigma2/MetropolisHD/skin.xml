@@ -125,6 +125,44 @@
 		</widget>
 	</screen>
 
+	<screen name="SecondInfoBarSimple" flags="wfNoBorder" position="0,0" size="1280,720" backgroundColor="transparent">
+		<panel name="InfoBarTemplate"/>
+		<eLabel position="50,35" size="585,400" zPosition="-1" backgroundColor="back"/>
+		<eLabel name="Line" position="50,35" size="585,1" backgroundColor="lineback"/>
+		<eLabel name="Line" position="50,435" size="585,1" backgroundColor="lineback"/>
+		<eLabel name="Line" position="50,35" size="1,400" backgroundColor="lineback"/>
+		<eLabel name="Line" position="635,35" size="1,400" backgroundColor="lineback"/>
+		<widget source="session.Event_Now" render="Label" position="65,40" size="560,24" foregroundColor="yellow" noWrap="1" font="Regular;22">
+			<convert type="EventName">NameNow</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Label" position="65,70" size="450,22" font="Regular;20" foregroundColor="hellgreen">
+			<convert type="EventName">Genre</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Label" position="420,70" size="200,22" font="Regular;20" halign="right" foregroundColor="hellgreen">
+			<convert type="EventName">SmallRating</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Label" position="65,100" size="560,325" font="Regular;20" halign="block" foregroundColor="foreground">
+			<convert type="EventName">FullDescription</convert>
+		</widget>
+		<eLabel position="645,35" size="585,400" zPosition="-1" backgroundColor="back"/>
+		<eLabel name="Line" position="645,35" size="585,1" backgroundColor="lineback"/>
+		<eLabel name="Line" position="645,435" size="585,1" backgroundColor="lineback"/>
+		<eLabel name="Line" position="645,35" size="1,400" backgroundColor="lineback"/>
+		<eLabel name="Line" position="1230,35" size="1,400" backgroundColor="lineback"/>
+		<widget source="session.Event_Next" render="Label" position="660,40" size="560,26" foregroundColor="yellow" noWrap="1" font="Regular;22">
+			<convert type="EventName">NameNext</convert>
+		</widget>
+		<widget source="session.Event_Next" render="Label" position="660,70" size="450,22" font="Regular;20" foregroundColor="hellgreen">
+			<convert type="EventName">Genre</convert>
+		</widget>
+		<widget source="session.Event_Next" render="Label" position="1015,70" size="200,22" font="Regular;20" halign="right" foregroundColor="hellgreen">
+			<convert type="EventName">SmallRating</convert>
+		</widget>
+		<widget source="session.Event_Next" render="Label" position="660,100" size="560,325" font="Regular;20" halign="block" foregroundColor="foreground">
+			<convert type="EventName">FullDescription</convert>
+		</widget>
+	</screen>
+
 	<screen name="ChannelSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="Big2PanelsTemplate"/>
 		<widget source="Title" render="Label" position="67,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
