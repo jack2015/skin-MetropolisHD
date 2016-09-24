@@ -67,11 +67,11 @@
 		<widget source="session.Event_Next" render="Label" position="343,600" size="597,40" font="OpenSans;25" foregroundColor="grey" backgroundColor="transpGrey" transparent="1">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" font="Replacement;17" position="60,545" size="54,22" halign="right" foregroundColor="foreground" backgroundColor="transpGrey" transparent="1" text="1920">
+		<widget source="session.CurrentService" render="Label" font="Replacement;17" position="60,545" size="54,22" halign="right" foregroundColor="foreground" backgroundColor="transpGrey" transparent="1">
 			<convert type="ServiceInfo">VideoWidth</convert>
 		</widget>
 		<eLabel text="x" font="Replacement;17" position="115,545" size="13,22" halign="center" foregroundColor="foreground" backgroundColor="transpGrey" transparent="1"/>
-		<widget source="session.CurrentService" render="Label" font="Replacement;17" position="130,545" size="54,22" foregroundColor="foreground" backgroundColor="transpGrey" transparent="1" text="1080">
+		<widget source="session.CurrentService" render="Label" font="Replacement;17" position="130,545" size="54,22" foregroundColor="foreground" backgroundColor="transpGrey" transparent="1">
 			<convert type="ServiceInfo">VideoHeight</convert>
 		</widget>
 		<eLabel text="BER:" position="1037,664" size="50,22" font="Replacement;17" backgroundColor="transpGrey" transparent="1" foregroundColor="yellow" halign="right"/>
@@ -141,11 +141,11 @@
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="session.CurrentService" render="Label" font="Replacement;15" position="120,115" size="54,20" halign="right" foregroundColor="foreground" text="1920">
+		<widget source="session.CurrentService" render="Label" font="Replacement;15" position="120,115" size="54,20" halign="right" foregroundColor="foreground">
 			<convert type="ServiceInfo">VideoWidth</convert>
 		</widget>
 		<eLabel text="x" font="Replacement;12" position="175,114" size="13,20" halign="center" foregroundColor="foreground"/>
-		<widget source="session.CurrentService" render="Label" font="Replacement;15" position="188,115" size="54,20" foregroundColor="foreground" text="1080">
+		<widget source="session.CurrentService" render="Label" font="Replacement;15" position="188,115" size="54,20" foregroundColor="foreground">
 			<convert type="ServiceInfo">VideoHeight</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Progress" position="center,95" size="610,6" zPosition="1" pixmap="MetropolisHD/window/slider_player.png" transparent="1">
