@@ -404,7 +404,7 @@
 
 	<screen name="ServiceInfo" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="ServiceInfoTemplate"/>
-		<panel name="ButtonTemplate_RGYB"/>
+		<panel name="ButtonTemplate_RYB"/>
 	</screen>
 
 	<screen name="AudioSelection" position="center,center" size="680,330" backgroundColor="back" title="Audio">
