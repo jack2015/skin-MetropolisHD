@@ -306,6 +306,13 @@
 		<widget source="key_green" render="Label" position="650,524" size="250,33" font="Regular;22" halign="center" valign="center"/>
 	</screen>
 
+	<screen name="ButtonTemplate_RGY_Minimal">
+		<panel name="ButtonTemplate_Minimal_RGY"/>
+		<widget name="key_red" position="360,524" size="180,33" font="Regular;22" halign="center" valign="center"/>
+		<widget name="key_green" position="center,524" size="180,33" font="Regular;22" halign="center" valign="center"/>
+		<widget name="key_yellow" position="740,524" size="180,33" font="Regular;22" halign="center" valign="center"/>
+	</screen>
+
 	<screen name="ButtonTemplate_RGYBS_Minimal">
 		<panel name="ButtonTemplate_Minimal_RGYB"/>
 		<widget source="key_red" render="Label" position="331,524" size="152,33" font="Regular;22" halign="center" valign="center"/>
@@ -563,6 +570,11 @@
 	<screen name="MinimalScreen_RGS_Template">
 		<panel name="MinimalScreenTemplate"/>
 		<panel name="ButtonTemplate_RGS_Minimal"/>
+	</screen>
+
+	<screen name="MinimalScreen_RGY_Template">
+		<panel name="MinimalScreenTemplate"/>
+		<panel name="ButtonTemplate_RGY_Minimal"/>
 	</screen>
 
 	<screen name="MinimalScreen_RGYBS_Template">

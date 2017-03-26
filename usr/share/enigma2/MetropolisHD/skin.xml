@@ -2153,9 +2153,9 @@ MultiContentEntryPixmapAlphaTest(pos = (10,6), size = (48,48), png = 3), # index
 	</screen>
 
 	<screen name="StreamingClientsInfo" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="MinimalScreenTemplate"/>
-		<eLabel text="Streaming clients info" position="center,158" size="600,34" halign="center" font="Replacement;24" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<widget name="ScrollLabel" position="center,210" size="580,290" font="Regular;20" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" itemHeight="29"/>
+		<panel name="MinimalScreen_RGY_Template"/>
+		<widget source="Title" render="Label" position="center,158" size="600,34" halign="center" font="Replacement;24" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget name="menu" position="center,210" size="580,290" font="Regular;20" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" itemHeight="29"/>
 	</screen>
 </skin>
 
