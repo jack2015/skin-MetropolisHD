@@ -228,24 +228,24 @@
 
 	<screen name="menu_mainmenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuTemplate"/>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/shutdown.png" position="128,132" size="125,125" alphatest="on">
-			<convert type="MenuEntryCompare">standby_restart_list</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/setup.png" position="128,132" size="125,125" alphatest="on">
-			<convert type="MenuEntryCompare">setup_selection</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/plugins.png" position="128,132" size="125,125" alphatest="on">
-			<convert type="MenuEntryCompare">plugin_selection</convert>
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/timer.png" position="128,132" size="125,125" alphatest="on">
+			<convert type="MenuEntryCompare">timer_edit</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/information.png" position="128,132" size="125,125" alphatest="on">
 			<convert type="MenuEntryCompare">info_screen</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/timer.png" position="128,132" size="125,125" alphatest="on">
-			<convert type="MenuEntryCompare">timer_edit</convert>
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/plugins.png" position="128,132" size="125,125" alphatest="on">
+			<convert type="MenuEntryCompare">plugin_selection</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/setup.png" position="128,132" size="125,125" alphatest="on">
+			<convert type="MenuEntryCompare">setup_selection</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/shutdown.png" position="128,132" size="125,125" alphatest="on">
+			<convert type="MenuEntryCompare">standby_restart_list</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/YPbPr.png" position="128,128" size="125,125" alphatest="on">
