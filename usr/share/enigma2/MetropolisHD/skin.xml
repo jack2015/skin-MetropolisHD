@@ -315,8 +315,12 @@
 
 	<screen name="menu_shutdown" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuTemplate"/>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/shutdown.png" position="128,132" size="128,125" alphatest="on">
-			<convert type="MenuEntryCompare">deep_standby</convert>
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/timer.png" position="128,132" size="125,125" alphatest="on">
+			<convert type="MenuEntryCompare">sleep</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/shutdown.png" position="128,132" size="125,125" alphatest="on">
+			<convert type="MenuEntryCompare">standby</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/reboot.png" position="128,132" size="125,125" alphatest="on">
@@ -327,12 +331,8 @@
 			<convert type="MenuEntryCompare">restart_enigma</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/shutdown.png" position="128,132" size="125,125" alphatest="on">
-			<convert type="MenuEntryCompare">standby</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/timer.png" position="128,132" size="125,125" alphatest="on">
-			<convert type="MenuEntryCompare">sleep</convert>
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/shutdown.png" position="128,132" size="128,125" alphatest="on">
+			<convert type="MenuEntryCompare">deep_standby</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 	</screen>
