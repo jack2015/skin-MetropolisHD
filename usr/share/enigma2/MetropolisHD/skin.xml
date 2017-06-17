@@ -287,6 +287,11 @@
 		<ePixmap position="128,132" size="128,128" pixmap="MetropolisHD/menu/setup.png" alphatest="on"/>
 	</screen>
 
+	<screen name="menu_video" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MenuTemplate"/>
+		<ePixmap position="128,132" size="128,128" pixmap="MetropolisHD/menu/setup.png" alphatest="on"/>
+	</screen>
+
 	<screen name="menu_harddisk" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuTemplate"/>
 		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/hdd.png" position="128,132" size="125,125" alphatest="on">
