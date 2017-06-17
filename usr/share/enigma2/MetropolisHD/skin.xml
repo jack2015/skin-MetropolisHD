@@ -256,36 +256,16 @@
 
 	<screen name="menu_setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuTemplate"/>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/shutdown.png" position="128,132" size="125,125" alphatest="on">
-			<convert type="MenuEntryCompare">standby_restart_list</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/setup.png" position="128,132" size="125,125" alphatest="on">
-			<convert type="MenuEntryCompare">setup_selection</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/plugins.png" position="128,132" size="125,125" alphatest="on">
-			<convert type="MenuEntryCompare">plugin_selection</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/information.png" position="128,132" size="125,125" alphatest="on">
-			<convert type="MenuEntryCompare">info_screen</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/scart.png" position="128,132" size="125,125" alphatest="on">
-			<convert type="MenuEntryCompare">scart_switch</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/timer.png" position="128,132" size="125,125" alphatest="on">
-			<convert type="MenuEntryCompare">timer_edit</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
 		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/setup.png" position="128,132" size="125,125" alphatest="on">
 			<convert type="MenuEntryCompare">system_selection</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/sat_search.png" position="128,132" size="125,125" alphatest="on">
 			<convert type="MenuEntryCompare">service_searching_selection</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/look.png" position="128,132" size="125,125" alphatest="on">
+			<convert type="MenuEntryCompare">cam_setup</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/look.png" position="128,132" size="125,125" alphatest="on">
