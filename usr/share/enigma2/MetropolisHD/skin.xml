@@ -329,12 +329,16 @@
 
 	<screen name="menu_information" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuTemplate"/>
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/information.png" position="128,132" size="125,125" alphatest="on">
+			<convert type="MenuEntryCompare">service_info_screen</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
 		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/info.png" position="128,132" size="125,125" alphatest="on">
 			<convert type="MenuEntryCompare">about_screen</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/information.png" position="128,132" size="125,125" alphatest="on">
-			<convert type="MenuEntryCompare">service_info_screen</convert>
+		<widget source="menu" render="Pixmap" pixmap="MetropolisHD/menu/info.png" position="128,132" size="125,125" alphatest="on">
+			<convert type="MenuEntryCompare">streaming_clients_info_screen</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 	</screen>
