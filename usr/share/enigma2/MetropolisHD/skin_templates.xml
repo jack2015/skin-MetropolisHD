@@ -81,6 +81,9 @@
 		<widget source="session.FrontendStatus" render="Label" position="1092,617" size="50,22" font="Replacement;17" backgroundColor="transpGrey" transparent="1" foregroundColor="foreground">
 			<convert type="FrontendInfo">SNRdB</convert>
 		</widget>
+		<widget source="session.FrontendInfo" render="Label" position="1145,664" size="90,22" backgroundColor="transpGrey" transparent="1" font="Replacement;17">
+			<convert type="FrontendInfo">STRING</convert>
+		</widget>
 		<eLabel text="SNR:" position="1037,617" size="50,22" font="Replacement;17" backgroundColor="transpGrey" transparent="1" foregroundColor="yellow" halign="right"/>
 		<widget source="session.Event_Now" render="Label" position="343,530" size="597,50" font="OpenSans;30" foregroundColor="yellow" transparent="1" noWrap="1" backgroundColor="transpGrey" valign="bottom">
 			<convert type="EventName">Name</convert>
