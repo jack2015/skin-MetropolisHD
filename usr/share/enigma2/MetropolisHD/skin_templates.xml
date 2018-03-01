@@ -528,7 +528,7 @@
 
 	<screen name="ScanTemplate">
 		<panel name="MidleScreen_CancelScan_Template"/>
-		<widget name="header" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget source="Title" render="Label" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="config" position="center,130" size="680,380" sliderPixmap="MetropolisHD/window/slider_vert.png"/>
 	</screen>
 
