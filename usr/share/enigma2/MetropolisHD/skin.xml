@@ -1983,13 +1983,12 @@ MultiContentEntryPixmapAlphaTest(pos = (10,6), size = (48,48), png = 3), # index
 		<widget source="introduction" render="Label" position="center,570" size="680,40" font="Regular;22" halign="center"/>
 	</screen>
 
-	<screen name="HarddiskSetup" position="340,134" size="600,502">
-		<eLabel position="0,0" size="600,2" backgroundColor="grey"/>
-		<widget name="model" position="10,20" size="580,28" font="Regular;25" halign="center"/>
-		<widget name="capacity" position="10,60" size="580,28" font="Regular;25" halign="center"/>
-		<widget name="bus" position="10,100" size="580,28" font="Regular;25" halign="center"/>
-		<eLabel position="0,460" size="600,2" backgroundColor="grey"/>
-		<widget name="initializetext" position="20,467" size="580,30" font="Regular;24" halign="center" foregroundColor="red"/>
+	<screen name="HarddiskSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MinimalScreen_RGS_Template"/>
+		<widget source="Title" render="Label" position="center,155" size="600,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget name="model" position="center,210" size="580,28" font="Regular;25" halign="center"/>
+		<widget name="capacity" position="center,250" size="580,28" font="Regular;25" halign="center"/>
+		<widget name="bus" position="center,290" size="580,28" font="Regular;25" halign="center"/>
 	</screen>
 
 	<screen name="NumericalTextInputHelpDialog" position="center,580" size="484,122" zPosition="10" flags="wfNoBorder">
