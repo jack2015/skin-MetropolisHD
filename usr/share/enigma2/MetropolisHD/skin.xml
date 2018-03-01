@@ -2079,10 +2079,19 @@ MultiContentEntryPixmapAlphaTest(pos = (10,6), size = (48,48), png = 3), # index
 	</screen>
 
 	<screen name="HotkeySetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="MidleScreen_RG_Template"/>
-		<eLabel text="Hotkey" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<panel name="MidleScreen_RS_Template"/>
+		<widget source="Title" render="Label" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="list" position="290,center" size="330,475" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" itemHeight="30"/>
 		<widget name="choosen" position="600,center" size="390,475" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" itemHeight="30"/>
+	</screen>
+
+	<screen name="HotkeySetupSelect" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="MidleScreen_RGYS_Template"/>
+		<eLabel source="Title" render="Label" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<widget name="list" position="290,center" size="330,475" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" itemHeight="30"/>
+		<widget name="choosen" position="600,center" size="390,475" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" itemHeight="30"/>
+		<widget name="h_prev" pixmap="skin_default/buttons/key_prev.png" alphatest="on" position="340,616" size="35,25"/>
+		<widget name="h_next" pixmap="skin_default/buttons/key_next.png" alphatest="on" position="920,616" size="35,25"/>
 	</screen>
 
 	<screen name="HdmiCECSetupScreen" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
