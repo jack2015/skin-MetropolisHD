@@ -303,6 +303,11 @@
 		<widget name="key_red" position="center,524" size="250,33" font="Regular;22" halign="center" valign="center"/>
 	</screen>
 
+	<screen name="ButtonTemplate_RS_Minimal">
+		<panel name="ButtonTemplate_Minimal_R"/>
+		<widget source="key_red" render="Label" position="center,524" size="250,33" font="Regular;22" halign="center" valign="center"/>
+	</screen>
+
 	<screen name="ButtonTemplate_RGS_Minimal">
 		<panel name="ButtonTemplate_Minimal_RG"/>
 		<widget source="key_red" render="Label" position="380,524" size="250,33" font="Regular;22" halign="center" valign="center"/>
@@ -575,6 +580,11 @@
 	<screen name="MinimalScreen_R_Template">
 		<panel name="MinimalScreenTemplate"/>
 		<panel name="ButtonTemplate_R_Minimal"/>
+	</screen>
+
+	<screen name="MinimalScreen_RS_Template">
+		<panel name="MinimalScreenTemplate"/>
+		<panel name="ButtonTemplate_RS_Minimal"/>
 	</screen>
 
 	<screen name="MinimalScreen_RGS_Template">
