@@ -1147,14 +1147,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth) / 2, orgpos.y() + (
 	</screen>
 
 	<screen name="TimerEntry" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="MidleScreenTemplate"/>
-		<panel name="ButtonTemplate_Midle_RGYB"/>
+		<panel name="MidleScreen_RGYBS_Template"/>
 		<widget source="Title" render="Label" position="center,72" size="735,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
-		<widget name="config" position="center,150" size="676,425" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" font="Regular;20" foregroundColor="foreground"/>
-		<widget name="canceltext" position="280,614" size="180,33" font="Regular;22" halign="center" valign="center"/>
-		<widget name="oktext" position="460,614" size="180,33" font="Regular;22" halign="center" valign="center"/>
-		<widget name="key_yellow" position="640,614" size="180,33" font="Regular;22" halign="center" valign="center"/>
-		<widget name="key_blue" position="820,614" size="180,33" font="Regular;22" halign="center" valign="center"/>
+		<widget name="config" position="center,115" size="722,495" enableWrapAround="1" scrollbarMode="showOnDemand" sliderPixmap="MetropolisHD/window/slider_vert.png" font="Regular;20" foregroundColor="foreground"/>
 	</screen>
 
 	<screen name="TimerLog" position="90,100" size="1100,560" backgroundColor="back">
