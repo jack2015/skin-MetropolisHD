@@ -1612,15 +1612,12 @@ MultiContentEntryText(pos = (0,0), size = (650,160), flags = RT_HALIGN_CENTER|RT
 
 	<screen name="VirtualKeyBoard" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" zPosition="99">
 		<panel name="MinimalScreenTemplate"/>
-		<panel name="ButtonTemplate_Minimal_RGY"/>
-		<eLabel text="Virtual keyboard" position="center,157" size="600,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
+		<panel name="ButtonTemplate_RGYS_Minimal"/>
+		<widget source="Title" render="Label" position="center,157" size="600,34" halign="center" font="Replacement;26" foregroundColor="hellgreen" backgroundColor="transpGrey" transparent="1"/>
 		<widget name="header" position="center,200" size="542,20" font="Regular;20" noWrap="1"/>
 		<ePixmap pixmap="MetropolisHD/window/vkey_text.png" position="center,229" zPosition="-4" size="542,52" alphatest="on"/>		
 		<widget name="text" position="center,231" size="530,46" font="Regular;38" noWrap="1" halign="right"/>		
 		<widget name="list" position="center,288" size="540,225" selectionDisabled="1" transparent="1"/>
-		<eLabel text="Exit" render="Label" position="360,524" size="180,33" font="Regular;22" halign="center" valign="center"/>
-		<eLabel text="OK" render="Label" position="center,524" size="180,33" font="Regular;22" halign="center" valign="center"/>
-		<widget source="country" render="Label" position="740,524" size="180,33" font="Regular;22" halign="center" valign="center"/>
 	</screen>
 
 	<screen name="MyTubePlayer" position="0,549" size="1280,155" backgroundColor="transparent" flags="wfNoBorder">

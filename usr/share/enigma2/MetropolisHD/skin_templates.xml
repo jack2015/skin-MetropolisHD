@@ -316,6 +316,13 @@
 		<widget name="key_yellow" position="740,524" size="180,33" font="Regular;22" halign="center" valign="center"/>
 	</screen>
 
+	<screen name="ButtonTemplate_RGYS_Minimal">
+		<panel name="ButtonTemplate_Minimal_RGY"/>
+		<widget source="key_red" render="Label" position="360,524" size="180,33" font="Regular;22" halign="center" valign="center"/>
+		<widget source="key_green" render="Label" position="center,524" size="180,33" font="Regular;22" halign="center" valign="center"/>
+		<widget source="key_yellow" render="Label" position="740,524" size="180,33" font="Regular;22" halign="center" valign="center"/>
+	</screen>
+
 	<screen name="ButtonTemplate_RGYBS_Minimal">
 		<panel name="ButtonTemplate_Minimal_RGYB"/>
 		<widget source="key_red" render="Label" position="331,524" size="152,33" font="Regular;22" halign="center" valign="center"/>
