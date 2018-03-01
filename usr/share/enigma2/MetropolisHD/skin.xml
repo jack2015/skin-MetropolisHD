@@ -656,8 +656,8 @@ self.instance.move(ePoint((1280-wsizex) / 2, (720 - wsizey) / (count > 7 and 2 o
 		</widget>
 	</screen>
 
-	<screen name="TextBox" position="center,center" size="550,400" title="Message">
-		<widget name="text" position="center,center" size="480,380" font="Regular;22"/>
+	<screen name="TextBox" position="center,center" size="750,500" title="Message">
+		<widget name="text" position="center,center" size="680,480" font="Regular;20"/>
 	</screen>
 
 	<screen name="MessageBoxTemplate">
