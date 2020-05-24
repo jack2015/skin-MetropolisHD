@@ -37,10 +37,10 @@
 
 	<fonts>
 		<font filename="lcd.ttf" name="LCD" scale="100"/>
-		<font filename="md_khmurabi_10.ttf" name="Replacement" scale="100" replacement="1"/>
+		<font filename="ae_AlMateen.ttf" name="Replacement" scale="100" replacement="1"/>
 		<font filename="tuxtxt.ttf" name="Console" scale="100"/>
-		<font filename="DroidSans.ttf" name="Regular" scale="100"/>
-		<font filename="OpenSans-Regular.ttf" name="OpenSans" scale="100"/>
+		<font filename="LiberationSans-Regular.ttf" name="Regular" scale="100"/>
+		<font filename="LiberationSans-Regular.ttf" name="OpenSans" scale="100"/>
 	</fonts>
 
 	<parameters>
