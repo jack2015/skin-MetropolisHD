@@ -20,6 +20,7 @@ from enigma import eLabel
 from enigma import eDVBVolumecontrol, eTimer
 from Components.VariableText import VariableText
 
+
 class MetVolume(VariableText, Renderer):
 
 	def __init__(self):
