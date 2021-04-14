@@ -12,7 +12,7 @@
 #    but WITHOUT ANY WARRANTY; without even the implied warranty of
 #    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #    GNU General Public License for more details.
-#    
+#
 #######################################################################
 
 from Renderer import Renderer
@@ -26,7 +26,7 @@ class MetVolume(VariableText, Renderer):
 	def __init__(self):
 		Renderer.__init__(self)
 		VariableText.__init__(self)
-		self.start = False                     		
+		self.start = False
 		self.vTimer = eTimer()
 		self.vTimer.callback.append(self.changed)
 	GUI_WIDGET = eLabel
@@ -41,4 +41,4 @@ class MetVolume(VariableText, Renderer):
 
 	def onHide(self):
 		self.start = False
-		self.vTimer.stop()		
+		self.vTimer.stop()
